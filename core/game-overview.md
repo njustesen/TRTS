@@ -34,7 +34,7 @@ Each round starts with a _Macromanagement_ phase that is followed by a _Microman
 
 When the first round is over, the **Starting Player Token** is moved to the end of the line of **Starting Player Tokens** and the **Turn Marker** is moved one square forward on the **Turn Tracker** on the **Turn Sequence Board**. Then, the next **Starting Player Token** is used placed on the _Macromanagement_ phase on the **Turn Sequence Board** to initiate a new round.
 
-### Macromanagement
+### Macromanagement Phase
 
 The macromanagement phase consists of three sub-phases that are done in order but are performed indepentendly and secretely by each player. When all players have said they are "Done!", the turn will proceed to the Micromanagement phase.
 
@@ -44,7 +44,7 @@ The macromanagement phase consists of three sub-phases that are done in order bu
 
 #### Production
 
-### Micromanagement
+### Micromanagement Phase
 
 In the _Micromanagement Phase_, players perform a sereis of _Micromanagement Actions_ with a _group of units_ in the _current player turn order_ until all players have passed in the same round. When the group of units are done with their their _Micromanagement Actions_, they can no longer move or retreat this turn. They can, however, make an _attack_ while defending if they did not make an _attack_ in this turn. After performing a _Micromanagement Action_, it becomes the next player in _current player turn order_ to perform a _Micromanagement Action_ or to _pass_. When a player _passes_, they can still perform _Micromanagement Actions_ lather in the _Micromanagement Phase_ while it ends when all players are _passing_.
 
