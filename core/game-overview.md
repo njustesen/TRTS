@@ -46,7 +46,7 @@ The macromanagement phase consists of three sub-phases that are done in order bu
 
 ### Micromanagement
 
-In the _Micromanagement_ phase, players perform _Micromanagement Actions_ in the _current player turn order_ until all players have passed. _Micromanagement Actions_ are performed by a _group of units_ and when the group of units are done with their all their actions, they can no longer move or retreat this turn. They can, however, make an attack while defending if they did not attack in this turn. After performing a _Micromanagement Action_, it becomes the next player in _current player turn order_ to perform a _Micromanagement Action_ or to pass.
+In the _Micromanagement Phase_, players perform a sereis of _Micromanagement Actions_ with a _group of units_ in the _current player turn order_ until all players have passed in the same round. When the group of units are done with their their _Micromanagement Actions_, they can no longer move or retreat this turn. They can, however, make an _attack_ while defending if they did not make an _attack_ in this turn. After performing a _Micromanagement Action_, it becomes the next player in _current player turn order_ to perform a _Micromanagement Action_ or to _pass_. When a player _passes_, they can still perform _Micromanagement Actions_ lather in the _Micromanagement Phase_ while it ends when all players are _passing_.
 
 A _Micromanagement Action_ is performed by first selecting a group of units that must execute the same _Micromanagement Action_. Some units can perform special _Micromanagement Actions_ which is described in their own ruleset, while the main _Micromanagement Action_ is either _Move Actions_, _Engagement Actions_ or _Combat Actions_ which are described below.
 
@@ -56,48 +56,42 @@ This action allows you to move a group of units through **Areas** that you _cont
 
 #### Engagement Action
 
-To move into an **Area** that you do not _control_ or _contest_, you must make an _Engagement action_. Select a group of units, which can come from different **Areas**, and move them to a target **Area**. You cannot move through **Areas** that you do not _control_ or _contest_.
-
-
-The selected _group of units_ does not have to start in the same **Area** but they have to target their actions in the same **Area**.
-
-The following types of actions can be executed:
-
-1. Movement
-
-To make an _engagement_, move a group of units from to an **area** that's not under your control. 
+To move into an **Area** that you do not _control_ or _contest_, you must make an _Engagement Action_. Select a group of units, which can come from different **Areas**, and move them to a target **Player Board Area**. You cannot move through **Areas** that you do not either _control_ or _contest_. Then, indicate that you maded an _engagement_ to the **Area** by placing a **Control Marker** on the **Game Board Area**. 
 
 Here, there are 3 possible scenarios:
 
-1. If the **Area** is _neutral_, place one of your **Control Markers** on the engaged **Area**. You now control the engaged **Area**. 
+1. If the **Area** is _neutral_, remove the **Neutral Control Marker** and you now control the engaged **Area**. 
 
-2. If the **Area** is under control of other players, place one of your **Control Marker** on the **Game Board Area** to indicate the engagement. 
-The player controlling the **Area** has to say whether or not there are any units or buildings.
+2. If the **Area** is under control by enemy players, the players controlling the **Area** has to say whether or not they have any units or buildings.
 
-* If there are no units/buildings in the engaged **Area**, keep your **Control Marker** on the **Game Baord Area** and remove any **Control Markers** of other players. 
-You now control the engaged **Area**.
+* If there are no units/buildings in the engaged **Area**, keep your **Control Marker** on the **Game Baord Area** and remove any **Control Markers** of other players. You now control the engaged **Area**.
 
-* If there are units/buildings, immediately move all units that are in the **Player Area** onto the **Game Board Area** so they become visible to anyone, including the engaging units.
-Then, carry out a _combat_ round, described in the next section.
+* If there are units or buildings, immediately move all units that are in the corresponding **Player Areas** onto the **Game Board Area** so they become visible to anyone, including the engaging units. Then, carry out a _combat_ round, described in the next section.
 
-3. If the **Area** is contested and you have a **Control Marker** on the **Area**, move the units directly to the new **Game Board Area** and perform a round of combat.
+3. If the **Area** is already contested by you, move the units directly to the new **Game Board Area** and perform a round of combat.
 
-If some of the engaging units have movement points left after making an _engagement_, they can immediately perform another _engagement_ or move to adjacent **Area** under control but remember that units that have attacked cannot attack again this turn. Units that have survived a _combat round_ without attacking are thus allowed to attack in any proceeding _combat rounds_. When the sequence of _engagements_ are over for this group of units, they can no longer move or retreat in this turn.
+Moving from one **Area** to an adjacent **Area** costs one movement point. Units cannot move or retreat if they are out of _movement points_. 
+
+After making an _engagement_ (and after any _combat rounds_), _the group of units_ can immediately continue to perform another _Micromanagement Action_. Units can, however, only attack on time per _turn_ and units cannot move anymore if they are out of _movement points_. Units that have survived a _combat round_ without attacking are still allowed to attack in any proceeding _combat rounds_. Thus, deciding not to attack in a _combat round_ can allow units to move further into the opponents **Areas** and then attack. 
+
+When the sequence of _engagements_ are over for the group of units, they can no longer move or retreat in this turn.
 
 ### Combat
-A _combat round_ is performed in several _combat steps_ where units with the long range attack first. In each _combat step_, units and buildings that share the _range_ value of the current _combat step_ can _attack_ and _cast spells_. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the next highest, the third, and so on until all units have had a change to act. 
+A _combat round_ is performed in several _combat steps_ where units with the long range attack first. In each _combat step_, units and buildings that share the _range_ value of the current _combat step_ can _attack_ and _cast spells_. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the next highest, the third, and so on until all units have had a change. 
 
-During a combat step, the following happens:
+During a _combat step_, the following happens:
 
-1. All units with a greater _sight_ value than the _range_ value of the current _combat step_ can retreat to any adjacent **Area** under control or contested by the units' owner, given they have enough movement points left.
+1. All units with a greater _sight_ value than the _range_ value of the current _combat step_ can retreat to any adjacent **Area** with an owned **Control Marker**, given they have enough movement points left.
 
-2. Units that match the _range_ value of the current _combat step_ can attack or cast a spell. This is done in the **player turn order** but the damage are allocated simulatenously. The amount of damage each unit deals is described in the next section. Remove any units that died and place damage tokens to reflect any damage to surviving units/buildings.
+2. Units that match the _range_ value of the current _combat step_ can attack or cast spells. This is done in the _player turn order_ but the damage are allocated simulatenously. The amount of damage each unit deals is described in the next section. Remove any units that died and place damage tokens to reflect any damage to surviving units/buildings.
 
 3. In the **player turn order** units that match the _range_ value of the current _combat step_ can retreat to any adjacent **Area** under control or contested by the units' owner, if they have enough movement points left. 
 
 Retreating units can use all their movement points to move severeal **Areas** away from the engaged **Area**. 
 
 Retreating units cannot move anymore this turn. 
+
+Units cannot reatreat if they have performed _Micromanagement Actions_ previously in this.
 
 Units and buildings can only attack one time in a turn even if they take part of multiple combat rounds. 
 
