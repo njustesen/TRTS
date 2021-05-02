@@ -97,15 +97,3 @@ Units and buildings can only attack one time in a turn even if they take part of
 
 ### Damage
 
-
-
-
-### Outnumbered
-A unit is _outnumbered_ if there are more opponent units and buildings that can target it in the same **Area** than there are friendly units.
-
-Units can move and retreat safely through a contested *Area* with an owned **Control Marker** if the following two conditions are met:
-
-1. The units are moving to an **Area** with an owned **Control Marker**.
-2. The opponent units in the contested **Area** are all pinned.
-
-
