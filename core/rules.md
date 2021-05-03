@@ -83,7 +83,7 @@ Units cannot perform a _Hold Position Action_ if they have attacked this turn.
 
 Units that haven't attacked yet this turn will automatically perform a _Hold Position Action_ when they end their _activation_.
 
-Units that have not been _acitvated_ yet will always be in _Hold Position_.
+Units that have not been _acitvated_ yet this _Turn_ will always be in _Hold Position_.
 
 Buildings are always in _Hold Position_.
 
