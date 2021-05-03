@@ -81,7 +81,7 @@ This defensive actions ends the _activation_ of a **Control Group** but allows t
 
 Units cannot perform a _Hold Position Action_ if they have attacked this turn.
 
-Units haven't attacked yet this turn will automatically perform a _Hold Position Action_ when they end their _activation_.
+Units that haven't attacked yet this turn will automatically perform a _Hold Position Action_ when they end their _activation_.
 
 Units that have not been _acitvated_ yet will always be in _Hold Position_.
 
