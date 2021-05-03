@@ -93,15 +93,17 @@ Immedieatly when non-_activated_ units are being _engaged_ by an enemy **Control
 If all units in the _engaged_ **Area** are _retreating_ and they do not control any buildings in the **Area**, remove their **Control Marker** and the _engaging_ player new controls the **Area**.
 
 ### Combat
-A _combat round_ is performed in several _combat steps_ where units with the long range attack first. In each _combat step_, units and buildings that share the _range_ value of the current _combat step_ can _attack_ and _cast spells_. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the next highest, the third, and so on until all units have had a change. 
+A _combat round_ is performed in several _Combat Steps_ where units with the long range attack first. In each _Combat Step_, units and buildings that share the _range_ value of the current _combat step_ can _attack_ and _cast spells_. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the next highest, the third, and so on until all units have had a change. 
 
-During a _combat step_, the following happens:
+During a _Combat Step_, the following happens:
 
-1. Units that match the _range_ value of the current _combat step_ can attack or cast spells. The _engaging_ players allocates damage first and then the _defending_ player while the damage of a round is dealt simulatenously. The amount of damage each unit deals is described in the next section. Remove any units that died and place damage tokens to reflect any damage to surviving units/buildings. In the rare situation that both players will loose all their units and buildings in the **Area** during one _combat step_, the _defending_ player will keep a unit of choice alive with 1 HP left.
+1. Both _engaging_ and _defending_ units that match the _range_ value of the current _combat step_ can attack or cast spells. The _engaging_ players allocates damage first followed by the _defending_ players, while the damage of a _Combat Step_ is dealt simulatenously. The amount of damage each unit deals is described in the next section. Remove any units that died and place damage tokens to reflect any damage to surviving units/buildings. In the rare situation that both players will loose all their units and buildings in the **Area** during one _combat step_, the _defending_ player will keep a unit of choice alive with 1 HP left.
 
 2. Any units in the _active_ **Control Group** can _retreat_ to any adjacent **Area** under control or contested by the units' owner without initiating any new _Combat_ rounds. Retreating units can use all their movement points to move severeal **Areas** away from the engaged **Area** which is important since their _activation_ ends. Retreating units ends their _activation_ when _retreiting_ and thus cannot move anymore this turn. 
 
-Units and buildings can only ever attack once per turn, and only if the are _active_ or are in _Hold Position_.
+the _active_ **Control Group** cannot retreat during combat if the _engagement_ occoured this turn _up a ramp_. Thus ignore step #2 in this case. 
+
+Units and buildings can only ever attack once per turn, and only if the are in the _active_ **Control Group** or are in _Hold Position_.
 
 Defending units cannot _retreat_ during the _Combat_ round. They have to make a _Retreat_ action immediately when _engaged_.
 
