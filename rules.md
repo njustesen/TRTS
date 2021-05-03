@@ -54,7 +54,7 @@ When a **Control Group** is done being _microed_, it becomes the next player to 
 
 Units can only be moved in so-called **Control Groups**, even if a **Control Group** only consists of a single unit. A **Control Group** is simply a set of units that perform the same action in the _Micromanagement Phase_. All units in a **Control Groups** do not have to start in the same **Area** but they must always target the same **Area** when moving. It is good practice to place units in a **Control Group** close together in their **Area** so it is easy to remember that they have been _microed_ together. 
 
-Players can continue to move the same **Control Groups** multiple times if they have enough movement points. It is not allowed to split up the **Control Groups** and _micro_ the individually. You can, however, leave behind some of the units in a **Control Groups** and continue to move with a subset of the units, e.g. if some units are faster than others, or if some units will stay and fight while others will move forward to harass another **Areas**. When units are left behind, their _activation_ ends, and they can no longer move for the rest of the turn. This means that you only have to remember how many movement points are left for the units within the _active_ **Control Group**, sinve all other units either cannot move anymore or have not been _microed_ yet. In the late-game, it can become necessary to mark control groups to remember that they have been _microed_.
+Players can continue to move the same **Control Group** multiple times if they have enough movement points. It is not allowed to split up the **Control Groups** and _micro_ the individually. You can, however, leave behind some of the units in a **Control Groups** and continue to move with a subset of the units, e.g. if some units are faster than others, or if some units will stay and fight while others will move forward to harass another **Areas**. When units are left behind, their _activation_ ends, and they can no longer move for the rest of the turn. This means that you only have to remember how many movement points are left for the units within the _active_ **Control Group**, sinve all other units either cannot move anymore or have not been _microed_ yet. In the late-game, it can become necessary to mark control groups to remember that they have been _microed_.
 
 #### Moving a Control Group
 To initiate a movement of a **Control Group**, first, select a group of units under your control, that have not yet been _microed_ yet, and move them to an **Area** that they can all reach (see how many movement points they have). Units in _contested_ **Areas** are also allowed to be _microed_. If you _control_ the target **Area**, simply move them to the **Player Board Area**. If you do not _control_ the **Area**, an _engagement_ will happen. 
@@ -68,48 +68,27 @@ There are 3 possible scenarios for an _engagement_:
 
 1. If the **Area** is _neutral_, remove the _neutral_ **Control Marker**. You now control the engaged **Area**. 
 
-2. If the **Area** is under control by enemy players, the players controlling the **Area** has to say whether or not they have any units or buildings in that **Area**.
+2. If the **Area** is under _control_ by enemy players, the players controlling the **Area** has to say whether or not they have any units or buildings in that **Area**.
 
 * If there are no units/buildings in the engaged **Area**, keep your **Control Marker** on the **Game Board Area** and remove any enemy **Control Markers**. You now control the engaged **Area**.
 
-* If there are units or buildings, immediately move all units that are in the corresponding **Player Board Areas**, including the engaging units, onto the **Game Board Area** so they become visible to everyone. New upgrades must be declared while research that enables new actions and spells can be kept secret until used.
-The _defending_ player can then decide _retreat_ with units in the _engaged_ **Area**. If some _defending_ units or buildings remain, you must carry out a _Combat_ round (described later), otherwise you gain control over the **Area**.
-
-When the movement (and any _Combat_) is over, the **Control Group** (or a subgroup) is allowed to continue its activation.
-
-#### Attack
-A **Control Group** in an **Area** with enemy units or buildings can initiate a _Combat_ round if they have not attacked yet this turn. _Combat_ is described later.
-
-#### Hold Position Action
-This defensive actions ends the _activation_ of a **Control Group** but allows them to _attack_ during _Combat_ rounds in their **Area** that will occour until they become _activated_ again.
-
-Units cannot perform a _Hold Position Action_ if they have attacked this turn.
-
-Units that haven't attacked yet this turn will automatically perform a _Hold Position Action_ when they end their _activation_.
-
-Units that have not been _acitvated_ yet this turn will always be in _Hold Position_.
-
-Buildings are always in _Hold Position_.
-
-#### Retreat Action
-Immedieatly when non-_activated_ units are being _engaged_ by an enemy **Control Group** (or as part of a _Combat_), they can be _activated_ and _retreat_ to and through **Areas** that are _controlled_ or _contested_ given they have anough movement points left. When retreating before combat, units cannot retreat to the **Area** from which the _engaging_ **Control Group** came from. The _retreating_ **Control Group** ends their _activation_ (in _Hold Position_ if they have not attacked this turn) but they do not initiate any new _Combat_ rounds in the **Area** they _retreated_ into. 
-
-If all units in the _engaged_ **Area** are _retreating_ and they do not control any buildings in the **Area**, remove their **Control Marker** and the _engaging_ player new controls the **Area**.
+* If there are units or buildings, immediately move all units that are in the corresponding **Player Board Areas**, including the engaging units, onto the **Game Board Area** so they become visible to everyone. New upgrades must be declared immediately while research that enables new spells can be kept secret until used.
+If all enemy units and buildings are eliminated during combate, you gain control over the **Area**, otherwise, it remains _contested_ (keep both players' **Control Markers**, units, and buildings on the **Game Board Area**).
 
 ### Combat
-A _combat round_ is performed in several _Combat Steps_ where units with the long range attack first. In each _Combat Step_, units and buildings that share the _range_ value of the current _combat step_ can _attack_ and _cast spells_. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the next highest, the third, and so on until all units have had a change. 
+A _combat_ is performed in several _combat steps_ where units with the long _range_ attack before units with short _range_. In each _combat step_, units and buildings that share the same _range_ value of the current _combat step_ can attack and cast spells. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the second highest, the third, and so on, until all units have had a change to attack (unless they were killed of course). 
 
-During a _Combat Step_, the following happens:
+During a _combat step_ at _range_ X, the following happens:
 
-1. Both _engaging_ and _defending_ units that match the _range_ value of the current _combat step_ can attack or cast spells. The _engaging_ players allocates damage first followed by the _defending_ players, while the damage of a _Combat Step_ is dealt simulatenously. The amount of damage each unit deals is described in the next section. Remove any units that died and place damage tokens to reflect any damage to surviving units/buildings. In the rare situation that both players will loose all their units and buildings in the **Area** during one _combat step_, the _defending_ player will keep a unit of choice alive with 1 HP left.
+1. If the _enganging_ player has any unit with greater _sight_ than X, any unit under control can be _microed_ to _retreat_ (if they haven't been _microed_ previously this turn). _Retreating_ simply means that you immediately moves the _retreating_ units to an **Area** they can reach that are under _control_ or _contested_. Since _retreating_ requires _micromanagement_ these units cannot be _microed_ again this turn.
 
-2. Any units in the _active_ **Control Group** can _retreat_ to any adjacent **Area** under control or contested by the units' owner without initiating any new _Combat_ rounds. Any retreating units end their _activation_ after _retreiting_ and thus cannot move anymore this turn. 
+2. If the _defending_ player has any unit with greater _sight_ than X, any unit under control can be _microed_ to _retreat_ following the same rules as above.
 
-the _active_ **Control Group** cannot retreat during combat if the _engagement_ occoured this turn _up a ramp_. Thus ignore step #2 in this case. 
+3. Both _engaging_ and _defending_ units that match the _range_ value of the current _combat step_ can attack or cast spells. The _engaging_ player allocates damage first, followed by the _defending_ player, while the damage of this _combat step_ is dealt simulatenously. The amount of damage each unit deals is described in the next section. Remove any units that died and place damage tokens to reflect any damage to surviving units and buildings. In the rare situation that both players have lost all their units and buildings in the **Area** during one _combat step_, the _defending_ player will keep a unit or building of choice alive with 1 HP left.
 
-Units and buildings can only ever attack once per turn, and only if the are in the _active_ **Control Group** or are in _Hold Position_.
+The _active_ **Control Group** cannot retreat during combat if they _engaged_ the combat in this turn _up a ramp_. Simply ignore step #1 in this case. 
 
-Defending units cannot _retreat_ during the _Combat_ round. They have to make a _Retreat_ action immediately when _engaged_.
+Units and buildings can only ever attack once per turn, even if they take part in multiple combat sitatuions.
 
 ### Damage
 
