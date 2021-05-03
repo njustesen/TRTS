@@ -85,6 +85,8 @@ Units haven't attacked yet this turn will automatically perform a _Hold Position
 
 Units that have not been _acitvated_ yet will always be in _Hold Position_.
 
+Buildings are always in _Hold Position_.
+
 #### Retreat Action
 Immedieatly when non-_activated_ units are being _engaged_ by an enemy **Control Group** (or as part of a _Combat_), units can decide to be _activated_ and _retreat_ to and through **Areas** that are _controlled_ or _contested_ except for the **Area** from which the _engaging_ **Control Group** came from, given they have anough movement points left. The _retreating_ **Control Group** ends their _activation_ (in _Hold Position_ if they have not attacked this turn) but they do not initiate any _Combat_ in the **Area** they _retreated_ into. 
 
@@ -99,7 +101,7 @@ During a _combat step_, the following happens:
 
 2. Any units in the _active_ **Control Group** can _retreat_ to any adjacent **Area** under control or contested by the units' owner without initiating any new _Combat_ rounds. Retreating units can use all their movement points to move severeal **Areas** away from the engaged **Area** which is important since their _activation_ ends. Retreating units ends their _activation_ when _retreiting_ and thus cannot move anymore this _Turn_. 
 
-Units and buildings can only ever attack once per _Turn_. 
+Units and buildings can only ever attack once per _Turn_, and only if the are _active_ or are in _Hold Position_.
 
 Defending units cannot _retreat_ during the _Combat_ round. They have to make a _Retreat_ action immediately when _engaged_.
 
