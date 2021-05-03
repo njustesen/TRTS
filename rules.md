@@ -46,34 +46,38 @@ The macromanagement phase consists of three sub-phases that are done in order bu
 
 ### Micromanagement Phase
 
-In the _Micromanagement Phase_, players can _micro-manage_ (or just _micro_) their units. In the _current player turn order_ one **Control Group** is _activated_ at a time to perform one or more _Micro Actions_. After a **Control Group** has performed one or more _Micro Actions_, they cannot be _activated_ until the next turn. Units can only perform _Micro Actions_ when they are _activated_ making already-_activated_ units fragile from attacks. 
+In the _Micromanagement Phase_, players can move units between connected **Areas** on the map which sometimes results in combat. In the _current player turn order_, one **Control Group** is "_microed_" at a time. When the _active_ **Control Group** is done being _microed_, they cannot be _microed_ again this turn. Units can only perform _Movement Actions_, which includes _retreating_ from _Combat_, when they are _active_, making already-_microed_ units fragile. 
 
-When a **Control Group** is finished with its _activatation_, it becomes the next player to _activate_ a **Control Group** or _pass_. When a player _passes_, that player's _Micromanagement Turn_ is simply skipped. In the next _Micromanagement Turn_, that player can decide again to_activate_ a **Control Group** or _pass_. When all players have _passed_ in a round, the _Micromanagement Phase_ is over and a new turn starts.
+When a **Control Group** is done being _microed_, it becomes the next player to _micro_ a **Control Group** or _pass_. When a player _passes_, that player's _Micromanagement Turn_ is simply skipped in this _Micromanagement Round_, but can decide again in the next _Micromanagement Round_ to either _mirco_ a **Control Group** or _pass_. When all players have _passed_ in a _Micromanagement Round_, the _Micromanagement Phase_ is over and a new turn starts with the _Macromanagement Phase_.
 
-When finishing the _activation_ of a **Control Group**, the current player can optionally decide to continue to perform _micro actions_ with subgroups of the **Control Group** before that player's _Micromanagement Turn_ ends.
+A **Control Group** is simply a set of units that performs the same _Micro Action_. They do not have to start in the same **Area** but their _micro actions_ must target the same **Area**. It is good practice to place units in a **Control Group** close together in their **Area** so it is easy to remember that they have been _microed_ together.
 
-A **Control Group** is simply a set of units that performs the same _Micro Action_. They do not have to start in the same **Area** but their _micro actions_ must target the same **Area**. It is good practice to place units in a **Control Group** close together in an **Area** so it is easy to remember that they are either _active_ now or have been _activated_.
 
-Some units can perform special _Micro Actions_ which are described in their _special rules_, while (almost) all units can do a _Move Action_, an _Attack Action_, and a _Hold Position Action_. 
 
-#### Move Action
+When ending the _micro_ of a **Control Group**, the current player can optionally decide to continue to _micro_ at most one subgroup of the **Control Group** before that player's _Micromanagement Turn_ ends. You can continue to make subgroups of subgroups but you cannot make 
 
-This action allows you to move a **Control Group** through **Areas** that you _control_ or _contest_ to an **Area** that you also _control_ or _contest_. All the units must, however, have enough _Movement Points_ to reach the **Area**. Move the units to the **Player Board Area** and place them together to indicate that they have been _activated_. If you moved through any contested areas, you have to briefly reveil the **Control Group** and let everyone know which **Areas** they passed through. Opponent units cannot attack your units as they _pass through_ contested **Areas** as they are busy fighting the existing units. If **Control Group** moves into an **Area** that they do not control or _contest_, place a **Control Marker** on the **Game Board Area** to indicate an _engagement_. 
+Some units can perform special _Micro Actions_ which are described in their _special rules_, while (almost) all units can do _Move_ and an _Attack_. 
 
-Here, there are 3 possible scenarios:
+#### Movement
 
-1. If the **Area** is _neutral_, remove the neutral **Control Marker** and you now control the engaged **Area**. 
+This action allows you to move a **Control Group** through **Areas** that you _control_ or _contest_ to an **Area** that you also _control_ or _contest_. All the units must, however, have enough _Movement Points_ to reach the **Area**, the **Areas** must be connected, and only _flying_ units can cross non-walkable barriers.
 
-2. If the **Area** is under control by enemy players, the players controlling the **Area** has to say whether or not they have any units or buildings.
+Move the units to the **Player Board Area** and place them together to indicate that they have been _micored_. If you moved through any _contested_ areas, you have to briefly reveil the **Control Group** and let everyone know which _contested_ **Areas** they passed through. Opponent units cannot attack your units as they _pass through_ contested **Areas** as they are busy fighting. If a **Control Group** moves into an **Area** that they do not _control_ or _contest_, place a **Control Marker** on the **Game Board Area** to indicate an _engagement_. 
+
+There are 3 possible scenarios for an _engagement_:
+
+1. If the **Area** is _neutral_, remove the _neutral_ **Control Marker**. You now control the engaged **Area**. 
+
+2. If the **Area** is under control by enemy players, the players controlling the **Area** has to say whether or not they have any units or buildings in that **Area**.
 
 * If there are no units/buildings in the engaged **Area**, keep your **Control Marker** on the **Game Board Area** and remove any enemy **Control Markers**. You now control the engaged **Area**.
 
 * If there are units or buildings, immediately move all units that are in the corresponding **Player Board Areas**, including the engaging units, onto the **Game Board Area** so they become visible to everyone. New upgrades must be declared while research that enables new actions and spells can be kept secret until used.
-The _defending_ player can then decide to perform a _Retreat Action_ with units in the _engaged_ **Area**. If some _defending_ units or buildings remain, you must carry out a _Combat_ round (described later), otherwise you gain control over the **Area**.
+The _defending_ player can then decide _retreat_ with units in the _engaged_ **Area**. If some _defending_ units or buildings remain, you must carry out a _Combat_ round (described later), otherwise you gain control over the **Area**.
 
-When the _Move Action_ (and any _Combat_) is over, the **Control Group** is allowed to continue its activation.
+When the movement (and any _Combat_) is over, the **Control Group** (or a subgroup) is allowed to continue its activation.
 
-#### Attack Action
+#### Attack
 A **Control Group** in an **Area** with enemy units or buildings can initiate a _Combat_ round if they have not attacked yet this turn. _Combat_ is described later.
 
 #### Hold Position Action
