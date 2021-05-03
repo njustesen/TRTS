@@ -58,11 +58,7 @@ Some units can perform special _Micro Actions_ which are described in their _spe
 
 #### Move Action
 
-This action allows you to move a **Control Group** through **Areas** that you _control_ or _contest_ to an **Area** that you also _control_ or _contest_. All the units must, however, have enough _Movement Points_ to reach the **Area**. Move the units to the **Player Board Area** and place them together to indicate that they have been _activated_. If you moved through any contested areas, you have to briefly reveil the **Control Group** and let everyone know which **Areas** they passed through. Opponent units cannot attack your units as they pass through contested **Areas** as they are busy fighting the existing units. 
-
-#### Engagement
-
-To move into an **Area** that you do not _control_ or _contest_, you must make an _Engagement Action_. Select a group of units, which can come from different **Areas**, and move them to a target **Player Board Area**. You cannot move through **Areas** that you do not either _control_ or _contest_. Then, indicate that you maded an _engagement_ to the **Area** by placing a **Control Marker** on the **Game Board Area**. 
+This action allows you to move a **Control Group** through **Areas** that you _control_ or _contest_ to an **Area** that you also _control_ or _contest_. All the units must, however, have enough _Movement Points_ to reach the **Area**. Move the units to the **Player Board Area** and place them together to indicate that they have been _activated_. If you moved through any contested areas, you have to briefly reveil the **Control Group** and let everyone know which **Areas** they passed through. Opponent units cannot attack your units as they _pass through_ contested **Areas** as they are busy fighting the existing units. If **Control Group** moves into an **Area** that they do not control or _contest_, place a **Control Marker** on the **Game Board Area** to indicate an _engagement_. 
 
 Here, there are 3 possible scenarios:
 
@@ -70,17 +66,23 @@ Here, there are 3 possible scenarios:
 
 2. If the **Area** is under control by enemy players, the players controlling the **Area** has to say whether or not they have any units or buildings.
 
-* If there are no units/buildings in the engaged **Area**, keep your **Control Marker** on the **Game Baord Area** and remove any **Control Markers** of other players. You now control the engaged **Area**.
+* If there are no units/buildings in the engaged **Area**, keep your **Control Marker** on the **Game Board Area** and remove any enemy **Control Markers**. You now control the engaged **Area**.
 
-* If there are units or buildings, immediately move all units that are in the corresponding **Player Areas** onto the **Game Board Area** so they become visible to anyone, including the engaging units. Then, carry out a _combat_ round, described in the next section.
+* If there are units or buildings, immediately move all units that are in the corresponding **Player Board Areas**, including the engaging units, onto the **Game Board Area** so they become visible to everyone. Then, carry out a _Combat_ round (described later).
 
-3. If the **Area** is already contested by you, move the units directly to the new **Game Board Area** and perform a round of combat.
+When the _Move Action_ (and any _Combat_) is over, the **Control Group** is allowed to continue its activation.
 
-Moving from one **Area** to an adjacent **Area** costs one movement point. Units cannot move or retreat if they are out of _movement points_. 
+#### Attack Action
+A **Control Group** in an **Area** with enemy units or buildings can initiate a _Combat_ round if they have not attacked yet this turn.
 
-After making an _engagement_ (and after any _combat rounds_), _the group of units_ can immediately continue to perform another _Micromanagement Action_. Units can, however, only attack on time per _turn_ and units cannot move anymore if they are out of _movement points_. Units that have survived a _combat round_ without attacking are still allowed to attack in any proceeding _combat rounds_. Thus, deciding not to attack in a _combat round_ can allow units to move further into the opponents **Areas** and then attack. 
+#### Hold Position Action
+This defensive actions ends the _activation_ of a **Control Group** but allows them to _attack_ during _Combat_ rounds in their **Area** that will occour until they become _activated_ again.
 
-When the sequence of _engagements_ are over for the group of units, they can no longer move or retreat in this turn.
+Units cannot perform a _Hold Position Action_ if they have attacked this turn.
+
+Units will automatically perform a _Hold Position Action_ when they end their _activation_ if haven't attacked yet this turn.
+
+Newly deployed units are not in _Hold Position_ until they are _activated_ which makes them fragile to attacks.
 
 ### Combat
 A _combat round_ is performed in several _combat steps_ where units with the long range attack first. In each _combat step_, units and buildings that share the _range_ value of the current _combat step_ can _attack_ and _cast spells_. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the next highest, the third, and so on until all units have had a change. 
