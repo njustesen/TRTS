@@ -88,9 +88,9 @@ Units that have not been _acitvated_ yet this turn will always be in _Hold Posit
 Buildings are always in _Hold Position_.
 
 #### Retreat Action
-Immedieatly when non-_activated_ units are being _engaged_ by an enemy **Control Group** (or as part of a _Combat_), units can decide to be _activated_ and _retreat_ to and through **Areas** that are _controlled_ or _contested_ except for the **Area** from which the _engaging_ **Control Group** came from, given they have anough movement points left. The _retreating_ **Control Group** ends their _activation_ (in _Hold Position_ if they have not attacked this turn) but they do not initiate any _Combat_ in the **Area** they _retreated_ into. 
+Immedieatly when non-_activated_ units are being _engaged_ by an enemy **Control Group** (or as part of a _Combat_), they can be _activated_ and _retreat_ to and through **Areas** that are _controlled_ or _contested_ except for the **Area** from which the _engaging_ **Control Group** came from, given they have anough movement points left. The _retreating_ **Control Group** ends their _activation_ (in _Hold Position_ if they have not attacked this turn) but they do not initiate any _Combat_ in the **Area** they _retreated_ into. 
 
-If all units in the _engaged_ **Area** are _retreating_ and they do not control any buildings in the **Area**, remove your **Control Marker** the _engaging_ player noew controls the **Area**.
+If all units in the _engaged_ **Area** are _retreating_ and they do not control any buildings in the **Area**, remove their **Control Marker** and the _engaging_ player new controls the **Area**.
 
 ### Combat
 A _combat round_ is performed in several _combat steps_ where units with the long range attack first. In each _combat step_, units and buildings that share the _range_ value of the current _combat step_ can _attack_ and _cast spells_. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the next highest, the third, and so on until all units have had a change. 
