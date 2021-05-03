@@ -10,7 +10,7 @@ A TRTS game is played over a series of rounds and ends in one of the following w
   - In a **free-for-all** match, the player with the most **areas** under controls win*.
   - In a **last-man-standing** match, the game continues if there are more than two player remaining, otherwise the remaining player claims the victory.
 
-*In case of a tie, it is the player with the most units (counted by supply) that wins.
+*In case of a tie, it is the player with the most units (counted by their supply cost) that wins. In the unlikely event that it is still a tie, the player in front of the starting player of the current round wins.
 
 ## Setup
 
