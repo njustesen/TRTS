@@ -62,7 +62,7 @@ This action allows you to move a **Control Group** through **Areas** that you _c
 
 Here, there are 3 possible scenarios:
 
-1. If the **Area** is _neutral_, remove the **Neutral Control Marker** and you now control the engaged **Area**. 
+1. If the **Area** is _neutral_, remove the neutral **Control Marker** and you now control the engaged **Area**. 
 
 2. If the **Area** is under control by enemy players, the players controlling the **Area** has to say whether or not they have any units or buildings.
 
