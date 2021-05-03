@@ -84,6 +84,9 @@ Units will automatically perform a _Hold Position Action_ when they end their _a
 
 Newly deployed units are not in _Hold Position_ until they are _activated_ which makes them fragile to attacks.
 
+#### Retreat (Re-)Action
+Immedieatly when non-_activated_ units are being _engaged_ by an enemy **Control Group**, thay may decide to _retreat_ to and through **Areas** that are _controlled_ or _contested_ except for the **Area** from which the _engaging_ **Control Group** came from. The _retreating_ **Control Group** ends their _activation_ in _Hold Position_ but they do not initiate any _Combat_ in the **Area** they _retreated_ into.
+
 ### Combat
 A _combat round_ is performed in several _combat steps_ where units with the long range attack first. In each _combat step_, units and buildings that share the _range_ value of the current _combat step_ can _attack_ and _cast spells_. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the next highest, the third, and so on until all units have had a change. 
 
