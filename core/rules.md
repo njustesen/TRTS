@@ -46,7 +46,7 @@ The macromanagement phase consists of three sub-phases that are done in order bu
 
 ### Micromanagement Phase
 
-In the _Micromanagement Phase_, players can _micromanage_ (or just _micro_) their units. In the _current player turn order_ one **Control Group** is _activated_ at a time to perform one or more _Micro Actions_. After a **Control Group** has performed one or more _Micro Actions_, they cannot be _activated_ until the next turn. Units can only perform _Micro Actions_ when they are _activated_ making already-_activated_ units fragile from attacks. 
+In the _Micromanagement Phase_, players can _micro-manage_ (or just _micro_) their units. In the _current player turn order_ one **Control Group** is _activated_ at a time to perform one or more _Micro Actions_. After a **Control Group** has performed one or more _Micro Actions_, they cannot be _activated_ until the next turn. Units can only perform _Micro Actions_ when they are _activated_ making already-_activated_ units fragile from attacks. 
 
 When a **Control Group** is finished with its _activatation_, it becomes the next player to _activate_ a **Control Group** or _pass_. When a player _passes_, that player's _Micromanagement Turn_ is simply skipped. In the next _Micromanagement Turn_, that player can decide again to_activate_ a **Control Group** or _pass_. When all players have _passed_ in a round, the _Micromanagement Phase_ is over and a new turn starts.
 
