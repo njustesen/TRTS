@@ -83,7 +83,7 @@ Units cannot perform a _Hold Position Action_ if they have attacked this turn.
 
 Units that haven't attacked yet this turn will automatically perform a _Hold Position Action_ when they end their _activation_.
 
-Units that have not been _acitvated_ yet this _Turn_ will always be in _Hold Position_.
+Units that have not been _acitvated_ yet this turn will always be in _Hold Position_.
 
 Buildings are always in _Hold Position_.
 
@@ -99,9 +99,9 @@ During a _combat step_, the following happens:
 
 1. Units that match the _range_ value of the current _combat step_ can attack or cast spells. The _engaging_ players allocates damage first and then the _defending_ player while the damage of a round is dealt simulatenously. The amount of damage each unit deals is described in the next section. Remove any units that died and place damage tokens to reflect any damage to surviving units/buildings. In the rare situation that both players will loose all their units and buildings in the **Area** during one _combat step_, the _defending_ player will keep a unit of choice alive with 1 HP left.
 
-2. Any units in the _active_ **Control Group** can _retreat_ to any adjacent **Area** under control or contested by the units' owner without initiating any new _Combat_ rounds. Retreating units can use all their movement points to move severeal **Areas** away from the engaged **Area** which is important since their _activation_ ends. Retreating units ends their _activation_ when _retreiting_ and thus cannot move anymore this _Turn_. 
+2. Any units in the _active_ **Control Group** can _retreat_ to any adjacent **Area** under control or contested by the units' owner without initiating any new _Combat_ rounds. Retreating units can use all their movement points to move severeal **Areas** away from the engaged **Area** which is important since their _activation_ ends. Retreating units ends their _activation_ when _retreiting_ and thus cannot move anymore this turn. 
 
-Units and buildings can only ever attack once per _Turn_, and only if the are _active_ or are in _Hold Position_.
+Units and buildings can only ever attack once per turn, and only if the are _active_ or are in _Hold Position_.
 
 Defending units cannot _retreat_ during the _Combat_ round. They have to make a _Retreat_ action immediately when _engaged_.
 
