@@ -1,7 +1,7 @@
 # Game Rules
 
 ## Overview
-A TRTS game is played over a series of rounds and ends in one of the following ways:
+A Turn-based Real-Time Strategy (TRTS) game is played over a series of rounds and ends in one of the following ways:
 
 - The final round has ended and several players are still in the game, in which case the player with the most **areas** under control wins*.
 - A player is eliminated. The victory conditions in this case differs from the match type:
