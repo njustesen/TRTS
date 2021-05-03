@@ -88,7 +88,7 @@ Units that have not been _acitvated_ yet this turn will always be in _Hold Posit
 Buildings are always in _Hold Position_.
 
 #### Retreat Action
-Immedieatly when non-_activated_ units are being _engaged_ by an enemy **Control Group** (or as part of a _Combat_), they can be _activated_ and _retreat_ to and through **Areas** that are _controlled_ or _contested_ except for the **Area** from which the _engaging_ **Control Group** came from, given they have anough movement points left. The _retreating_ **Control Group** ends their _activation_ (in _Hold Position_ if they have not attacked this turn) but they do not initiate any _Combat_ in the **Area** they _retreated_ into. 
+Immedieatly when non-_activated_ units are being _engaged_ by an enemy **Control Group** (or as part of a _Combat_), they can be _activated_ and _retreat_ to and through **Areas** that are _controlled_ or _contested_ given they have anough movement points left. When retreating before combat, units cannot retreat to the **Area** from which the _engaging_ **Control Group** came from. The _retreating_ **Control Group** ends their _activation_ (in _Hold Position_ if they have not attacked this turn) but they do not initiate any new _Combat_ rounds in the **Area** they _retreated_ into. 
 
 If all units in the _engaged_ **Area** are _retreating_ and they do not control any buildings in the **Area**, remove their **Control Marker** and the _engaging_ player new controls the **Area**.
 
@@ -99,7 +99,7 @@ During a _Combat Step_, the following happens:
 
 1. Both _engaging_ and _defending_ units that match the _range_ value of the current _combat step_ can attack or cast spells. The _engaging_ players allocates damage first followed by the _defending_ players, while the damage of a _Combat Step_ is dealt simulatenously. The amount of damage each unit deals is described in the next section. Remove any units that died and place damage tokens to reflect any damage to surviving units/buildings. In the rare situation that both players will loose all their units and buildings in the **Area** during one _combat step_, the _defending_ player will keep a unit of choice alive with 1 HP left.
 
-2. Any units in the _active_ **Control Group** can _retreat_ to any adjacent **Area** under control or contested by the units' owner without initiating any new _Combat_ rounds. Retreating units can use all their movement points to move severeal **Areas** away from the engaged **Area**. Retreating units end their _activation_ after _retreiting_ and thus cannot move anymore this turn. 
+2. Any units in the _active_ **Control Group** can _retreat_ to any adjacent **Area** under control or contested by the units' owner without initiating any new _Combat_ rounds. Any retreating units end their _activation_ after _retreiting_ and thus cannot move anymore this turn. 
 
 the _active_ **Control Group** cannot retreat during combat if the _engagement_ occoured this turn _up a ramp_. Thus ignore step #2 in this case. 
 
