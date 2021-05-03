@@ -73,7 +73,7 @@ Here, there are 3 possible scenarios:
 When the _Move Action_ (and any _Combat_) is over, the **Control Group** is allowed to continue its activation.
 
 #### Attack Action
-A **Control Group** in an **Area** with enemy units or buildings can initiate a _Combat_ round if they have not attacked yet this turn.
+A **Control Group** in an **Area** with enemy units or buildings can initiate a _Combat_ round if they have not attacked yet this turn. _Combat_ is described later.
 
 #### Hold Position Action
 This defensive actions ends the _activation_ of a **Control Group** but allows them to _attack_ during _Combat_ rounds in their **Area** that will occour until they become _activated_ again.
@@ -84,8 +84,10 @@ Units will automatically perform a _Hold Position Action_ when they end their _a
 
 Newly deployed units are not in _Hold Position_ until they are _activated_ which makes them fragile to attacks.
 
-#### Retreat (Re-)Action
-Immedieatly when non-_activated_ units are being _engaged_ by an enemy **Control Group**, thay may decide to _retreat_ to and through **Areas** that are _controlled_ or _contested_ except for the **Area** from which the _engaging_ **Control Group** came from. The _retreating_ **Control Group** ends their _activation_ in _Hold Position_ but they do not initiate any _Combat_ in the **Area** they _retreated_ into.
+#### Retreat Re-Action
+Immedieatly when non-_activated_ units are being _engaged_ by an enemy **Control Group**, thay may decide to _retreat_ to and through **Areas** that are _controlled_ or _contested_ except for the **Area** from which the _engaging_ **Control Group** came from. The _retreating_ **Control Group** ends their _activation_ in _Hold Position_ but they do not initiate any _Combat_ in the **Area** they _retreated_ into. 
+
+If all units in the _engaged_ **Area** are _retreating_ and they do not control any buildings in the **Area**, remove your **Control Marker** the _engaging_ player noew controls the **Area**.
 
 ### Combat
 A _combat round_ is performed in several _combat steps_ where units with the long range attack first. In each _combat step_, units and buildings that share the _range_ value of the current _combat step_ can _attack_ and _cast spells_. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the next highest, the third, and so on until all units have had a change. 
