@@ -46,23 +46,23 @@ The macromanagement phase consists of three sub-phases that are done in order bu
 
 ### Micromanagement Phase
 
-In the _Micromanagement Phase_, players can move units between connected **Areas** on the map which sometimes results in combat. In the _current player turn order_, one **Control Group** is "_microed_" at a time. When the _active_ **Control Group** is done being _microed_, they cannot be _microed_ again this turn. Units can only perform _Movement Actions_, which includes _retreating_ from _Combat_, when they are _active_, making already-_microed_ units fragile. 
+In the _Micromanagement Phase_, players can move units between connected **Areas** on the map which sometimes involves combat. 
 
-When a **Control Group** is done being _microed_, it becomes the next player to _micro_ a **Control Group** or _pass_. When a player _passes_, that player's _Micromanagement Turn_ is simply skipped in this _Micromanagement Round_, but can decide again in the next _Micromanagement Round_ to either _mirco_ a **Control Group** or _pass_. When all players have _passed_ in a _Micromanagement Round_, the _Micromanagement Phase_ is over and a new turn starts with the _Macromanagement Phase_.
+In the _current player turn order_, one **Control Group** is "_microed_" at a time. When the _active_ **Control Group** is done being _microed_, they cannot be _microed_ again this turn. Units can only perform _Movement Actions_, which includes _retreating_ from _Combat_, when they are _active_, making already-_microed_ units fragile when left out in the open. 
 
-A **Control Group** is simply a set of units that performs the same _Micro Action_. They do not have to start in the same **Area** but their _micro actions_ must target the same **Area**. It is good practice to place units in a **Control Group** close together in their **Area** so it is easy to remember that they have been _microed_ together.
+When a **Control Group** is done being _microed_, it becomes the next player to _micro_ a **Control Group**. When a full _Micromanagement_ round has been made without any _combat_ or _engagements_ (will be explained later), the phase stops. However, before a new turn begins with the _Macromanagement Phase_, all players can (simultaneosuly and secretely) move all units that have not been _activated_ that are in **Areas** under _control_.
 
+Units can only be moved in so-called **Control Groups**, even if a **Control Group** only consists of a single unit. A **Control Group** is simply a set of units that perform the same action in the _Micromanagement Phase_. All units in a **Control Groups** do not have to start in the same **Area** but they must always target the same **Area** when moving. It is good practice to place units in a **Control Group** close together in their **Area** so it is easy to remember that they have been _microed_ together. 
 
+Players can continue to move the same **Control Groups** multiple times if they have enough movement points. It is not allowed to split up the **Control Groups** and _micro_ the individually. You can, however, leave behind some of the units in a **Control Groups** and continue to move with a subset of the units, e.g. if some units are faster than others, or if some units will stay and fight while others will move forward to harass another **Areas**. When units are left behind, their _activation_ ends, and they can no longer move for the rest of the turn. This means that you only have to remember how many movement points are left for the units within the _active_ **Control Group**, sinve all other units either cannot move anymore or have not been _microed_ yet. In the late-game, it can become necessary to mark control groups to remember that they have been _microed_.
 
-When ending the _micro_ of a **Control Group**, the current player can optionally decide to continue to _micro_ at most one subgroup of the **Control Group** before that player's _Micromanagement Turn_ ends. You can continue to make subgroups of subgroups but you cannot make 
+#### Moving a Control Group
+To initiate a movement of a **Control Group**, first, select a group of units under your control, that have not yet been _microed_ yet, and move them to an **Area** that they can all reach (see how many movement points they have). Units in _contested_ **Areas** are also allowed to be _microed_. If you _control_ the target **Area**, simply move them to the **Player Board Area**. If you do not _control_ the **Area**, an _engagement_ will happen. 
 
-Some units can perform special _Micro Actions_ which are described in their _special rules_, while (almost) all units can do _Move_ and an _Attack_. 
+After moving the units and resolving any _engagements_, you can either declare the _activation_ finished or you can continue moving with some or all of the units in the **Control Groups**, given they have enough movement points left. Units that are left behind cannot be _microed_ again later.
 
-#### Movement
-
-This action allows you to move a **Control Group** through **Areas** that you _control_ or _contest_ to an **Area** that you also _control_ or _contest_. All the units must, however, have enough _Movement Points_ to reach the **Area**, the **Areas** must be connected, and only _flying_ units can cross non-walkable barriers.
-
-Move the units to the **Player Board Area** and place them together to indicate that they have been _micored_. If you moved through any _contested_ areas, you have to briefly reveil the **Control Group** and let everyone know which _contested_ **Areas** they passed through. Opponent units cannot attack your units as they _pass through_ contested **Areas** as they are busy fighting. If a **Control Group** moves into an **Area** that they do not _control_ or _contest_, place a **Control Marker** on the **Game Board Area** to indicate an _engagement_. 
+#### Engagement
+If a **Control Group** moves into an **Area** that they do not _control_ or _contest_, place a **Control Marker** on the **Game Board Area** to indicate you are _engaging_. 
 
 There are 3 possible scenarios for an _engagement_:
 
