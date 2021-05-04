@@ -1,4 +1,4 @@
-# Tapletop Real-time Strategy Game
+# Turn-based Real-time Strategy Game
 
 This is the repository for the Tapletop Real-time Strategy (TRTS) project which aims to build a core ruleset for playing Real-time Strategy (RTS) game-like board games, supporting several key features from the video game genre, such as: 
 
