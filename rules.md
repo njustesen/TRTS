@@ -34,7 +34,7 @@ When the first round is over, the **Starting Player Token** is moved to the end 
 
 ### Macromanagement Phase
 
-The _Macromanagement Phase_ consists of three sub-phases that are done in order but are performed indepentendly and secretely by each player. When all players have said they are "Done!", the round will proceed to the _Micromanagement Phase_.
+The _Macromanagement Phase_ consists of four sub-phases that are done in order but are performed indepentendly and secretely by each player. When all players have said they are "Done!", the round will proceed to the _Micromanagement Phase_.
 
 #### Income
 
@@ -42,10 +42,14 @@ The _Macromanagement Phase_ consists of three sub-phases that are done in order 
 
 #### Production
 
+#### Positioning
+All players simply move the units they want to move between **Areas** they control. Units in _contested_ **Areas** are, however, _pinned_ until the _Pushing Phase_ and cannot move in this phase. Units can use their full movement points in this phase but if they move in this phase, they cannot be moved (besides retreating) in the _Micromanagement Phase_. Therefore, group/mark units that have moved.
+
 ### Micromanagement Phase
 
-In the _Micromanagement Phase_, players can move units between connected **Areas** on the map which sometimes involves combat. 
+Units that did not move in the _Positioning Phase_ can make so-called _pushes_ into _un-controlled_ and _contested_ **Areas** in the _Micromanagement Phase_. After _pushing_, there will be combat in all _contested_ **Areas**.
 
+#### Pushes
 In the _current player turn order_, one **Control Group** is "_microed_" at a time. When the _active_ **Control Group** is done being _microed_, they cannot be _microed_ again this round. Already-_microed_ units can thus neither move or retreat, making them fragile when left out in the open. 
 
 When a **Control Group** is done being _microed_, it becomes the next player to _micro_ a **Control Group**. When a full _Micromanagement_ round has been made without any _combat_ or _engagements_ (will be explained later), the phase stops. However, before a new round begins with the _Macromanagement Phase_, all players can simultaneosuly and secretely move all units under control that have not been _activated_ yet but only if they are in **Areas** under _control_.
