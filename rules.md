@@ -47,14 +47,22 @@ All players simply move the units they want to move between **Areas** they contr
 
 ### Micromanagement Phase
 
-Units that did not move in the _Positioning Phase_ can make so-called _pushes_ into _un-controlled_ and _contested_ **Areas** in the _Micromanagement Phase_. After _pushing_, there will be combat in all _contested_ **Areas**.
+Units that did not move in the _Positioning Phase_ can make so-called _pushes_ into _uncontrolled_ and _contested_ **Areas** in the _Micromanagement Phase_. During a _push_, one or more combat rounds can occour, however, at modt one per **Area** in each round.
 
 #### Pushes
-In the _current player turn order_, one **Control Group** is "_microed_" at a time. When the _active_ **Control Group** is done being _microed_, they cannot be _microed_ again this round. Already-_microed_ units can thus neither move or retreat, making them fragile when left out in the open. 
+In the _current player turn order_, each player can make a push with a so-called **Control Group**. When the push is over, the units in the **Control Group** cannot be part of another push later this round.
 
-When a **Control Group** is done being _microed_, it becomes the next player to _micro_ a **Control Group**. When a full _Micromanagement_ round has been made without any _combat_ or _engagements_ (will be explained later), the phase stops. However, before a new round begins with the _Macromanagement Phase_, all players can simultaneosuly and secretely move all units under control that have not been _activated_ yet but only if they are in **Areas** under _control_.
+To make a push, select a group of units (your **Control Group**) that can all reach an **Area** that is not under _control_ that they wish to _engage_ and that is adjacent to their current **Area** (which doesn't have to be the same). Units in _contested_ **Areas** can be part of a **Control Group** and can safely move to the target **Area**. Units that are already in the targeted **Area** will automatically be part of the **Control Group** and will simply stay where they are. You cannot target an **Area** that you have already targeted this round. Now, place one of your **Control Markers** on the **Game Board Area**. Then move the **Control Group** to the target **Player Board Area** and (if relevant) keep note on how many movement point each unit has left. 
 
-Units can only be moved in so-called **Control Groups**, even if a **Control Group** only consists of a single unit. A **Control Group** is simply a set of units that perform the same action in the _Micromanagement Phase_. All units in a **Control Groups** do not have to start in the same **Area** but they must always target the same **Area** when moving or attacking. It is good practice to place units in a **Control Group** close together in their **Area** so it is easy to remember that they have been _microed_ together. 
+There are 3 possible scenarios when _pushing_ into an **Area**:
+
+1. If the **Area** is _neutral_, remove the _neutral_ **Control Marker**. You now control the **Area**. 
+
+2. If the **Area** is under _control_ by an enemy player, the player controlling the **Area** has to say whether or not they have any units or buildings in that **Area**.
+
+* If there are no units or buildings in the **Area**, keep your **Control Marker** on the **Game Board Area** and remove any enemy **Control Markers**. You now control the **Area**.
+
+* If there are units or buildings in the **Area**, immediately move them and the **Control Group** to the **Game Board Area** so they become visible to everyone. Any of the defending units can decide immediately to _retreat_ to an adjacent **Area** under control (if there are any) without taking part of the combat. Units that have _retreated_ cannot be part of a _push_ later this round. Units that have already _pushed_, always have the option to _retreat_ when being engaged, regardless of how much they have moved, except if there are no adjacent **Area** under _control_. If the defending player does not have vision to see any of the attacking units, _retreating_ is also not an option. If all enemy units and buildings are eliminated during combat, the _pushing_ player gains control over the **Area**. If the **Area** remains _contested_, keep both players' **Control Markers**, units, and buildings on the **Game Board Area**.
 
 A **Control Group** can be moved multiple times if they have enough movement points. It is not allowed to split up the **Control Groups** and _micro_ them individually. You can, however, leave behind some of the units in a **Control Groups** and continue to move with another subset of the units, e.g. if some units are faster than the others, or if some units will stay and fight while others will move forward to harass another **Area**. When units are left behind, their _activation_ ends, and they can no longer move, nor _retreat_, until next round. This means that you only have to remember how many movement points are left for the units within the _active_ **Control Group**, since all other units either cannot move anymore or have not been _microed_ yet. In the late-game, it can become necessary to mark **Control Group** that have been _microed_.
 
