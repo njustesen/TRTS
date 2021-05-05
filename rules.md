@@ -50,7 +50,7 @@ Players can secretely and independently move their units between **Player Board 
 All units can make _pushes_ into _uncontrolled_ and _contested_ **Areas** in the _Micromanagement Phase_ as long as they are adjacent to the **Area** they want to engage. During a _push_, one or more combat rounds can occour, however, at most one per **Area** in each round.
 
 #### Pushes
-In the _current player turn order_, each player can make a _push_ with a so-called **Control Group**. When the push is over, the units in the **Control Group** cannot be part of another push later this round.
+In the _current player turn order_, each player can make a _push_ with a so-called **Control Group**. When the _push_ is over, the units in the **Control Group** cannot be part of another _push_ this round.
 
 To make a push, select a group of units (your **Control Group**) that can all reach an **Area** that is not under _control_ that they wish to _engage_ and that is adjacent to their current **Area** (which doesn't have to be the same). Each player is only allowed to _engage_ the same **Area** one time each round. Units in _contested_ **Areas** can be part of a **Control Group** and can safely move out of their **Area**. Units that are already in the targeted **Area** will automatically be part of the **Control Group** and will simply stay where they are. You cannot target an **Area** that you have already targeted this round. Now, place one of your **Control Markers** on the **Game Board Area**. Then move the **Control Group** to the target **Player Board Area** and (if relevant) keep note on how many movement point each unit has left. 
 
