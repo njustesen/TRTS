@@ -43,7 +43,7 @@ The _Macromanagement Phase_ consists of four sub-phases that are done in order b
 #### Production
 
 #### Positioning
-All players simply move the units they want to move between **Areas** they control. Units in _contested_ **Areas** are, however, _pinned_ until the _Pushing Phase_ and cannot move in this phase. Units can use their full movement points in this phase but if they move in this phase, they cannot be moved (besides retreating) in the _Micromanagement Phase_. Therefore, group/mark units that have moved.
+Players can secretely and independently move their units between **Player Board Areas** they _control_. Units in _contested_ **Areas** are, however, _pinned_ until the _Pushing Phase_ and cannot move in this phase. Units can use their full movement points in this phase but if they move in this phase, they cannot be moved (besides retreating) in the _Micromanagement Phase_. Therefore, group/mark units that have moved.
 
 ### Micromanagement Phase
 
@@ -74,3 +74,7 @@ During each _combat step_, the following happens: Both _engaging_ and _defending
 Units and buildings can only ever attack once per round, even if they take part in multiple combat sitatuions.
 
 ### Damage
+
+
+# Problems
+- retreating from _contested_ **Areas**??
