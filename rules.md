@@ -47,12 +47,12 @@ Players can secretely and independently move their units between **Player Board 
 
 ### Micromanagement Phase
 
-All units can make _pushes_ into _uncontrolled_ and _contested_ **Areas** in the _Micromanagement Phase_ as long as they are adjacent to the **Area** they want to engage. During a _push_, one or more combat rounds can occour, however, at most one per **Area** in each round.
+All units can make _pushes_ into _uncontrolled_ and _contested_ **Areas** in the _Micromanagement Phase_. During a _push_, one or more combat rounds can occour. Units that are already in a _contested_ **Area** can instead _pushing_ also _regroup_ to retract themselves from _engagement_.
+
+In the _current player turn order_, each player can _regroup_ or make a _push_ with a so-called **Control Group**. When the _regrouping_ or _push_ is over, the units in the **Control Group** cannot be controlled again this round, except for _retreating_ if attacked by the enemy. When all players _pass_, a new round of the game begins with a new _Macromanagement Phase_.
 
 #### Pushes
-In the _current player turn order_, each player can make a _push_ with a so-called **Control Group**. When the _push_ is over, the units in the **Control Group** cannot be part of another _push_ this round.
-
-To make a _push_, select a group of units (your **Control Group**) that can reach an **Area** not under _control_ you wish to _engage_ that is adjacent to their current **Area**. Units in a **Control Group** do not have to start in the same **Area** but they must be adjacent to the target **Area**. Each player is only allowed to _engage_ the same **Area** one time each round. Units in _contested_ **Areas** can be part of a **Control Group** and can safely move out of their **Area**. Units that are already in the targeted **Area** will automatically be part of the **Control Group** and will simply stay where they are. You cannot target an **Area** that you have already targeted this round. Now, place one of your **Control Markers** on the **Game Board Area**. Then move the **Control Group** to the target **Player Board Area** and (if relevant) keep note on how many movement point each unit has left. 
+To make a _push_, select a group of units (your **Control Group**) that can reach an **Area** not under _control_ you wish to _engage_ that is adjacent to their current **Area**. Units in a **Control Group** do not have to start in the same **Area** and they can move through _controlled_ **Areas** only. Units in _contested_ **Areas** can also be part of a **Control Group** and can safely move out of their **Area**. Each player is only allowed to _engage_ the same **Area** one time each round. Units that are already in the targeted **Area** will automatically be part of the **Control Group** and will simply stay where they are. You cannot target an **Area** that you have already targeted this round. Now, place one of your **Control Markers** on the **Game Board Area**. Then move the **Control Group** to the target **Player Board Area** and (if relevant) keep note on how many movement point each unit has left.
 
 There are 3 possible scenarios when _pushing_ into an **Area**:
 
@@ -66,6 +66,9 @@ There are 3 possible scenarios when _pushing_ into an **Area**:
 
 When the _engagement_ is over, units in the **Control Group** that have not yet attacked or cast spells in this _push_ can decide to _push_ forward if they have enough movement points left. If you _push_ forward, you must follow the same rules as described above but remember that units can only attack and cast spells once per turn. You can exploit this rule to _run by_ the enemy's defensive line to harass their main base.
 
+### Regrouping
+Instead of making a _push_, you can also _regroup_, meaning that you move from a _contested_ **Area** to an **Area** under _control_ (if any).
+
 ### Combat
 A _combat round_ is performed in several _combat steps_ where units with the long range attack before units with short range. In each _combat step_, units and buildings that share the same range value of the current _combat step_ can attack and cast spells. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the second highest, the third, and so on, until all units have had a change to attack (unless they are killed first). 
 
@@ -75,6 +78,3 @@ Units and buildings can only ever attack once per round, even if they take part 
 
 ### Damage
 
-
-# Problems
-- retreating from _contested_ **Areas**??
