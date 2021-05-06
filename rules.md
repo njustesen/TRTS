@@ -68,7 +68,7 @@ When the _engagement_ is over, units in the **Control Group** that have not yet 
 ### Regrouping
 Instead of making a _push_, you can also _regroup_, meaning that you move from a _contested_ **Area** to a reachable **Area** under _control_ (if any). Units that _regroup_, cannot be activated until next round.
 
-Units can also decide to _regroup_ instead of _pushing forward_ and it will end the _push_ immediately.
+Units can also decide to _regroup_ instead of _pushing forward_ and it will end the _push_ immediately after.
 
 ### Combat
 A _combat round_ is performed in several _combat steps_ where units with the long range attack before units with short range. In each _combat step_, units and buildings that share the same range value of the current _combat step_ can attack and cast spells. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the second highest, the third, and so on, until all units have had a change to attack (unless they are killed first). 
