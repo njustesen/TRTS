@@ -37,10 +37,17 @@ When the first round is over, the **Starting Player Token** is moved to the end 
 The _Macromanagement Phase_ consists of four sub-phases that are done in order but are performed indepentendly and secretely by each player. When all players have said they are "Done!", the round will proceed to the _Micromanagement Phase_.
 
 #### Income
+In the _Income Phase_, you collect resources from **Areas** you _control_ or _contest_. Read the game-specific rules for collecting resources. Move any collected resources to the **Resources Area** on your **Player Board**.
 
 #### Deployment
+Units that were produced in last round are deployed in the _Deployment phase_, as well as research, upgrades, and buildings. Research and upgrades are small tokens that you can place on your **Player Board** on the **Research** and **Upgrade Tracks**.
 
 #### Production
+You can train units, build buildings, do research, and produce upgrades in the _Production Phase_. Simply pay the cost in resources by removing them from your **Resources Area** to your **Player Board Resource Pool**. 
+
+When producing units, upgrades, and research, place the models or tokens on the building that is producing it. When building a building, place the corresponding **Building Tile** in the **Area** of the constructing worker(s) and place the worker(s) ontop of the **Building Tile**.
+
+If a unit is being summoned by another unit, put a special token under the unit model and place it near its summoner.
 
 #### Movement
 Players can secretely and independently move their units between **Player Board Areas** they _control_. Units in _contested_ **Areas** are, however, _pinned_ until the _Pushing Phase_ and cannot move in this phase. The movement points used in this phase cannot be used in the _Micromanagement Phase_. Therefore, group and mark units that have moved with the number of movement points they have left.
