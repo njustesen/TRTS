@@ -84,5 +84,18 @@ During each _combat step_, the following happens: Both _engaging_ and _defending
 
 Units and buildings can only ever attack once per round, even if they take part in multiple combat sitatuions.
 
-### Damage
+### Allocating Damage
 
+The _enaging_ player allocates damage first in a _combat round_ and then the _defending_ player, while the damage is dealt simulatenously. The units that can allocate damage in a _combat round_ are those that match the range value of the _combat step_. We will call these the _attacking units_. 
+
+When allocating damage, direct damage from your _attacking_ units to any number of enemy units that the units can target. Here are the core _targeting_ rules while there may be more in the game-specific rules:
+
+- Air units can only be targeted by air attack
+- Ground units can only be targeted by ground attack
+- Melee attacks has to target units with the lowest range first following the _melee targeting_ rules (described below)
+- Invisible units cannot be targeted unless they are made visible by units with the _detector_ ability or other game-specific rules
+
+#### Melee Targeting
+
+
+#### Splitting Damage
