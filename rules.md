@@ -7,7 +7,7 @@ A Turn-based Real-Time Strategy (TRTS) game is played over a series of rounds an
 - A player is eliminated by losing all their buildings. The victory conditions in this case differs from the match type:
   - In a **2-player** match, the eliminated player lose the game, and the remaining player wins.
   - In a **team** match, the team of the elimnated player lose the game, and the other team wins.
-  - In a **free-for-all** match, the player with the most **Areas** under _control_ win*.
+  - In a **free-for-all** match, the player with the most **Areas** under _control_ wins*.
   - In a **last-man-standing** match, the game continues as long as there are two or more players remaining, otherwise the remaining player claims the victory.
 
 *In case of a tie, it is the player with the most units (counted by their supply cost) that wins. In the unlikely event that it is still a tie, the player currently in front of the starting player line round wins.
