@@ -86,16 +86,21 @@ Units and buildings can only ever attack once per round, even if they take part 
 
 ### Allocating Damage
 
-The _enaging_ player allocates damage first in a _combat round_ and then the _defending_ player, while the damage is dealt simulatenously. The units that can allocate damage in a _combat round_ are those that match the range value of the _combat step_. We will call these the _attacking units_. 
+The _enaging_ player allocates damage first in a _combat round_ and then the _defending_ player, while the damage is dealt simulatenously. The units that can allocate damage in a _combat round_ are those that match the range value of the _combat step_. We will call these the _attacking units_. Attacks at range 1 is also called _melee_ attacks, and have some special rules.
 
 When allocating damage, direct damage from your _attacking_ units to any number of enemy units that the units can target. Here are the core _targeting_ rules while there may be more in the game-specific rules:
 
 - Air units can only be targeted by air attack
 - Ground units can only be targeted by ground attack
-- Melee attacks has to target units with the lowest range first following the _melee targeting_ rules (described below)
+- Melee attacks has to target units with the lowest range first following the _melee targeting_ rules (described later)
+- Melee attacks cannot target units that have range attack and are faster than the attacker, unless the defender allows it
 - Invisible units cannot be targeted unless they are made visible by units with the _detector_ ability or other game-specific rules
 
-#### Melee Targeting
-
-
 #### Splitting Damage
+
+
+#### Melee Targeting
+Melee units can block other melee units from attacking ranged units, unless one side can overrun the other. 
+To start with, melee units has to target other melee units. If they are able to assign at least one damage to all enemy melee units. they can to assign the remaining damage units with second lowest range. If all those units can be assigned at least one damage, the attackers can proceed to the next.
+
+Faster ranged units normally cannot be targeted by slower units but the defender can decide to use them to block, allowing the attacker to target them anyway.
