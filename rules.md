@@ -97,10 +97,15 @@ When allocating damage, direct damage from your _attacking_ units to any number 
 - Invisible units cannot be targeted unless they are made visible by units with the _detector_ ability or other game-specific rules
 
 #### Splitting Damage
+Normally, all damage from a unit has to be assigned to the same enemy unit but if the amount of damage surpasses the health points of the targeted unit, the remaining damage can be allocated to other enemy units, if the following requirements are met:
 
+- Melee attacks cannot be split onto ranged units, unless they are slower than the attacker.
+- _Splash_ damage cannot be split between units but has its own special rules (described later) 
 
 #### Melee Targeting
 Melee units can block other melee units from attacking ranged units, unless one side can overrun the other. 
 To start with, melee units has to target other melee units. If they are able to assign at least one damage to all enemy melee units. they can to assign the remaining damage units with second lowest range. If all those units can be assigned at least one damage, the attackers can proceed to the next.
 
 Faster ranged units normally cannot be targeted by slower units but the defender can decide to use them to block, allowing the attacker to target them anyway.
+
+#### Splash Damage
