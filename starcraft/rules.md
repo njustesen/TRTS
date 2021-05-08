@@ -7,6 +7,8 @@ Each worker can collect one mineral from one **Mineral Field** and no other work
 
 Up to three workers can collect vespene gas from each **Gas Geiser** that has a _controlled_ gas exctactor on it.
 
+Workers are building a building or have attacked in the last round cannot collect resources this round.
+
 ## Combat
 
 ### Dealing Damage
