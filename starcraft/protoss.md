@@ -11,6 +11,7 @@ High Templar   | 1    | 3   | 2    |     1 |  1 |      1 |     0 |    S |       
 Dark Templar   | 2    | 2   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      4 |     |     8 | Bio  |
 Archon         |      |     |      |     2 |  1 |      7 |     0 |    L |     2 |     5s |     |     8 |      |
 Dark Archon    |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |      |
+Reaver         | 4    | 2   | 4    |     1 |  2 |      1 |     0 |    L |     8 |    4es |     |    10 | Mech |
 
 e: Explosive Attack, s: Splash Damage
 
@@ -43,3 +44,7 @@ Dark Archons can cast one of the following spells per turn (two with the Argus T
 - _Feedback_: Target spellcaster cannot cast spells this turn and take damage equal to the number of spells they can cast in the remainder of this turn. 
 - _Maelstrom_: During combat, target up to four small, three medium, or two large, biological units of the same type. These units are stunned, become cloaked units become visible, for the remainder of this turn. 
 - _Mind Control_: During combat, gain full control over target unit for the rest of the game. 
+
+## Reaver
+
+- _Scarabs_: Reavers can only attack if they have _scarabs_. They start without any and have to produce them in the Production phase at the cost of 1 mineral each, but is unable to do so if they are in a contested area. A Reaver can hold at most one Scarab without the Increased Reaver Capacity upgrade, and two with it. 
