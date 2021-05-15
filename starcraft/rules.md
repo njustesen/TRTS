@@ -13,7 +13,7 @@ Workers are building a building or have attacked in the last round cannot collec
 
 ### Dealing Damage
 
-#### Concussive Damage
+#### Concussive
 Concussive Attacks deals one additional attack to small units and one less damage to large units.
 
 #### Explosive
