@@ -10,7 +10,7 @@ Dragoon        | 2    | 1   | 2    |     2 |  2 |      1 |     1 |    L |     4 
 High Templar   | 1    | 3   | 2    |     1 |  1 |      1 |     0 |    S |       |        |     |     7 |
 Dark Templar   | 2    | 2   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      4 |     |     8 |
 Archon         |      |     |      |     2 |  1 |      7 |     0 |    L |     2 |     5s |     |     8 |
-Dark Archon    |      |     |      |     2 |  1 |      4 |     1 |    L |       |       |     |    10 |
+Dark Archon    |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |
 
 ### Probe
 
@@ -20,7 +20,12 @@ Buildings with the _powered_ ability requires a Pylon under control to be presen
 
 ### High Templar
 
+High Templars are spell casters and can cast one of the following spells per turn:
+
+_Psionic Storm_: During combat, target up to four small, three medium, or two large units of the same type. Target units are dealt 2 damage (ignoring armor) for units with speed 0-2 and 1 damage (ignoring armor) to units with speed 3+. Psionic Storm is not stackable so casting more than one on the same target in the same combat does not cause more damage. Psionic Storm does not damage units under a Stasis Field.
+
 ### Dark Templar
+
 
 ### Archon
 
