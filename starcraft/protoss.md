@@ -12,8 +12,7 @@ Dark Templar   | 2    | 2   | 2    |     2 |  2 |      1 |     1 |    S |     1 
 Archon         |      |     |      |     2 |  1 |      7 |     0 |    L |     2 |     5s |     |     8 |      |
 Dark Archon    |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |      |
 
-e: Explosive Attack
-s: Splash Damage
+e: Explosive Attack, s: Splash Damage
 
 ### Probe
 
