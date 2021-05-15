@@ -17,13 +17,13 @@ s: Splash Damage
 
 ### Probe
 
-_Resource gathering_: Probes can collect 1 mineral (max. one per mineral field) or 1 gas (requires an assimilaor) in the income phase.
-_Warping_: Probes can warp in a building by paying its cost. Warped-in buildings cannot be used before the Deployment phase. 
-Buildings with the _powered_ ability requires a Pylon under control to be present in the area. 
+- _Hovering_.
+- _Resource Gathering_: Probes can collect 1 mineral (max. one per mineral field) or 1 gas (requires an assimilaor) in the income phase.
+- _Warping_: Probes can warp in a building by paying its cost. Warped-in buildings cannot be used before the Deployment phase. Buildings with the _powered_ ability requires a Pylon under control to be present in the area. 
 
 ### High Templar
 
-High Templars are spell casters and can cast one of the following spells per turn:
+High Templars can cast one of the following spells per turn (two with the Khaydarin Amulet upgrade):
 
 _Psionic Storm_ (researched at Templar Archives): During combat, target up to four small, three medium, or two large units of the same type. Target units are dealt 2 damage (ignoring armor) for units with speed 0-2 and 1 damage (ignoring armor) to units with speed 3+. Psionic Storm is not stackable so casting more than one on the same target in the same combat does not cause more damage. Psionic Storm does not damage units under a Stasis Field.
 
@@ -31,7 +31,7 @@ _Hallucination_ (researched at Templar Archives): Allows High Templar to creates
 
 ### Dark Templar
 
-_Cloaked_.
+- _Cloaked_.
 
 ### Archon
 
@@ -41,3 +41,9 @@ An Archon can be formed in the production phase by merging two High Templars and
 
 A Dark Archon can be formed in the production phase by merging two Dark Templars and is under development until the Deployment Phase.
 
+Dark Archons can cast one of the following spells per turn (two with the Argus Talisman upgrade):
+
+- _Feedback_: Target spellcaster cannot cast spells this turn and take damage equal to the number of spells they can cast this turn. 
+- _Maelstrom_: 
+- _Mind Control_:
+- 
