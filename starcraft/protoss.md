@@ -12,6 +12,12 @@ Dark Templar   | 2    | 2   | 2    |     2 |  2 |      1 |     1 |    S |     1 
 Archon         |      |     |      |     2 |  1 |      7 |     0 |    L |     2 |     5s |     |     8 |      |
 Dark Archon    |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |      |
 Reaver         | 4    | 2   | 4    |     1 |  2 |      1 |     0 |    L |     8 |    4es |     |    10 | Mech |
+Observer       | 1    | 1   | 1    |     1 |  1 |      1 |     0 |    S |       |        |     |     9 | Mech |
+Scout          | 5    | 2   | 3    |     2 |  3 |      2 |     0 |    L |     4 |     1s |  4e |     8 | Mech |
+Corsair        | 3    | 2   | 2    |     3 |  2 |      1 |     1 |    M |     5 |        | 2es |     8 | Mech |
+Carrier        | 7    | 5   | 6    |     1 |  6 |      3 |     4 |    L |     8 |        |     |    11 | Mech |
+Interceptor    | 1    | 1   |      |     5 |  6 |      0 |     0 |    S |     4 |      1 |   1 |     4 | Mech |
+Arbiter        | 2    | 7   | 4    |     2 |  4 |      3 |     1 |    L |     5 |     1e |  1e |     9 | Mech |
 
 e: Explosive Attack, s: Splash Damage
 
@@ -48,3 +54,8 @@ Dark Archons can cast one of the following spells per turn (two with the Argus T
 ## Reaver
 
 - _Scarabs_: Reavers can only attack if they have _scarabs_. They start without any and have to produce them in the Production phase at the cost of 1 mineral each, but is unable to do so if they are in a contested area. A Reaver can hold at most one Scarab without the Increased Reaver Capacity upgrade, and two with it. 
+
+## Observer
+
+- _Cloaked_. 
+
