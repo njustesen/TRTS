@@ -12,6 +12,9 @@ Dark Templar   | 2    | 2   | 2    |     2 |  2 |      1 |     1 |    S |     1 
 Archon         |      |     |      |     2 |  1 |      7 |     0 |    L |     2 |     5s |     |     8 |
 Dark Archon    |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |
 
+e: Explosive Attack
+s: Splash Damage
+
 ### Probe
 
 _Resource gathering_: Probes can collect 1 mineral (max. one per mineral field) or 1 gas (requires an assimilaor) in the income phase.
@@ -22,11 +25,19 @@ Buildings with the _powered_ ability requires a Pylon under control to be presen
 
 High Templars are spell casters and can cast one of the following spells per turn:
 
-_Psionic Storm_: During combat, target up to four small, three medium, or two large units of the same type. Target units are dealt 2 damage (ignoring armor) for units with speed 0-2 and 1 damage (ignoring armor) to units with speed 3+. Psionic Storm is not stackable so casting more than one on the same target in the same combat does not cause more damage. Psionic Storm does not damage units under a Stasis Field.
+_Psionic Storm_ (researched at Templar Archives): During combat, target up to four small, three medium, or two large units of the same type. Target units are dealt 2 damage (ignoring armor) for units with speed 0-2 and 1 damage (ignoring armor) to units with speed 3+. Psionic Storm is not stackable so casting more than one on the same target in the same combat does not cause more damage. Psionic Storm does not damage units under a Stasis Field.
+
+_Hallucination_ (researched at Templar Archives): Allows High Templar to creates two temporary duplicates of a frendly unit in the same area. This spell can be cast at any time, e.g. when being engaged by the enemy. Duplicates have 1 HP, cannot attack or use abilities, and must be removed from the game at the end of the turn. Other attributs are the same as the unit they were copied from. Keep track on your Player Board which units are duplicates. You don't have to reveal that units are duplicates until they are removed from a contested area.
 
 ### Dark Templar
 
+_Cloaked_.
 
 ### Archon
 
+An Archon can be formed in the production phase by merging two High Templars and is under development until the Deployment Phase.
+
 ### Dark Archon
+
+A Dark Archon can be formed in the production phase by merging two Dark Templars and is under development until the Deployment Phase.
+
