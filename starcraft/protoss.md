@@ -2,15 +2,15 @@
 
 ## Units 
 
-Unit           | Min. | Gas | Sup. | Speed | HP | Shield | Armor | Size | Range | Ground | Air | Sight |
-:------------- | ---: | --: | ---: | ----: | -: | -----: | ----: | ---: | ----: | -----: | --: | ----: |
-Probe          | 1    | 0   | 1    |     2 |  1 |      0 |     0 |    S |     1 |    1/2 |     |     8 | 
-Zealot         | 2    | 0   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      2 |     |     7 |
-Dragoon        | 2    | 1   | 2    |     2 |  2 |      1 |     1 |    L |     4 |     2e |     |     8 |
-High Templar   | 1    | 3   | 2    |     1 |  1 |      1 |     0 |    S |       |        |     |     7 |
-Dark Templar   | 2    | 2   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      4 |     |     8 |
-Archon         |      |     |      |     2 |  1 |      7 |     0 |    L |     2 |     5s |     |     8 |
-Dark Archon    |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |
+Unit           | Min. | Gas | Sup. | Speed | HP | Shield | Armor | Size | Range | Ground | Air | Sight | Type |
+:------------- | ---: | --: | ---: | ----: | -: | -----: | ----: | ---: | ----: | -----: | --: | ----: | ---- | 
+Probe          | 1    | 0   | 1    |     2 |  1 |      0 |     0 |    S |     1 |    1/2 |     |     8 | Mech |
+Zealot         | 2    | 0   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      2 |     |     7 | Bio  |
+Dragoon        | 2    | 1   | 2    |     2 |  2 |      1 |     1 |    L |     4 |     2e |     |     8 | Mech |
+High Templar   | 1    | 3   | 2    |     1 |  1 |      1 |     0 |    S |       |        |     |     7 | Bio  |
+Dark Templar   | 2    | 2   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      4 |     |     8 | Bio  |
+Archon         |      |     |      |     2 |  1 |      7 |     0 |    L |     2 |     5s |     |     8 |      |
+Dark Archon    |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |      |
 
 e: Explosive Attack
 s: Splash Damage
@@ -20,8 +20,6 @@ s: Splash Damage
 - _Hovering_.
 - _Resource Gathering_: Probes can collect 1 mineral (max. one per mineral field) or 1 gas (requires an assimilaor) in the income phase.
 - _Warping_: Probes can warp in a building by paying its cost. Warped-in buildings cannot be used before the Deployment phase. Buildings with the _powered_ ability requires a Pylon under control to be present in the area. 
-
-### High Templar
 
 High Templars can cast one of the following spells per turn (two with the Khaydarin Amulet upgrade):
 
@@ -43,7 +41,6 @@ A Dark Archon can be formed in the production phase by merging two Dark Templars
 
 Dark Archons can cast one of the following spells per turn (two with the Argus Talisman upgrade):
 
-- _Feedback_: Target spellcaster cannot cast spells this turn and take damage equal to the number of spells they can cast this turn. 
-- _Maelstrom_: 
-- _Mind Control_:
-- 
+- _Feedback_: Target spellcaster cannot cast spells this turn and take damage equal to the number of spells they can cast in the remainder of this turn. 
+- _Maelstrom_: During combat, target up to four small, three medium, or two large, biological units of the same type. These units are stunned, become cloaked units become visible, for the remainder of this turn. 
+- _Mind Control_: During combat, gain full control over target unit for the rest of the game. 
