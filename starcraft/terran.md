@@ -139,14 +139,12 @@ Gives +1 Supply.
 Comsat Stations starts with 1/4 energy.
 
 **Abilities**:
-* Scan [1 Energy]:
-  - Reveals everything in an area, including cloaked units. If used during a combat round, the effect stops when the round is over, otherwise it stops immedieately after inspecting the area.
+* Scan [1 Energy]: Reveals everything in an area, including cloaked units. If used during a combat round, the effect stops when the round is over, otherwise it stops immedieately after inspecting the area.
 
 ### Nuclear Silo
 
 **Produces**:
-* Nuke [8 min, 4 sup]
-  - A Nuclear Silo can at most hold one Nuke.
+* Nuke [8 min, 4 sup]: A Nuclear Silo can at most hold one Nuke.
 
 ### Supply Depot
 
@@ -166,19 +164,13 @@ Required on a Gas Geyser before gas can be extracted.
 ### Engineering Bay
 
 **Upgrades**:
-* Infantry Weapons Level 1 [2 min, 2 gas]
-  - +1 attack to Marines, Firebats, and Ghosts.
-* Infantry Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
-  - +1 attack to Marines, Firebats, and Ghosts.
-* Infantry Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
-  - +1 attack to Marines, Firebats, and Ghosts.
+* Infantry Weapons Level 1 [2 min, 2 gas]: +1 attack to Marines, Firebats, and Ghosts.
+* Infantry Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility): +1 attack to Marines, Firebats, and Ghosts.
+* Infantry Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility): +1 attack to Marines, Firebats, and Ghosts.
 
-* Infantry Armor Level 1 [2 min, 2 gas]
-  - +1 armor to Marines, Firebats, and Ghosts.
-* Infantry Armor Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
-  - +1 armor to Marines, Firebats, and Ghosts.
-* Infantry Armor Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
-  - +1 armor to Marines, Firebats, and Ghosts.
+* Infantry Armor Level 1 [2 min, 2 gas]: +1 armor to Marines, Firebats, and Ghosts.
+* Infantry Armor Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility): +1 armor to Marines, Firebats, and Ghosts.
+* Infantry Armor Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility): +1 armor to Marines, Firebats, and Ghosts.
 
 ### Academy
 
@@ -225,33 +217,21 @@ Required on a Gas Geyser before gas can be extracted.
 * _Apollo Reactor_ [4 min, 4 gas]: Increases Wraith's maximum energy to 6.
 
 ### Armory
-* Vehicle Weapons Level 1 [2 min, 2 gas]
-  - +1 attack to Vultures, Goliaths, and Siege Tanks.
-* Vehicle Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
-  - +1 attack to Vultures, Goliaths, and Siege Tanks.
-* Vehicle Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
-  - +1 attack to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Weapons Level 1 [2 min, 2 gas]: +1 attack to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility): +1 attack to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility): +1 attack to Vultures, Goliaths, and Siege Tanks.
 
-* Vehicle Plating Level 1 [2 min, 2 gas]
-  - +1 armor to Vultures, Goliaths, and Siege Tanks.
-* Vehicle Plating Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
-  - +1 armor to Vultures, Goliaths, and Siege Tanks.
-* Vehicle Plating Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
-  - +1 armor to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Plating Level 1 [2 min, 2 gas]: +1 armor to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Plating Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility): +1 armor to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Plating Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility): +1 armor to Vultures, Goliaths, and Siege Tanks.
 
-* Ship Weapons Level 1 [2 min, 2 gas]
-  - +1 attack to Wraiths, Valkyries, and Battlecruisers.
-* Ship Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
-  - +1 attack to Wraiths, Valkyries, and Battlecruisers.
-* Ship Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
-  - +1 attack to Wraiths, Valkyries, and Battlecruisers.
+* Ship Weapons Level 1 [2 min, 2 gas]: +1 attack to Wraiths, Valkyries, and Battlecruisers.
+* Ship Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility): +1 attack to Wraiths, Valkyries, and Battlecruisers.
+* Ship Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility): +1 attack to Wraiths, Valkyries, and Battlecruisers.
 
-* Ship Plating Level 1 [3 min, 3 gas]
-  - +1 armor to Wraiths, Valkyries, and Battlecruisers.
-* Ship Plating Level 2 [4 min, 4 gas] (Requires level 1 + Science Facility)
-  - +1 armor to Wraiths, Valkyries, and Battlecruisers.
-* Ship Plating Level 3 [5 min, 5 gas] (Requires level 2 + Science Facility)
-  - +1 armor to Wraiths, Valkyries, and Battlecruisers.
+* Ship Plating Level 1 [3 min, 3 gas]: +1 armor to Wraiths, Valkyries, and Battlecruisers.
+* Ship Plating Level 2 [4 min, 4 gas] (Requires level 1 + Science Facility): +1 armor to Wraiths, Valkyries, and Battlecruisers.
+* Ship Plating Level 3 [5 min, 5 gas] (Requires level 2 + Science Facility): +1 armor to Wraiths, Valkyries, and Battlecruisers.
 
 ### Science Facility
 
