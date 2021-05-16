@@ -252,3 +252,28 @@ Required on a Gas Geyser before gas can be extracted.
   - +1 armor to Wraiths, Valkyries, and Battlecruisers.
 * Ship Plating Level 3 [5 min, 5 gas] (Requires level 2 + Science Facility)
   - +1 armor to Wraiths, Valkyries, and Battlecruisers.
+
+### Science Facility
+
+**Upgrades**:
+* _EMP Shockwave_ [4 min, 4 gas]: Allows Science Vessels to use EMP Shockwave.
+* _Irradiate_ [4 min, 4 gas]: Allows Science Vessels to use Irradiate.
+* _Titan Reactor_ [3 min, 3 gas]: Increases a Science Vessels's maximum Energy to 6.
+
+**Add-ons**:
+* Physics Lab [1 min, 1 gas]
+* Covert Ops [1 min, 1 gas]
+
+### Physics Lab
+
+**Upgrades**:
+* _Yamato Gun_ [2 min, 2 gas]: Allows Battlecruisers to fire their Yamato Gun.
+* _Colossus Reactor_ [3 min, 3 gas]: Increases a Battlecruisers's maximum Energy to 6.
+
+### Covert Ops
+
+**Upgrades**:
+* _Personnel Cloaking_ [2 min, 2 gas]: Allows Ghosts to use Personnel Cloaking.
+* _Lockdown_ [4 min, 4 gas]: Allows Ghosts to use Lockdown.
+* _Ocular Implants_ [2 min, 2 gas]: +2 Ghost sight
+* _Moebius Reactor_ [3 min, 3 gas]: Increases a Ghost's maximum Energy to 6.
