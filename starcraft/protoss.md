@@ -130,21 +130,39 @@ Required on a Gas Geyser before gas can be extracted.
 ### Forge
 
 **Upgrades:**
-* Ground Weapons Level 1
+* Ground Weapons Level 1 [2 min, 2 gas]
   - +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
-* Ground Weapons Level 2 (Requires level 1 + Templar Archives)
+* Ground Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Templar Archives)
   - +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
-* Ground Weapons Level 3 (Requires level 2 + Templar Archives)
+* Ground Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Templar Archives)
   - +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
-* Ground Armor Level 1
+* Ground Armor Level 1 [2 min, 2 gas]
   - +1 armor to all Protoss ground units.
-* Ground Armor Level 2 (Requires level 1 + Templar Archives)
+* Ground Armor Level 2 [3 min, 3 gas] (Requires level 1 + Templar Archives)
   - +1 armor to all Protoss ground units.
-* Ground Armor Level 3 (Requires level 2 + Templar Archives)
+* Ground Armor Level 3 [4 min, 4 gas] (Requires level 2 + Templar Archives)
   - +1 armor to all Protoss ground units.
-* Plasma Shields Level 1
+* Plasma Shields Level 1 [2 min, 2 gas]
   - +1 shield to all Protoss ground units and structures.
-* Plasma Shields Level 2 (Requires level 1 + Cybernetics Core) 
+* Plasma Shields Level 2 [4 min, 4 gas] (Requires level 1 + Cybernetics Core) 
   - +1 shield to all Protoss ground units and structures.
-- Plasma Shields Level 3 (Requires level 2 + Cybernetics Core)
+* Plasma Shields Level 3 [6 min, 6 gas] (Requires level 2 + Cybernetics Core)
   - +1 shield to all Protoss ground units and structures.
+
+### Cybernetics Core
+
+**Upgrades:**
+* Singularity Charge [3 min, 3 gas]
+  - +2 Dragoon range
+* Air Weapons Level 1 [2 min, 2 gas]
+  - +1 air attack to Protoss air units.
+* Air Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Fleet Beacon)
+  - +1 air attack to Protoss air units.
+* Air Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Fleet Beacon)
+  - +1 air attack to Protoss air units.
+* Air Armor Level 1 [3 min, 3 gas]
+  - +1 armor to Protoss air units.
+* Air Armor Level 2 [4 min, 4 gas] (Requires level 1 + Fleet Beacon)
+  - +1 armor to Protoss air units.
+* Air Armor Level 3 [5 min, 5 gas] (Requires level 2 + Fleet Beacon)
+  - +1 armor to Protoss air units.
