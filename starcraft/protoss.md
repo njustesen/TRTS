@@ -90,7 +90,7 @@ Shield Battery       | 2    | 0   |      |  4 |      4 |     1 |    L |       | 
 Stargate             | 3    | 3   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
 Citadel of Adun      | 3    | 2   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
 Templar Archives     | 3    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
-Robotics Facility.   | 4    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Robotics Facility    | 4    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
 Robotics Support Bay | 3    | 2   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
 Observatory          | 1    | 2   |      |  5 |      5 |     1 |    L |       |        |        |       |    Yes |
 Fleet Beacon         | 4    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
@@ -104,7 +104,7 @@ Required in an area to collect resources.
 Gives +1 Supply.
 
 **Produces**: 
-- Probes
+- Probe [1 min, 1 sup]
 
 ### Pylon
 
@@ -122,10 +122,10 @@ Required on a Gas Geyser before gas can be extracted.
 ### Gateway
 
 **Produces:** 
-- Zealots
-- Dragoons (requires Cybernetics Core)
-- High Templar (requires Templar Archives)
-- Dark Templar (requires Templar Archives)
+- Zealots [2 min, 2 sup]
+- Dragoons [2 min, 1 gas, 2 sup] (requires Cybernetics Core)
+- High Templar [1 min, 3 gas, 2 sup] (requires Templar Archives)
+- Dark Templar [2 min, 2 gas, 2 sup] (requires Templar Archives)
 
 ### Forge
 
@@ -166,3 +166,81 @@ Required on a Gas Geyser before gas can be extracted.
   - +1 armor to Protoss air units.
 * Air Armor Level 3 [5 min, 5 gas] (Requires level 2 + Fleet Beacon)
   - +1 armor to Protoss air units.
+
+### Shield Battery
+
+Shield Batteries start with 2/4 energy and can at any time (also to save units from being killed) recharge up to 2 shield points (never above the max. shield value) for the cost of 1 energy.
+
+### Stargate
+
+**Produces:**
+- Scout [5 min, 2 gas, 3 sup]
+- Corsair [3 min, 2 gas, 2 sup]
+- Carrier [7 min, 5 gas, 6 sup] (Requires Fleet Beacon)
+- Arbiter [2 min, 7 gas, 4 sup] (Requires Arbiter Tribunal)
+
+### Citadel of Adun
+
+**Upgrades:**
+* Leg Enhancements [3 min, 3 gas]
+  - +1 Zealot speed
+
+### Templar Archives
+
+**Upgrades:**
+* Psionic Storm [4 min, 4 gas]
+  - Allows High Templars to cast Psionic Storm
+* Hallucination [3 min, 3 gas]
+  - Allows High Templars to cast Hallucination
+* Khaydarin Amulet [3 min, 3 gas]
+  - Gives High Templar +2 max. energy
+* Maelstrom [2 min, 2 gas]
+  - Allows Dark Archons to cast Maelstrom
+* Mind Control [4 min, 4 gas]
+  - Allows Dark Archons to cast Mind Control
+* Argus Talisman [3 min, 3 gas]
+  - Gives Dark Archons +2 max. energy
+
+### Robotics Facility
+
+**Produces:**
+- Reaver [4 min, 4 gas, 4 sup]
+- Observer [1 min, 1 gas, 1 sup] (Requires Observatory)
+
+### Robotics Support Bay**
+
+**Upgrades:**
+* Scarab Damage [4 min, 4 gas]
+  - +1 Reaver attack
+* Increased Reaver Capacity [4 min, 4 gas]
+  - Revers can house 4 scarabs instead of 2
+* Gravitic Drive [4 min, 4 gas]
+  - +1 Shuttle speed
+
+### Observatory
+
+**Upgrades:**
+* Sensor Array [3 min, 3 gas]
+  - +2 Observer sight
+* Gravitic Booster [3 min, 3 gas]
+  - +1 Observer speed
+
+### Fleet Beacon
+
+**Upgrades:**
+* Carrier Capacity [2 min, 2 gas]
+  - Carriers can house 8 Interceptors instead of 4
+* Apial Sensors [2 min, 2 gas]
+  - +2 Scout sight
+* Gravitic Thrusters [4 min, 4 gas]
+  - +1 Carrier speed
+
+### Arbiter Tribunal
+
+**Upgrades:**
+* Stasis Field [3 min, 3 gas]
+  - Allows Arbiters to cas Stasis Field
+* Recall [3 min, 3 gas]
+  - Allows Arbiters to cas Stasis Field
+* Khaydarin Core [3 min, 3 gas]
+  - Gives Arbiters +2 max. energy
