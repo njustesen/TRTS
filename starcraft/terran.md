@@ -106,6 +106,7 @@ ComSat Station       | 1    | 1   |      | 15 |     0 |    L |       |        | 
 Nuclear Silo         | 8    | 0   |      | 10 |     0 |    L |       |        |        |       |
 Supply Depot         | 8    | 0   | +1   | 10 |     0 |    L |       |        |        |       |
 Refinery             | 2    | 0   |      | 10 |     1 |    L |       |        |        |       |
+Barracks             | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
 
 ### Command Center
 
@@ -145,3 +146,25 @@ Gives +1 Supply.
 Required on a Gas Geyser before gas can be extracted.
 
 ### Barracks
+
+**Produces**:
+* Marine [1 min, 1 sup]
+* Firebat [1 min, 1 gas, 1 sup] (Requires Academy)
+* Medic  [1 min, 1 gas, 1 sup] (Requires Academy)
+
+### Engineering Bay
+
+**Upgrades**:
+* Infantry Weapons Level 1 [2 min, 2 gas]
+  - +1 attack to Marines, Firebats, and Ghosts.
+* Infantry Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
+  - +1 attack to Marines, Firebats, and Ghosts.
+* Infantry Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
+  - +1 attack to Marines, Firebats, and Ghosts.
+* Infantry Armor Level 1 [2 min, 2 gas]
+  - +1 armor to Marines, Firebats, and Ghosts.
+* Infantry Armor Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
+  - +1 armor to Marines, Firebats, and Ghosts.
+* Infantry Armor Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
+  - +1 armor to Marines, Firebats, and Ghosts.
+
