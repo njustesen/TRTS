@@ -1,4 +1,4 @@
-# Protoss Rules
+# Protoss
 
 ## Units 
 
