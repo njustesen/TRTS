@@ -188,3 +188,37 @@ Required on a Gas Geyser before gas can be extracted.
 - _Optical Flare_ [2 min, 2 gas]: Medics gain the ability to use Optic Flare.
 - _Caduceus Reactor_ [2 min, 2 gas]: Increases a Medic's maximum Energy to 6.
 
+### Factory
+
+**Produces**:
+* Vulture [2 min, 2 sup]
+* Siege Tank [3 min, 2 gas, 2 sup] (Requires Machine Shop add-on)
+* Goliath  [2 min, 1 gas, 2 sup] (Requires Armory)
+
+**Add-Ons**:
+* Machine Shop [1 min, 1 gas]
+
+### Machine Shop
+
+**Upgrades**:
+* _Spider Mines_ [2 min, 2 gas]: Allows Vultures to plant Spider Mines.
+* _Siege Tech_ [3 min, 3 gas]: Allows Siege Tanks to go in Sige Mode.
+* _Ion Thrusters_ [2 min, 2 gas]: +1 Vulture speed.
+* _Charon Boosters_ [2 min, 2 gas]: +3 Goliath range.
+
+### Starport
+
+**Produces**:
+* _Wraith_ [3 min, 2 gas, 2 sup]
+* _Dropship_ [2 min, 2 gas, 2 sup] (Requires Control Tower add-on)
+* _Valkyrie_ [5 min, 2 gas, 3 sup] (Requires Control Tower add-on)
+* _Battlecruiser_ [8 min, 6 gas, 6 sup] (Requires Control Tower add-on + Physics Lab)
+
+**Add-Ons**:
+* Conrtol Tower [1 min, 1 gas]
+
+### Control Tower
+
+**Upgrades**:
+* _Cloaking Field_ [3 min, 3 gas]: Wraiths gain the _Cloaking Field_ ability.
+* _Apollo Reactor_ [4 min, 4 gas]: Increases Wraith's maximum energy to 6.
