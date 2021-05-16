@@ -53,7 +53,7 @@ Dark Archons can cast one of the following spells per turn (two with the Argus T
 
 ## Reaver
 
-- _Scarabs_: Reavers can only attack if they have _scarabs_. They start without any and have to produce them in the Production phase at the cost of 1 mineral each, but is unable to do so if they are in a contested area. A Reaver can hold at most one Scarab without the Increased Reaver Capacity upgrade, and two with it. 
+- _Scarabs_: Reavers can fire up to two _scarabs_ when they attack. They start with no scarabs and can produce up to two for a total cost of 1 mineral in the Production phase, where one scarab will be _queued_ (effectiely taking two rounds to be produced). A Reaver can hold at most two Scarabs (including those in production) and four with the Increased Reaver Capacity upgrade.  
 
 ## Observer
 
