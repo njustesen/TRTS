@@ -24,6 +24,7 @@ Dropship        | 2    | 2   | 2    |     2 |  3 |     1 |    L |       |       
 Wraith          | 3    | 2   | 2    |     3 |  2 |     0 |    L |     5 |      1 |  3e |     7 | Mech |
 Science Vessel  | 2    | 5   | 2    |     2 |  4 |     1 |    L |       |        |     |    10 | Mech |
 Valkyrie        | 6    | 2   | 3    |     3 |  4 |     2 |    L |     6 |        | 3es |     8 | Mech |
+Battlecruiser   | 8    | 6   | 6    |     1 | 10 |     3 |    L |     6 |      3 |   3 |    11 | Mech |
 
 e: Explosive Attack, c: Concussive Attack, s: Splash Damage
 
@@ -60,7 +61,7 @@ Ghosts have 1/4 energy.
 
 **Abilities**:
 - _Call Down_: Ghosts can call down a Nuke, if any are available in a Nuclear Silo, instead of attacking. To call down a Nuke, secretely indicate the area of the Ghost on the Player Board and then inform the other player: "Nuclear Luanch Detected!". The Nuke will land and detonate as soon as the next Micromanagement Phase starts if the Ghost is still alive, otherwise it is lost. Nukes can, however, be canceled without losing it at any time this round. If a Nuke detonates, it immediately deals 15 splash damage to enemies in that zone. If not all splash damage can be assigned to enemies it must be assigned to friendly units.
-- _Personnel Cloaking_ [1 energy] (Researched at Covert Ops): Makes the Ghost _cloaked_ until the next round.
+- _Personnel Cloaking_ [1 or 2 energy] (Researched at Covert Ops): Makes the Ghost _cloaked_ for one combat step for 1 energy or for an entire round for 2 energy.
 - _Lockdown_ [2 energy] (Researched at Covert Ops): Allows the Ghost to cast Lockdown on a mechanical unit, making the target unable to do anything until the next round.
 
 ### Siege Tank
@@ -72,6 +73,13 @@ Ghosts have 1/4 energy.
 
 **Abilities**:
 - _Transporter_: Dropships can load up to 8 units, where M counts as 2 and large as 4. Dropships can load and unload as they want in the Movemen Phase and can also load _or_ unload (not both) in any combat step, except during melee combat. 
+
+### Wraith
+
+Wraith start with 1/4 energy.
+
+**Abilities**:
+- _Cloaking Field_ [1 or 2 energy] (Researched at Control Tower): Makes the Wraith _cloaked_ for one combat step for 1 energy, or for an entire round for 2 energy.
 
 ## Buildings
 
