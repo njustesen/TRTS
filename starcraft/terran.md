@@ -8,22 +8,22 @@
 
 ## Units 
 
-Unit           | Min  | Gas | Sup. | Speed | HP | Armor | Size | Range | Ground | Air | Sight | Type |
-:------------- | ---: | --: | ---: | ----: | -: | ----: | ---: | ----: | -----: | --: | ----: | ---- | 
-SCV            | 1    | 0   | 1    |     2 |  1 |     0 |    S |     1 |    1/2 |     |     7 | Mech |
-Marine         | 1    | 0   | 1    |     2 |  1 |     0 |    S |     4 |      1 |     |     7 |  Bio |
-Firebat        | 1    | 1   | 1    |     2 |  1 |     1 |    S |     2 |    2cs |     |     7 |  Bio |
-Medic          | 1    | 1   | 1    |     2 |  1 |     0 |    S |       |        |     |     9 |  Bio |
-Ghost          | 1    | 1   | 1    |     2 |  1 |     1 |    S |     7 |     2c |     |     9 |  Bio |
-Vulture        | 2    | 0   | 2    |     3 |  2 |     0 |    M |     5 |     2c |     |     8 | Mech |
-Spider Mine    |      |     |      |     4 |  1 |     0 |    S |     1 |    2es |     |     3 | Mech |
-Tank           | 3    | 2   | 2    |     2 |  3 |     1 |    L |     7 |     2e |     |    10 | Mech |
-_Siege Tank_   |      |     |      |     0 |  3 |     1 |    L |    12 |    3es |     |    10 | Mech |
-Goliath        | 2    | 1   | 2    |     2 |  3 |     1 |    L |     5 |      2 |  3e |     8 | Mech |
-Dropship       | 2    | 2   | 2    |     2 |  3 |     1 |    L |       |        |     |    11 | Mech |
-Wraith         | 3    | 2   | 2    |     3 |  2 |     0 |    L |     5 |      1 |  3e |     7 | Mech |
-Science Vessel | 2    | 5   | 2    |     2 |  4 |     1 |    L |       |        |     |    10 | Mech |
-Valkyrie       | 6    | 2   | 3    |     3 |  4 |     2 |    L |     6 |        | 3es |     8 | Mech |
+Unit            | Min  | Gas | Sup. | Speed | HP | Armor | Size | Range | Ground | Air | Sight | Type |
+:-------------- | ---: | --: | ---: | ----: | -: | ----: | ---: | ----: | -----: | --: | ----: | ---- | 
+SCV             | 1    | 0   | 1    |     2 |  1 |     0 |    S |     1 |    1/2 |     |     7 | Mech |
+Marine          | 1    | 0   | 1    |     2 |  1 |     0 |    S |     4 |      1 |     |     7 |  Bio |
+Firebat         | 1    | 1   | 1    |     2 |  1 |     1 |    S |     2 |    2cs |     |     7 |  Bio |
+Medic           | 1    | 1   | 1    |     2 |  1 |     0 |    S |       |        |     |     9 |  Bio |
+Ghost           | 1    | 1   | 1    |     2 |  1 |     1 |    S |     7 |     2c |     |     9 |  Bio |
+Vulture         | 2    | 0   | 2    |     3 |  2 |     0 |    M |     5 |     2c |     |     8 | Mech |
+Spider Mine     |      |     |      |     4 |  1 |     0 |    S |     1 |    2es |     |     3 | Mech |
+Siege Tank      | 3    | 2   | 2    |     2 |  3 |     1 |    L |     7 |     2e |     |    10 | Mech |
+In _Siege Mode_ |      |     |      |     0 |  3 |     1 |    L |    12 |    3es |     |    10 | Mech |
+Goliath         | 2    | 1   | 2    |     2 |  3 |     1 |    L |     5 |      2 |  3e |     8 | Mech |
+Dropship        | 2    | 2   | 2    |     2 |  3 |     1 |    L |       |        |     |    11 | Mech |
+Wraith          | 3    | 2   | 2    |     3 |  2 |     0 |    L |     5 |      1 |  3e |     7 | Mech |
+Science Vessel  | 2    | 5   | 2    |     2 |  4 |     1 |    L |       |        |     |    10 | Mech |
+Valkyrie        | 6    | 2   | 3    |     3 |  4 |     2 |    L |     6 |        | 3es |     8 | Mech |
 
 e: Explosive Attack, c: Concussive Attack, s: Splash Damage
 
@@ -62,6 +62,16 @@ Ghosts have 1/4 energy.
 - _Call Down_: Ghosts can call down a Nuke, if any are available in a Nuclear Silo, instead of attacking. To call down a Nuke, secretely indicate the area of the Ghost on the Player Board and then inform the other player: "Nuclear Luanch Detected!". The Nuke will land and detonate as soon as the next Micromanagement Phase starts if the Ghost is still alive, otherwise it is lost. Nukes can, however, be canceled without losing it at any time this round. If a Nuke detonates, it immediately deals 15 splash damage to enemies in that zone. If not all splash damage can be assigned to enemies it must be assigned to friendly units.
 - _Personnel Cloaking_ [1 energy] (Researched at Covert Ops): Makes the Ghost _cloaked_ until the next round.
 - _Lockdown_ [2 energy] (Researched at Covert Ops): Allows the Ghost to cast Lockdown on a mechanical unit, making the target unable to do anything until the next round.
+
+### Siege Tank
+
+**Abilities**:
+- _Siege Mode_ (Researched at Machine Shop): Can be used in the Movement Phase at the cost of 1 Movement Point to transform the Siege Tank into Siege Mode where it gains range 12, a base 3es attack and loses it's mobility. Un-sieging costs 1 Movement Point and can be done at any point before moving the Tank, however, not during a combat round.
+
+### Dropship
+
+**Abilities**:
+- _Transporter_: Dropships can load up to 8 units, where M counts as 2 and large as 4. Dropships can load and unload as they want in the Movemen Phase and can also load _or_ unload (not both) in any combat step, except during melee combat. 
 
 ## Buildings
 
