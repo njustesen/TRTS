@@ -53,9 +53,12 @@ Dark Archons can cast one of the following spells per turn (two with the Argus T
 
 ## Reaver
 
-- _Scarabs_: Reavers can fire up to two _scarabs_ when they attack. They start with no scarabs and can produce up to two for a total cost of 1 mineral in the Production phase, where one scarab will be _queued_ (effectiely taking two rounds to be produced). A Reaver can hold at most two Scarabs (including those in production) and four with the Increased Reaver Capacity upgrade.  
+- _Scarabs_: Reavers can fire up to two _scarabs_ when they attack. They start with no scarabs and can produce up to two for a total cost of one mineral in the Production phase, where one scarab will be _queued_ (effectiely taking two rounds to be produced). A Reaver can hold at most two Scarabs (including those in production) and four with the Increased Reaver Capacity upgrade. 
+
+## Carrier
+
+- _Jnterceptors_: Carriers do not attack but can house up to four Interceptors (eight with the Carrier Capacity upgrade). They start with no interceptors and can produce up to two for a total cost of 1 mineral in the Production phase and both are deployed in the following Deployment Phase. If any unit assigns damage to a Carrier, all Interceptors under control in that area can fire at the attackers first, dealing damage before any damage is assigned to the Carriers.
 
 ## Observer
 
 - _Cloaked_. 
-
