@@ -76,10 +76,26 @@ Ghosts have 1/4 energy.
 
 ### Wraith
 
-Wraith start with 1/4 energy.
+Wraiths start with 1/4 energy.
 
 **Abilities**:
 - _Cloaking Field_ [1 or 2 energy] (Researched at Control Tower): Makes the Wraith _cloaked_ for one combat step for 1 energy, or for an entire round for 2 energy.
+
+### Science Vessel
+
+Science Vessels start with 1/4 energy.
+
+**Abilities**:
+- _Defense Matrix_ [2 energy]: Target unit gains +5 HP for the rest of the round. 
+- _EMP Shockwave_ [2 energy] (Researched at Science Facility): Depletes the energy and shields of 1 large, 2 medium, or 4 small units of the same type.
+- _Irradiate_ [2 energy]: Science Vessels gain the ability to cast Irradiate on 1 large, 2 medium, or 4 small biological units of the same type that are not in Stasis. These units are dealt 2 splash damage (ignoring armor) at then end of each round.
+
+### Battlecruiser
+
+Battlecruiser starts with 1/4 energy.
+
+**Abilities**:
+- _Yamato Gun_ [3 energy] (Researched at Physics Lab): Allows the Battlecruiser to fire its Yamato Gun at range 10 dealing 5 explosive damage.
 
 ## Buildings
 
