@@ -53,20 +53,20 @@ Dark Archons start with 1/4 energy and can cast the following spells:
 - _Maelstrom_ [2 Energy]: During combat, target up to four small, three medium, or two large, biological units of the same type. These units are stunned, and cloaked units become visible, for the remainder of this turn. 
 - _Mind Control_ [3 Energy]: During combat, gain full control over one target unit for the rest of the game. 
 
-## Reaver
+### Reaver
 
 - _Scarabs_: Reavers can fire up to two _scarabs_ when they attack. They start with no scarabs and can produce up to two for a total cost of one mineral in the Production phase, where one scarab will be _queued_ (effectiely taking two rounds to be produced). A Reaver can hold at most two Scarabs (including those in production) and four with the Increased Reaver Capacity upgrade. 
 
-## Observer
+### Observer
 
 - _Cloaked_. 
 - _Detector_.
 
-## Carrier
+### Carrier
 
 - _Jnterceptors_: Carriers do not attack but can house up to four Interceptors (eight with the Carrier Capacity upgrade). They start with no interceptors and can produce up to two for a total cost of 1 mineral in the Production phase and both are deployed in the following Deployment Phase. If any unit assigns damage to a Carrier, all Interceptors under control in that area can fire at the attackers first, dealing damage before any damage is assigned to the Carriers.
 
-## Arbiter
+### Arbiter
 
 - _Invisibility Field_: All friendly units in the same area as the Arbiter become _cloaked_.
 
@@ -74,3 +74,13 @@ Arbiters start with 1/4 energy and can cast the following spells:
 
 - _Stasis Field_ (researched at Arbiter Tribunal) [2 Energy]: Allows Arbiters to freeze up to 3 units of the same type. Frozen units cannot do anything until the next Micromanagement Phase.
 - _Recall_ (researched at Arbiter Tribunal) [3 Energy]: Allows the Arbiter to teleport any unit under control to the area of the Arbiter without spending movement points.
+
+## Buildings
+
+### 
+Building       | Min. | Gas | Sup. | HP | Shield | Armor | Size | Range | Ground | Air    | Sight | Powered |
+:------------- | ---: | --: | ---: | -: | -----: | ----: | ---: | ----: | -----: | -----: | ----: | ------: |
+Nexus          | 8    | 0   | +1   | 15 |     15 |     1 |    L |       |        |        |       |     No  |
+Pylon          | 2    | 0   | +1   | 6  |      6 |     1 |    L |       |        |        |       |     No  |
+Photon Cannon  | 3    | 0   |      | 2  |      2 |     0 |    L |     7 |      3 |      3 |   11  |    Yes  |
+
