@@ -25,7 +25,7 @@ e: Explosive Attack, s: Splash Damage
 
 **Abilities**
 - _Hovering_.
-- _Resource Gathering_: Probes can collect 1 mineral (max. one per mineral field) or 1 gas (requires an assimilaor) in the income phase.
+- _Resource Gathering_: Probes can collect 1 mineral (max. one per mineral field) or 1 gas (requires an assimilator) in the income phase.
 - _Warping_: Probes can warp in a building by paying its cost. Warping-in buildings cannot be used before the Deployment phase and has half HP and half shield (rounded down). Buildings with the _powered_ ability requires a Pylon under control to be present in the area to be warped in.
 
 ### High Templar
