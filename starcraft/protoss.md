@@ -45,11 +45,11 @@ An Archon can be formed in the production phase by merging two High Templars and
 
 A Dark Archon can be formed in the production phase by merging two Dark Templars and is under development until the Deployment Phase.
 
-Dark Archons can cast one of the following spells per turn (two with the Argus Talisman upgrade):
+Dark Archons start with 1/4 energy and can cast the following spells:
 
-- _Feedback_: Target spellcaster cannot cast spells this turn and take damage equal to the number of spells they can cast in the remainder of this turn. 
-- _Maelstrom_: During combat, target up to four small, three medium, or two large, biological units of the same type. These units are stunned, become cloaked units become visible, for the remainder of this turn. 
-- _Mind Control_: During combat, gain full control over target unit for the rest of the game. 
+- _Feedback_ [1 Energy]: Target spellcaster cannot cast spells this turn and take damage equal to the number of spells they can cast in the remainder of this turn. 
+- _Maelstrom_ [2 Energy]: During combat, target up to four small, three medium, or two large, biological units of the same type. These units are stunned, and cloaked units become visible, for the remainder of this turn. 
+- _Mind Control_ [3 Energy]: During combat, gain full control over one target unit for the rest of the game. 
 
 ## Reaver
 
