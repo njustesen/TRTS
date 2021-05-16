@@ -9,6 +9,11 @@ Up to three workers can collect vespene gas from each **Gas Geiser** that has a 
 
 Workers are building a building or have attacked in the last round cannot collect resources this round.
 
+## Energy
+
+Some units and buildings have energy. Use tokens to indicate how much energy each unit and building has. 
+During the Income phase, each unit that can have energy receives one energy token up to its maximum amount of energy.
+
 ## Combat
 
 ### Dealing Damage
