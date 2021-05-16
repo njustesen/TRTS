@@ -109,6 +109,15 @@ Refinery             | 2    | 0   |      | 10 |     1 |    L |       |        | 
 Barracks             | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Engineering Bay      | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Academy              | 3    | 0   |      | 10 |     1 |    L |       |        |        |       |
+Missile Turret       | 1    | 0   |      |  4 |     0 |    L |     7 |        |     2e |    11 |
+Factory              | 4    | 2   |      | 25 |     1 |    L |       |        |        |       |
+Machine Shop         | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
+Starport             | 3    | 2   |      | 25 |     1 |    L |       |        |        |       |
+Control Tower        | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
+Armory               | 2    | 1   |      | 15 |     1 |    L |       |        |        |       |
+Science Facility     | 2    | 3   |      | 15 |     1 |    L |       |        |        |       |
+Physics Lab          | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
+Covert Ops           | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
 
 ### Command Center
 
