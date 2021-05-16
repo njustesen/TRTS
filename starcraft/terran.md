@@ -11,6 +11,19 @@
 Unit           | Min  | Gas | Sup. | Speed | HP | Armor | Size | Range | Ground | Air | Sight | Type |
 :------------- | ---: | --: | ---: | ----: | -: | ----: | ---: | ----: | -----: | --: | ----: | ---- | 
 SCV            | 1    | 0   | 1    |     2 |  1 |     0 |    S |     1 |    1/2 |     |     7 | Mech |
+Marine         | 1    | 0   | 1    |     2 |  1 |     0 |    S |     4 |      1 |     |     7 |  Bio |
+Firebat        | 1    | 1   | 1    |     2 |  1 |     1 |    S |     2 |    2cs |     |     7 |  Bio |
+Medic          | 1    | 1   | 1    |     2 |  1 |     0 |    S |       |        |     |     9 |  Bio |
+Ghost          | 1    | 1   | 1    |     2 |  1 |     1 |    S |     7 |     2c |     |     9 |  Bio |
+Vulture        | 2    | 0   | 2    |     3 |  2 |     0 |    M |     5 |     2c |     |     8 | Mech |
+Spider Mine    |      |     |      |     4 |  1 |     0 |    S |     1 |    2es |     |     3 | Mech |
+Tank           | 3    | 2   | 2    |     2 |  3 |     1 |    L |     7 |     2e |     |    10 | Mech |
+_Siege Tank_   |      |     |      |     0 |  3 |     1 |    L |    12 |    3es |     |    10 | Mech |
+Goliath        | 2    | 1   | 2    |     2 |  3 |     1 |    L |     5 |      2 |  3e |     8 | Mech |
+Dropship       | 2    | 2   | 2    |     2 |  3 |     1 |    L |       |        |     |    11 | Mech |
+Wraith         | 3    | 2   | 2    |     3 |  2 |     0 |    L |     5 |      1 |  3e |     7 | Mech |
+Science Vessel | 2    | 5   | 2    |     2 |  4 |     1 |    L |       |        |     |    10 | Mech |
+Valkyrie       | 6    | 2   | 3    |     3 |  4 |     2 |    L |     6 |        | 3es |     8 | Mech |
 
 e: Explosive Attack, c: Concussive Attack, s: Splash Damage
 
