@@ -68,7 +68,7 @@ Dark Archons start with 1/4 energy and can cast the following spells:
 
 ### Arbiter
 
-- _Invisibility Field_: All friendly units in the same area as the Arbiter become _cloaked_.
+- _Invisibility Field_: All friendly units in the same area as the Arbiter are _cloaked_.
 
 Arbiters start with 1/4 energy and can cast the following spells:
 
@@ -77,21 +77,74 @@ Arbiters start with 1/4 energy and can cast the following spells:
 
 ## Buildings
 
-Building             | Min. | Gas | Sup. | HP | Shield | Armor | Size | Range | Ground | Air    | Sight | Powered |
-:------------------- | ---: | --: | ---: | -: | -----: | ----: | ---: | ----: | -----: | -----: | ----: | ------: |
-Nexus                | 8    | 0   | +1   | 15 |     15 |     1 |    L |       |        |        |       |      No |
-Pylon                | 2    | 0   | +1   |  6 |      6 |     1 |    L |       |        |        |       |      No |
-Photon Cannon        | 3    | 0   |      |  2 |      2 |     0 |    L |     7 |      3 |      3 |    11 |     Yes |
-Assimilator          | 2    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |      No |
-Gateway              | 3    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |     Yes |
-Forge                | 3    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |     Yes |
-Cybernetics Core     | 4    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |     Yes |
-Shield Battery       | 2    | 0   |      |  4 |      4 |     1 |    L |       |        |        |       |     Yes |
-Stargate             | 3    | 3   |      | 10 |     10 |     1 |    L |       |        |        |       |     Yes |
-Citadel of Adun      | 3    | 2   |      | 10 |     10 |     1 |    L |       |        |        |       |     Yes |
-Templar Archives     | 3    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |     Yes |
-Robotics Facility.   | 4    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |     Yes |
-Robotics Support Bay | 3    | 2   |      | 10 |     10 |     1 |    L |       |        |        |       |     Yes |
-Observatory          | 1    | 2   |      |  5 |      5 |     1 |    L |       |        |        |       |     Yes |
-Fleet Beacon         | 4    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |     Yes |
-Arbiter Tribunal     | 4    | 3   |      | 10 |     10 |     1 |    L |       |        |        |       |     Yes |
+Building             | Min. | Gas | Sup. | HP | Shield | Armor | Size | Range | Ground | Air    | Sight | Power* |
+:------------------- | ---: | --: | ---: | -: | -----: | ----: | ---: | ----: | -----: | -----: | ----: | -----: |
+Nexus                | 8    | 0   | +1   | 15 |     15 |     1 |    L |       |        |        |       |     No |
+Pylon                | 2    | 0   | +1   |  6 |      6 |     1 |    L |       |        |        |       |     No |
+Photon Cannon        | 3    | 0   |      |  2 |      2 |     0 |    L |     7 |      3 |      3 |    11 |    Yes |
+Assimilator          | 2    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |     No |
+Gateway              | 3    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Forge                | 3    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Cybernetics Core     | 4    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Shield Battery       | 2    | 0   |      |  4 |      4 |     1 |    L |       |        |        |       |    Yes |
+Stargate             | 3    | 3   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Citadel of Adun      | 3    | 2   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Templar Archives     | 3    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Robotics Facility.   | 4    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Robotics Support Bay | 3    | 2   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Observatory          | 1    | 2   |      |  5 |      5 |     1 |    L |       |        |        |       |    Yes |
+Fleet Beacon         | 4    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Arbiter Tribunal     | 4    | 3   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+
+* Must be powered by a Pylon.
+
+### Nexus
+
+Required in an area to collect resources.
+Gives +1 Supply.
+
+**Produces**: 
+- Probes
+
+### Pylon
+
+Powers all buildings in an area. If buildings loose power thay cannot produce or deploy until they regain power.
+Gives +1 Supply.
+
+### Photon Cannon
+
+_Detector_
+
+### Assimilator
+
+Required on a Gas Geyser before gas can be extracted.
+
+### Gateway
+
+**Produces:** 
+- Zealots
+- Dragoons (requires Cybernetics Core)
+- High Templar (requires Templar Archives)
+- Dark Templar (requires Templar Archives)
+
+### Forge
+
+**Upgrades:**
+* Ground Weapons Level 1
+  - +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
+* Ground Weapons Level 2 (Requires level 1 + Templar Archives)
+  - +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
+* Ground Weapons Level 3 (Requires level 2 + Templar Archives)
+  - +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
+* Ground Armor Level 1
+  - +1 armor to all Protoss ground units.
+* Ground Armor Level 2 (Requires level 1 + Templar Archives)
+  - +1 armor to all Protoss ground units.
+* Ground Armor Level 3 (Requires level 2 + Templar Archives)
+  - +1 armor to all Protoss ground units.
+* Plasma Shields Level 1
+  - +1 shield to all Protoss ground units and structures.
+* Plasma Shields Level 2 (Requires level 1 + Cybernetics Core) 
+  - +1 shield to all Protoss ground units and structures.
+- Plasma Shields Level 3 (Requires level 2 + Cybernetics Core)
+  - +1 shield to all Protoss ground units and structures.
