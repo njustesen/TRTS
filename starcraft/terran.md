@@ -172,6 +172,7 @@ Required on a Gas Geyser before gas can be extracted.
   - +1 attack to Marines, Firebats, and Ghosts.
 * Infantry Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
   - +1 attack to Marines, Firebats, and Ghosts.
+
 * Infantry Armor Level 1 [2 min, 2 gas]
   - +1 armor to Marines, Firebats, and Ghosts.
 * Infantry Armor Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
@@ -222,3 +223,32 @@ Required on a Gas Geyser before gas can be extracted.
 **Upgrades**:
 * _Cloaking Field_ [3 min, 3 gas]: Wraiths gain the _Cloaking Field_ ability.
 * _Apollo Reactor_ [4 min, 4 gas]: Increases Wraith's maximum energy to 6.
+
+### Armory
+* Vehicle Weapons Level 1 [2 min, 2 gas]
+  - +1 attack to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
+  - +1 attack to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
+  - +1 attack to Vultures, Goliaths, and Siege Tanks.
+
+* Vehicle Plating Level 1 [2 min, 2 gas]
+  - +1 armor to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Plating Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
+  - +1 armor to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Plating Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
+  - +1 armor to Vultures, Goliaths, and Siege Tanks.
+
+* Ship Weapons Level 1 [2 min, 2 gas]
+  - +1 attack to Wraiths, Valkyries, and Battlecruisers.
+* Ship Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility)
+  - +1 attack to Wraiths, Valkyries, and Battlecruisers.
+* Ship Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
+  - +1 attack to Wraiths, Valkyries, and Battlecruisers.
+
+* Ship Plating Level 1 [3 min, 3 gas]
+  - +1 armor to Wraiths, Valkyries, and Battlecruisers.
+* Ship Plating Level 2 [4 min, 4 gas] (Requires level 1 + Science Facility)
+  - +1 armor to Wraiths, Valkyries, and Battlecruisers.
+* Ship Plating Level 3 [5 min, 5 gas] (Requires level 2 + Science Facility)
+  - +1 armor to Wraiths, Valkyries, and Battlecruisers.
