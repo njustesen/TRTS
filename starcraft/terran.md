@@ -107,6 +107,8 @@ Nuclear Silo         | 8    | 0   |      | 10 |     0 |    L |       |        | 
 Supply Depot         | 8    | 0   | +1   | 10 |     0 |    L |       |        |        |       |
 Refinery             | 2    | 0   |      | 10 |     1 |    L |       |        |        |       |
 Barracks             | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
+Engineering Bay      | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
+Academy              | 3    | 0   |      | 10 |     1 |    L |       |        |        |       |
 
 ### Command Center
 
@@ -167,4 +169,13 @@ Required on a Gas Geyser before gas can be extracted.
   - +1 armor to Marines, Firebats, and Ghosts.
 * Infantry Armor Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility)
   - +1 armor to Marines, Firebats, and Ghosts.
+
+### Academy
+
+**Upgrades**:
+- _Stim Pack_ [2 min, 2 gas]: Marines and Firebats gain the ability to use Stim Pack.
+- _U-238 Shells_ [3 min, 3 gas]: +1 Marine range
+- _Restoration_ [2 min, 2 gas]: Medics gains the ability to use Restoration.
+- _Optical Flare_ [2 min, 2 gas]: Medics gain the ability to use Optic Flare.
+- _Caduceus Reactor_ [2 min, 2 gas]: Increases a Medic's maximum Energy to 6.
 
