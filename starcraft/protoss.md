@@ -27,11 +27,13 @@ e: Explosive Attack, s: Splash Damage
 - _Resource Gathering_: Probes can collect 1 mineral (max. one per mineral field) or 1 gas (requires an assimilaor) in the income phase.
 - _Warping_: Probes can warp in a building by paying its cost. Warping-in buildings cannot be used before the Deployment phase and has half HP and half shield (rounded down). Buildings with the _powered_ ability requires a Pylon under control to be present in the area to be warped in.
 
-High Templars can cast one of the following spells per turn (two with the Khaydarin Amulet upgrade):
+### High Templar
 
-_Psionic Storm_ (researched at Templar Archives): During combat, target up to four small, three medium, or two large units of the same type. Target units are dealt 2 damage (ignoring armor) for units with speed 0-2 and 1 damage (ignoring armor) to units with speed 3+. Psionic Storm is not stackable so casting more than one on the same target in the same combat does not cause more damage. Psionic Storm does not damage units under a Stasis Field.
+High Templars start with 1/4 energy and can cast one of the following spells per turn (two with the Khaydarin Amulet upgrade):
 
-_Hallucination_ (researched at Templar Archives): Allows High Templar to creates two temporary duplicates of a frendly unit in the same area. This spell can be cast at any time, e.g. when being engaged by the enemy. Duplicates have 1 HP, cannot attack or use abilities, and must be removed from the game at the end of the turn. Other attributs are the same as the unit they were copied from. Keep track on your Player Board which units are duplicates. You don't have to reveal that units are duplicates until they are removed from a contested area.
+_Psionic Storm_ (researched at Templar Archives) [2 Energy]: During combat, target up to four small, three medium, or two large units of the same type. Target units are dealt 2 damage (ignoring armor) for units with speed 0-2 and 1 damage (ignoring armor) to units with speed 3+. Psionic Storm is not stackable so casting more than one on the same target in the same combat does not cause more damage. Psionic Storm does not damage units under a Stasis Field.
+
+_Hallucination_ (researched at Templar Archives) [2 Energy]: Allows High Templar to creates two temporary duplicates of a frendly unit in the same area. This spell can be cast at any time, e.g. when being engaged by the enemy. Duplicates have 1 HP, cannot attack or use abilities, and must be removed from the game at the end of the turn. Other attributs are the same as the unit they were copied from. Keep track on your Player Board which units are duplicates. You don't have to reveal that units are duplicates until they are removed from a contested area.
 
 ### Dark Templar
 
@@ -39,11 +41,11 @@ _Hallucination_ (researched at Templar Archives): Allows High Templar to creates
 
 ### Archon
 
-An Archon can be formed in the production phase by merging two High Templars and is under development until the Deployment Phase.
+An Archon can be formed in the production phase by merging two High Templars and is under development until the next Deployment Phase.
 
 ### Dark Archon
 
-A Dark Archon can be formed in the production phase by merging two Dark Templars and is under development until the Deployment Phase.
+A Dark Archon can be formed in the production phase by merging two Dark Templars and is under development until the next Deployment Phase.
 
 Dark Archons start with 1/4 energy and can cast the following spells:
 
