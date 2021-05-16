@@ -3,6 +3,7 @@
 ## Special Rules
 
 - _Burning Buildings_: Terran buildings with 1 HP left by the end of the turn will be destroyed.
+- _Add-ons_: Add-ons are small buildings that can be added onto another building. Add-ons can be constructed without an SCV while the main building cannot be used for anything else until the add-on is deployed. Buildings can at most have one add-on and only those listed in their rules.
 - _Lift Off_: Terran buildings with the _Lift Off_ ability can become flying with speed 1. This ability can only be used in the Movement phase and the building cannot move after _lifting off_. When _lifted_, the building can land during the movement phase. Any add-ons on the lifted building remain on the ground and cannot be used but can be attached to any landing building that fits with the add-on.
 
 ## Units 
@@ -18,7 +19,7 @@ e: Explosive Attack, c: Concussive Attack, s: Splash Damage
 **Abilities**:
 - _Hovering_
 - _Resource Gathering_: SCVs can collect 1 mineral (max. one per mineral field) or 1 gas (requires an assimilaor) in the income phase.
-- _Constructing_: SCVs can contruct a building by paying its cost. The SCV and the buildings under constructions cannot be used before the Deployment phas and the building has half HP (rounded down).
+- _Constructing_: SCVs can contruct a building by paying its cost. The SCV and the buildings under constructions cannot be used before the Deployment phase and the building has half HP (rounded down).
 - _Reparing_: SCVs can repair any Terran building or mech unit for 1 mineral giving them up to 3 lost HP.
 
 ## Buildings
@@ -26,6 +27,10 @@ e: Explosive Attack, c: Concussive Attack, s: Splash Damage
 Building             | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
 :------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
 Command Center       | 8    | 0   | +1   | 30 |     1 |    L |       |        |        |       |
+ComSat Station       | 1    | 1   |      | 15 |     0 |    L |       |        |        |       |
+Nuclear Silo         | 8    | 0   |      | 10 |     0 |    L |       |        |        |       |
+Supply Depot         | 8    | 0   | +1   | 10 |     0 |    L |       |        |        |       |
+Refinery             | 2    | 0   |      | 10 |     1 |    L |       |        |        |       |
 
 ### Command Center
 
@@ -38,3 +43,30 @@ Gives +1 Supply.
 **Produces**: 
 - SCV [1 min, 1 sup]
 
+**Add-ons**
+* ComSat Station [1 min, 1 sup]
+* Nuclear Silo [1 min, 1 sup]
+
+### Comsat Station
+
+Comsat Stations starts with 1/4 energy.
+
+**Abilities**:
+* Scan [1 Energy]:
+  - Reveals everything in an area, including cloaked units. If used during a combat round, the effect stops when the round is over, otherwise it stops immedieately after inspecting the area.
+
+### Nuclear Silo
+
+**Produces**:
+* Nuke [8 min, 4 sup]
+  - A Nuclear Silo can at most hold one Nuke.
+
+### Supply Depot
+
+Gives +1 Supply.
+
+### Refinery
+
+Required on a Gas Geyser before gas can be extracted.
+
+### Barracks
