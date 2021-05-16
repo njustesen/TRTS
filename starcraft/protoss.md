@@ -23,13 +23,16 @@ e: Explosive Attack, s: Splash Damage
 
 ### Probe
 
+**Abilities**
 - _Hovering_.
 - _Resource Gathering_: Probes can collect 1 mineral (max. one per mineral field) or 1 gas (requires an assimilaor) in the income phase.
 - _Warping_: Probes can warp in a building by paying its cost. Warping-in buildings cannot be used before the Deployment phase and has half HP and half shield (rounded down). Buildings with the _powered_ ability requires a Pylon under control to be present in the area to be warped in.
 
 ### High Templar
 
-High Templars start with 1/4 energy and can cast one of the following spells per turn (two with the Khaydarin Amulet upgrade):
+High Templars start with 1/4 energy.
+
+**Abilities**
 
 _Psionic Storm_ (researched at Templar Archives) [2 Energy]: During combat, target up to four small, three medium, or two large units of the same type. Target units are dealt 2 damage (ignoring armor) for units with speed 0-2 and 1 damage (ignoring armor) to units with speed 3+. Psionic Storm is not stackable so casting more than one on the same target in the same combat does not cause more damage. Psionic Storm does not damage units under a Stasis Field.
 
@@ -37,6 +40,7 @@ _Hallucination_ (researched at Templar Archives) [2 Energy]: Allows High Templar
 
 ### Dark Templar
 
+**Abilities**
 - _Cloaked_.
 
 ### Archon
@@ -47,7 +51,9 @@ An Archon can be formed in the production phase by merging two High Templars and
 
 A Dark Archon can be formed in the production phase by merging two Dark Templars and is under development until the next Deployment Phase.
 
-Dark Archons start with 1/4 energy and can cast the following spells:
+Dark Archons start with 1/4 energy.
+
+**Abilities**
 
 - _Feedback_ [1 Energy]: Target spellcaster cannot cast spells this turn and take damage equal to the number of spells they can cast in the remainder of this turn. 
 - _Maelstrom_ [2 Energy]: During combat, target up to four small, three medium, or two large, biological units of the same type. These units are stunned, and cloaked units become visible, for the remainder of this turn. 
@@ -55,23 +61,26 @@ Dark Archons start with 1/4 energy and can cast the following spells:
 
 ### Reaver
 
-- _Scarabs_: Reavers can fire up to two _scarabs_ when they attack. They start with no scarabs and can produce up to two for a total cost of one mineral in the Production phase, where one scarab will be _queued_ (effectiely taking two rounds to be produced). A Reaver can hold at most two Scarabs (including those in production) and four with the Increased Reaver Capacity upgrade. 
+**Produces**:
+- _Scarabs_ [1 min for 2]: Reavers can fire up to two _scarabs_ when they attack. They start with no scarabs and can produce up to two for a total cost of one mineral in the Production phase, where one scarab will be _queued_ (effectiely taking two rounds to be produced). A Reaver can hold at most two Scarabs (including those in production) and four with the Increased Reaver Capacity upgrade. 
 
 ### Observer
 
-- _Cloaked_. 
-- _Detector_.
+**Abilities**
+- _Cloaked_ 
+- _Detector_
 
 ### Carrier
 
+**Produces**:
 - _Interceptors_: Carriers do not attack but can house up to four Interceptors (eight with the Carrier Capacity upgrade). They start with no interceptors and can produce up to two for a total cost of 1 mineral in the Production phase and both are deployed in the following Deployment Phase. If any unit assigns damage to a Carrier, all Interceptors under control in that area can fire at the attackers first, dealing damage before any damage is assigned to the Carriers.
 
 ### Arbiter
 
+Arbiters start with 1/4 energy.
+
+**Abilities**
 - _Invisibility Field_: All friendly units in the same area as the Arbiter are _cloaked_.
-
-Arbiters start with 1/4 energy and can cast the following spells:
-
 - _Stasis Field_ (researched at Arbiter Tribunal) [2 Energy]: Allows Arbiters to freeze up to 3 units of the same type. Frozen units cannot do anything until the next Micromanagement Phase.
 - _Recall_ (researched at Arbiter Tribunal) [3 Energy]: Allows the Arbiter to teleport any unit under control to the area of the Arbiter without spending movement points.
 
@@ -169,7 +178,10 @@ Required on a Gas Geyser before gas can be extracted.
 
 ### Shield Battery
 
-Shield Batteries start with 2/4 energy and can at any time (also to save units from being killed) recharge up to 2 shield points (never above the max. shield value) for the cost of 1 energy.
+Shield Batteries start with 2/4 energy
+
+**Abilities**:
+- _Recarge_ [1 energy]: Shield Batteries can at any time (also to save units from being killed) recharge up to 2 shield points (never above the max. shield value) for a unit in the same area.
 
 ### Stargate
 
