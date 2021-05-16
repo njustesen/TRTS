@@ -108,7 +108,7 @@ Gives +1 Supply.
 
 ### Pylon
 
-Powers all buildings in an area. If buildings loose power thay cannot produce, research, or deploy until they regain power.
+Powers all buildings in an area. If buildings loose power thay cannot do anything until they regain power.
 Gives +1 Supply.
 
 ### Photon Cannon
