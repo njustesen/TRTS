@@ -35,6 +35,25 @@ e: Explosive Attack, c: Concussive Attack, s: Splash Damage
 - _Constructing_: SCVs can contruct a building by paying its cost. The SCV and the buildings under constructions cannot be used before the Deployment phase and the building has half HP (rounded down).
 - _Reparing_: SCVs can repair any Terran building or mech unit for 1 mineral giving them up to 3 lost HP.
 
+### Marine
+
+**Abilities**:
+- _Stim Pack_ (Researched at Academy): Allows Marines to gain double attack and double speed in a combat round. However, they lose 1 HP and die if not healed immediately after. 
+
+### Firebat
+
+**Abilities**:
+- _Stim Pack_ (Researched at Academy): Allows the Marine to +1 attack and +1 speed in a combat round. However, they will die if not healed at the end of this round and any damage before armor will kill it.
+
+### Medic
+
+Medics have 1/4 energy.
+
+**Abilities**:
+- _Heal_ [1 energy]: Allows the Medic to heal a Terran biological unit at any point during a combat to deny 1 damage. 
+- _Restoration_ [1 energy]: Allows the Medic to remove remove any harmful effects on a unit, such as Lockdown, Optic Flares, Irradiate, Plague, Ensnare and Parasites, except Stasis Field.
+- _Optical Flare_ [2 energy]: Allows the Medic to permanently reduced the sight of any unit in the same area to 1.
+
 ## Buildings
 
 Building             | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
