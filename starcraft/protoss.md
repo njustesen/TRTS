@@ -2,7 +2,7 @@
 
 ## Units 
 
-Unit           | Min. | Gas | Sup. | Speed | HP | Shield | Armor | Size | Range | Ground | Air | Sight | Type |
+Unit           | Min  | Gas | Sup. | Speed | HP | Shield | Armor | Size | Range | Ground | Air | Sight | Type |
 :------------- | ---: | --: | ---: | ----: | -: | -----: | ----: | ---: | ----: | -----: | --: | ----: | ---- | 
 Probe          | 1    | 0   | 1    |     2 |  1 |      0 |     0 |    S |     1 |    1/2 |     |     8 | Mech |
 Zealot         | 2    | 0   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      2 |     |     7 | Bio  |
