@@ -51,8 +51,17 @@ Medics have 1/4 energy.
 
 **Abilities**:
 - _Heal_ [1 energy]: Allows the Medic to heal a Terran biological unit at any point during a combat to deny 1 damage. 
-- _Restoration_ [1 energy]: Allows the Medic to remove remove any harmful effects on a unit, such as Lockdown, Optic Flares, Irradiate, Plague, Ensnare and Parasites, except Stasis Field.
-- _Optical Flare_ [2 energy]: Allows the Medic to permanently reduced the sight of any unit in the same area to 1.
+- _Restoration_ [1 energy] (Researched at Academy): Allows the Medic to remove remove any harmful effects on a unit, such as Lockdown, Optic Flares, Irradiate, Plague, Ensnare and Parasites, except Stasis Field.
+- _Optical Flare_ [2 energy] (Researched at Academy): Allows the Medic to permanently reduced the sight of any unit in the same area to 1.
+
+### Ghost
+
+Ghosts have 1/4 energy.
+
+**Abilities**:
+- _Call Down_: Ghosts can call down a Nuke, if any are available in a Nuclear Silo, instead of attacking. To call down a Nuke, secretely indicate the area of the Ghost on the Player Board and then inform the other player: "Nuclear Luanch Detected!". The Nuke will land and detonate as soon as the next Micromanagement Phase starts if the Ghost is still alive, otherwise it is lost. Nukes can, however, be canceled without losing it at any time this round. If a Nuke detonates, it immediately deals 15 splash damage to enemies in that zone. If not all splash damage can be assigned to enemies it must be assigned to friendly units.
+- _Personnel Cloaking_ [1 energy] (Researched at Covert Ops): Makes the Ghost _cloaked_ until the next round.
+- _Lockdown_ [2 energy] (Researched at Covert Ops): Allows the Ghost to cast Lockdown on a mechanical unit, making the target unable to do anything until the next round.
 
 ## Buildings
 
