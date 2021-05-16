@@ -82,7 +82,7 @@ A _combat round_ is performed in several _combat steps_ where units with the lon
 
 During each _combat step_, the following happens: Both _engaging_ and _defending_ units that match the range value of the current _combat step_ can attack or cast spells. The _engaging_ player allocates damage first, followed by the _defending_ player, while the damage is dealt simulatenously. The amount of damage each unit deals is described in the next section. Remove any units that died and place damage tokens to reflect any damage to surviving units and buildings. In the rare situation that both players have lost all their units and buildings in the **Area** during a _combat step_, the _defending_ player will keep one unit or building of choice alive with 1 HP left.
 
-Units and buildings can only ever attack once per round, even if they take part in multiple combat sitatuions.
+Units and buildings can only ever attack once per round, even if they take part in multiple combat sitatuions. Units can also hold back their attack for a later combat step, either to target the same unit or to deal with special types of units.
 
 ### Allocating Damage
 
