@@ -99,25 +99,25 @@ Battlecruiser starts with 1/4 energy.
 
 ## Buildings
 
-Building             | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
-:------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
-Command Center       | 8    | 0   | +1   | 30 |     1 |    L |       |        |        |       |
-ComSat Station       | 1    | 1   |      | 15 |     0 |    L |       |        |        |       |
-Nuclear Silo         | 8    | 0   |      | 10 |     0 |    L |       |        |        |       |
-Supply Depot         | 8    | 0   | +1   | 10 |     0 |    L |       |        |        |       |
-Refinery             | 2    | 0   |      | 10 |     1 |    L |       |        |        |       |
-Barracks             | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
-Engineering Bay      | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
-Academy              | 3    | 0   |      | 10 |     1 |    L |       |        |        |       |
-Missile Turret       | 1    | 0   |      |  4 |     0 |    L |     7 |        |     2e |    11 |
-Factory              | 4    | 2   |      | 25 |     1 |    L |       |        |        |       |
-Machine Shop         | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
-Starport             | 3    | 2   |      | 25 |     1 |    L |       |        |        |       |
-Control Tower        | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
-Armory               | 2    | 1   |      | 15 |     1 |    L |       |        |        |       |
-Science Facility     | 2    | 3   |      | 15 |     1 |    L |       |        |        |       |
-Physics Lab          | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
-Covert Ops           | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
+Building               | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
+:--------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
+Command Center         | 8    | 0   | +1   | 30 |     1 |    L |       |        |        |       |
+ComSat Station         | 1    | 1   |      | 15 |     0 |    L |       |        |        |       |
+Nuclear Silo           | 8    | 0   |      | 10 |     0 |    L |       |        |        |       |
+Supply Depot           | 8    | 0   | +1   | 10 |     0 |    L |       |        |        |       |
+Refinery               | 2    | 0   |      | 10 |     1 |    L |       |        |        |       |
+Barracks               | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
+Engineering Bay        | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
+Academy                | 3    | 0   |      | 10 |     1 |    L |       |        |        |       |
+Missile Turret         | 1    | 0   |      |  4 |     0 |    L |     7 |        |     2e |    11 |
+Factory                | 4    | 2   |      | 25 |     1 |    L |       |        |        |       |
+Machine Shop (Add-on)  | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
+Starport               | 3    | 2   |      | 25 |     1 |    L |       |        |        |       |
+Control Tower (Add-on) | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
+Armory                 | 2    | 1   |      | 15 |     1 |    L |       |        |        |       |
+Science Facility       | 2    | 3   |      | 15 |     1 |    L |       |        |        |       |
+Physics Lab (Add-on)   | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
+Covert Ops  (Add-on)   | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
 
 ### Command Center
 
