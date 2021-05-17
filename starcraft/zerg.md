@@ -25,10 +25,10 @@ Devourer        |    5 |   3 |    2 |     2 |  5 |     2 |    L |     6 |       
 Guardian        |    3 |   4 |    2 |     1 |  3 |     2 |    L |     8 |      2 |      |     7 |  Bio |
 Broodling       |      |     |      |     3 |  1 |     0 |    S |     1 |      1 |      |     5 |  Bio |       
 
-(x2): These units are morphed in pairs at the total cost shown in the table.
-x: Eggs cost supply equivalent of what's in them. 
-a: Acid Spores: Read rules under Devourer.
-e: Explosive Attack, c: Concussive Attack, s: Splash Damage.
+- (x2): These units are morphed in pairs at the total cost shown in the table.
+- x: Eggs cost supply equivalent of what's in them. 
+- a: Acid Spores: Read rules under Devourer.
+- e: Explosive Attack, c: Concussive Attack, s: Splash Damage.
 
 ### Drone
 
@@ -48,8 +48,8 @@ Lair                   | 3    | 2   | +1   | 30 |     1 |    L |       |        
 Hive                   | 4    | 3   | +1   | 50 |     1 |    L |       |        |        |       |
 Spawning Pool          | 4    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Creep Colony           | 1    | 0   |      |  8 |     1 |    L |       |        |        |       |
-Spore Colony           | 3    | 1   |      |  8 |     1 |    L |       |        |        |       |
-Sunken Colony          | 3    | 0   |      |  8 |     1 |    L |       |        |        |       |
+Spore Colony           | 3    | 1   |      |  8 |     1 |    L |     7 |        |      3 |    10 |
+Sunken Colony          | 3    | 0   |      |  8 |     1 |    L |     7 |     4e |        |    10 |
 Extractor              | 1    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Hydralisk Den          | 3    | 2   |      | 15 |     1 |    L |       |        |        |       |
 Evolution Chamber      | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
