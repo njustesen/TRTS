@@ -88,7 +88,7 @@ Science Vessels start with 1/4 energy.
 **Abilities**:
 - _Defense Matrix_ [2 energy]: Target unit gains +5 HP for the rest of the round. 
 - _EMP Shockwave_ [2 energy] (Researched at Science Facility): Depletes the energy and shields of 1 large, 2 medium, or 4 small units of the same type.
-- _Irradiate_ [2 energy]: Science Vessels gain the ability to cast Irradiate on 1 large, 2 medium, or 4 small biological units of the same type that are not in Stasis. These units are dealt 2 splash damage (ignoring armor) at then end of each round.
+- _Irradiate_ [2 energy] (Researched at Science Facility): Science Vessels gain the ability to cast Irradiate on 1 large, 2 medium, or 4 small biological units of the same type that are not in Stasis. These units are dealt 2 splash damage (ignoring armor) at then end of each round.
 
 ### Battlecruiser
 
