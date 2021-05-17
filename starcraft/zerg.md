@@ -3,7 +3,7 @@
 ## Special Rules
 
 - _Creep_: Any area with a finished Hatchary on it also has creep on it. Creep allows other Zerg strucutures than the Hatchery to be morphed in this area. Additionally, no other stuctures than Zerg's can be constructed in this area.
-- _Regeneration_: 
+- _Regeneration_: All Zerg units and structures heal 1 lost HP in the Income Phase.
 
 ## Units 
 
@@ -44,6 +44,21 @@ e: Explosive Attack, c: Concussive Attack, s: Splash Damage.
 Building               | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
 :--------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
 Hatchery               | 6    | 0   | +1   | 25 |     1 |    L |       |        |        |       |
+Lair                   | 3    | 2   | +1   | 30 |     1 |    L |       |        |        |       |
+Hive                   | 4    | 3   | +1   | 50 |     1 |    L |       |        |        |       |
+Spawning Pool          | 4    | 0   |      | 15 |     1 |    L |       |        |        |       |
+Creep Colony           | 1    | 0   |      |  8 |     1 |    L |       |        |        |       |
+Spore Colony           | 3    | 1   |      |  8 |     1 |    L |       |        |        |       |
+Sunken Colony          | 3    | 0   |      |  8 |     1 |    L |       |        |        |       |
+Extractor              | 1    | 0   |      | 15 |     1 |    L |       |        |        |       |
+Hydralisk Den          | 3    | 2   |      | 15 |     1 |    L |       |        |        |       |
+Evolution Chamber      | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
+Spire                  | 4    | 3   |      | 10 |     1 |    L |       |        |        |       |
+Greater Spire          | 2    | 3   |      | 20 |     1 |    L |       |        |        |       |
+Queens Nest            | 3    | 2   |      | 15 |     1 |    L |       |        |        |       |
+Nydus Canal            | 3    | 0   |      |  5 |     1 |    L |       |        |        |       |
+Defiler Mound          | 2    | 2   |      | 15 |     1 |    L |       |        |        |       |
+Ultralisk Cavern       | 3    | 4   |      | 10 |     1 |    L |       |        |        |       |
 
 ### Hatchery
 
