@@ -1,5 +1,9 @@
 # Terran
 
+## Starts With
+- Command Center
+- 2 SCVs
+
 ## Special Rules
 
 - _Burning Buildings_: Terran buildings with 1 HP left by the end of the turn will be destroyed.
