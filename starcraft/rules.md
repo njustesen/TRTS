@@ -1,4 +1,7 @@
-# StarCraft Rules
+# StarCraft
+
+## Setup
+Each player receives only 1 Mineral in the first _Income Phase_.
 
 ## Income
 During the _Income Phase_, you can collect resources in **Areas** where you have a base, workers, and there are some resources. 
