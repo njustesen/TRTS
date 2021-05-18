@@ -1,5 +1,10 @@
 # Zerg
 
+## Starts With
+- 1 Hatchery
+- 2 Drones
+- 1 Overlord
+
 ## Special Rules
 
 - _Creep_: Any area with a finished Hatchary on it also has creep on it. Creep allows other Zerg strucutures than the Hatchery to be morphed in this area. Additionally, no other stuctures than Zerg's can be constructed in this area.
