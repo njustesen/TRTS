@@ -1,5 +1,9 @@
 # Protoss
 
+## Starts With
+- Nexus
+- 2 Probes
+
 ## Units 
 
 Unit           | Min  | Gas | Sup. | Speed | HP | Shield | Armor | Size | Range | Ground | Air | Sight | Type |
