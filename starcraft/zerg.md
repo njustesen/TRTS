@@ -43,9 +43,9 @@ Broodling       |      |     |      |     3 |  1 |     0 |    S |     1 |      1
 
 Building               | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
 :--------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
-Hatchery               | 6    | 0   | +1   | 25 |     1 |    L |       |        |        |       |
-Lair                   | 3    | 2   | +1   | 30 |     1 |    L |       |        |        |       |
-Hive                   | 4    | 3   | +1   | 50 |     1 |    L |       |        |        |       |
+Hatchery               | 6    | 0   |      | 25 |     1 |    L |       |        |        |       |
+Lair                   | 3    | 2   |      | 30 |     1 |    L |       |        |        |       |
+Hive                   | 4    | 3   |      | 50 |     1 |    L |       |        |        |       |
 Spawning Pool          | 4    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Creep Colony           | 1    | 0   |      |  8 |     1 |    L |       |        |        |       |
 Spore Colony           | 3    | 1   |      |  8 |     1 |    L |     7 |        |      3 |    10 |
