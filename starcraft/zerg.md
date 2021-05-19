@@ -9,6 +9,8 @@
 
 - _Creep_: Any area with a finished Hatchary on it also has creep on it. Creep allows other Zerg strucutures than the Hatchery to be morphed in this area. Additionally, no other stuctures than Zerg's can be constructed in this area.
 - _Regeneration_: All Zerg units and structures heal 1 lost HP in the Income Phase.
+- _Morphing_: Zerg units and structures can _morph_ into other units and structures in the _Production Phase_.
+- _Burrow_: Zerg ground units that has the _burrow_ ability can at any time _burrow_ or _unborrow_ during the _Macromanagement phase_ and can _burrow_ at the beginning of every combat as well. _Burrowed_ units are _cloaked_ and cannot do anything other than _unborrowing_, unless the have special rules allowing them.
 
 ## Units 
 
@@ -78,5 +80,17 @@ Gives +1 Supply.
 - Drone [1 min, 1 sup]
 - Overlord [2 min, +1 sup]
 
+**Upgrades**:
+- _Burrow_ [2 min, 2 gas]: Allows all Zerg ground units to borrow. 
+
 **Morphs Into**
-* Lair [3 min, 2 gas]
+- Lair [3 min, 2 gas]
+
+### Lair
+Same rules as the Hatchery, with these additions:
+
+**Upgrades**:
+* _Ventral Sacs_ [3 min, 3 gas]: Gives Overlords the ability to transport up to 8 units, where medium units counts as 2, and large units counts as 4.
+* _Antennae_ [3 min, 3 gas]: Increases the Overlord's vision radius by 2 (from 9 to 11).
+* _Pneumatized Caraspace_ [3 min, 3 gas[: +1 Overload speed.
+
