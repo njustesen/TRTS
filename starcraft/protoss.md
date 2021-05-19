@@ -71,19 +71,36 @@ Dark Archons start with 1/4 energy.
 ### Observer
 
 **Abilities**
+- _Flying_
 - _Cloaked_ 
 - _Detector_
 
+### Scout
+
+**Abilities**
+- _Flying_
+
+### Corsair
+
+**Abilities**
+- _Flying_
+
 ### Carrier
 
+If any unit assigns damage to a Carrier, all Interceptors under control in that area can fire at the attackers first, dealing damage before any damage is assigned to the Carriers.
+
 **Produces**:
-- _Interceptors_: Carriers do not attack but can house up to four Interceptors (eight with the Carrier Capacity upgrade). They start with no interceptors and can produce up to two for a total cost of 1 mineral in the Production phase and both are deployed in the following Deployment Phase. If any unit assigns damage to a Carrier, all Interceptors under control in that area can fire at the attackers first, dealing damage before any damage is assigned to the Carriers.
+- _Interceptors_: Carriers do not attack but can house up to four Interceptors (eight with the Carrier Capacity upgrade). They start with no interceptors and can produce up to two for a total cost of 1 mineral in the Production phase and both are deployed in the following Deployment Phase. 
+
+**Abilities**:
+- _Flying_
 
 ### Arbiter
 
 Arbiters start with 1/4 energy.
 
 **Abilities**
+- _Flying_
 - _Invisibility Field_: All friendly units in the same area as the Arbiter are _cloaked_.
 - _Stasis Field_ (researched at Arbiter Tribunal) [2 Energy]: Allows Arbiters to freeze up to 3 units of the same type. Frozen units cannot do anything until the next Micromanagement Phase.
 - _Recall_ (researched at Arbiter Tribunal) [3 Energy]: Allows the Arbiter to teleport any unit under control to the area of the Arbiter without spending movement points.
