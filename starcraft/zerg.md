@@ -70,7 +70,7 @@ Ultralisk Cavern       | 3    | 4   |      | 10 |     1 |    L |       |        
 ### Hatchery
 
 Required in an area to collect resources.
-Gives +1 Supply.
+Gives +2 Supply.
 
 **Abilities**:
 - _Creep_: Produces creep that allows itself and other Zerg structures to be morphed onto.
