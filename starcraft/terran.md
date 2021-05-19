@@ -126,7 +126,7 @@ Covert Ops  (Add-on)   | 1    | 1   |      | 15 |     1 |    L |       |        
 ### Command Center
 
 Required in an area to collect resources.
-Gives +1 Supply.
+Gives +2 Supply.
 
 **Abilities**:
 - _Lift Off_
@@ -152,7 +152,7 @@ Comsat Stations starts with 1/4 energy.
 
 ### Supply Depot
 
-Gives +1 Supply.
+Gives +2 Supply.
 
 ### Refinery
 
