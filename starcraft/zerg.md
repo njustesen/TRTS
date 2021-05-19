@@ -37,6 +37,26 @@ Broodling       |      |     |      |     3 |  1 |     0 |    S |     1 |      1
 - a: Acid Spores: Read rules under Devourer.
 - e: Explosive Attack, c: Concussive Attack, s: Splash Damage.
 
+### Larva
+
+Each Hatchery, Lair, or Hive produces one Larva automatically in the _Income Phase_ until it has three.
+
+**Morphs Into**:
+- Egg: Larva's can morph into an Egg containing a unit that can be produced at the Hatchery/Lair/Hive.
+
+### Egg
+
+**Morphs Into**:
+Eggs automatically morphs into the unit it is containing in the _Deployment Phase_. 
+
+### Overlord
+
+Gives +2 Supply.
+
+**Abilities**:
+- _Flying_
+- _Detector_
+
 ### Drone
 
 **Abilities**:
@@ -70,7 +90,6 @@ Ultralisk Cavern       | 3    | 4   |      | 10 |     1 |    L |       |        
 ### Hatchery
 
 Required in an area to collect resources.
-Gives +2 Supply.
 
 **Abilities**:
 - _Creep_: Produces creep that allows itself and other Zerg structures to be morphed onto.
@@ -93,4 +112,10 @@ Same rules as the Hatchery, with these additions:
 * _Ventral Sacs_ [3 min, 3 gas]: Gives Overlords the ability to transport up to 8 units, where medium units counts as 2, and large units counts as 4.
 * _Antennae_ [3 min, 3 gas]: Increases the Overlord's vision radius by 2 (from 9 to 11).
 * _Pneumatized Caraspace_ [3 min, 3 gas]: +1 Overload speed.
+
+### Hive
+Same rules as the Lair.
+
+### Spawning Pool
+
 
