@@ -24,7 +24,7 @@ Zergling (x2)   |    1 |   0 |    1 |     3 |  1 |     0 |    S |     1 |      1
 Hydralisk       |    1 |   1 |    1 |     2 |  2 |     0 |    M |     4 |     2e |   2e |     5 |  Bio |
 Mutalisk        |    2 |   2 |    2 |     3 |  2 |     0 |    S |     3 |    1+1 |  1+1 |     7 |  Bio |
 Scourge (x2)    |    1 |   1 |    1 |     3 |  2 |     0 |    S |     3 |    1+1 |  1+1 |     7 |  Bio |
-Lurker          |    4 |   4 |    2 |     3 |  3 |     1 |    M |     6 |     4s |      |     8 |  Bio |
+Lurker          |    4 |   4 |    1 |     3 |  3 |     1 |    M |     6 |     4s |      |     8 |  Bio |
 Ultralisk       |    4 |   4 |    4 |     2 |  8 |     1 |    L |     1 |      4 |      |     7 |  Bio |
 Defiler         |    1 |   3 |    2 |     2 |  2 |     1 |    M |       |        |      |    10 |  Bio |
 Queen           |    2 |   2 |    2 |     3 |  2 |     0 |    M |       |        |      |    10 |  Bio |
@@ -49,14 +49,6 @@ Each Hatchery, Lair, or Hive produces one Larva automatically in the _Income Pha
 **Morphs Into**:
 Eggs automatically morphs into the unit it is containing in the _Deployment Phase_. 
 
-### Overlord
-
-Gives +2 Supply.
-
-**Abilities**:
-- _Flying_
-- _Detector_
-
 ### Drone
 
 **Abilities**:
@@ -65,6 +57,35 @@ Gives +2 Supply.
 
 **Morphs Into**
 - _Any Zerg Structure_: Drones can morph into any Zerg structure by paying its cost, if the requirements are met. Replace the Drone with the structure which cannot be used before the Deployment phase and it will have half HP (rounded down) until it's done. Drones can cancel the morphing process before the Deployment Phase. To do so, replace the structure with the Drone and retake the resources spent.
+
+### Overlord
+
+Gives +2 Supply.
+
+**Abilities**:
+- _Flying_
+- _Detector_
+
+### Zergling
+
+Two Zerglings comes out of one Egg for the cost of [1 min, 1 sup].
+
+### Hydralisk
+
+**Morphs Into**:
+- Lurker [4 min, 4 gas, 1 sup] (Requires _Lurker Aspect_)
+
+### Defiler
+
+Defilers start with 1/4 energy.
+
+**Abilities**:
+- _Consume_: Allows the Defiler to eat a friendly Zerg unit, taking its life and giving the Defiler 1 more energy up to it's maximum energy level.
+- _Dark Swarm_ [2 energy]: Allows the Defiler to cast a dark swarm in an area. No ground units take direct damage from ranged attacks in this area this round, except fo splash damage.
+- _Plague_ [3 energy]: Allows the Defiler to cast Plague on up to six small, four medium and two large units of the same type. Plagued units lose 1 HP (ignoring armor) at the end of each round or until they reach 1 HP whereafter their armor won't have effect.
+
+
+### 
 
 ## Structures
 
