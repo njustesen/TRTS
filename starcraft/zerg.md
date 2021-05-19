@@ -92,5 +92,5 @@ Same rules as the Hatchery, with these additions:
 **Upgrades**:
 * _Ventral Sacs_ [3 min, 3 gas]: Gives Overlords the ability to transport up to 8 units, where medium units counts as 2, and large units counts as 4.
 * _Antennae_ [3 min, 3 gas]: Increases the Overlord's vision radius by 2 (from 9 to 11).
-* _Pneumatized Caraspace_ [3 min, 3 gas[: +1 Overload speed.
+* _Pneumatized Caraspace_ [3 min, 3 gas]: +1 Overload speed.
 
