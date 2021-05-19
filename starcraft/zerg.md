@@ -19,7 +19,7 @@ Unit            | Min  | Gas | Sup. | Speed | HP | Armor | Size | Range | Ground
 Larva           |      |     |      |       |  1 |    10 |    S |       |        |      |     4 |  Bio |
 Egg             |      |     |      |       |  4 |    10 |    S |       |        |      |     4 |  Bio |
 Drone           |    1 |   0 |    1 |     2 |  1 |     0 |    S |     1 |    1/2 |      |     7 |  Bio |
-Overlord        |    2 |   0 |   +1 |     1 |  4 |     0 |    L |       |        |      |     9 |  Bio |
+Overlord        |    2 |   0 |   +2 |     1 |  4 |     0 |    L |       |        |      |     9 |  Bio |
 Zergling (x2)   |    1 |   0 |    1 |     3 |  1 |     0 |    S |     1 |      1 |      |     5 |  Bio |
 Hydralisk       |    1 |   1 |    1 |     2 |  2 |     0 |    M |     4 |     2e |   2e |     5 |  Bio |
 Mutalisk        |    2 |   2 |    2 |     3 |  2 |     0 |    S |     3 |    1+1 |  1+1 |     7 |  Bio |
