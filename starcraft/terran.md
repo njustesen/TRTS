@@ -105,10 +105,10 @@ Battlecruiser starts with 1/4 energy.
 
 Building               | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
 :--------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
-Command Center         | 8    | 0   | +1   | 30 |     1 |    L |       |        |        |       |
+Command Center         | 8    | 0   | +2   | 30 |     1 |    L |       |        |        |       |
 ComSat Station         | 1    | 1   |      | 15 |     0 |    L |       |        |        |       |
 Nuclear Silo           | 8    | 0   |      | 10 |     0 |    L |       |        |        |       |
-Supply Depot           | 8    | 0   | +1   | 10 |     0 |    L |       |        |        |       |
+Supply Depot           | 8    | 0   | +2   | 10 |     0 |    L |       |        |        |       |
 Refinery               | 2    | 0   |      | 10 |     1 |    L |       |        |        |       |
 Barracks               | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Engineering Bay        | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
