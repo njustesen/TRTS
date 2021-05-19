@@ -114,7 +114,7 @@ Arbiter Tribunal     | 4    | 3   |      | 10 |     10 |     1 |    L |       | 
 ### Nexus
 
 Required in an area to collect resources.
-Gives +1 Supply.
+Gives +2 Supply.
 
 **Produces**: 
 - Probe [1 min, 1 sup]
@@ -122,7 +122,7 @@ Gives +1 Supply.
 ### Pylon
 
 Powers all buildings in an area. If buildings loose power thay cannot do anything until they regain power.
-Gives +1 Supply.
+Gives +2 Supply.
 
 ### Photon Cannon
 
