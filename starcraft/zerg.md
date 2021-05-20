@@ -82,8 +82,7 @@ Defilers start with 1/4 energy.
 **Abilities**:
 - _Consume_: Allows the Defiler to eat a friendly Zerg unit, taking its life and giving the Defiler 1 more energy up to it's maximum energy level.
 - _Dark Swarm_ [2 energy]: Allows the Defiler to cast a dark swarm in an area. No ground units take direct damage from ranged attacks in this area this round, except fo splash damage.
-- _Plague_ [3 energy]: Allows the Defiler to cast Plague on up to six small, four medium and two large units of the same type. Plagued units lose 1 HP (ignoring armor) at the end of each round or until they reach 1 HP whereafter their armor won't have effect.
-
+- _Plague_ [3 energy]: Allows the Defiler to cast Plague on up to 4 small, 3 medium, 2 large units of the same type, or 1 structure. Plagued units and buildings lose 1 HP now (ignoring armor) and 5 the end of the round. Plague can, however, never kill a unit or destroy a building. When the target reaches 1 HP their armor won't work.
 
 ### 
 
