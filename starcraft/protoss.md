@@ -38,7 +38,7 @@ High Templars start with 1/4 energy.
 
 **Abilities**
 
-_Psionic Storm_ (researched at Templar Archives) [2 Energy]: During combat, target up to four small, three medium, or two large units of the same type. Target units are dealt 2 damage (ignoring armor) for units with speed 0-2 and 1 damage (ignoring armor) to units with speed 3+. Psionic Storm is not stackable so casting more than one on the same target in the same combat does not cause more damage. Psionic Storm does not damage units under a Stasis Field.
+_Psionic Storm_ (researched at Templar Archives) [2 Energy]: During combat, target up to four small, three medium, or two large units of the same type. Targets with speed 0-2 are dealt 2 damage (ignoring armor) and are otherwise dealt 1 damage (ignoring armor). Psionic Storm is not stackable so casting more than one on the same target in the same combat does not cause more damage. Psionic Storm does not damage units under a Stasis Field.
 
 _Hallucination_ (researched at Templar Archives) [2 Energy]: Allows High Templar to creates two temporary duplicates of a frendly unit in the same area. This spell can be cast at any time, e.g. when being engaged by the enemy. Duplicates have 1 HP, cannot attack or use abilities, and must be removed from the game at the end of the turn. Other attributs are the same as the unit they were copied from. Keep track on your Player Board which units are duplicates. You don't have to reveal that units are duplicates until they are removed from a contested area.
 
