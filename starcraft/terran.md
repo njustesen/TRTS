@@ -68,6 +68,19 @@ Ghosts have 1/4 energy.
 - _Personnel Cloaking_ [1 or 2 energy] (Researched at Covert Ops): Makes the Ghost _cloaked_ for one combat step for 1 energy or for an entire round for 2 energy.
 - _Lockdown_ [2 energy] (Researched at Covert Ops): Allows the Ghost to cast Lockdown on a mechanical unit, making the target unable to do anything until the next round.
 
+### Vulture
+
+**Abilities** 
+- _Spider Mines_ (Researched at Machine Shop): Each Vulture can plant up to three Spider Mines during the game with this upgrade. Spider Mines can be planted at any time in the Movement Phase, or one Spider Mine can be planted in a combat instead of attacking. Spider Mines that are planted during combate are not cloaked.
+
+### Spider Mine
+
+Spider Mines borrow automatically when deployed and cannot be ordered to unburrow and move between areas.
+Spider Mine attack, however, unborrow automatically during combat at range 4 and can perform a melee attack at range 1 if they have survived to that step. 
+
+**Abilities**:
+- _Burrow_: Burrowed units are cloaked.
+
 ### Siege Tank
 
 **Abilities**:
