@@ -48,6 +48,7 @@ Larvaes can morph into the following list of units and will become an Egg until 
 - Overlord [2 min]
 - Zergling (x2) [1 min, 1 sup] (Requires Spawning Pool)
 - Hydralisk [1 min, 1 gas, 1 sup] (Requires Hydralisk Den)
+- Ultralisk [4 min, 4 gas, 4 sup] (Requires Ultralisk Cavern)
 - Mutalisk [2 min, 2 gas, 2 sup] (Requires Spire)
 - Scourge (x2) [1 min, 1 gas, 1 sup] (Requires Spire)
 - Defiler [1 min, 3 gas, 2 sup] (Requires Defiler Mound)
