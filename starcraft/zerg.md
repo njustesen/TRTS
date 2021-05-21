@@ -141,4 +141,5 @@ Same rules as the Lair.
 
 ### Nydus Canal
 
-Can be used right when engaged.
+The Nydus Canal allows the Zerg player to instantly transport ground units between the two linked Nydus Canals without spending movement ppints. When the Nydus Canal is deployed, a second Nydus Canal (called a Nydus Canal Exit) can then be produced on Creep in any Area under control for free. The original Nydus Canal and its complementary Canal Exit are then linked, allowing Zerg units to enter either Canal, immediately exiting out through its counterpart Canal. 
+
