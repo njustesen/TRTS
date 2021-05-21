@@ -41,9 +41,17 @@ Broodling       |      |     |      |     3 |  1 |     0 |    S |     1 |      1
 
 Each Hatchery, Lair, or Hive produces one Larva automatically in the _Income Phase_ until it has three.
 
+Larvaes can morph into the following list of units and will become an Egg until they are deployed.
+
 **Morphs Into**:
-* Egg: Larva's can morph into an Egg containing one of the following units
-- 
+- Drone [1 min, 1 sup]
+- Overlord [2 min]
+- Zergling (x2) [1 min, 1 sup] (Requires Spawning Pool)
+- Hydralisk [1 min, 1 gas, 1 sup] (Requires Hydralisk Den)
+- Mutalisk [2 min, 2 gas, 2 sup] (Requires Spire)
+- Scourge (x2) [1 min, 1 gas, 1 sup] (Requires Spire)
+- Defiler [1 min, 3 gas, 2 sup] (Requires Defiler Mound)
+- Queen [2 min, 2 gas, 2 sup] (Requires Queens Nest)
 
 ### Egg
 
