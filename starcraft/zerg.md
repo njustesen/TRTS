@@ -137,7 +137,7 @@ Creep Colony           | 1    | 0   |      |  8 |     1 |    L |       |        
 Spore Colony           | 1    | 0   |      |  8 |     1 |    L |     7 |        |      3 |    10 |
 Sunken Colony          | 1    | 0   |      |  8 |     1 |    L |     7 |     4e |        |    10 |
 Extractor              | 1    | 0   |      | 15 |     1 |    L |       |        |        |       |
-Hydralisk Den          | 3    | 2   |      | 15 |     1 |    L |       |        |        |       |
+Hydralisk Den          | 2    | 1   |      | 15 |     1 |    L |       |        |        |       |
 Evolution Chamber      | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Spire                  | 4    | 3   |      | 10 |     1 |    L |       |        |        |       |
 Greater Spire          | 2    | 3   |      | 20 |     1 |    L |       |        |        |       |
