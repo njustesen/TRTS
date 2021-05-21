@@ -170,6 +170,47 @@ Same rules as the Lair.
 - Sunken Colony [3 min] (Requires Spawning Pool)
 - Spore Colony [3 min, 1 gas] (Requires Evolution Chamber)
 
+### Extractor
+
+Required on a Gas Geyser before gas can be extracted.
+
+### Hydralisk Den
+
+**Upgrades**:
+* _Muscular Augments_ [3 min, 3 gas]: +1 Hydralisk speed.
+* _Grooved Spines_ [3 min, 3 gas]: +1 Hydralisk range.
+* _Lurker Aspect_ [4 min, 4 gas] (Requires a Lair): Enables Hydralisks to morph into Lurkers.
+
+### Evolution Chamber
+
+**Upgrades**:
+* _Zerg Melee Attacks Level 1_ [2 min, 2 gas]: +1 Attack to Zerglings, Ultralisks, and Broodlings.
+* _Zerg Melee Attacks Level 2_ [2 min, 2 gas] (Requires Level 1 + Lair): +1 Attack to Zerglings, Ultralisks, and Broodlings.
+* _Zerg Melee Attacks Level 3_ [2 min, 2 gas] (Requires Level 2 + Hive): +1 Attack to Zerglings, Ultralisks, and Broodlings.
+* _Zerg Missile Attacks Level 1_ [2 min, 2 gas]: +1 Attack to Hydralisks and Lurkers.
+* _Zerg Missile Attacks Level 2_ [2 min, 2 gas] (Requires Level 1 + Lair): +1 Attack to Hydralisks and Lurkers.
+* _Zerg Missile Attacks Level 3_ [2 min, 2 gas] (Requires Level 2 + Hive): +1 Attack to Hydralisks and Lurkers.
+* _Zerg Carapace Attacks Level 1_ [3 min, 3 gas]: +1 Armor to all Zerg ground forces.
+* _Zerg Carapace Attacks Level 2_ [3 min, 3 gas] (Requires Level 1 + Lair): +1 Armor to all Zerg ground forces.
+* _Zerg Carapace Attacks Level 3_ [3 min, 3 gas] (Requires Level 2 + Hive): +1 Armor to all Zerg ground forces.
+
+### Spire
+
+**Upgrades**:
+* _Flyer Attack Level 1_ [2 min, 2 gas]: +1 Attack to all Zerg air forces.
+* _Flyer Attack Level 2_ [3 min, 3 gas] (Requires Level 1 + Lair): +1 Attack to all Zerg air forces.
+* _Flyer Attack Level 3_ [4 min, 4 gas] (Requires Level 2 + Hive): +1 Attack to all Zerg air forces. 
+* _Flyer Carapace Level 1_ [3 min, 3 gas]: +1 Armor to all Zerg air forces.
+* _Flyer Carapace Level 2_ [4 min, 4 gas] (Requires Level 1 + Lair): +1 Armor to all Zerg air forces.
+* _Flyer Carapace Level 3_ [5 min, 5 gas] (Requires Level 2 + Hive): +1 Armor to all Zerg air forces. 
+
+**Morphes Into**:
+* _Greater Spire_ [2 min, 3 gas] (Requires Hive)
+
+### Greater Spire
+
+Same rules as Spire.
+
 ### Nydus Canal
 
 The Nydus Canal allows the Zerg player to instantly transport ground units between the two linked Nydus Canals without spending movement ppints. When the Nydus Canal is deployed, a second Nydus Canal (called a Nydus Canal Exit) can then be produced on Creep in any Area under control for free. The original Nydus Canal and its complementary Canal Exit are then linked, allowing Zerg units to enter either Canal, immediately exiting out through its counterpart Canal. 
