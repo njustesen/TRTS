@@ -84,6 +84,16 @@ Defilers start with 1/4 energy.
 - _Dark Swarm_ [2 energy]: Allows the Defiler to cast a dark swarm in an area. No ground units take direct damage from ranged attacks in this area this round, except fo splash damage.
 - _Plague_ [3 energy]: Allows the Defiler to cast Plague on up to 4 small, 3 medium, 2 large units of the same type, or 1 structure. Plagued units and buildings lose 1 HP now (ignoring armor). Plague can never kill or destroy a building and thus cannot reduce HP lower than 1 HP. Plagued units with 1 HP left after this initial reduction cannot use their armor this turn. Plagued targets are dealt 6 additional damage at the end of this turn, and again not to a lower value than 1 HP, wherefter targets are no longer plagued.
 
+### Queen
+
+Queens start with 1/4 energy.
+
+**Abilities**:
+- _Infest Command Center_: Infests heavily damaged (< 50% HP) Terran Command Center to make an Infested Command Center under control.
+- _Parasite_ [1 Energy]: Targets an enemy unit. The player gains sight for that unit for the rest of the game.
+- _Ensnare_ [3 Energy]: Targets 4 small, 3 medium or 2 large unborrowed units that will get their attack and speed cut in half for the rest of the round, both the speed stat and any remaining movement points. Cloaked units hit by Ensnare also become visible, and yes, they can be targeted.
+- _Spawn Broodling_ [1 Energy]: A Queen with this ability can instantaneously destroy any non-robotic ground unit in the game as the Broodling larvae she plants rapidly mature and, feeding on the victim from the inside, destroy their host. Remove the target and add to Broodlings in the area that becomes under control. At the end of the next round, the spawned Broodlings will run out of energy and die. Archons and Dark Archons cannot be targeted by this ability.
+
 ### 
 
 ## Structures
