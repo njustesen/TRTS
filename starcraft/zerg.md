@@ -31,6 +31,7 @@ Queen           |    2 |   2 |    2 |     3 |  2 |     0 |    M |       |       
 Devourer        |    5 |   3 |    2 |     2 |  5 |     2 |    L |     6 |        | 1esa |     7 |  Bio |
 Guardian        |    3 |   4 |    2 |     1 |  3 |     2 |    L |     8 |      2 |      |     7 |  Bio |
 Broodling       |      |     |      |     3 |  1 |     0 |    S |     1 |      1 |      |     5 |  Bio |       
+Infested Terran |    2 |   1 |    1 |     3 |  1 |     0 |    S |     1 |   10es |      |     5 |  Bio |  
 
 - (x2): These units are morphed in pairs at the total cost shown in the table.
 - x: Eggs cost supply equivalent of what's in them. 
@@ -125,9 +126,13 @@ Queens start with 1/4 energy.
 
 _Acid Spores_: Whenever a Devourer deals damage to a unit, it gets an Acid Spore token. Anytime in the future, when this unit is dealt damage, it is also dealt one additional damage for each Acid Spore token on it. 
 
+### Infested Terran
+
+Infested Terran are automatically killed after they have attacked as they suicide dive into the enemy.
+
 ## Structures
 
-Structure               | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
+Structure              | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
 :--------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
 Hatchery               | 6    | 0   |      | 25 |     1 |    L |       |        |        |       |
 Lair                   | 3    | 2   |      | 30 |     1 |    L |       |        |        |       |
@@ -145,6 +150,7 @@ Queens Nest            | 3    | 2   |      | 15 |     1 |    L |       |        
 Nydus Canal            | 3    | 0   |      |  5 |     1 |    L |       |        |        |       |
 Defiler Mound          | 2    | 2   |      | 15 |     1 |    L |       |        |        |       |
 Ultralisk Cavern       | 3    | 4   |      | 10 |     1 |    L |       |        |        |       |
+Infested Command Center|      |     |      | 30 |     1 |    L |       |        |        |       |
 
 ### Hatchery
 
@@ -251,3 +257,8 @@ The Nydus Canal allows the Zerg player to instantly transport ground units betwe
 **Upgrades**:
 - _Anabolic Synthesis_ [4 min, 4 gas]: +1 Ultralisk Speed.
 - _Chitinous Plating_ [3 min, 3 gas]: +2 Ultralisk Armor.
+
+### Infested Command Center
+
+**Produces**:
+- _Infested Terran_ [2 min, 1 gas, 1 sup]
