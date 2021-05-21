@@ -109,7 +109,7 @@ To start with, melee units has to target other melee units. If, however, they ma
 Faster ranged units normally cannot be targeted by slower melee units but the defender can decide to use them to block, forcing the attacker to target them before higher range units.
 
 #### Splash Damage
-If an attack deals splash damage, it gives the attacker additional damage to allocate after a target is selected. If a unit deals X splash damage, it can assign X-1 damage to another unit of the same type until there are either no more units of that type left or the amount of damage reaches 0.
+If an attack deals splash damage, it gives the attacker additional damage to allocate after a target is selected. If a unit deals X splash damage, it can assign X-1 damage to another unit of the same type until there are either no more units of that type left or the amount of damage reaches 0 or four targets have received splash damage (thus five has received damage in total).
 
 ### Dealing Damage
 When the damage of a _combat round_ have ben assigned by both sides, they are dealt. For each unit, first subtract the armor value from the number of assigned damage points. IF the assigned damage is greater than or equal to the unit's health points, it is killed so remove it from the game. If the assigned damage is less than the the unit's health points, it survives. Units that don't have full health, must have tokens next to them, indicating their remaining health points.
