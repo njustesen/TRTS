@@ -101,7 +101,7 @@ _Acid Spores_: Whenever a Devourer deals damage to a unit, it gets an Acid Spore
 
 ## Structures
 
-Building               | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
+Structure               | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
 :--------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
 Hatchery               | 6    | 0   |      | 25 |     1 |    L |       |        |        |       |
 Lair                   | 3    | 2   |      | 30 |     1 |    L |       |        |        |       |
