@@ -41,7 +41,7 @@ Broodling       |      |     |      |     3 |  1 |     0 |    S |     1 |      1
 
 Each Hatchery, Lair, and Hive produces one Larva automatically in the _Income Phase_ to a maximum of three Larvae each.
 
-Larvaes can morph into the following list of units and will become an Egg until they are deployed.
+Larvae can morph into the following list of units and will become an Egg until they are deployed.
 
 **Morphs Into**:
 - Drone [1 min, 1 sup]
