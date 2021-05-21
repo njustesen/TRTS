@@ -139,3 +139,6 @@ Same rules as the Lair.
 ### Spawning Pool
 
 
+### Nydus Canal
+
+Can be used right when engaged.
