@@ -7,7 +7,7 @@
 
 ## Special Rules
 
-- _Creep_: Any area with a finished Hatchary on it also has creep on it. Creep allows other Zerg strucutures than the Hatchery to be morphed in this area. Additionally, no other stuctures than Zerg's can be constructed in this area.
+- _Creep_: Any area with a finished Hatchery has creep on it. Creep allows other Zerg strucutures than the Hatchery to be morphed in this area. Additionally, no other stuctures than Zerg's can be constructed in this area.
 - _Regeneration_: All Zerg units and structures heal 1 lost HP in the Income Phase.
 - _Morphing_: Zerg units and structures can _morph_ into other units and structures in the _Production Phase_.
 - _Burrow_: Zerg ground units that has the _burrow_ ability can at any time _burrow_ or _unborrow_ during the _Macromanagement phase_ and can _burrow_ at the beginning of every combat as well. _Burrowed_ units are _cloaked_ and cannot do anything other than _unborrowing_, unless the have special rules allowing them.
@@ -23,7 +23,7 @@ Overlord        |    2 |   0 |   +2 |     1 |  4 |     0 |    L |       |       
 Zergling (x2)   |    1 |   0 |    1 |     3 |  1 |     0 |    S |     1 |      1 |      |     5 |  Bio |
 Hydralisk       |    1 |   1 |    1 |     2 |  2 |     0 |    M |     4 |     2e |   2e |     5 |  Bio |
 Mutalisk        |    2 |   2 |    2 |     3 |  2 |     0 |    S |     3 |    1+1 |  1+1 |     7 |  Bio |
-Scourge (x2)    |    1 |   1 |    1 |     3 |  2 |     0 |    S |     3 |    1+1 |  1+1 |     7 |  Bio |
+Scourge (x2)    |    1 |   1 |    1 |     3 |  1 |     0 |    S |     1 |        |    2 |     7 |  Bio |
 Lurker          |    4 |   4 |    1 |     3 |  3 |     1 |    M |     6 |     4s |      |     8 |  Bio |
 Ultralisk       |    4 |   4 |    4 |     2 |  8 |     1 |    L |     1 |      4 |      |     7 |  Bio |
 Defiler         |    1 |   3 |    2 |     2 |  2 |     1 |    M |       |        |      |    10 |  Bio |
@@ -36,6 +36,7 @@ Broodling       |      |     |      |     3 |  1 |     0 |    S |     1 |      1
 - x: Eggs cost supply equivalent of what's in them. 
 - a: Acid Spores: Read rules under Devourer.
 - e: Explosive Attack, c: Concussive Attack, s: Splash Damage.
+- 1+1: See Rules under Mutalisk
 
 ### Larva
 
@@ -84,6 +85,22 @@ Two Zerglings comes out of one Egg for the cost of [1 min, 1 sup].
 
 **Morphs Into**:
 - Lurker [4 min, 4 gas, 1 sup] (Requires _Lurker Aspect_)
+
+### Lurker
+
+Lurkers can only attack when _burrowed_.
+
+**Abilities**:
+- _Burrow_
+
+### Mutalisk
+
+**Abilities**:
+- _Glaive Wurm_: Whenever Mutalisk assigns their main damage (1 without upgrades) they can assign one additional damage to another unit. The additional damage is not affected by upgrades.
+
+### Scourge
+
+Scourges are automatically killed after they have attacked as they suicide dive into the enemy.
 
 ### Defiler
 
