@@ -211,7 +211,26 @@ Required on a Gas Geyser before gas can be extracted.
 
 Same rules as Spire.
 
+### Queens Nest
+
+**Upgrades**:
+- _Ensnare_ [2 min, 2 gas]: Allows Queens to use the Ensnare ability.
+- _Spawn Broodling_ [2 min, 2 gas]: Allows Queens to use the _Spawn Broodling ability_.
+- _Gamete Meiosis_ [3 min, 3 gas]: +2 maximum energy to Queens.
+
 ### Nydus Canal
 
 The Nydus Canal allows the Zerg player to instantly transport ground units between the two linked Nydus Canals without spending movement ppints. When the Nydus Canal is deployed, a second Nydus Canal (called a Nydus Canal Exit) can then be produced on Creep in any Area under control for free. The original Nydus Canal and its complementary Canal Exit are then linked, allowing Zerg units to enter either Canal, immediately exiting out through its counterpart Canal. 
 
+### Defiler Mound
+
+**Upgrades**:
+- _Consume_ [2 min, 2 gas]: Allows Defilers to use the Consume ability.
+- _Plague_ [4 min, 4 gas]: Allows Defilers to use the Plague ability.
+- _Metasynaptic Node_ [3 min, 3 gas]: +2 maximum energy to Defilers.
+
+### Ultralisk Cavern
+
+**Upgrades**:
+- _Anabolic Synthesis_ [4 min, 4 gas]: +1 Ultralisk Speed.
+- _Chitinous Plating_ [3 min, 3 gas]: +2 Ultralisk Armor.
