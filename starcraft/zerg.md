@@ -42,7 +42,8 @@ Broodling       |      |     |      |     3 |  1 |     0 |    S |     1 |      1
 Each Hatchery, Lair, or Hive produces one Larva automatically in the _Income Phase_ until it has three.
 
 **Morphs Into**:
-- Egg: Larva's can morph into an Egg containing a unit that can be produced at the Hatchery/Lair/Hive.
+* Egg: Larva's can morph into an Egg containing one of the following units
+- 
 
 ### Egg
 
@@ -96,7 +97,7 @@ Queens start with 1/4 energy.
 
 ### Devourer
 
-_Acid Spores_: Whenever a Devourer attacks another unit, that unit gets an Acid Spore token. Anytime in the future, when this unit is dealt damage, it is also dealt one additional damage for each Acid Spore token on it. 
+_Acid Spores_: Whenever a Devourer deals damage to a unit, it gets an Acid Spore token. Anytime in the future, when this unit is dealt damage, it is also dealt one additional damage for each Acid Spore token on it. 
 
 ## Structures
 
@@ -107,8 +108,8 @@ Lair                   | 3    | 2   |      | 30 |     1 |    L |       |        
 Hive                   | 4    | 3   |      | 50 |     1 |    L |       |        |        |       |
 Spawning Pool          | 4    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Creep Colony           | 1    | 0   |      |  8 |     1 |    L |       |        |        |       |
-Spore Colony           | 3    | 1   |      |  8 |     1 |    L |     7 |        |      3 |    10 |
-Sunken Colony          | 3    | 0   |      |  8 |     1 |    L |     7 |     4e |        |    10 |
+Spore Colony           | 1    | 0   |      |  8 |     1 |    L |     7 |        |      3 |    10 |
+Sunken Colony          | 1    | 0   |      |  8 |     1 |    L |     7 |     4e |        |    10 |
 Extractor              | 1    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Hydralisk Den          | 3    | 2   |      | 15 |     1 |    L |       |        |        |       |
 Evolution Chamber      | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
@@ -150,6 +151,15 @@ Same rules as the Lair.
 
 ### Spawning Pool
 
+**Upgrades**:
+* _Metabolic Boost_ [2 min, 2 gas]: +1 Zergling speed.
+* _Adrenal Glands_ [4 min, 4 gas]: +1 Zergling attack.
+
+### Creep Colony
+
+**Morphs Into**
+- Sunken Colony [3 min] (Requires Spawning Pool)
+- Spore Colony [3 min, 1 gas] (Requires Evolution Chamber)
 
 ### Nydus Canal
 
