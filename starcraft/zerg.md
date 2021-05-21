@@ -94,7 +94,9 @@ Queens start with 1/4 energy.
 - _Ensnare_ [3 Energy]: Targets 4 small, 3 medium or 2 large unborrowed units that will get their attack and speed cut in half for the rest of the round, both the speed stat and any remaining movement points. Cloaked units hit by Ensnare also become visible, and yes, they can be targeted.
 - _Spawn Broodling_ [1 Energy]: A Queen with this ability can instantaneously destroy any non-robotic ground unit in the game as the Broodling larvae she plants rapidly mature and, feeding on the victim from the inside, destroy their host. Remove the target and add to Broodlings in the area that becomes under control. At the end of the next round, the spawned Broodlings will run out of energy and die. Archons and Dark Archons cannot be targeted by this ability.
 
-### 
+### Devourer
+
+_Acid Spores_: Whenever a Devourer attacks another unit, that unit gets an Acid Spore token. Anytime in the future, when this unit is dealt damage, it is also dealt one additional damage for each Acid Spore token on it. 
 
 ## Structures
 
