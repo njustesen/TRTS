@@ -89,7 +89,7 @@ Dark Archons start with 1/4 energy.
 **Abilities**
 - _Flying_
 
-### Carrier [7 min, 5 gas, 6 sup] (Produced at Stargate, Requires Fleet Beacon)
+### Carrier [7 min, 5 gas, 6 sup, 2t] (Produced at Stargate, Requires Fleet Beacon)
 
 If any unit assigns damage to a Carrier, all Interceptors under control in that area can fire at the attackers first, dealing damage before any damage is assigned to the Carriers.
 
