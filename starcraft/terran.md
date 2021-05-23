@@ -8,7 +8,7 @@
 
 - _Burning Buildings_: Terran buildings with 1 HP left by the end of the turn will be destroyed.
 - _Add-ons_: Add-ons are small buildings that can be added onto another building. Add-ons can be constructed without an SCV while the main building cannot be used for anything else until the add-on is deployed. Buildings can at most have one add-on and only those listed in their rules.
-- _Lift Off_: Terran buildings with the _Lift Off_ ability can become flying with speed 1. This ability can only be used in the Movement phase and the building cannot move after _lifting off_. When _lifted_, the building can land during the movement phase. Any add-ons on the lifted building remain on the ground and cannot be used but can be attached to any landing building that fits with the add-on.
+- _Lift Off_: Terran buildings with the _Lift Off_ ability can become flying with speed 1 and sight 12. This ability can only be used in the Movement phase and the building cannot move after _lifting off_. When _lifted_, the building can land during the movement phase. Any add-ons on the lifted building remain on the ground and cannot be used but can be attached to any landing building that fits with the add-on.
 
 ## Units 
 
@@ -64,7 +64,7 @@ Medics have 1/4 energy.
 Ghosts have 1/4 energy.
 
 **Abilities**:
-- _Call Down_: Ghosts can call down a Nuke, if any are available in a Nuclear Silo, instead of attacking. To call down a Nuke, secretely indicate the area of the Ghost on the Player Board and then inform the other player: "Nuclear Luanch Detected!". The Nuke will land and detonate as soon as the next Micromanagement Phase starts if the Ghost is still alive, otherwise it is lost. Nukes can, however, be canceled without losing it at any time this round. If a Nuke detonates, it immediately deals 15 splash damage to enemies in that zone. If not all splash damage can be assigned to enemies it must be assigned to friendly units.
+- _Call Down_: Ghosts can call down a Nuke, if any are available in a Nuclear Silo, instead of attacking. To call down a Nuke, secretely indicate the area of the Ghost on the Player Board and then inform the other player: "Nuclear Luanch Detected!". The Nuke will land and detonate as soon as the next Micromanagement Phase starts if the Ghost is still alive, otherwise it is lost. Nukes can, however, be canceled without losing it at any time this round. If a Nuke detonates, it immediately deals 15 damage to one, 10 to two, and 5 to four enemies in that area. If not all splash damage can be assigned to enemies it must be assigned to friendly units.
 - _Personnel Cloaking_ [1 or 2 energy] (Researched at Covert Ops): Makes the Ghost _cloaked_ for one combat step for 1 energy or for an entire round for 2 energy.
 - _Lockdown_ [2 energy] (Researched at Covert Ops): Allows the Ghost to cast Lockdown on a mechanical unit, making the target unable to do anything until the next round.
 
@@ -125,8 +125,8 @@ Building               | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground 
 :--------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
 Command Center         | 8    | 0   | +2   | 30 |     1 |    L |       |        |        |       |
 ComSat Station         | 1    | 1   |      | 15 |     0 |    L |       |        |        |       |
-Nuclear Silo           | 8    | 0   |      | 10 |     0 |    L |       |        |        |       |
-Supply Depot           | 8    | 0   | +2   | 10 |     0 |    L |       |        |        |       |
+Nuclear Silo           | 2    | 2   |      | 10 |     0 |    L |       |        |        |       |
+Supply Depot           | 2    | 0   | +2   | 10 |     0 |    L |       |        |        |       |
 Refinery               | 2    | 0   |      | 10 |     1 |    L |       |        |        |       |
 Barracks               | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Engineering Bay        | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
@@ -141,7 +141,7 @@ Science Facility       | 2    | 3   |      | 15 |     1 |    L |       |        
 Physics Lab (Add-on)   | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
 Covert Ops  (Add-on)   | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
 
-### Command Center
+### Command Center [8 min, +2 sup, 2t]
 
 Required in an area to collect resources.
 Gives +2 Supply.
@@ -156,45 +156,45 @@ Gives +2 Supply.
 * ComSat Station [1 min, 1 sup]
 * Nuclear Silo [1 min, 1 sup]
 
-### Comsat Station
+### Comsat Station [1 min, 1 gas] (Command Center Add-On)
 
 Comsat Stations starts with 1/4 energy.
 
 **Abilities**:
 * Scan [1 Energy]: Reveals everything in an area, including cloaked units. If used during a combat round, the effect stops when the round is over, otherwise it stops immedieately after inspecting the area.
 
-### Nuclear Silo
+### Nuclear Silo [2 min, 2 gas] (Command Center Add-On)
 
 **Produces**:
 * Nuke [8 min, 4 sup]: A Nuclear Silo can at most hold one Nuke.
 
-### Supply Depot
+### Supply Depot [2 min, +2 sup]
 
 Gives +2 Supply.
 
-### Refinery
+### Refinery [2 min]
 
 Required on a Gas Geyser before gas can be extracted.
 
-### Barracks
+### Barracks [2 min] (Requires Command Center)
 
 **Produces**:
 * Marine [1 min, 1 sup]
 * Firebat [1 min, 1 gas, 1 sup] (Requires Academy)
 * Medic  [1 min, 1 gas, 1 sup] (Requires Academy)
 
-### Engineering Bay
+### Engineering Bay [2 min] (Requires Command Center)
 
 **Upgrades**:
-* Infantry Weapons Level 1 [2 min, 2 gas]: +1 attack to Marines, Firebats, and Ghosts.
-* Infantry Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility): +1 attack to Marines, Firebats, and Ghosts.
-* Infantry Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility): +1 attack to Marines, Firebats, and Ghosts.
+* Infantry Weapons Level 1 [2 min, 2 gas, 2t]: +1 attack to Marines, Firebats, and Ghosts.
+* Infantry Weapons Level 2 [3 min, 3 gas, 3t] (Requires level 1 + Science Facility): +1 attack to Marines, Firebats, and Ghosts.
+* Infantry Weapons Level 3 [4 min, 4 gas, 4t] (Requires level 2 + Science Facility): +1 attack to Marines, Firebats, and Ghosts.
 
-* Infantry Armor Level 1 [2 min, 2 gas]: +1 armor to Marines, Firebats, and Ghosts.
-* Infantry Armor Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility): +1 armor to Marines, Firebats, and Ghosts.
-* Infantry Armor Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility): +1 armor to Marines, Firebats, and Ghosts.
+* Infantry Armor Level 1 [2 min, 2 gas, 2t]: +1 armor to Marines, Firebats, and Ghosts.
+* Infantry Armor Level 2 [3 min, 3 gas, 3t] (Requires level 1 + Science Facility): +1 armor to Marines, Firebats, and Ghosts.
+* Infantry Armor Level 3 [4 min, 4 gas, 4t] (Requires level 2 + Science Facility): +1 armor to Marines, Firebats, and Ghosts.
 
-### Academy
+### Academy [3 min] (Requires Barracks)
 
 **Upgrades**:
 - _Stim Pack_ [2 min, 2 gas]: Marines and Firebats gain the ability to use Stim Pack.
@@ -203,7 +203,7 @@ Required on a Gas Geyser before gas can be extracted.
 - _Optical Flare_ [2 min, 2 gas]: Medics gain the ability to use Optic Flare.
 - _Caduceus Reactor_ [2 min, 2 gas]: Gives Medic's +2 maximum energy and +1 starting energy.
 
-### Factory
+### Factory [4 min, 2 gas] (Requires Barracks)
 
 **Produces**:
 * Vulture [2 min, 2 sup]
@@ -213,69 +213,69 @@ Required on a Gas Geyser before gas can be extracted.
 **Add-Ons**:
 * Machine Shop [1 min, 1 gas]
 
-### Machine Shop
+### Machine Shop [1 min, 1 gas] (Factory Add-On)
 
 **Upgrades**:
-* _Spider Mines_ [2 min, 2 gas]: Allows Vultures to plant Spider Mines.
-* _Siege Tech_ [3 min, 3 gas]: Allows Siege Tanks to go in Sige Mode.
-* _Ion Thrusters_ [2 min, 2 gas]: +1 Vulture speed.
-* _Charon Boosters_ [2 min, 2 gas]: +3 Goliath range.
+* _Spider Mines_ [2 min, 2 gas, 1t]: Allows Vultures to plant Spider Mines.
+* _Siege Tech_ [3 min, 3 gas, 1t]: Allows Siege Tanks to go in Sige Mode.
+* _Ion Thrusters_ [2 min, 2 gas, 1t]: +1 Vulture speed.
+* _Charon Boosters_ [2 min, 2 gas, 2t]: +3 Goliath range.
 
-### Starport
+### Starport [3 min, 2 gas] (Requires Factory)
 
 **Produces**:
 * _Wraith_ [3 min, 2 gas, 2 sup]
 * _Dropship_ [2 min, 2 gas, 2 sup] (Requires Control Tower add-on)
 * _Valkyrie_ [5 min, 2 gas, 3 sup] (Requires Control Tower add-on)
-* _Battlecruiser_ [8 min, 6 gas, 6 sup] (Requires Control Tower add-on + Physics Lab)
+* _Battlecruiser_ [8 min, 6 gas, 6 sup, 2t] (Requires Control Tower add-on + Physics Lab)
 
 **Add-Ons**:
 * Conrtol Tower [1 min, 1 gas]
 
-### Control Tower
+### Control Tower [1 min, 1 gas] (Starport Add-On)
 
 **Upgrades**:
-* _Cloaking Field_ [3 min, 3 gas]: Wraiths gain the _Cloaking Field_ ability.
-* _Apollo Reactor_ [4 min, 4 gas]: Gives Wraiths +2 maximum energy and +1 starting energy.
+* _Cloaking Field_ [3 min, 3 gas, 1t]: Wraiths gain the _Cloaking Field_ ability.
+* _Apollo Reactor_ [4 min, 4 gas, 2t]: Gives Wraiths +2 maximum energy and +1 starting energy.
 
-### Armory
-* Vehicle Weapons Level 1 [2 min, 2 gas]: +1 attack to Vultures, Goliaths, and Siege Tanks.
-* Vehicle Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility): +1 attack to Vultures, Goliaths, and Siege Tanks.
-* Vehicle Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility): +1 attack to Vultures, Goliaths, and Siege Tanks.
+### Armory [2 min, 1 gas] (Requires Factory)
+* Vehicle Weapons Level 1 [2 min, 2 gas, 2t]: +1 attack to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Weapons Level 2 [3 min, 3 gas, 3t] (Requires level 1 + Science Facility): +1 attack to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Weapons Level 3 [4 min, 4 gas, 4t] (Requires level 2 + Science Facility): +1 attack to Vultures, Goliaths, and Siege Tanks.
 
-* Vehicle Plating Level 1 [2 min, 2 gas]: +1 armor to Vultures, Goliaths, and Siege Tanks.
-* Vehicle Plating Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility): +1 armor to Vultures, Goliaths, and Siege Tanks.
-* Vehicle Plating Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility): +1 armor to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Plating Level 1 [2 min, 2 gas, 2t]: +1 armor to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Plating Level 2 [3 min, 3 gas, 3t] (Requires level 1 + Science Facility): +1 armor to Vultures, Goliaths, and Siege Tanks.
+* Vehicle Plating Level 3 [4 min, 4 gas, 4t] (Requires level 2 + Science Facility): +1 armor to Vultures, Goliaths, and Siege Tanks.
 
-* Ship Weapons Level 1 [2 min, 2 gas]: +1 attack to Wraiths, Valkyries, and Battlecruisers.
-* Ship Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Science Facility): +1 attack to Wraiths, Valkyries, and Battlecruisers.
-* Ship Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Science Facility): +1 attack to Wraiths, Valkyries, and Battlecruisers.
+* Ship Weapons Level 1 [2 min, 2 gas, 2t]: +1 attack to Wraiths, Valkyries, and Battlecruisers.
+* Ship Weapons Level 2 [3 min, 3 gas, 3t] (Requires level 1 + Science Facility): +1 attack to Wraiths, Valkyries, and Battlecruisers.
+* Ship Weapons Level 3 [4 min, 4 gas, 4t] (Requires level 2 + Science Facility): +1 attack to Wraiths, Valkyries, and Battlecruisers.
 
-* Ship Plating Level 1 [3 min, 3 gas]: +1 armor to Wraiths, Valkyries, and Battlecruisers.
-* Ship Plating Level 2 [4 min, 4 gas] (Requires level 1 + Science Facility): +1 armor to Wraiths, Valkyries, and Battlecruisers.
-* Ship Plating Level 3 [5 min, 5 gas] (Requires level 2 + Science Facility): +1 armor to Wraiths, Valkyries, and Battlecruisers.
+* Ship Plating Level 1 [3 min, 3 gas, 2t]: +1 armor to Wraiths, Valkyries, and Battlecruisers.
+* Ship Plating Level 2 [4 min, 4 gas, 3t] (Requires level 1 + Science Facility): +1 armor to Wraiths, Valkyries, and Battlecruisers.
+* Ship Plating Level 3 [5 min, 5 gas, 4t] (Requires level 2 + Science Facility): +1 armor to Wraiths, Valkyries, and Battlecruisers.
 
-### Science Facility
+### Science Facility [2 min, 3 gas] (Requires Factory + Starport)
 
 **Upgrades**:
-* _EMP Shockwave_ [4 min, 4 gas]: Allows Science Vessels to use EMP Shockwave.
-* _Irradiate_ [4 min, 4 gas]: Allows Science Vessels to use Irradiate.
-* _Titan Reactor_ [3 min, 3 gas]: Gives Science Vessels +2 maximum energy and +1 starting energy.
+* _EMP Shockwave_ [4 min, 4 gas, 1t]: Allows Science Vessels to use EMP Shockwave.
+* _Irradiate_ [4 min, 4 gas, 1t]: Allows Science Vessels to use Irradiate.
+* _Titan Reactor_ [3 min, 3 gas, 2t]: Gives Science Vessels +2 maximum energy and +1 starting energy.
 
 **Add-ons**:
 * Physics Lab [1 min, 1 gas]
 * Covert Ops [1 min, 1 gas]
 
-### Physics Lab
+### Physics Lab [1 min, 1 gas] (Science Facility Add-On)
 
 **Upgrades**:
-* _Yamato Gun_ [2 min, 2 gas]: Allows Battlecruisers to fire their Yamato Gun.
-* _Colossus Reactor_ [3 min, 3 gas]: Gives Battlecruisers +2 maximum energy and +1 starting energy.
+* _Yamato Gun_ [2 min, 2 gas, 1t]: Allows Battlecruisers to fire their Yamato Gun.
+* _Colossus Reactor_ [3 min, 3 gas, 2t]: Gives Battlecruisers +2 maximum energy and +1 starting energy.
 
-### Covert Ops
+### Covert Ops [1 min, 1 gas] (Science Facility Add-On)
 
 **Upgrades**:
-* _Personnel Cloaking_ [2 min, 2 gas]: Allows Ghosts to use Personnel Cloaking.
-* _Lockdown_ [4 min, 4 gas]: Allows Ghosts to use Lockdown.
-* _Ocular Implants_ [2 min, 2 gas]: +2 Ghost sight
-* _Moebius Reactor_ [3 min, 3 gas]: Gives Ghosts +2 maximum energy and +1 starting energy.
+* _Personnel Cloaking_ [2 min, 2 gas, 1t]: Allows Ghosts to use Personnel Cloaking.
+* _Lockdown_ [4 min, 4 gas, 1t]: Allows Ghosts to use Lockdown.
+* _Ocular Implants_ [2 min, 2 gas, 2t]: +2 Ghost sight
+* _Moebius Reactor_ [3 min, 3 gas, 2t]: Gives Ghosts +2 maximum energy and +1 starting energy.
