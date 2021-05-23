@@ -68,14 +68,23 @@ There are 3 possible scenarios when _pushing_ into an **Area**:
 
 * If there are no units or buildings in the **Area**, keep your **Control Marker** on the **Game Board Area** and remove any enemy **Control Markers**. You now control the **Area**.
 
-* If there are enemy units or buildings in this **Area**, immediately move them and the **Control Group** to the **Game Board Area** so they become visible to everyone. Any of the defending units can decide to immediately _retreat_ to a reachable **Area** under control (if there are any) without taking part of the combat. If the defending player does not have vision to see any of the attacking units, _retreating_ is not an option. If the defending player have some units or structures left on the **Area**, perform a round of combat before continuing. If all enemy units and buildings have _retreated_ or are eliminated during combat, the _pushing_ player gains control over the **Area**. If the **Area** remains _contested_, keep both players' **Control Markers**, units, and buildings on the **Game Board Area**. 
+* If there are enemy units or buildings in this **Area**, follow the Revealing rules bellow. 
 
 When the _engagement_ is over, units in the **Control Group** that have not yet attacked or cast spells in this _push_ can decide to _push forward_ if they have enough movement points left. If you _push forward_, you must follow the same rules as described above but remember that units can only attack and cast spells once per turn. You can exploit this rule to _run by_ the enemy's defensive line to harass their main base. Units that do not _push forward_, will stay in the _engaged_ **Area** and cannot be activated later.   
 
-#### Regrouping
-Instead of making a _push_, you can also _regroup_, meaning that you move from a _contested_ **Area** to a reachable **Area** under _control_ (if any). Units that _regroup_, cannot be activated until next round.
+#### Revealing
+When engaging an **Area** that has enemy units or buildings, they are revealed (placed on the **Game Board Area**) following these steps:
 
-Units can also decide to _regroup_ instead of _pushing forward_ and it will end the _push_ immediately after.
+1. The attacker reveals at least one of the engaging units, which are called _scouts_.
+2. The defender has to reveal any number of units or buildings in the **Area**, known as the _front line_, where at least one unit can attack one of the _scouts_. If no units or buildings can attack any of the _scouts_, reveal everything on the defender's **Player Board Area**.
+3. The attacker can decide to _retreat_ to the square they came from with any of their units without spending movement points. Retreating units are no longer part of the push. If any of the _scouts_ _retreat_, then any from the _front line_ that has a greater range than the highest sight value of the _scouts_ can attack any of the _scouts_ but only if any in the _front line_ can match the highest sight value of the _scouts_. 
+4. If some attacking units did not _retreat_, the defender can decide to _retreat_ to an adjacent **Area** under control with any units that have enough movement points left. If the defender has no units or buildings left in the **Area** after retreating, the attacker gains control over the **Area**.
+5. If any units from both sides remains in the **Area**, there will be a combat round. If all units and buildings of one side is destroyed in combat, the other player gains control over the **Area**, otherwise it remains _contested_.
+
+#### Regrouping
+Instead of making a _push_, you can also _regroup_, meaning that you move from a _contested_ **Area** to a reachable **Area** under _control_ (if any). Units that _regroup_ cannot be activated until next round.
+
+Units can also decide to _regroup_ instead of _pushing forward_.
 
 #### Combat
 A _combat round_ is performed in several _combat steps_ where units with the long range attack before units with short range. In each _combat step_, units and buildings that share the same range value of the current _combat step_ can attack and cast spells. A _combat round_ thus starts with the highest range of any unit in the **Area**, then the second highest, the third, and so on, until all units have had a change to attack (unless they are killed first). 
