@@ -32,7 +32,7 @@ Battlecruiser   | 8    | 6   | 6    |     1 | 10 |     3 |    L |     6 |      3
 
 e: Explosive Attack, c: Concussive Attack, s: Splash Damage
 
-### SCV
+### SCV [1 min, 1 sup] (Produced at Command Center)
 
 **Abilities**:
 - _Hovering_
@@ -40,17 +40,17 @@ e: Explosive Attack, c: Concussive Attack, s: Splash Damage
 - _Constructing_: SCVs can contruct a building by paying its cost. The SCV and the buildings under constructions cannot be used before the Deployment phase and the building has half HP (rounded down).
 - _Reparing_: SCVs can repair any Terran building or mech unit for 1 mineral giving them up to 3 lost HP.
 
-### Marine
+### Marine [1 min, 1 sup] (Produced at Barracks)
 
 **Abilities**:
 - _Stim Pack_ (Researched at Academy): Allows Marines to gain double attack and double speed in a combat round. However, they lose 1 HP and die if not healed immediately after. 
 
-### Firebat
+### Firebat [1 min, 1 gas. 1 sup] (Produced at Barracks, Requires Academy)
 
 **Abilities**:
 - _Stim Pack_ (Researched at Academy): Allows the Marine to +1 attack and +1 speed in a combat round. However, they will die if not healed at the end of this round and any damage before armor will kill it.
 
-### Medic
+### Medic [1 min, 1 gas, 1 sup] (Produced at Barracks, Requires Academy)
 
 Medics have 1/4 energy.
 
@@ -59,7 +59,7 @@ Medics have 1/4 energy.
 - _Restoration_ [1 energy] (Researched at Academy): Allows the Medic to remove remove any harmful effects on a unit, such as Lockdown, Optic Flares, Irradiate, Plague, Ensnare and Parasites, except Stasis Field.
 - _Optical Flare_ [2 energy] (Researched at Academy): Allows the Medic to permanently reduced the sight of any unit in the same area to 1.
 
-### Ghost
+### Ghost [1 min, 1 gas, 1 sup] (Produced at Barracks, Requires Academy)
 
 Ghosts have 1/4 energy.
 
@@ -68,12 +68,12 @@ Ghosts have 1/4 energy.
 - _Personnel Cloaking_ [1 or 2 energy] (Researched at Covert Ops): Makes the Ghost _cloaked_ for one combat step for 1 energy or for an entire round for 2 energy.
 - _Lockdown_ [2 energy] (Researched at Covert Ops): Allows the Ghost to cast Lockdown on a mechanical unit, making the target unable to do anything until the next round.
 
-### Vulture
+### Vulture [2 min, 2 sup] (Produced at Factory)
 
 **Abilities** 
 - _Spider Mines_ (Researched at Machine Shop): Each Vulture can plant up to three Spider Mines during the game with this upgrade. Spider Mines can be planted at any time in the Movement Phase, or one Spider Mine can be planted in a combat instead of attacking. Spider Mines that are planted during combate are not cloaked.
 
-### Spider Mine
+### Spider Mine (x3) (Deployed from Vultures)
 
 Spider Mines borrow automatically when deployed and cannot be ordered to unburrow and move between areas.
 Spider Mine attack, however, unborrow automatically during combat at range 4 and can perform a melee attack at range 1 if they have survived to that step. 
@@ -81,17 +81,17 @@ Spider Mine attack, however, unborrow automatically during combat at range 4 and
 **Abilities**:
 - _Burrow_: Burrowed units are cloaked.
 
-### Siege Tank
+### Siege Tank [3 min, 2 gas, 2 sup] (Produced at Factory with Machine Shop)
 
 **Abilities**:
 - _Siege Mode_ (Researched at Machine Shop): Can be used in the Movement Phase at the cost of 1 Movement Point to transform the Siege Tank into Siege Mode where it gains range 12, a base 3es attack and loses it's mobility. Un-sieging costs 1 Movement Point and can be done at any point before moving the Tank, however, not during a combat round.
 
-### Dropship
+### Dropship [2 min, 2 gas, 2 sup] (Produced at Starport with Control Tower)
 
 **Abilities**:
 - _Transporter_: Dropships can load up to 8 units, where M counts as 2 and large as 4. Dropships can load and unload as they want in the Movemen Phase and can also load _or_ unload (not both) in any combat step, except during melee combat. 
 
-### Wraith
+### Wraith [3 min, 2 gas, 2 sup] (Produced at Starport)
 
 Wraiths start with 1/4 energy.
 
@@ -99,7 +99,7 @@ Wraiths start with 1/4 energy.
 - _Flying_
 - _Cloaking Field_ [1 or 2 energy] (Researched at Control Tower): Makes the Wraith _cloaked_ for one combat step for 1 energy, or for an entire round for 2 energy.
 
-### Science Vessel
+### Science Vessel [2 min, 5 gas, 2 sup] (Produced at Starport with Control Tower, Requires Science Facility)
 
 Science Vessels start with 1/4 energy.
 
@@ -109,7 +109,9 @@ Science Vessels start with 1/4 energy.
 - _EMP Shockwave_ [2 energy] (Researched at Science Facility): Depletes the energy and shields of 1 large, 2 medium, or 4 small units of the same type.
 - _Irradiate_ [2 energy] (Researched at Science Facility): Science Vessels gain the ability to cast Irradiate on 1 large, 2 medium, or 4 small biological units of the same type that are not in Stasis. These units are dealt 2 splash damage (ignoring armor) at then end of each round.
 
-### Battlecruiser
+### Valkyrie [6 min, 2 gas, 3 sup] (Produced at Starport with Control Tower, Requires Armory)
+
+### Battlecruiser [8 min, 6 gas, 6 sup] (Produced at Starport with Control Tower, Requires Physics Lab)
 
 Battlecruiser starts with 1/4 energy.
 
