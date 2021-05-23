@@ -189,30 +189,34 @@ Same rules as the Hatchery, with these additions:
 ### Hive [4 min, 3 gas, 2t]
 Same rules as the Lair.
 
-### Spawning Pool
+### Spawning Pool [4 min] (Requires Hatchery)
 
 **Upgrades**:
 * _Metabolic Boost_ [2 min, 2 gast]: +1 Zergling speed.
 * _Adrenal Glands_ [4 min, 4 gas]: +1/2 Zergling attack.
 
-### Creep Colony
+### Creep Colony [1 min]
 
 **Morphs Into**
 - Sunken Colony [3 min] (Requires Spawning Pool)
 - Spore Colony [3 min, 1 gas] (Requires Evolution Chamber)
 
-### Extractor
+### Sunken Colony [1 min] (Morphed from Creep Colony, Requires Spawning Pool)
+
+### Spore Colony [1 min] (Morphed from Creep Colony, Requires Evolution Chamber)
+
+### Extractor [1 min]
 
 Required on a Gas Geyser before gas can be extracted.
 
-### Hydralisk Den
+### Hydralisk Den [2 min, 1 gas] (Requires Hatchery + Spawning Pool)
 
 **Upgrades**:
 * _Muscular Augments_ [3 min, 3 gas]: +1 Hydralisk speed.
 * _Grooved Spines_ [3 min, 3 gas]: +1 Hydralisk range.
 * _Lurker Aspect_ [4 min, 4 gas] (Requires a Lair): Enables Hydralisks to morph into Lurkers.
 
-### Evolution Chamber
+### Evolution Chamber [2 min] (Requires Hatchery)
 
 **Upgrades**:
 * _Zerg Melee Attacks Level 1_ [2 min, 2 gas, 2t]: +1 Attack to Ultralisks, and Broodlings, and +1/2 Attack to Zerglings.
@@ -225,7 +229,7 @@ Required on a Gas Geyser before gas can be extracted.
 * _Zerg Carapace Level 2_ [3 min, 3 gas, 3t] (Requires Level 1 + Lair): +1 Armor to all Zerg ground forces, except +1/2 Armor to Zerglings.
 * _Zerg Carapace Level 3_ [3 min, 3 gas, 4t] (Requires Level 2 + Hive): +1 Armor to all Zerg ground forces, except +1/2 Armor to Zerglings.
 
-### Spire
+### Spire [4 min, 3 gas]
 
 **Upgrades**:
 * _Flyer Attack Level 1_ [2 min, 2 gas, 2t]: +1 Attack to all Zerg air forces.
@@ -238,35 +242,35 @@ Required on a Gas Geyser before gas can be extracted.
 **Morphes Into**:
 * _Greater Spire_ [2 min, 3 gas] (Requires Hive)
 
-### Greater Spire
+### Greater Spire [2 min, 3 gas] (Morphed from Spire)
 
 Same rules as Spire.
 
-### Queens Nest
+### Queens Nest [3 min, 2 gas] (Requires Hive)
 
 **Upgrades**:
 - _Ensnare_ [2 min, 2 gas]: Allows Queens to use the Ensnare ability.
 - _Spawn Broodling_ [2 min, 2 gas]: Allows Queens to use the _Spawn Broodling ability_.
 - _Gamete Meiosis_ [3 min, 3 gas]: +2 maximum energy to Queens.
 
-### Nydus Canal
+### Nydus Canal [3 min] (Requires Hive)
 
 The Nydus Canal allows the Zerg player to instantly transport ground units between the two linked Nydus Canals without spending movement ppints. When the Nydus Canal is deployed, a second Nydus Canal (called a Nydus Canal Exit) can then be produced on Creep in any Area under control for free. The original Nydus Canal and its complementary Canal Exit are then linked, allowing Zerg units to enter either Canal, immediately exiting out through its counterpart Canal. 
 
-### Defiler Mound
+### Defiler Mound [3 min, 4 gas] (Requires Hive)
 
 **Upgrades**:
 - _Consume_ [2 min, 2 gas]: Allows Defilers to use the Consume ability.
 - _Plague_ [4 min, 4 gas]: Allows Defilers to use the Plague ability.
 - _Metasynaptic Node_ [3 min, 3 gas, 2t]: +2 maximum energy to Defilers.
 
-### Ultralisk Cavern
+### Ultralisk Cavern [3 min, 4 gas] (Requires Hive)
 
 **Upgrades**:
 - _Anabolic Synthesis_ [4 min, 4 gas, 2t]: +1 Ultralisk Speed.
 - _Chitinous Plating_ [3 min, 3 gas, 2t]: +2 Ultralisk Armor.
 
-### Infested Command Center
+### Infested Command Center (Infested by a Queen)
 
 **Produces**:
 - _Infested Terran_ [2 min, 1 gas, 1 sup]
