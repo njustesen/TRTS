@@ -6,33 +6,37 @@
 
 ## Units 
 
-Unit           | Min  | Gas | Sup. | Speed | HP | Shield | Armor | Size | Range | Ground | Air | Sight | Type |
-:------------- | ---: | --: | ---: | ----: | -: | -----: | ----: | ---: | ----: | -----: | --: | ----: | ---- | 
-Probe          | 1    | 0   | 1    |     2 |  1 |      0 |     0 |    S |     1 |    1/2 |     |     8 | Mech |
-Zealot         | 2    | 0   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      2 |     |     7 | Bio  |
-Dragoon        | 2    | 1   | 2    |     2 |  2 |      1 |     1 |    L |     4 |     2e |     |     8 | Mech |
-High Templar   | 1    | 3   | 2    |     1 |  1 |      1 |     0 |    S |       |        |     |     7 | Bio  |
-Dark Templar   | 2    | 2   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      4 |     |     8 | Bio  |
-Archon         |      |     |      |     2 |  1 |      7 |     0 |    L |     2 |     5s |     |     8 |      |
-Dark Archon    |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |      |
-Reaver         | 4    | 2   | 4    |     1 |  2 |      1 |     0 |    L |     8 |  2x3es |     |    10 | Mech |
-Observer       | 1    | 1   | 1    |     1 |  1 |      1 |     0 |    S |       |        |     |     9 | Mech |
-Scout          | 5    | 2   | 3    |     2 |  3 |      2 |     0 |    L |     4 |     1s |  4e |     8 | Mech |
-Corsair        | 3    | 2   | 2    |     3 |  2 |      1 |     1 |    M |     5 |        | 2es |     8 | Mech |
-Carrier        | 7    | 5   | 6    |     1 |  6 |      3 |     4 |    L |     8 |        |     |    11 | Mech |
-Interceptor    | 1    | 1   |      |     5 |  6 |      0 |     0 |    S |     4 |      1 |   1 |     4 | Mech |
-Arbiter        | 2    | 7   | 4    |     2 |  4 |      3 |     1 |    L |     5 |     1e |  1e |     9 | Mech |
+Unit             | Min  | Gas | Sup. | Speed | HP | Shield | Armor | Size | Range | Ground | Air | Sight | Type |
+:--------------- | ---: | --: | ---: | ----: | -: | -----: | ----: | ---: | ----: | -----: | --: | ----: | ---- | 
+Probe            | 1    | 0   | 1    |     2 |  1 |      0 |     0 |    S |     1 |    1/2 |     |     8 | Mech |
+Zealot           | 2    | 0   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      2 |     |     7 | Bio  |
+Dragoon          | 2    | 1   | 2    |     2 |  2 |      1 |     1 |    L |     4 |     2e |     |     8 | Mech |
+High Templar     | 1    | 3   | 2    |     1 |  1 |      1 |     0 |    S |       |        |     |     7 | Bio  |
+Dark Templar     | 2    | 2   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      4 |     |     8 | Bio  |
+Archon           |      |     |      |     2 |  1 |      7 |     0 |    L |     2 |     5s |     |     8 |      |
+Dark Archon      |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |      |
+Reaver           | 4    | 2   | 4    |     1 |  2 |      1 |     0 |    L |     8 |  2x3es |     |    10 | Mech |
+Observer         | 1    | 1   | 1    |     1 |  1 |      1 |     0 |    S |       |        |     |     9 | Mech |
+Scout            | 5    | 2   | 3    |     2 |  3 |      2 |     0 |    L |     4 |     1s |  4e |     8 | Mech |
+Corsair          | 3    | 2   | 2    |     3 |  2 |      1 |     1 |    M |     5 |        | 2es |     8 | Mech |
+Carrier          | 7    | 5   | 6    |     1 |  6 |      3 |     4 |    L |     8 |        |     |    11 | Mech |
+Interceptor (2x) | 1    | 1   |      |     5 |  6 |      0 |     0 |    S |     4 |      1 |   1 |     4 | Mech |
+Arbiter          | 2    | 7   | 4    |     2 |  4 |      3 |     1 |    L |     5 |     1e |  1e |     9 | Mech |
 
 e: Explosive Attack, s: Splash Damage
 
-### Probe
+### Probe [1 min, 1 sup] (Produced at Nexus)
 
 **Abilities**
 - _Hovering_.
 - _Resource Gathering_: Probes can collect 1 mineral (max. one per mineral field) or 1 gas (requires an assimilator) in the income phase.
 - _Warping_: Probes can warp in a building by paying its cost. Warping-in buildings cannot be used before the Deployment phase and has half HP and half shield (rounded down). Buildings with the _powered_ ability requires a Pylon under control to be present in the area to be warped in.
 
-### High Templar
+### Zealot [2 min, 2 sup] (Produced at Gateway)
+
+### Dragoon [2 min, 1 gas, 2 sup] (Produced at Gateway, Requires Cybernetics Core)
+
+### High Templar [1 min, 3 gas, 2 sup] (Produced at Gateway, Requires Templar Archives)
 
 High Templars start with 1/4 energy.
 
@@ -42,16 +46,16 @@ _Psionic Storm_ (researched at Templar Archives) [2 Energy]: During combat, targ
 
 _Hallucination_ (researched at Templar Archives) [2 Energy]: Allows High Templar to creates two temporary duplicates of a frendly unit in the same area. This spell can be cast at any time, e.g. when being engaged by the enemy. Duplicates have 1 HP, cannot attack or use abilities, and must be removed from the game at the end of the turn. Other attributs are the same as the unit they were copied from. Keep track on your Player Board which units are duplicates. You don't have to reveal that units are duplicates until they are removed from a contested area.
 
-### Dark Templar
+### Dark Templar [2 min, 2 gas, 2 sup] (Produced at Gateway, Requires Templar Archives)
 
 **Abilities**
 - _Cloaked_.
 
-### Archon
+### Archon (Merged by two High Templars)
 
 An Archon can be formed in the production phase by merging two High Templars and is under development until the next Deployment Phase.
 
-### Dark Archon
+### Dark Archon (Merged by two Dark Templars)
 
 A Dark Archon can be formed in the production phase by merging two Dark Templars and is under development until the next Deployment Phase.
 
@@ -63,39 +67,43 @@ Dark Archons start with 1/4 energy.
 - _Maelstrom_ [2 Energy]: During combat, target up to four small, three medium, or two large, biological units of the same type. These units are stunned, and cloaked units become visible, for the remainder of this turn. 
 - _Mind Control_ [3 Energy]: During combat, gain full control over one target unit for the rest of the game. 
 
-### Reaver
+### Reaver [4 min, 2 gas, 4 sup] (Produced at Robotics Facility, Requires Robotics Support Bay)
 
 **Produces**:
 - _Scarabs_ [1 min for 2]: Reavers can fire up to two _scarabs_ when they attack. They start with no scarabs and can produce up to two for a total cost of one mineral in the Production phase, where one scarab will be _queued_ (effectiely taking two rounds to be produced). A Reaver can hold at most two Scarabs (including those in production) and four with the Increased Reaver Capacity upgrade. 
 
-### Observer
+### Observer [1 min, 1 gas, 1 sup] (Produced at Robotics Facility, Requires Observatory)
 
 **Abilities**
 - _Flying_
 - _Cloaked_ 
 - _Detector_
 
-### Scout
+### Scout [5 min, 2 gas, 3 sup] (Produced at Stargate)
 
 **Abilities**
 - _Flying_
 
-### Corsair
+### Corsair [3 min, 2 gas, 2 sup] (Produced at Stargate)
 
 **Abilities**
 - _Flying_
 
-### Carrier
+### Carrier [7 min, 5 gas, 6 sup] (Produced at Stargate, Requires Fleet Beacon)
 
 If any unit assigns damage to a Carrier, all Interceptors under control in that area can fire at the attackers first, dealing damage before any damage is assigned to the Carriers.
 
 **Produces**:
 - _Interceptors_: Carriers do not attack but can house up to four Interceptors (eight with the Carrier Capacity upgrade). They start with no interceptors and can produce up to two for a total cost of 1 mineral in the Production phase and both are deployed in the following Deployment Phase. 
 
+### Interceptor (2x) [1 min] (Produced at Carrier)
+
+Can never leave the area of its hosting Carrier.
+
 **Abilities**:
 - _Flying_
 
-### Arbiter
+### Arbiter [2 min, 7 gas, 4 sup] (Produced at Stargate, Requires Arbiter Tribunal)
 
 Arbiters start with 1/4 energy.
 
