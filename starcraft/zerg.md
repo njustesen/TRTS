@@ -251,7 +251,7 @@ Same rules as Spire.
 **Upgrades**:
 - _Ensnare_ [2 min, 2 gas]: Allows Queens to use the Ensnare ability.
 - _Spawn Broodling_ [2 min, 2 gas]: Allows Queens to use the _Spawn Broodling ability_.
-- _Gamete Meiosis_ [3 min, 3 gas]: +2 maximum energy to Queens.
+- _Gamete Meiosis_ [3 min, 3 gas]: +2 maximum energy to Queens and +1 starting energy.
 
 ### Nydus Canal [3 min] (Requires Hive)
 
@@ -262,7 +262,7 @@ The Nydus Canal allows the Zerg player to instantly transport ground units betwe
 **Upgrades**:
 - _Consume_ [2 min, 2 gas]: Allows Defilers to use the Consume ability.
 - _Plague_ [4 min, 4 gas]: Allows Defilers to use the Plague ability.
-- _Metasynaptic Node_ [3 min, 3 gas, 2t]: +2 maximum energy to Defilers.
+- _Metasynaptic Node_ [3 min, 3 gas, 2t]: +2 maximum energy to Defilers and +1 starting energy.
 
 ### Ultralisk Cavern [3 min, 4 gas] (Requires Hive)
 
