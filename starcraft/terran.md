@@ -199,7 +199,7 @@ Required on a Gas Geyser before gas can be extracted.
 - _U-238 Shells_ [3 min, 3 gas]: +1 Marine range
 - _Restoration_ [2 min, 2 gas]: Medics gains the ability to use Restoration.
 - _Optical Flare_ [2 min, 2 gas]: Medics gain the ability to use Optic Flare.
-- _Caduceus Reactor_ [2 min, 2 gas]: Increases a Medic's maximum Energy to 6.
+- _Caduceus Reactor_ [2 min, 2 gas]: Gives Medic's +2 maximum energy and +1 starting energy.
 
 ### Factory
 
@@ -234,7 +234,7 @@ Required on a Gas Geyser before gas can be extracted.
 
 **Upgrades**:
 * _Cloaking Field_ [3 min, 3 gas]: Wraiths gain the _Cloaking Field_ ability.
-* _Apollo Reactor_ [4 min, 4 gas]: Increases Wraith's maximum energy to 6.
+* _Apollo Reactor_ [4 min, 4 gas]: Gives Wraiths +2 maximum energy and +1 starting energy.
 
 ### Armory
 * Vehicle Weapons Level 1 [2 min, 2 gas]: +1 attack to Vultures, Goliaths, and Siege Tanks.
@@ -258,7 +258,7 @@ Required on a Gas Geyser before gas can be extracted.
 **Upgrades**:
 * _EMP Shockwave_ [4 min, 4 gas]: Allows Science Vessels to use EMP Shockwave.
 * _Irradiate_ [4 min, 4 gas]: Allows Science Vessels to use Irradiate.
-* _Titan Reactor_ [3 min, 3 gas]: Increases a Science Vessels's maximum Energy to 6.
+* _Titan Reactor_ [3 min, 3 gas]: Gives Science Vessels +2 maximum energy and +1 starting energy.
 
 **Add-ons**:
 * Physics Lab [1 min, 1 gas]
@@ -268,7 +268,7 @@ Required on a Gas Geyser before gas can be extracted.
 
 **Upgrades**:
 * _Yamato Gun_ [2 min, 2 gas]: Allows Battlecruisers to fire their Yamato Gun.
-* _Colossus Reactor_ [3 min, 3 gas]: Increases a Battlecruisers's maximum Energy to 6.
+* _Colossus Reactor_ [3 min, 3 gas]: Gives Battlecruisers +2 maximum energy and +1 starting energy.
 
 ### Covert Ops
 
@@ -276,4 +276,4 @@ Required on a Gas Geyser before gas can be extracted.
 * _Personnel Cloaking_ [2 min, 2 gas]: Allows Ghosts to use Personnel Cloaking.
 * _Lockdown_ [4 min, 4 gas]: Allows Ghosts to use Lockdown.
 * _Ocular Implants_ [2 min, 2 gas]: +2 Ghost sight
-* _Moebius Reactor_ [3 min, 3 gas]: Increases a Ghost's maximum Energy to 6.
+* _Moebius Reactor_ [3 min, 3 gas]: Gives Ghosts +2 maximum energy and +1 starting energy.
