@@ -73,7 +73,7 @@ There are 3 possible scenarios when _pushing_ into an **Area**:
 When the _engagement_ is over, units in the **Control Group** that have not yet attacked or cast spells in this _push_ can decide to _push forward_ if they have enough movement points left. If you _push forward_, you must follow the same rules as described above but remember that units can only attack and cast spells once per turn. You can exploit this rule to _run by_ the enemy's defensive line to harass their main base. Units that do not _push forward_, will stay in the _engaged_ **Area** and cannot be activated later.   
 
 #### Revealing
-When units or buildings are revealed, it means that they are moved from the **Player Board Area** to the **Game Board Area**.
+When units or buildings are revealed, it means that they are moved from the **Player Board Area** to the **Game Board Area**. Reveal buildings stay on the **Game Board Area** until they are destroyed (or moved) while units are moved back to the **Player Board Area** if the enemy loses sight of the units. Revealed production buildings can be _cloned_ so they also appear on the **Player Board Area**, so production and upgrades can be done secretely.
 
 Follow these steps when engaging an **Area** that has enemy units or buildings in it:
 
