@@ -152,7 +152,7 @@ Defiler Mound          | 2    | 2   |      | 15 |     1 |    L |       |        
 Ultralisk Cavern       | 3    | 4   |      | 10 |     1 |    L |       |        |        |       |
 Infested Command Center|      |     |      | 30 |     1 |    L |       |        |        |       |
 
-### Hatchery
+### Hatchery [6 min, 2t]
 
 Required in an area to collect resources.
 
@@ -165,27 +165,27 @@ Required in an area to collect resources.
 - Overlord [2 min, +1 sup]
 
 **Upgrades**:
-- _Burrow_ [2 min, 2 gas]: Allows all Zerg ground units to borrow. 
+- _Burrow_ [2 min, 2 gas, 1t]: Allows all Zerg ground units to borrow. 
 
 **Morphs Into**
 - Lair [3 min, 2 gas]
 
-### Lair
+### Lair [3 min, 2 gas, 1t]
 Same rules as the Hatchery, with these additions:
 
 **Upgrades**:
-* _Ventral Sacs_ [3 min, 3 gas]: Gives Overlords the ability to transport up to 8 units, where medium units counts as 2, and large units counts as 4.
-* _Antennae_ [3 min, 3 gas]: Increases the Overlord's vision radius by 2 (from 9 to 11).
-* _Pneumatized Caraspace_ [3 min, 3 gas]: +1 Overload speed.
+* _Ventral Sacs_ [3 min, 3 gas, 2t]: Gives Overlords the ability to transport up to 8 units, where medium units counts as 2, and large units counts as 4.
+* _Antennae_ [3 min, 3 gas, 2t]: Increases the Overlord's vision radius by 2 (from 9 to 11).
+* _Pneumatized Caraspace_ [3 min, 3 gas, 2t]: +1 Overload speed.
 
-### Hive
+### Hive [4 min, 3 gas, 2t]
 Same rules as the Lair.
 
 ### Spawning Pool
 
 **Upgrades**:
-* _Metabolic Boost_ [2 min, 2 gas]: +1 Zergling speed.
-* _Adrenal Glands_ [4 min, 4 gas]: +1 Zergling attack.
+* _Metabolic Boost_ [2 min, 2 gas, 1t]: +1 Zergling speed.
+* _Adrenal Glands_ [4 min, 4 gas, 1t]: +1/2 Zergling attack.
 
 ### Creep Colony
 
@@ -200,32 +200,32 @@ Required on a Gas Geyser before gas can be extracted.
 ### Hydralisk Den
 
 **Upgrades**:
-* _Muscular Augments_ [3 min, 3 gas]: +1 Hydralisk speed.
-* _Grooved Spines_ [3 min, 3 gas]: +1 Hydralisk range.
-* _Lurker Aspect_ [4 min, 4 gas] (Requires a Lair): Enables Hydralisks to morph into Lurkers.
+* _Muscular Augments_ [3 min, 3 gas, 1t]: +1 Hydralisk speed.
+* _Grooved Spines_ [3 min, 3 gas, 1t]: +1 Hydralisk range.
+* _Lurker Aspect_ [4 min, 4 gas, 1t] (Requires a Lair): Enables Hydralisks to morph into Lurkers.
 
 ### Evolution Chamber
 
 **Upgrades**:
-* _Zerg Melee Attacks Level 1_ [2 min, 2 gas]: +1 Attack to Zerglings, Ultralisks, and Broodlings.
-* _Zerg Melee Attacks Level 2_ [2 min, 2 gas] (Requires Level 1 + Lair): +1 Attack to Zerglings, Ultralisks, and Broodlings.
-* _Zerg Melee Attacks Level 3_ [2 min, 2 gas] (Requires Level 2 + Hive): +1 Attack to Zerglings, Ultralisks, and Broodlings.
-* _Zerg Missile Attacks Level 1_ [2 min, 2 gas]: +1 Attack to Hydralisks and Lurkers.
-* _Zerg Missile Attacks Level 2_ [2 min, 2 gas] (Requires Level 1 + Lair): +1 Attack to Hydralisks and Lurkers.
-* _Zerg Missile Attacks Level 3_ [2 min, 2 gas] (Requires Level 2 + Hive): +1 Attack to Hydralisks and Lurkers.
-* _Zerg Carapace Attacks Level 1_ [3 min, 3 gas]: +1 Armor to all Zerg ground forces.
-* _Zerg Carapace Attacks Level 2_ [3 min, 3 gas] (Requires Level 1 + Lair): +1 Armor to all Zerg ground forces.
-* _Zerg Carapace Attacks Level 3_ [3 min, 3 gas] (Requires Level 2 + Hive): +1 Armor to all Zerg ground forces.
+* _Zerg Melee Attacks Level 1_ [2 min, 2 gas, 2t]: +1 Attack to Ultralisks, and Broodlings, and +1/2 Attack to Zerglings.
+* _Zerg Melee Attacks Level 2_ [2 min, 2 gas, 3t] (Requires Level 1 + Lair): +1 Attack to Ultralisks, and Broodlings, and +1/2 Attack to Zerglings.
+* _Zerg Melee Attacks Level 3_ [2 min, 2 gas, 4t] (Requires Level 2 + Hive): +1 Attack to Ultralisks, and Broodlings, and +1/2 Attack to Zerglings.
+* _Zerg Missile Attacks Level 1_ [2 min, 2 gas, 2t]: +1 Attack to Hydralisks and Lurkers.
+* _Zerg Missile Attacks Level 2_ [2 min, 2 gas, 3t] (Requires Level 1 + Lair): +1 Attack to Hydralisks and Lurkers.
+* _Zerg Missile Attacks Level 3_ [2 min, 2 gas, 4t] (Requires Level 2 + Hive): +1 Attack to Hydralisks and Lurkers.
+* _Zerg Carapace Level 1_ [3 min, 3 gas, 2t]: +1 Armor to all Zerg ground forces, except +1/2 Armor to Zerglings.
+* _Zerg Carapace Level 2_ [3 min, 3 gas, 3t] (Requires Level 1 + Lair): +1 Armor to all Zerg ground forces, except +1/2 Armor to Zerglings.
+* _Zerg Carapace Level 3_ [3 min, 3 gas, 4t] (Requires Level 2 + Hive): +1 Armor to all Zerg ground forces, except +1/2 Armor to Zerglings.
 
 ### Spire
 
 **Upgrades**:
-* _Flyer Attack Level 1_ [2 min, 2 gas]: +1 Attack to all Zerg air forces.
-* _Flyer Attack Level 2_ [3 min, 3 gas] (Requires Level 1 + Lair): +1 Attack to all Zerg air forces.
-* _Flyer Attack Level 3_ [4 min, 4 gas] (Requires Level 2 + Hive): +1 Attack to all Zerg air forces. 
-* _Flyer Carapace Level 1_ [3 min, 3 gas]: +1 Armor to all Zerg air forces.
-* _Flyer Carapace Level 2_ [4 min, 4 gas] (Requires Level 1 + Lair): +1 Armor to all Zerg air forces.
-* _Flyer Carapace Level 3_ [5 min, 5 gas] (Requires Level 2 + Hive): +1 Armor to all Zerg air forces. 
+* _Flyer Attack Level 1_ [2 min, 2 gas, 2t]: +1 Attack to all Zerg air forces.
+* _Flyer Attack Level 2_ [3 min, 3 gas, 3t] (Requires Level 1 + Lair): +1 Attack to all Zerg air forces.
+* _Flyer Attack Level 3_ [4 min, 4 gas, 4t] (Requires Level 2 + Hive): +1 Attack to all Zerg air forces. 
+* _Flyer Carapace Level 1_ [3 min, 3 gas, 2t]: +1 Armor to all Zerg air forces.
+* _Flyer Carapace Level 2_ [4 min, 4 gas, 3t] (Requires Level 1 + Lair): +1 Armor to all Zerg air forces.
+* _Flyer Carapace Level 3_ [5 min, 5 gas, 4t] (Requires Level 2 + Hive): +1 Armor to all Zerg air forces. 
 
 **Morphes Into**:
 * _Greater Spire_ [2 min, 3 gas] (Requires Hive)
@@ -237,9 +237,9 @@ Same rules as Spire.
 ### Queens Nest
 
 **Upgrades**:
-- _Ensnare_ [2 min, 2 gas]: Allows Queens to use the Ensnare ability.
-- _Spawn Broodling_ [2 min, 2 gas]: Allows Queens to use the _Spawn Broodling ability_.
-- _Gamete Meiosis_ [3 min, 3 gas]: +2 maximum energy to Queens.
+- _Ensnare_ [2 min, 2 gas, 1t]: Allows Queens to use the Ensnare ability.
+- _Spawn Broodling_ [2 min, 2 gas, 1t]: Allows Queens to use the _Spawn Broodling ability_.
+- _Gamete Meiosis_ [3 min, 3 gas, 2t]: +2 maximum energy to Queens.
 
 ### Nydus Canal
 
@@ -248,15 +248,15 @@ The Nydus Canal allows the Zerg player to instantly transport ground units betwe
 ### Defiler Mound
 
 **Upgrades**:
-- _Consume_ [2 min, 2 gas]: Allows Defilers to use the Consume ability.
-- _Plague_ [4 min, 4 gas]: Allows Defilers to use the Plague ability.
-- _Metasynaptic Node_ [3 min, 3 gas]: +2 maximum energy to Defilers.
+- _Consume_ [2 min, 2 gas, 1t]: Allows Defilers to use the Consume ability.
+- _Plague_ [4 min, 4 gas, 1t]: Allows Defilers to use the Plague ability.
+- _Metasynaptic Node_ [3 min, 3 gas, 2t]: +2 maximum energy to Defilers.
 
 ### Ultralisk Cavern
 
 **Upgrades**:
-- _Anabolic Synthesis_ [4 min, 4 gas]: +1 Ultralisk Speed.
-- _Chitinous Plating_ [3 min, 3 gas]: +2 Ultralisk Armor.
+- _Anabolic Synthesis_ [4 min, 4 gas, 2t]: +1 Ultralisk Speed.
+- _Chitinous Plating_ [3 min, 3 gas, 2t]: +2 Ultralisk Armor.
 
 ### Infested Command Center
 
