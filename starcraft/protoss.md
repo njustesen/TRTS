@@ -136,7 +136,7 @@ Arbiter Tribunal     | 4    | 3   |      | 10 |     10 |     1 |    L |       | 
 
 * Must be powered by a Pylon.
 
-### Nexus
+### Nexus [8 min, +2 sup, 2t]
 
 Required in an area to collect resources.
 Gives +2 Supply.
@@ -144,20 +144,20 @@ Gives +2 Supply.
 **Produces**: 
 - Probe [1 min, 1 sup]
 
-### Pylon
+### Pylon [1 min, +2 sup]
 
 Powers all buildings in an area. If buildings loose power thay cannot do anything until they regain power.
 Gives +2 Supply.
 
-### Photon Cannon
+### Photon Cannon [3 min, +2 sup] (Requires Forge)
 
 _Detector_
 
-### Assimilator
+### Assimilator [2 min, +2 sup]
 
 Required on a Gas Geyser before gas can be extracted.
 
-### Gateway
+### Gateway [3 min] (Requires Nexus)
 
 **Produces:** 
 - Zealots [2 min, 2 sup]
@@ -165,38 +165,38 @@ Required on a Gas Geyser before gas can be extracted.
 - High Templar [1 min, 3 gas, 2 sup] (requires Templar Archives)
 - Dark Templar [2 min, 2 gas, 2 sup] (requires Templar Archives)
 
-### Forge
+### Forge [3 min] (Requires Nexus)
 
 **Upgrades:**
-* Ground Weapons Level 1 [2 min, 2 gas]: +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
-* Ground Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Templar Archives): +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
-* Ground Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Templar Archives): +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
-* Ground Armor Level 1 [2 min, 2 gas]: +1 armor to all Protoss ground units.
-* Ground Armor Level 2 [3 min, 3 gas] (Requires level 1 + Templar Archives): +1 armor to all Protoss ground units.
-* Ground Armor Level 3 [4 min, 4 gas] (Requires level 2 + Templar Archives): +1 armor to all Protoss ground units.
-* Plasma Shields Level 1 [2 min, 2 gas]: +1 shield to all Protoss ground units and structures.
-* Plasma Shields Level 2 [4 min, 4 gas] (Requires level 1 + Cybernetics Core): +1 shield to all Protoss ground units and structures.
-* Plasma Shields Level 3 [6 min, 6 gas] (Requires level 2 + Cybernetics Core): +1 shield to all Protoss ground units and structures.
+* Ground Weapons Level 1 [2 min, 2 gas, 2t]: +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
+* Ground Weapons Level 2 [3 min, 3 gas, 3t] (Requires level 1 + Templar Archives): +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
+* Ground Weapons Level 3 [4 min, 4 gas, 4t] (Requires level 2 + Templar Archives): +1 ground attack to Zealots, Dragoons, Dark Templars and Archons.
+* Ground Armor Level 1 [2 min, 2 gas, 2t]: +1 armor to all Protoss ground units.
+* Ground Armor Level 2 [3 min, 3 gas, 3t] (Requires level 1 + Templar Archives): +1 armor to all Protoss ground units.
+* Ground Armor Level 3 [4 min, 4 gas, 4t] (Requires level 2 + Templar Archives): +1 armor to all Protoss ground units.
+* Plasma Shields Level 1 [2 min, 2 gas, 3t]: +1 shield to all Protoss ground units and structures.
+* Plasma Shields Level 2 [4 min, 4 gas, 4t] (Requires level 1 + Cybernetics Core): +1 shield to all Protoss ground units and structures.
+* Plasma Shields Level 3 [6 min, 6 gas, 5t] (Requires level 2 + Cybernetics Core): +1 shield to all Protoss ground units and structures.
 
-### Cybernetics Core
+### Cybernetics Core [4 min] (Requires Gateway)
 
 **Upgrades:**
-* Singularity Charge [3 min, 3 gas]: +2 Dragoon range
-* Air Weapons Level 1 [2 min, 2 gas]: +1 air attack to Protoss air units.
-* Air Weapons Level 2 [3 min, 3 gas] (Requires level 1 + Fleet Beacon): +1 air attack to Protoss air units.
-* Air Weapons Level 3 [4 min, 4 gas] (Requires level 2 + Fleet Beacon): +1 air attack to Protoss air units.
-* Air Armor Level 1 [3 min, 3 gas]: +1 armor to Protoss air units.
-* Air Armor Level 2 [4 min, 4 gas] (Requires level 1 + Fleet Beacon): +1 armor to Protoss air units.
-* Air Armor Level 3 [5 min, 5 gas] (Requires level 2 + Fleet Beacon): +1 armor to Protoss air units.
+* Singularity Charge [3 min, 3 gas, 2t]: +2 Dragoon range
+* Air Weapons Level 1 [2 min, 2 gas, 2t]: +1 air attack to Protoss air units.
+* Air Weapons Level 2 [3 min, 3 gas, 3t] (Requires level 1 + Fleet Beacon): +1 air attack to Protoss air units.
+* Air Weapons Level 3 [4 min, 4 gas, 4t] (Requires level 2 + Fleet Beacon): +1 air attack to Protoss air units.
+* Air Armor Level 1 [3 min, 3 gas, 2t]: +1 armor to Protoss air units.
+* Air Armor Level 2 [4 min, 4 gas, 3t] (Requires level 1 + Fleet Beacon): +1 armor to Protoss air units.
+* Air Armor Level 3 [5 min, 5 gas, 4t] (Requires level 2 + Fleet Beacon): +1 armor to Protoss air units.
 
-### Shield Battery
+### Shield Battery [2 min] (Requires Gateway)
 
 Shield Batteries start with 2/4 energy
 
 **Abilities**:
-- _Recarge_ [1 energy]: Shield Batteries can at any time (also to save units from being killed) recharge up to 2 shield points (never above the max. shield value) for a unit in the same area.
+- _Recharge_ [1 energy]: Shield Batteries can at any time (also to save units from being killed) recharge up to 2 shield points (never above the max. shield value) for a unit in the same area.
 
-### Stargate
+### Stargate [3 min, 3 gas] (Requires Cybernetics Core)
 
 **Produces:**
 - Scout [5 min, 2 gas, 3 sup]
@@ -204,51 +204,53 @@ Shield Batteries start with 2/4 energy
 - Carrier [7 min, 5 gas, 6 sup] (Requires Fleet Beacon)
 - Arbiter [2 min, 7 gas, 4 sup] (Requires Arbiter Tribunal)
 
-### Citadel of Adun
+### Citadel of Adun [3 min, 2 gas] (Requires Cybernetics Core)
 
 **Upgrades:**
-* Leg Enhancements [3 min, 3 gas]
+* Leg Enhancements [3 min, 3 gas, 1t]
   - +1 Zealot speed
 
-### Templar Archives
+### Templar Archives [3 min, 4 gas] (Requires Citadel of Adun)
 
 **Upgrades:**
-* Psionic Storm [4 min, 4 gas]: Allows High Templars to cast Psionic Storm
-* Hallucination [3 min, 3 gas]: Allows High Templars to cast Hallucination
-* Khaydarin Amulet [3 min, 3 gas]: Gives High Templar +2 max. energy
-* Maelstrom [2 min, 2 gas]: Allows Dark Archons to cast Maelstrom
-* Mind Control [4 min, 4 gas]: Allows Dark Archons to cast Mind Control
-* Argus Talisman [3 min, 3 gas]: Gives Dark Archons +2 max. energy
+* Psionic Storm [4 min, 4 gas, 1t]: Allows High Templars to cast Psionic Storm
+* Hallucination [3 min, 3 gas, 1t]: Allows High Templars to cast Hallucination
+* Khaydarin Amulet [3 min, 3 gas, 2t]: Gives High Templar +2 max. energy and +1 starting energy.
+* Maelstrom [2 min, 2 gas, 1t]: Allows Dark Archons to cast Maelstrom
+* Mind Control [4 min, 4 gas, 1t]: Allows Dark Archons to cast Mind Control
+* Argus Talisman [3 min, 3 gas, 2t]: Gives Dark Archons +2 max. energy and +1 starting energy.
 
-### Robotics Facility
+### Robotics Facility [4 min, 4 gas] (Requires Cybernetics Core)
 
 **Produces:**
 - Reaver [4 min, 4 gas, 4 sup]
 - Observer [1 min, 1 gas, 1 sup] (Requires Observatory)
 
-### Robotics Support Bay**
+### Robotics Support Bay** [3 min, 2 gas] (Requires Robotics Facility)
 
 **Upgrades:**
-* Scarab Damage [4 min, 4 gas]: +1 Reaver attack
-* Increased Reaver Capacity [4 min, 4 gas]: Revers can house 4 scarabs instead of 2
-* Gravitic Drive [4 min, 4 gas]: +1 Shuttle speed
+* Scarab Damage [4 min, 4 gas, 2t]: +1 Reaver attack
+* Increased Reaver Capacity [4 min, 4 gas, 2t]: Revers can house 4 scarabs instead of 2
+* Gravitic Drive [4 min, 4 gas, 2t]: +1 Shuttle speed
 
-### Observatory
-
-**Upgrades:**
-* Sensor Array [3 min, 3 gas]: +2 Observer sight
-* Gravitic Booster [3 min, 3 gas]: +1 Observer speed
-
-### Fleet Beacon
+### Observatory [1 min, 2 gas] (Requires Robotics Facility)
 
 **Upgrades:**
-* Carrier Capacity [2 min, 2 gas]: Carriers can house 8 Interceptors instead of 4
-* Apial Sensors [2 min, 2 gas]: +2 Scout sight
-* Gravitic Thrusters [4 min, 4 gas]: +1 Carrier speed
+* Sensor Array [3 min, 3 gas, 1t]: +2 Observer sight
+* Gravitic Booster [3 min, 3 gas, 1t]: +1 Observer speed
 
-### Arbiter Tribunal
+### Fleet Beacon [4 min, 4 gas] (Requires Stargate)
+
+**Upgrades:**
+* Carrier Capacity [2 min, 2 gas, 1t]: Carriers can house 8 Interceptors instead of 4
+* Apial Sensors [2 min, 2 gas, 2t]: +2 Scout sight
+* Gravitic Thrusters [4 min, 4 gas, 2t]: +1 Carrier speed
+* Disruption Web [4 min, 4 gas, 1t]: Allows Corsairs to use Disruption Web.
+* Argus Jewel [2 min, 2 gas, 2t]: Gives Corsairs +2 max. energy and +1 starting energy.
+
+### Arbiter Tribunal [4 min, 3 gas] (Requires Stargate + Templar Archives)
 
 **Upgrades:**
 * Stasis Field [3 min, 3 gas]: Allows Arbiters to cas Stasis Field
 * Recall [3 min, 3 gas]: Allows Arbiters to cas Stasis Field
-* Khaydarin Core [3 min, 3 gas]: Gives Arbiters +2 max. energy
+* Khaydarin Core [3 min, 3 gas]: Gives Arbiters +2 max. energy and +1 starting energy.
