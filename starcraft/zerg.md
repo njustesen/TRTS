@@ -20,10 +20,10 @@ Larva           |      |     |      |       |  1 |    10 |    S |       |       
 Egg             |      |     |      |       |  4 |    10 |    S |       |        |      |     4 |  Bio |
 Drone           |    1 |   0 |    1 |     2 |  1 |     0 |    S |     1 |    1/2 |      |     7 |  Bio |
 Overlord        |    2 |   0 |   +2 |     1 |  4 |     0 |    L |       |        |      |     9 |  Bio |
-Zergling (x2)   |    1 |   0 |    1 |     3 |  1 |     0 |    S |     1 |      1 |      |     5 |  Bio |
+Zergling (2x)   |    1 |   0 |    1 |     3 |  1 |     0 |    S |     1 |      1 |      |     5 |  Bio |
 Hydralisk       |    1 |   1 |    1 |     2 |  2 |     0 |    M |     4 |     2e |   2e |     5 |  Bio |
 Mutalisk        |    2 |   2 |    2 |     3 |  2 |     0 |    S |     3 |    1+1 |  1+1 |     7 |  Bio |
-Scourge (x2)    |    1 |   1 |    1 |     3 |  1 |     0 |    S |     1 |        |    2 |     7 |  Bio |
+Scourge (2x)    |    1 |   1 |    1 |     3 |  1 |     0 |    S |     1 |        |    2 |     7 |  Bio |
 Lurker          |    4 |   4 |    1 |     3 |  3 |     1 |    M |     6 |     4s |      |     8 |  Bio |
 Ultralisk       |    4 |   4 |    4 |     2 |  8 |     1 |    L |     1 |      4 |      |     7 |  Bio |
 Defiler         |    1 |   3 |    2 |     2 |  2 |     1 |    M |       |        |      |    10 |  Bio |
@@ -33,7 +33,7 @@ Guardian        |    3 |   4 |    2 |     1 |  3 |     2 |    L |     8 |      2
 Broodling       |      |     |      |     3 |  1 |     0 |    S |     1 |      1 |      |     5 |  Bio |       
 Infested Terran |    2 |   1 |    1 |     3 |  1 |     0 |    S |     1 |   10es |      |     5 |  Bio |  
 
-- (x2): These units are morphed in pairs at the total cost shown in the table.
+- (2x): These units are morphed in pairs for the total cost shown in the table.
 - x: Eggs cost supply equivalent of what's in them. 
 - a: Acid Spores: Read rules under Devourer.
 - e: Explosive Attack, c: Concussive Attack, s: Splash Damage.
@@ -47,12 +47,12 @@ Larvae can morph into the following list of units and will become an Egg until t
 
 **Morphs Into**:
 - Drone [1 min, 1 sup]
-- Overlord [2 min]
-- Zergling (x2) [1 min, 1 sup] (Requires Spawning Pool)
+- Overlord [2 min, +2 sup]
+- Zergling (2x) [1 min, 1 sup] (Requires Spawning Pool)
 - Hydralisk [1 min, 1 gas, 1 sup] (Requires Hydralisk Den)
-- Ultralisk [4 min, 4 gas, 4 sup] (Requires Ultralisk Cavern)
 - Mutalisk [2 min, 2 gas, 2 sup] (Requires Spire)
-- Scourge (x2) [1 min, 1 gas, 1 sup] (Requires Spire)
+- Scourge (2x) [1 min, 1 gas, 1 sup] (Requires Spire)
+- Ultralisk [4 min, 4 gas, 4 sup] (Requires Ultralisk Cavern)
 - Defiler [1 min, 3 gas, 2 sup] (Requires Defiler Mound)
 - Queen [2 min, 2 gas, 2 sup] (Requires Queens Nest)
 
@@ -61,7 +61,7 @@ Larvae can morph into the following list of units and will become an Egg until t
 **Morphs Into**:
 Eggs automatically morphs into the unit it is containing in the _Deployment Phase_. 
 
-### Drone
+### Drone [1 min, 1 sup]
 
 **Abilities**:
 - _Hovering_
@@ -70,7 +70,7 @@ Eggs automatically morphs into the unit it is containing in the _Deployment Phas
 **Morphs Into**
 - _Any Zerg Structure_: Drones can morph into any Zerg structure by paying its cost, if the requirements are met. Replace the Drone with the structure which cannot be used before the Deployment phase and it will have half HP (rounded down) until it's done. Drones can cancel the morphing process before the Deployment Phase. To do so, replace the structure with the Drone and retake the resources spent.
 
-### Overlord
+### Overlord [2 min, +2 sup]
 
 Gives +2 Supply.
 
@@ -78,11 +78,11 @@ Gives +2 Supply.
 - _Flying_
 - _Detector_
 
-### Zergling
+### Zergling (2x) [1 min, 1 sup] (Requires Spawning Pool)
 
 Two Zerglings comes out of one Egg for the cost of [1 min, 1 sup].
 
-### Hydralisk
+### Hydralisk [1 min, 1 gas, 1 sup] (Requires Hydralisk Den)
 
 **Morphs Into**:
 - Lurker [4 min, 4 gas, 1 sup] (Requires _Lurker Aspect_)
@@ -94,16 +94,22 @@ Lurkers can only attack when _burrowed_.
 **Abilities**:
 - _Burrow_
 
-### Mutalisk
+### Mutalisk [2 min, 2 gas, 2 sup] (Requires Spire)
 
 **Abilities**:
 - _Glaive Wurm_: Whenever Mutalisk assigns their main damage (1 without upgrades) they can assign one additional damage to another unit. The additional damage is not affected by upgrades.
 
-### Scourge
+**Moprhs Into**:
+* Devourer [5 min, 3 gas, 2 sup] (Requires Greater Spire)
+* Guardian [3 min, 4 gas, 2 sup] (Requires Greater Spire)
+
+### Scourge (2x) [1 min, 1 gas, 1 sup] (Requires Spire)
 
 Scourges are automatically killed after they have attacked as they suicide dive into the enemy.
 
-### Defiler
+### Ultralisk [4 min, 4 gas, 4 sup] (Requires Ultralisk Cavern)
+
+### Defiler [1 min, 3 gas, 2 sup] (Requires Defiler Mound)
 
 Defilers start with 1/4 energy.
 
@@ -112,7 +118,7 @@ Defilers start with 1/4 energy.
 - _Dark Swarm_ [2 energy]: Allows the Defiler to cast a dark swarm in an area. No ground units take direct damage from ranged attacks in this area this round, except fo splash damage.
 - _Plague_ [3 energy]: Allows the Defiler to cast Plague on up to 4 small, 3 medium, 2 large units of the same type, or 1 structure. Plagued units and buildings lose 1 HP now (ignoring armor). Plague can never kill or destroy a building and thus cannot reduce HP lower than 1 HP. Plagued units with 1 HP left after this initial reduction cannot use their armor this turn. Plagued targets are dealt 6 additional damage at the end of this turn, and again not to a lower value than 1 HP, wherefter targets are no longer plagued.
 
-### Queen
+### Queen [2 min, 2 gas, 2 sup] (Requires Queens Nest)
 
 Queens start with 1/4 energy.
 
@@ -122,11 +128,13 @@ Queens start with 1/4 energy.
 - _Ensnare_ [3 Energy]: Targets 4 small, 3 medium or 2 large unborrowed units that will get their attack and speed cut in half for the rest of the round, both the speed stat and any remaining movement points. Cloaked units hit by Ensnare also become visible, and yes, they can be targeted.
 - _Spawn Broodling_ [1 Energy]: A Queen with this ability can instantaneously destroy any non-robotic ground unit in the game as the Broodling larvae she plants rapidly mature and, feeding on the victim from the inside, destroy their host. Remove the target and add to Broodlings in the area that becomes under control. At the end of the next round, the spawned Broodlings will run out of energy and die. Archons and Dark Archons cannot be targeted by this ability.
 
-### Devourer
+### Devourer [5 min, 3 gas, 2 sup] (Requires Greater Spire)
 
 _Acid Spores_: Whenever a Devourer deals damage to a unit, it gets an Acid Spore token. Anytime in the future, when this unit is dealt damage, it is also dealt one additional damage for each Acid Spore token on it. 
 
-### Infested Terran
+### Guardian [3 min, 4 gas, 2 sup] (Requires Greater Spire)
+
+### Infested Terran [2 min, 1 gas, 1 sup]
 
 Infested Terran are automatically killed after they have attacked as they suicide dive into the enemy.
 
@@ -165,12 +173,12 @@ Required in an area to collect resources.
 - Overlord [2 min, +1 sup]
 
 **Upgrades**:
-- _Burrow_ [2 min, 2 gas, 1t]: Allows all Zerg ground units to borrow. 
+- _Burrow_ [2 min, 2 gas]: Allows all Zerg ground units to borrow. 
 
 **Morphs Into**
 - Lair [3 min, 2 gas]
 
-### Lair [3 min, 2 gas, 1t]
+### Lair [3 min, 2 gas]
 Same rules as the Hatchery, with these additions:
 
 **Upgrades**:
@@ -184,8 +192,8 @@ Same rules as the Lair.
 ### Spawning Pool
 
 **Upgrades**:
-* _Metabolic Boost_ [2 min, 2 gas, 1t]: +1 Zergling speed.
-* _Adrenal Glands_ [4 min, 4 gas, 1t]: +1/2 Zergling attack.
+* _Metabolic Boost_ [2 min, 2 gast]: +1 Zergling speed.
+* _Adrenal Glands_ [4 min, 4 gas]: +1/2 Zergling attack.
 
 ### Creep Colony
 
@@ -200,9 +208,9 @@ Required on a Gas Geyser before gas can be extracted.
 ### Hydralisk Den
 
 **Upgrades**:
-* _Muscular Augments_ [3 min, 3 gas, 1t]: +1 Hydralisk speed.
-* _Grooved Spines_ [3 min, 3 gas, 1t]: +1 Hydralisk range.
-* _Lurker Aspect_ [4 min, 4 gas, 1t] (Requires a Lair): Enables Hydralisks to morph into Lurkers.
+* _Muscular Augments_ [3 min, 3 gas]: +1 Hydralisk speed.
+* _Grooved Spines_ [3 min, 3 gas]: +1 Hydralisk range.
+* _Lurker Aspect_ [4 min, 4 gas] (Requires a Lair): Enables Hydralisks to morph into Lurkers.
 
 ### Evolution Chamber
 
@@ -237,9 +245,9 @@ Same rules as Spire.
 ### Queens Nest
 
 **Upgrades**:
-- _Ensnare_ [2 min, 2 gas, 1t]: Allows Queens to use the Ensnare ability.
-- _Spawn Broodling_ [2 min, 2 gas, 1t]: Allows Queens to use the _Spawn Broodling ability_.
-- _Gamete Meiosis_ [3 min, 3 gas, 2t]: +2 maximum energy to Queens.
+- _Ensnare_ [2 min, 2 gas]: Allows Queens to use the Ensnare ability.
+- _Spawn Broodling_ [2 min, 2 gas]: Allows Queens to use the _Spawn Broodling ability_.
+- _Gamete Meiosis_ [3 min, 3 gas]: +2 maximum energy to Queens.
 
 ### Nydus Canal
 
@@ -248,8 +256,8 @@ The Nydus Canal allows the Zerg player to instantly transport ground units betwe
 ### Defiler Mound
 
 **Upgrades**:
-- _Consume_ [2 min, 2 gas, 1t]: Allows Defilers to use the Consume ability.
-- _Plague_ [4 min, 4 gas, 1t]: Allows Defilers to use the Plague ability.
+- _Consume_ [2 min, 2 gas]: Allows Defilers to use the Consume ability.
+- _Plague_ [4 min, 4 gas]: Allows Defilers to use the Plague ability.
 - _Metasynaptic Node_ [3 min, 3 gas, 2t]: +2 maximum energy to Defilers.
 
 ### Ultralisk Cavern
