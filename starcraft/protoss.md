@@ -103,7 +103,7 @@ Can never leave the area of its hosting Carrier.
 **Abilities**:
 - _Flying_
 
-### Arbiter [2 min, 7 gas, 4 sup] (Produced at Stargate, Requires Arbiter Tribunal)
+### Arbiter [2 min, 7 gas, 4 sup, 2t] (Produced at Stargate, Requires Arbiter Tribunal)
 
 Arbiters start with 1/4 energy.
 
