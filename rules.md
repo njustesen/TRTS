@@ -73,15 +73,14 @@ There are 3 possible scenarios when _pushing_ into an **Area**:
 When the _engagement_ is over, units in the **Control Group** that have not yet attacked or cast spells in this _push_ can decide to _push forward_ if they have enough movement points left. If you _push forward_, you must follow the same rules as described above but remember that units can only attack and cast spells once per turn. You can exploit this rule to _run by_ the enemy's defensive line to harass their main base. Units that do not _push forward_, will stay in the _engaged_ **Area** and cannot be activated later.   
 
 #### Revealing
-When units or buildings are revealed, it means that they are moved from the **Player Board Area** to the **Game Board Area**. Reveal buildings stay on the **Game Board Area** until they are destroyed (or moved) while units are moved back to the **Player Board Area** if the enemy loses sight of the units. Revealed production buildings can be _cloned_ so they also appear on the **Player Board Area**, so production and upgrades can be done secretely.
+When units or buildings are revealed, it means that they are moved from the **Player Board Area** to the **Game Board Area**. Revealed buildings stay on the **Game Board Area** until they are destroyed (or moved) while units are moved back to the **Player Board Area** if the enemy loses sight of the units. Revealed production buildings can be _cloned_ so they also appear on the **Player Board Area**, so production and upgrades can be done secretely.
 
 Follow these steps when engaging an **Area** that has enemy units or buildings in it:
 
-1. The attacker reveals at least one of the engaging units, which are called _scouts_.
-2. The defender has to reveal any number of units or buildings in the **Area**, known as the _front line_, where at least one unit can attack one of the _scouts_. If no units or buildings can attack any of the _scouts_, reveal everything on the defender's **Player Board Area**.
-3. The attacker can decide to _retreat_ to the square they came from with any of their units without spending movement points. Retreating units are no longer part of the push. If any of the _scouts_ decided to _retreat_, then any from the _front line_ that has a greater range than the highest sight value of the _scouts_ can attack any of the retreating _scouts_ but only if any in the _front line_ can match the highest sight value of the _scouts_. 
-4. If some attacking units did not _retreat_, the defender can decide to _retreat_ to an adjacent **Area** under control with any units that have enough movement points left. If the defender has no units or buildings left in the **Area** after retreating, the attacker gains control over the **Area**.
-5. If any units or buildings from both sides remains in the **Area**, then immediately perform a combat round. If all units and buildings of one side is destroyed in combat, the other player gains control over the **Area**, otherwise it remains _contested_.
+1. The attacker reveals all his units.
+2. The defender can decide to _retreat_ with some units, whereafter all units and defensive buildings in the **Area** must be revealed. If no defensive units or buildings are left in the **Area**, then the attacker gains control of it.
+3. The attacker can decide to _retreat_ to the square they came from with any of their units without spending movement points. Retreating units are no longer part of the push. If some units _retreat_, the defending units that have greater range than the highest sight value of the attacking units can immediately attack the retreating units. 
+6. If any units or buildings from both sides remains in the **Area**, then reveal any remaining buildings in the **Area** and perform a combat round. If all units and buildings of one side is destroyed in combat, the other player gains control over the **Area**, or otherwise, it remains _contested_.
 
 #### Regrouping
 Instead of making a _push_, you can also _regroup_, meaning that you move from a _contested_ **Area** to a reachable **Area** under _control_ (if any). Units that _regroup_ cannot be activated until next round.
