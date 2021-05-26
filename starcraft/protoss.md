@@ -115,24 +115,24 @@ Arbiters start with 1/4 energy.
 
 ## Buildings
 
-Building             | Min. | Gas | Sup. | HP | Shield | Armor | Size | Range | Ground | Air    | Sight | Power* |
-:------------------- | ---: | --: | ---: | -: | -----: | ----: | ---: | ----: | -----: | -----: | ----: | -----: |
-Nexus                | 8    | 0   | +2   | 15 |     15 |     1 |    L |       |        |        |       |     No |
-Pylon                | 2    | 0   | +2   |  6 |      6 |     1 |    L |       |        |        |       |     No |
-Photon Cannon        | 3    | 0   |      |  2 |      2 |     0 |    L |     7 |      3 |      3 |    11 |    Yes |
-Assimilator          | 2    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |     No |
-Gateway              | 3    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
-Forge                | 3    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
-Cybernetics Core     | 4    | 0   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
-Shield Battery       | 2    | 0   |      |  4 |      4 |     1 |    L |       |        |        |       |    Yes |
-Stargate             | 3    | 3   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
-Citadel of Adun      | 3    | 2   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
-Templar Archives     | 3    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
-Robotics Facility    | 4    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
-Robotics Support Bay | 3    | 2   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
-Observatory          | 1    | 2   |      |  5 |      5 |     1 |    L |       |        |        |       |    Yes |
-Fleet Beacon         | 4    | 4   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
-Arbiter Tribunal     | 4    | 3   |      | 10 |     10 |     1 |    L |       |        |        |       |    Yes |
+Building             | Min. | Gas | Sup. | HP | Shield | Size | Range | Ground | Air    | Sight | Power* |
+:------------------- | ---: | --: | ---: | -: | -----: | ---: | ----: | -----: | -----: | ----: | -----: |
+Nexus                | 8    | 0   | +2   | 15 |     15 |    L |       |        |        |       |     No |
+Pylon                | 2    | 0   | +2   |  7 |      7 |    L |       |        |        |       |     No |
+Photon Cannon        | 3    | 0   |      |  2 |      2 |    L |     7 |      3 |      3 |    11 |    Yes |
+Assimilator          | 2    | 0   |      | 10 |     10 |    L |       |        |        |       |     No |
+Gateway              | 3    | 0   |      | 10 |     10 |    L |       |        |        |       |    Yes |
+Forge                | 3    | 0   |      | 10 |     10 |    L |       |        |        |       |    Yes |
+Cybernetics Core     | 4    | 0   |      | 10 |     10 |    L |       |        |        |       |    Yes |
+Shield Battery       | 2    | 0   |      |  5 |      5 |    L |       |        |        |       |    Yes |
+Stargate             | 3    | 3   |      | 10 |     10 |    L |       |        |        |       |    Yes |
+Citadel of Adun      | 3    | 2   |      | 10 |     10 |    L |       |        |        |       |    Yes |
+Templar Archives     | 3    | 4   |      | 10 |     10 |    L |       |        |        |       |    Yes |
+Robotics Facility    | 4    | 4   |      | 10 |     10 |    L |       |        |        |       |    Yes |
+Robotics Support Bay | 3    | 2   |      | 10 |     10 |    L |       |        |        |       |    Yes |
+Observatory          | 1    | 2   |      |  5 |      5 |    L |       |        |        |       |    Yes |
+Fleet Beacon         | 4    | 4   |      | 10 |     10 |    L |       |        |        |       |    Yes |
+Arbiter Tribunal     | 4    | 3   |      | 10 |     10 |    L |       |        |        |       |    Yes |
 
 * Must be powered by a Pylon.
 
