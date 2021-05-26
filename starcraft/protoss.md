@@ -17,7 +17,7 @@ Archon           |      |     |      |     2 |  1 |      7 |     0 |    L |     
 Dark Archon      |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |      |
 Reaver           | 4    | 2   | 4    |     1 |  2 |      1 |     0 |    L |     8 |  2x3es |     |    10 | Mech |
 Observer         | 1    | 1   | 1    |     1 |  1 |      1 |     0 |    S |       |        |     |     9 | Mech |
-Scout            | 5    | 2   | 3    |     2 |  3 |      2 |     0 |    L |     4 |     1s |  4e |     8 | Mech |
+Scout            | 5    | 2   | 3    |     2 |  3 |      2 |     0 |    L |     4 |      1 |  4e |     8 | Mech |
 Corsair          | 3    | 2   | 2    |     3 |  2 |      1 |     1 |    M |     5 |        | 2es |     8 | Mech |
 Carrier          | 7    | 5   | 6    |     1 |  6 |      3 |     4 |    L |     8 |        |     |    11 | Mech |
 Interceptor (2x) | 1    | 1   |      |     5 |  6 |      0 |     0 |    S |     4 |      1 |   1 |     4 | Mech |
