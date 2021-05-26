@@ -12,23 +12,23 @@
 
 ## Units 
 
-Unit            | Min  | Gas | Sup. | Speed | HP | Armor | Size | Range | Ground | Air | Sight | Type |
-:-------------- | ---: | --: | ---: | ----: | -: | ----: | ---: | ----: | -----: | --: | ----: | ---- | 
-SCV             | 1    | 0   | 1    |     2 |  1 |     0 |    S |     1 |    1/2 |     |     7 | Mech |
-Marine          | 1    | 0   | 1    |     2 |  1 |     0 |    S |     4 |      1 |     |     7 |  Bio |
-Firebat         | 1    | 1   | 1    |     2 |  1 |     1 |    S |     2 |    2cs |     |     7 |  Bio |
-Medic           | 1    | 1   | 1    |     2 |  1 |     0 |    S |       |        |     |     9 |  Bio |
-Ghost           | 1    | 1   | 1    |     2 |  1 |     1 |    S |     7 |     2c |     |     9 |  Bio |
-Vulture         | 2    | 0   | 2    |     3 |  2 |     0 |    M |     5 |     2c |     |     8 | Mech |
-Spider Mine     |      |     |      |     4 |  1 |     0 |    S |     1 |    2es |     |     3 | Mech |
-Siege Tank      | 3    | 2   | 2    |     2 |  3 |     1 |    L |     7 |     2e |     |    10 | Mech |
-In _Siege Mode_ |      |     |      |     0 |  3 |     1 |    L |    12 |    3es |     |    10 | Mech |
-Goliath         | 2    | 1   | 2    |     2 |  3 |     1 |    L |     5 |      2 |  3e |     8 | Mech |
-Dropship        | 2    | 2   | 2    |     2 |  3 |     1 |    L |       |        |     |    11 | Mech |
-Wraith          | 3    | 2   | 2    |     3 |  2 |     0 |    L |     5 |      1 |  3e |     7 | Mech |
-Science Vessel  | 2    | 5   | 2    |     2 |  4 |     1 |    L |       |        |     |    10 | Mech |
-Valkyrie        | 6    | 2   | 3    |     3 |  4 |     2 |    L |     6 |        | 3es |     8 | Mech |
-Battlecruiser   | 8    | 6   | 6    |     1 | 10 |     3 |    L |     6 |      3 |   3 |    11 | Mech |
+Unit            | Min  | Gas | Sup. | Speed | HP | Size | Range | Ground | Air | Sight | Type |
+:-------------- | ---: | --: | ---: | ----: | -: | ---: | ----: | -----: | --: | ----: | ---- | 
+SCV             | 1    | 0   | 1    |     2 |  1 |    S |     1 |    1/2 |     |     7 | Mech |
+Marine          | 1    | 0   | 1    |     2 |  1 |    S |     4 |      1 |     |     7 |  Bio |
+Firebat         | 1    | 1   | 1    |     2 |  2 |    S |     2 |    2cs |     |     7 |  Bio |
+Medic           | 1    | 1   | 1    |     2 |  1 |    S |       |        |     |     9 |  Bio |
+Ghost           | 1    | 1   | 1    |     2 |  2 |    S |     7 |     2c |     |     9 |  Bio |
+Vulture         | 2    | 0   | 2    |     3 |  2 |    M |     5 |     2c |     |     8 | Mech |
+Spider Mine     |      |     |      |     4 |  1 |    S |     1 |    2es |     |     3 | Mech |
+Siege Tank      | 3    | 2   | 2    |     2 |  4 |    L |     7 |     2e |     |    10 | Mech |
+In _Siege Mode_ |      |     |      |     0 |  4 |    L |    12 |    3es |     |    10 | Mech |
+Goliath         | 2    | 1   | 2    |     2 |  4 |    L |     5 |      2 |  3e |     8 | Mech |
+Dropship        | 2    | 2   | 2    |     2 |  4 |    L |       |        |     |    11 | Mech |
+Wraith          | 3    | 2   | 2    |     3 |  2 |    L |     5 |      1 |  3e |     7 | Mech |
+Science Vessel  | 2    | 5   | 2    |     2 |  5 |    L |       |        |     |    10 | Mech |
+Valkyrie        | 6    | 2   | 3    |     3 |  6 |    L |     6 |        | 3es |     8 | Mech |
+Battlecruiser   | 8    | 6   | 6    |     1 | 13 |    L |     6 |      3 |   3 |    11 | Mech |
 
 e: Explosive Attack, c: Concussive Attack, s: Splash Damage
 
@@ -121,26 +121,26 @@ Battlecruiser starts with 1/4 energy.
 
 ## Buildings
 
-Building               | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
-:--------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
-Command Center         | 8    | 0   | +2   | 30 |     1 |    L |       |        |        |       |
-ComSat Station         | 1    | 1   |      | 15 |     0 |    L |       |        |        |       |
-Nuclear Silo           | 2    | 2   |      | 10 |     0 |    L |       |        |        |       |
-Supply Depot           | 2    | 0   | +2   | 10 |     0 |    L |       |        |        |       |
-Refinery               | 2    | 0   |      | 10 |     1 |    L |       |        |        |       |
-Barracks               | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
-Bunker                 | 2    | 0   |      |  7 |     1 |    L |       |        |        |       |
-Engineering Bay        | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
-Academy                | 3    | 0   |      | 10 |     1 |    L |       |        |        |       |
-Missile Turret         | 1    | 0   |      |  4 |     0 |    L |     7 |        |     2e |    11 |
-Factory                | 4    | 2   |      | 25 |     1 |    L |       |        |        |       |
-Machine Shop (Add-on)  | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
-Starport               | 3    | 2   |      | 25 |     1 |    L |       |        |        |       |
-Control Tower (Add-on) | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
-Armory                 | 2    | 1   |      | 15 |     1 |    L |       |        |        |       |
-Science Facility       | 2    | 3   |      | 15 |     1 |    L |       |        |        |       |
-Physics Lab (Add-on)   | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
-Covert Ops  (Add-on)   | 1    | 1   |      | 15 |     1 |    L |       |        |        |       |
+Building               | Min. | Gas | Sup. | HP | Size | Range | Ground | Air    | Sight |
+:--------------------- | ---: | --: | ---: | -: | ---: | ----: | -----: | -----: | ----: |
+Command Center         | 8    | 0   | +2   | 30 |    L |       |        |        |       |
+ComSat Station         | 1    | 1   |      | 15 |    L |       |        |        |       |
+Nuclear Silo           | 2    | 2   |      | 10 |    L |       |        |        |       |
+Supply Depot           | 2    | 0   | +2   | 10 |    L |       |        |        |       |
+Refinery               | 2    | 0   |      | 10 |    L |       |        |        |       |
+Barracks               | 2    | 0   |      | 15 |    L |       |        |        |       |
+Bunker                 | 2    | 0   |      |  8 |    L |       |        |        |       |
+Engineering Bay        | 2    | 0   |      | 15 |    L |       |        |        |       |
+Academy                | 3    | 0   |      | 10 |    L |       |        |        |       |
+Missile Turret         | 1    | 0   |      |  4 |    L |     7 |        |     2e |    11 |
+Factory                | 4    | 2   |      | 25 |    L |       |        |        |       |
+Machine Shop (Add-on)  | 1    | 1   |      | 15 |    L |       |        |        |       |
+Starport               | 3    | 2   |      | 25 |    L |       |        |        |       |
+Control Tower (Add-on) | 1    | 1   |      | 15 |    L |       |        |        |       |
+Armory                 | 2    | 1   |      | 15 |    L |       |        |        |       |
+Science Facility       | 2    | 3   |      | 15 |    L |       |        |        |       |
+Physics Lab (Add-on)   | 1    | 1   |      | 15 |    L |       |        |        |       |
+Covert Ops  (Add-on)   | 1    | 1   |      | 15 |    L |       |        |        |       |
 
 ### Command Center [8 min, +2 sup, 2t]
 
