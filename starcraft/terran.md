@@ -43,12 +43,12 @@ e: Explosive Attack, c: Concussive Attack, s: Splash Damage
 ### Marine [1 min, 1 sup] (Produced at Barracks)
 
 **Abilities**:
-- _Stim Pack_ (Researched at Academy): Allows Marines to gain double attack and double speed in a combat round. However, they lose 1 HP and die if not healed immediately after. 
+- _Stim Pack_ (Researched at Academy): Allows Marines to gain double attack and speed in a combat round. However, they lose 1 HP after the combat, if not healed
 
 ### Firebat [1 min, 1 gas. 1 sup] (Produced at Barracks, Requires Academy)
 
 **Abilities**:
-- _Stim Pack_ (Researched at Academy): Allows the Marine to +1 attack and +1 speed in a combat round. However, they will die if not healed at the end of this round and any damage before armor will kill it.
+- _Stim Pack_ (Researched at Academy): Allows Firebats to gain double attack and speed in a combat round. However, they lose 1 HP after the combat, if not healed.
 
 ### Medic [1 min, 1 gas, 1 sup] (Produced at Barracks, Requires Academy)
 
