@@ -14,24 +14,24 @@
 
 ## Units 
 
-Unit            | Min  | Gas | Sup. | Speed | HP | Armor | Size | Range | Ground |  Air | Sight | Type |
-:-------------- | ---: | --: | ---: | ----: | -: | ----: | ---: | ----: | -----: | ---: | ----: | ---- | 
-Larva           |      |     |      |       |  1 |    10 |    S |       |        |      |     4 |  Bio |
-Egg             |      |     |      |       |  4 |    10 |    S |       |        |      |     4 |  Bio |
-Drone           |    1 |   0 |    1 |     2 |  1 |     0 |    S |     1 |    1/2 |      |     7 |  Bio |
-Overlord        |    2 |   0 |   +2 |     1 |  4 |     0 |    L |       |        |      |     9 |  Bio |
-Zergling (2x)   |    1 |   0 |    1 |     3 |  1 |     0 |    S |     1 |      1 |      |     5 |  Bio |
-Hydralisk       |    1 |   1 |    1 |     2 |  2 |     0 |    M |     4 |     2e |   2e |     5 |  Bio |
-Mutalisk        |    2 |   2 |    2 |     3 |  2 |     0 |    S |     3 |    1+1 |  1+1 |     7 |  Bio |
-Scourge (2x)    |    1 |   1 |    1 |     3 |  1 |     0 |    S |     1 |        |    2 |     7 |  Bio |
-Lurker          |    4 |   4 |    1 |     3 |  3 |     1 |    M |     6 |     4s |      |     8 |  Bio |
-Ultralisk       |    4 |   4 |    4 |     2 |  8 |     1 |    L |     1 |      4 |      |     7 |  Bio |
-Defiler         |    1 |   3 |    2 |     2 |  2 |     1 |    M |       |        |      |    10 |  Bio |
-Queen           |    2 |   2 |    2 |     3 |  2 |     0 |    M |       |        |      |    10 |  Bio |
-Devourer        |    5 |   3 |    2 |     2 |  5 |     2 |    L |     6 |        | 1esa |     7 |  Bio |
-Guardian        |    3 |   4 |    2 |     1 |  3 |     2 |    L |     8 |      2 |      |     7 |  Bio |
-Broodling       |      |     |      |     3 |  1 |     0 |    S |     1 |      1 |      |     5 |  Bio |       
-Infested Terran |    2 |   1 |    1 |     3 |  1 |     0 |    S |     1 |   10es |      |     5 |  Bio |  
+Unit            | Min  | Gas | Sup. | Speed | HP | Size | Range | Ground |  Air | Sight | Type |
+:-------------- | ---: | --: | ---: | ----: | -: | ---: | ----: | -----: | ---: | ----: | ---- | 
+Larva           |      |     |      |       | 10 |    S |       |        |      |     4 |  Bio |
+Egg             |      |     |      |       | 15 |    S |       |        |      |     4 |  Bio |
+Drone           |    1 |   0 |    1 |     2 |  1 |    S |     1 |    1/2 |      |     7 |  Bio |
+Overlord        |    2 |   0 |   +2 |     1 |  4 |    L |       |        |      |     9 |  Bio |
+Zergling (2x)   |    1 |   0 |    1 |     3 |  1 |    S |     1 |      1 |      |     5 |  Bio |
+Hydralisk       |    1 |   1 |    1 |     2 |  2 |    M |     4 |     2e |   2e |     5 |  Bio |
+Mutalisk        |    2 |   2 |    2 |     3 |  2 |    S |     3 |    1+1 |  1+1 |     7 |  Bio |
+Scourge (2x)    |    1 |   1 |    1 |     3 |  1 |    S |     1 |        |    2 |     7 |  Bio |
+Lurker          |    4 |   4 |    1 |     3 |  4 |    M |     6 |     4s |      |     8 |  Bio |
+Ultralisk       |    4 |   4 |    4 |     2 |  9 |    L |     1 |      4 |      |     7 |  Bio |
+Defiler         |    1 |   3 |    2 |     2 |  3 |    M |       |        |      |    10 |  Bio |
+Queen           |    2 |   2 |    2 |     3 |  2 |    M |       |        |      |    10 |  Bio |
+Devourer        |    5 |   3 |    2 |     2 |  7 |    L |     6 |        | 1esa |     7 |  Bio |
+Guardian        |    3 |   4 |    2 |     1 |  5 |    L |     8 |      2 |      |     7 |  Bio |
+Broodling       |      |     |      |     3 |  1 |    S |     1 |      1 |      |     5 |  Bio |       
+Infested Terran |    2 |   1 |    1 |     3 |  1 |    S |     1 |   10es |      |     5 |  Bio |  
 
 - (2x): These units are morphed in pairs for the total cost shown in the table.
 - x: Eggs cost supply equivalent of what's in them. 
@@ -140,25 +140,25 @@ Infested Terran are automatically killed after they have attacked as they suicid
 
 ## Structures
 
-Structure              | Min. | Gas | Sup. | HP | Armor | Size | Range | Ground | Air    | Sight |
-:--------------------- | ---: | --: | ---: | -: | ----: | ---: | ----: | -----: | -----: | ----: |
-Hatchery               | 6    | 0   |      | 25 |     1 |    L |       |        |        |       |
-Lair                   | 3    | 2   |      | 30 |     1 |    L |       |        |        |       |
-Hive                   | 4    | 3   |      | 50 |     1 |    L |       |        |        |       |
-Spawning Pool          | 4    | 0   |      | 15 |     1 |    L |       |        |        |       |
-Creep Colony           | 1    | 0   |      |  8 |     1 |    L |       |        |        |       |
-Spore Colony           | 1    | 0   |      |  8 |     1 |    L |     7 |        |      3 |    10 |
-Sunken Colony          | 1    | 0   |      |  8 |     1 |    L |     7 |     4e |        |    10 |
-Extractor              | 1    | 0   |      | 15 |     1 |    L |       |        |        |       |
-Hydralisk Den          | 2    | 1   |      | 15 |     1 |    L |       |        |        |       |
-Evolution Chamber      | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
-Spire                  | 4    | 3   |      | 10 |     1 |    L |       |        |        |       |
-Greater Spire          | 2    | 3   |      | 20 |     1 |    L |       |        |        |       |
-Queens Nest            | 3    | 2   |      | 15 |     1 |    L |       |        |        |       |
-Nydus Canal            | 3    | 0   |      |  5 |     1 |    L |       |        |        |       |
-Defiler Mound          | 2    | 2   |      | 15 |     1 |    L |       |        |        |       |
-Ultralisk Cavern       | 3    | 4   |      | 10 |     1 |    L |       |        |        |       |
-Infested Command Center|      |     |      | 30 |     1 |    L |       |        |        |       |
+Structure              | Min. | Gas | Sup. | HP | Size | Range | Ground | Air    | Sight |
+:--------------------- | ---: | --: | ---: | -: | ---: | ----: | -----: | -----: | ----: |
+Hatchery               | 6    | 0   |      | 25 |    L |       |        |        |       |
+Lair                   | 3    | 2   |      | 30 |    L |       |        |        |       |
+Hive                   | 4    | 3   |      | 50 |    L |       |        |        |       |
+Spawning Pool          | 4    | 0   |      | 15 |    L |       |        |        |       |
+Creep Colony           | 1    | 0   |      |  9 |    L |       |        |        |       |
+Spore Colony           | 1    | 0   |      |  9 |    L |     7 |        |      3 |    10 |
+Sunken Colony          | 1    | 0   |      |  9 |    L |     7 |     4e |        |    10 |
+Extractor              | 1    | 0   |      | 15 |    L |       |        |        |       |
+Hydralisk Den          | 2    | 1   |      | 15 |    L |       |        |        |       |
+Evolution Chamber      | 2    | 0   |      | 15 |    L |       |        |        |       |
+Spire                  | 4    | 3   |      | 10 |    L |       |        |        |       |
+Greater Spire          | 2    | 3   |      | 20 |    L |       |        |        |       |
+Queens Nest            | 3    | 2   |      | 15 |    L |       |        |        |       |
+Nydus Canal            | 3    | 0   |      |  5 |    L |       |        |        |       |
+Defiler Mound          | 2    | 2   |      | 15 |    L |       |        |        |       |
+Ultralisk Cavern       | 3    | 4   |      | 10 |    L |       |        |        |       |
+Infested Command Center|      |     |      | 30 |    L |       |        |        |       |
 
 ### Hatchery [6 min, 2t]
 
