@@ -6,22 +6,22 @@
 
 ## Units 
 
-Unit             | Min  | Gas | Sup. | Speed | HP | Shield | Armor | Size | Range | Ground | Air | Sight | Type |
-:--------------- | ---: | --: | ---: | ----: | -: | -----: | ----: | ---: | ----: | -----: | --: | ----: | ---- | 
-Probe            | 1    | 0   | 1    |     2 |  1 |      0 |     0 |    S |     1 |    1/2 |     |     8 | Mech |
-Zealot           | 2    | 0   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      2 |     |     7 | Bio  |
-Dragoon          | 2    | 1   | 2    |     2 |  2 |      1 |     1 |    L |     4 |     2e |     |     8 | Mech |
-High Templar     | 1    | 3   | 2    |     1 |  1 |      1 |     0 |    S |       |        |     |     7 | Bio  |
-Dark Templar     | 2    | 2   | 2    |     2 |  2 |      1 |     1 |    S |     1 |      4 |     |     8 | Bio  |
-Archon           |      |     |      |     2 |  1 |      7 |     0 |    L |     2 |     5s |     |     8 |      |
-Dark Archon      |      |     |      |     2 |  1 |      4 |     1 |    L |       |        |     |    10 |      |
-Reaver           | 4    | 2   | 4    |     1 |  2 |      1 |     0 |    L |     8 |  2x3es |     |    10 | Mech |
-Observer         | 1    | 1   | 1    |     1 |  1 |      1 |     0 |    S |       |        |     |     9 | Mech |
-Scout            | 5    | 2   | 3    |     2 |  3 |      2 |     0 |    L |     4 |      1 |  4e |     8 | Mech |
-Corsair          | 3    | 2   | 2    |     3 |  2 |      1 |     1 |    M |     5 |        | 2es |     8 | Mech |
-Carrier          | 7    | 5   | 6    |     1 |  6 |      3 |     4 |    L |     8 |        |     |    11 | Mech |
-Interceptor (2x) | 1    | 1   |      |     5 |  6 |      0 |     0 |    S |     4 |      1 |   1 |     4 | Mech |
-Arbiter          | 2    | 7   | 4    |     2 |  4 |      3 |     1 |    L |     5 |     1e |  1e |     9 | Mech |
+Unit             | Min  | Gas | Sup. | Speed | HP | Shield | Size  | Range | Ground | Air | Sight | Type |
+:--------------- | ---: | --: | ---: | ----: | -: | -----: | ----: | ----: | -----: | --: | ----: | ---: |
+Probe            | 1    | 0   | 1    |     2 |  1 |      0 |     S |     1 |    1/2 |     |     8 | Mech |
+Zealot           | 2    | 0   | 2    |     2 |  3 |      1 |     S |     1 |      2 |     |     7 | Bio  |
+Dragoon          | 2    | 1   | 2    |     2 |  3 |      1 |     L |     4 |     2e |     |     8 | Mech |
+High Templar     | 1    | 3   | 2    |     1 |  1 |      1 |     S |       |        |     |     7 | Bio  |
+Dark Templar     | 2    | 2   | 2    |     2 |  3 |      1 |     S |     1 |      4 |     |     8 | Bio  |
+Archon           |      |     |      |     2 |  1 |      7 |     L |     2 |     5s |     |     8 |      |
+Dark Archon      |      |     |      |     2 |  2 |      4 |     L |       |        |     |    10 |      |
+Reaver           | 4    | 2   | 4    |     1 |  2 |      1 |     L |     8 |  2x3es |     |    10 | Mech |
+Observer         | 1    | 1   | 1    |     1 |  1 |      1 |     S |       |        |     |     9 | Mech |
+Scout            | 5    | 2   | 3    |     2 |  3 |      2 |     L |     4 |      1 |  4e |     8 | Mech |
+Corsair          | 3    | 2   | 2    |     3 |  3 |      1 |     M |     5 |        | 2es |     8 | Mech |
+Carrier          | 7    | 5   | 6    |     1 | 10 |      3 |     L |     8 |        |     |    11 | Mech |
+Interceptor (2x) | 1    | 1   |      |     5 |  1 |      0 |     S |     4 |      1 |   1 |     4 | Mech |
+Arbiter          | 2    | 7   | 4    |     2 |  5 |      3 |     L |     5 |     1e |  1e |     9 | Mech |
 
 e: Explosive Attack, s: Splash Damage
 
