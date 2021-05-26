@@ -129,6 +129,7 @@ Nuclear Silo           | 2    | 2   |      | 10 |     0 |    L |       |        
 Supply Depot           | 2    | 0   | +2   | 10 |     0 |    L |       |        |        |       |
 Refinery               | 2    | 0   |      | 10 |     1 |    L |       |        |        |       |
 Barracks               | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
+Bunker                 | 2    | 0   |      |  7 |     1 |    L |       |        |        |       |
 Engineering Bay        | 2    | 0   |      | 15 |     1 |    L |       |        |        |       |
 Academy                | 3    | 0   |      | 10 |     1 |    L |       |        |        |       |
 Missile Turret         | 1    | 0   |      |  4 |     0 |    L |     7 |        |     2e |    11 |
