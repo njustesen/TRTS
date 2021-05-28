@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    color: rgb(150, 220, 255);
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.item {
+    background-color: rgba(5, 5, 60, 0.2);
+    margin: 4px;
+    box-shadow: inset 75px 0px 50px #126;
+    border: 1px solid rgb(20, 50, 180);
+}
+
+.glow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 0px 14px #139;
+    z-index: 1000;
+}
+
+.image {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 2px;
+    box-shadow: inset 0px 0px 2px #137;
+}
+
+.icon {
+    max-height:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container {
+    position: relative;
+    background-color: black;
+    width: 64px;
+    height: 64px;
+    border: 2px solid rgb(40, 100, 220);
+}
+
+.content {
+    margin-left: 4px;
+    padding: 2px;
+}
+
+.title {
+    font-weight: bold;
+    color: rgb(230, 230, 255);
+}
+
+.requirement {
+    font-size: 12px;
+}
+
+.resource {
+    float: right;
+    padding: 4px;
+}

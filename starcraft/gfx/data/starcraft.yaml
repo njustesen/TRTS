@@ -1,0 +1,302 @@
+Races:
+  Protoss:
+    Buildings:
+      Nexus:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 8
+          Gas: 0
+          Supply: 0
+          Time: 2
+        Stats:
+          Size: L
+          Health: 15
+          Shield: 15
+        Produces:
+          - Probe
+        Abilities:
+          - Base
+      Pylon:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 7
+          Shield: 7
+        Abilities:
+          - Psionic Matrix
+      Assimilator:
+        Size:
+          Width: 4
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Abilities:
+          - Gas Extractor
+      Gateway:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Requires:
+          - Nexus
+        Produces:
+          - Zealot
+          - Dragoon
+          - High Templar
+          - Dark Templar
+      Forge:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 3
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Requires:
+          - Nexus
+        Upgrades:
+          - Ground Weapons
+          - Ground Armor
+          - Ground Shield
+      Photon Cannon:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 3
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 2
+          Shield: 2
+          Range: 7
+          Ground Damage: 3
+          Air Damage: 3
+          Sight: 11
+        Requires:
+          - Forge
+      Cybernetics Core:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 4
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Requires:
+          - Gateway
+        Upgrades:
+          - Air Weapons
+          - Air Armor
+          - Singularity Charge
+      Shield Battery:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 5
+          Shield: 5
+        Requires:
+          - Gateway
+        Abilities:
+          - Recharge
+      Stargate:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 3
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Requires:
+          - Cybernetics Core
+        Produces:
+          - Scout
+          - Corsair
+          - Carrier
+          - Arbiter
+      Citadel of Adun:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 3
+          Gas: 2
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Requires:
+          - Cybernetics Core
+        Upgrades:
+          - Leg Enhancements
+      Templar Archives:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 3
+          Gas: 4
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Requires:
+          - Citadel of Adun
+        Upgrades:
+          - Psionic Storm
+          - Hallucination
+          - Khaydarin Amulet
+          - Mind Control
+          - Maelstrom
+          - Argus Talisman
+      Robotics Facility:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 4
+          Gas: 4
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Requires:
+          - Cybernetics Core
+        Produces:
+          - Shuttle
+          - Observer
+          - Reaver
+      Robotics Support Bay:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 3
+          Gas: 2
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Requires:
+          - Robotics Facility
+        Upgrades:
+          - Scarab Damage
+          - Reaver Capacity
+          - Gravitic Drive
+      Observatory:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 2
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 5
+          Shield: 5
+        Requires:
+          - Robotics Facility
+        Upgrades:
+          - Sensor Array
+          - Gravitic Boosters
+      Fleet Beacon:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 4
+          Gas: 4
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 5
+          Shield: 5
+        Requires:
+          - Stargate
+        Upgrades:
+          - Apial Sensors
+          - Gravitic Thrusters
+          - Carrier Capacity
+          - Argus Jewel
+          - Disruption Web
+      Arbiter Tribunal:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 4
+          Gas: 4
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 5
+          Shield: 5
+        Requires:
+          - Stargate
+          - Templar Archives
+        Upgrades:
+          - Recall
+          - Stasis Field
+          - Khaydarin Core
+  Terran:
+  Zerg:
