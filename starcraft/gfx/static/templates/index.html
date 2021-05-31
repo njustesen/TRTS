@@ -3,7 +3,6 @@
         <title>Hello</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="static/css/styles.css" rel="stylesheet">
-
     </head>
     <body>
         <div class="container" style="max-width: 100%;">
@@ -11,9 +10,9 @@
                 <div class="col-3">
                     <div class="container">
                     {%for name, building in data['Races'][race]['Buildings'].items()%}
-                        <div class="row item">
-                            <div class="image-container col-3" >
-                                <div class="glow"></div>
+                        <div class="row item border-1">
+                            <div class="image-container building border-2 col-3" >
+                                <div class="glow-large"></div>
                                 <div class="image">
                                     <img class="icon" src="static/img/{{race}}/{{img(name)}}" style="max-width:{{building['Size']['Width']/0.04}}%;">
                                 </div>
@@ -26,44 +25,65 @@
                                         </div>
                                         <div class="col">
                                             {%if building['Costs']['Time'] > 1%}
-                                            <div class="resource">
-                                                {{building['Costs']['Time']}}<img src="static/img/icons/Duration.gif" width="20px">
-                                            </div>
+                                                <div class="resource">
+                                                    {{building['Costs']['Time']}}<img src="static/img/icons/Duration.gif" width="20px">
+                                                </div>
                                             {%endif%}
                                             {%if building['Costs']['Supply'] > 0%}
-                                            <div class="resource">
-                                                {{building['Costs']['Supply']}}<img src="static/img/icons/Supply.png" width="20px">
-                                            </div>
+                                                <div class="resource">
+                                                    {{building['Costs']['Supply']}}<img src="static/img/icons/Supply.png" width="20px">
+                                                </div>
                                             {%endif%}
                                             {%if building['Costs']['Gas'] > 0%}
-                                            <div class="resource">
-                                                {{building['Costs']['Gas']}}<img src="static/img/icons/Gas.png" width="20px">
-                                            </div>
+                                                <div class="resource">
+                                                    {{building['Costs']['Gas']}}<img src="static/img/icons/Gas.png" width="20px">
+                                                </div>
                                             {%endif%}
                                             {%if building['Costs']['Minerals'] > 0%}
-                                            <div class="resource">
-                                                {{building['Costs']['Minerals']}}<img src="static/img/icons/Mineral.png" width="20px">
-                                            </div>
+                                                <div class="resource">
+                                                    {{building['Costs']['Minerals']}}<img src="static/img/icons/Mineral.png" width="20px">
+                                                </div>
                                             {%endif%}
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row requirement-row">
                                         <div class="col-8 requirement">
-                                            {%if building['Requires']|length > 0%}
-                                            Requires
-                                            {%for requirement in building['Requires']%}
-                                                {{requirement}}
-                                            {%endfor%}
+                                            {%if building['Requires'] | length > 0%}
+                                                Requires
+                                                {%for requirement in building['Requires']%}
+                                                    <span class="badge bg-requirement">{{requirement}}</span>
+                                                {%endfor%}
+                                            {%else%}
+                                            &nbsp
                                             {%endif%}
                                         </div>
                                         <div class="col"></div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            {%for unit in building['Produces']%}
-                                                <img src="static/img/{{race}}/{{img(unit)}}" width="20px">
-                                            {%endfor%}
+                                    <div class="row products-row">
+                                        {%if building['Produces'] | length > 0 %}
+                                            <div class="col products">
+                                                {%for unit in building['Produces']%}
+                                                    <div class="image-container unit border-1">
+                                                        <div class="glow-small"></div>
+                                                        <div class="image">
+                                                            <img class="icon" src="static/img/{{race}}/{{img(unit)}}" style="max-width:32px">
+                                                        </div>
+                                                    </div>
+                                                {%endfor%}
+                                            </div>
+                                        {%endif%}
+                                    </div>
+                                    <div class="row abilities-row">
+                                        <div class="col-8 abilities">
+                                            {%if building['Abilities'] | length > 0%}
+                                                {%for ability in building['Abilities']%}
+                                                    <span class="badge bg-ability">{{ability}}</span>
+                                                {%endfor%}
+                                            {%else%}
+                                            &nbsp
+                                            {%endif%}
                                         </div>
+                                        <div class="col"></div>
                                     </div>
                                 </div>
                             </div>

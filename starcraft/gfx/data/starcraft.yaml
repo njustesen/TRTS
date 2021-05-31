@@ -18,6 +18,7 @@ Races:
           - Probe
         Abilities:
           - Base
+          - Supply
       Pylon:
         Size:
           Width: 2
@@ -33,6 +34,7 @@ Races:
           Shield: 7
         Abilities:
           - Psionic Matrix
+          - Supply
       Assimilator:
         Size:
           Width: 4

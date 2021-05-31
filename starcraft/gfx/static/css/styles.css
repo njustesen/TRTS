@@ -12,14 +12,21 @@ body {
     background-color: rgba(5, 5, 60, 0.2);
     margin: 4px;
     box-shadow: inset 75px 0px 50px #126;
-    border: 1px solid rgb(20, 50, 180);
 }
 
-.glow {
+.glow-large {
     position: absolute;
     height: 100%;
     width: 100%;
     box-shadow: inset 0px 0px 14px #139;
+    z-index: 1000;
+}
+
+.glow-small {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 0px 8px #139;
     z-index: 1000;
 }
 
@@ -42,14 +49,33 @@ body {
 .image-container {
     position: relative;
     background-color: black;
-    width: 64px;
-    height: 64px;
+}
+
+.border-2 {
     border: 2px solid rgb(40, 100, 220);
 }
 
+.border-1 {
+    border: 1px solid rgb(40, 100, 220);
+}
+
+.building {
+    width: 108px;
+    height: 108px;
+}
+
+.unit {
+    width: 42px;
+    height: 42px;
+    float: left;
+    margin-top: 1px;
+    margin-right: 1px;
+}
+
 .content {
-    margin-left: 4px;
-    padding: 2px;
+    padding-top: 4px;
+    height: 100%;
+    padding-left: 4px;
 }
 
 .title {
@@ -58,10 +84,46 @@ body {
 }
 
 .requirement {
+    width: 100%;
     font-size: 12px;
 }
 
+.bg-requirement {
+    background-color: rgb(40, 100, 220)!important;
+}
+
+.abilities-row {
+    margin-top: 1px;
+    margin-right: 4px;
+    margin-left: 1px;
+    border-top: 1px solid rgba(40, 100, 220, 0.6);
+}
+
+.abilities {
+    font-size: 12px;
+}
+
+.bg-ability {
+    background-color: rgb(40, 140, 80)!important;
+}
+
 .resource {
+    font-weight: bold;
     float: right;
-    padding: 4px;
+    padding-right: 4px;
+}
+
+.products {
+}
+
+.products-row {
+    margin-top: 1px;
+    margin-right: 4px;
+    margin-left: 1px;
+    border-top: 1px solid rgba(40, 100, 220, 0.6);
+    min-height: 44px;
+}
+
+.requirement-row {
+    min-height: 16px;
 }
