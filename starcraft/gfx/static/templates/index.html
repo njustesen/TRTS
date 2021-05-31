@@ -26,7 +26,7 @@
                                         <div class="col">
                                             {%if building['Costs']['Time'] > 1%}
                                                 <div class="resource">
-                                                    {{building['Costs']['Time']}}<img src="static/img/icons/Duration.gif" width="20px">
+                                                    {{building['Costs']['Time']}}<img src="static/img/icons/Duration.png" width="20px">
                                                 </div>
                                             {%endif%}
                                             {%if building['Costs']['Supply'] > 0%}
@@ -60,7 +60,7 @@
                                         <div class="col"></div>
                                     </div>
                                     <div class="row products-row">
-                                        {%if building['Produces'] | length > 0 %}
+                                        {%if num_products(building) > 0 %}
                                             <div class="col products">
                                                 {%for unit in building['Produces']%}
                                                     <div class="image-container unit border-1">
@@ -69,6 +69,9 @@
                                                             <img class="icon" src="static/img/{{race}}/{{img(unit)}}" style="max-width:32px">
                                                         </div>
                                                     </div>
+                                                {%endfor%}
+                                                {%for upgrade in building['Upgrades']%}
+                                                    <img class="icon" src="static/img/{{race}}/{{img(upgrade)}}" style="max-width:40px; float: right; margin-top: 1px;">
                                                 {%endfor%}
                                             </div>
                                         {%endif%}

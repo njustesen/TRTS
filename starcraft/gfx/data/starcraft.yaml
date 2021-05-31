@@ -88,7 +88,7 @@ Races:
         Upgrades:
           - Ground Weapons
           - Ground Armor
-          - Ground Shield
+          - Plasma Shield
       Photon Cannon:
         Size:
           Width: 2
@@ -239,7 +239,7 @@ Races:
           - Robotics Facility
         Upgrades:
           - Scarab Damage
-          - Reaver Capacity
+          - Increased Reaver Capacity
           - Gravitic Drive
       Observatory:
         Size:
@@ -258,7 +258,7 @@ Races:
           - Robotics Facility
         Upgrades:
           - Sensor Array
-          - Gravitic Boosters
+          - Gravitic Booster
       Fleet Beacon:
         Size:
           Width: 3
