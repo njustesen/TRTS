@@ -32,6 +32,8 @@ Races:
           Size: L
           Health: 7
           Shield: 7
+        Requires:
+          - Nexus
         Abilities:
           - Psionic Matrix
           - Supply
@@ -48,28 +50,10 @@ Races:
           Size: L
           Health: 10
           Shield: 10
-        Abilities:
-          - Gas Extractor
-      Gateway:
-        Size:
-          Width: 4
-          Height: 3
-        Costs:
-          Minerals: 3
-          Gas: 0
-          Supply: 0
-          Time: 1
-        Stats:
-          Size: L
-          Health: 10
-          Shield: 10
         Requires:
           - Nexus
-        Produces:
-          - Zealot
-          - Dragoon
-          - High Templar
-          - Dark Templar
+        Abilities:
+          - Gas Extractor
       Forge:
         Size:
           Width: 3
@@ -108,6 +92,43 @@ Races:
           Sight: 11
         Requires:
           - Forge
+      Gateway:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Requires:
+          - Nexus
+        Produces:
+          - Zealot
+          - Dragoon
+          - High Templar
+          - Dark Templar
+      Shield Battery:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 5
+          Shield: 5
+        Requires:
+          - Gateway
+        Abilities:
+          - Recharge
       Cybernetics Core:
         Size:
           Width: 3
@@ -127,43 +148,6 @@ Races:
           - Air Weapons
           - Air Armor
           - Singularity Charge
-      Shield Battery:
-        Size:
-          Width: 3
-          Height: 2
-        Costs:
-          Minerals: 2
-          Gas: 0
-          Supply: 0
-          Time: 1
-        Stats:
-          Size: L
-          Health: 5
-          Shield: 5
-        Requires:
-          - Gateway
-        Abilities:
-          - Recharge
-      Stargate:
-        Size:
-          Width: 4
-          Height: 3
-        Costs:
-          Minerals: 3
-          Gas: 3
-          Supply: 0
-          Time: 1
-        Stats:
-          Size: L
-          Health: 10
-          Shield: 10
-        Requires:
-          - Cybernetics Core
-        Produces:
-          - Scout
-          - Corsair
-          - Carrier
-          - Arbiter
       Citadel of Adun:
         Size:
           Width: 3
@@ -259,6 +243,26 @@ Races:
         Upgrades:
           - Sensor Array
           - Gravitic Booster
+      Stargate:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 3
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+          Shield: 10
+        Requires:
+          - Cybernetics Core
+        Produces:
+          - Scout
+          - Corsair
+          - Carrier
+          - Arbiter
       Fleet Beacon:
         Size:
           Width: 3

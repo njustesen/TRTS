@@ -57,11 +57,61 @@
                                             &nbsp
                                             {%endif%}
                                         </div>
-                                        <div class="col"></div>
                                     </div>
                                     <div class="row products-row">
                                         {%if num_products(building) > 0 %}
                                             <div class="col products">
+                                                {%if 'Range' in building['Stats']%}
+                                                    <div class="image-container unit border-1">
+                                                        <div class="container">
+                                                            <div class="glow-small"></div>
+                                                            <div class="row">
+                                                                <div class="col stat-header">
+                                                                    RANGE
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col stat-value">
+                                                                    {{building['Stats']['Range']}}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                {%endif%}
+                                                {%if 'Ground Damage' in building['Stats']%}
+                                                    <div class="image-container unit border-1">
+                                                        <div class="container">
+                                                            <div class="glow-small"></div>
+                                                            <div class="row">
+                                                                <div class="col stat-header">
+                                                                    GR.
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col stat-value">
+                                                                    {{building['Stats']['Ground Damage']}}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                {%endif%}
+                                                {%if 'Air Damage' in building['Stats']%}
+                                                    <div class="image-container unit border-1">
+                                                        <div class="container">
+                                                            <div class="glow-small"></div>
+                                                            <div class="row">
+                                                                <div class="col stat-header">
+                                                                    AIR
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col stat-value">
+                                                                    {{building['Stats']['Air Damage']}}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                {%endif%}
                                                 {%for unit in building['Produces']%}
                                                     <div class="image-container unit border-1">
                                                         <div class="glow-small"></div>
@@ -71,13 +121,13 @@
                                                     </div>
                                                 {%endfor%}
                                                 {%for upgrade in building['Upgrades']%}
-                                                    <img class="icon" src="static/img/{{race}}/{{img(upgrade)}}" style="max-width:40px; float: right; margin-top: 1px;">
+                                                    <img class="icon" src="static/img/{{race}}/{{img(upgrade)}}" style="max-width:42px; float: right; margin-top: 1px;">
                                                 {%endfor%}
                                             </div>
                                         {%endif%}
                                     </div>
                                     <div class="row abilities-row">
-                                        <div class="col-8 abilities">
+                                        <div class="col abilities">
                                             {%if building['Abilities'] | length > 0%}
                                                 {%for ability in building['Abilities']%}
                                                     <span class="badge bg-ability">{{ability}}</span>
@@ -86,6 +136,7 @@
                                             &nbsp
                                             {%endif%}
                                         </div>
+
                                         <div class="col"></div>
                                     </div>
                                 </div>

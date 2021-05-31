@@ -18,7 +18,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    box-shadow: inset 0px 0px 14px #139;
+    box-shadow: inset 0px 0px 24px #139;
     z-index: 1000;
 }
 
@@ -26,7 +26,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    box-shadow: inset 0px 0px 8px #139;
+    box-shadow: inset 0px 0px 12px #139;
     z-index: 1000;
 }
 
@@ -36,7 +36,6 @@ body {
     transform: translate(-50%,-50%);
     width: 100%;
     padding: 2px;
-    box-shadow: inset 0px 0px 2px #137;
 }
 
 .icon {
@@ -60,8 +59,8 @@ body {
 }
 
 .building {
-    width: 108px;
-    height: 108px;
+    width: 110px;
+    height: 110px;
 }
 
 .unit {
@@ -113,6 +112,13 @@ body {
     padding-right: 4px;
 }
 
+.health {
+    font-weight: bold;
+    float: right;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
 .products-row {
     margin-top: 1px;
     margin-right: 4px;
@@ -123,4 +129,14 @@ body {
 
 .requirement-row {
     min-height: 16px;
+}
+
+.stat-header {
+    font-size: 10px;
+    padding-top: 1px;
+    text-align: center;
+}
+
+.stat-value {
+    text-align: center;
 }

@@ -10,7 +10,14 @@ def img(name):
 def num_products(building):
     produces = len(building['Produces']) if 'Produces' in building else 0
     upgrades = len(building['Upgrades']) if 'Upgrades' in building else 0
-    return produces + upgrades
+    stats = 0
+    if 'Ground Damage' in building['Stats']:
+        stats += 1
+    if 'Air Damage' in building['Stats']:
+        stats += 1
+    if 'Range' in building['Stats']:
+        stats += 1
+    return produces + upgrades + stats
 
 
 @app.route('/protoss', methods=['GET', 'POST'])
