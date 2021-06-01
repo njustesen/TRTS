@@ -92,6 +92,8 @@ Races:
           Sight: 11
         Requires:
           - Forge
+        Abilities:
+          - Detector
       Gateway:
         Size:
           Width: 4
