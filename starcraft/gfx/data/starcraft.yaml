@@ -408,6 +408,7 @@ Races:
           - Templar Archives
         Abilities:
           - Cloaked
+          - Dark Archon Merging
       Archon:
         Size:
           Width: 2
@@ -422,12 +423,204 @@ Races:
           Speed: 2
           Health: 1
           Shield: 7
-          Ground Damage: 5s
-          Air Damage: 5s
+          Range: 2
+          Ground Damage: 5
+          Air Damage: 5
           Sight: 8
         Abilities:
           - Hovers
         Requires:
           - Templar Archives
+      Dark Archon:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Supply: 0
+          Minerals: 0
+          Gas: 0
+        Stats:
+          Size: L
+          Speed: 2
+          Health: 2
+          Shield: 4
+          Sight: 10
+        Abilities:
+          - Hovers
+          - Feedback
+          - Maelstrom
+          - Mind Control
+        Requires:
+          - Templar Archives
+      Shuttle:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 0
+          Supply: 2
+        Stats:
+          Size: L
+          Speed: 2
+          Health: 3
+          Shield: 1
+          Sight: 8
+        Abilities:
+          - Flying
+          - Transport
+      Reaver:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 2
+          Supply: 4
+        Stats:
+          Size: L
+          Speed: 1
+          Health: 2
+          Shield: 2
+          Range: 8
+          Ground Damage: 4e
+          Sight: 10
+        Produces:
+          - Scarab
+        Abilities:
+          - Scarabs
+        Requires:
+          - Robotics Support Bay
+      Observer:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Minerals: 1
+          Gas: 1
+          Supply: 1
+        Stats:
+          Size: S
+          Speed: 1
+          Health: 1
+          Shield: 1
+          Sight: 9
+        Abilities:
+          - Detector
+        Requires:
+          - Observatory
+        Abilities:
+          - Flying
+      Scout:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Minerals: 5
+          Gas: 2
+          Supply: 3
+        Stats:
+          Size: L
+          Speed: 2
+          Health: 3
+          Shield: 2
+          Range: 4
+          Ground Damage: 1
+          Air Damage: 4e
+          Sight: 8
+        Abilities:
+          - Flying
+      Corsair:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 2
+          Supply: 2
+        Stats:
+          Size: M
+          Speed: 3
+          Health: 3
+          Shield: 1
+          Air Damage: 2es
+          Sight: 8
+        Abilities:
+          - Flying
+      Carrier:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 2
+          Minerals: 7
+          Gas: 5
+          Supply: 6
+        Stats:
+          Size: L
+          Speed: 1
+          Health: 10
+          Shield: 3
+          Sight: 11
+        Produces:
+          - Interceptor
+        Abilities:
+          - Flying
+          - Interceptors
+        Requires:
+          - Fleet Beacon
+      Interceptor:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Minerals: 1
+          Gas: 0
+          Supply: 0
+        Stats:
+          Size: S
+          Speed: 4
+          Health: 1
+          Shield: 0
+          Range: 4
+          Air Damage: 1
+          Ground Damage: 1
+          Sight: 4
+        Abilities:
+          - Flying
+        Produces:
+          - Interceptor
+      Arbiter:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 7
+          Supply: 4
+        Stats:
+          Size: L
+          Speed: 2
+          Health: 5
+          Shield: 3
+          Range: 5
+          Ground Damage: 1e
+          Air Damage: 1e
+          Sight: 9
+        Abilities:
+          - Flying
+          - Invisibility Field
+          - Stasis Field
+          - Recall
+        Requires:
+          - Arbiter Tribunal
   Terran:
   Zerg:
