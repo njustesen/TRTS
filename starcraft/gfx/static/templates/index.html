@@ -8,152 +8,171 @@
     <body>
         <div class="container" style="max-width: 100%;">
             <div class="row">
-                <div class="col-3">
-                    <div class="container">
-                    {%for name, building in data['Races'][race]['Buildings'].items()%}
-                        <div class="row item border-1">
-                            <div class="image-container building border-2 col-3" >
-                                <div class="glow-large"></div>
-                                <div class="image">
-                                    <img class="icon" src="static/img/{{race}}/{{img(name)}}" style="max-width:{{building['Size']['Width']/0.04}}%;">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="container content">
-                                    <div class="row" style="height: 22px;">
-                                        <div class="col">
-                                            <span class="title">
-                                                {{ name }}
-                                            </span>
-                                            {%if building['Costs']['Time'] > 1%}
-                                                <span class="resource">
-                                                    {{building['Costs']['Time']}}<i class="bi light bi-clock-fill"></i>
-                                                </span>
-                                            {%endif%}
-                                            {%if building['Costs']['Supply'] > 0%}
-                                                <span class="resource">
-                                                    {{building['Costs']['Supply']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Supply{{race}}.png" width="20px"></span>
-                                                </span>
-                                            {%endif%}
-                                            {%if building['Costs']['Gas'] > 0%}
-                                                <span class="resource">
-                                                    {{building['Costs']['Gas']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Gas.png" width="20px"></span>
-                                                </span>
-                                            {%endif%}
-                                            {%if building['Costs']['Minerals'] > 0%}
-                                                <span class="resource">
-                                                    {{building['Costs']['Minerals']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Mineral.png" width="20px"></span>
-                                                </span>
-                                            {%endif%}
+                {%for item_type in data['Races'][race]%}
+                    <div class="col-3">
+                        <div class="container">
+                            {%for name, item in data['Races'][race][item_type].items()%}
+                                <div class="row item border-1">
+                                    <div class="image-container building border-2 col-3" >
+                                        <div class="glow-large"></div>
+                                        <div class="image">
+                                            <img class="icon" src="static/img/{{race}}/{{img(name)}}" style="max-width:{{item['Size']['Width']/0.04}}%;">
                                         </div>
                                     </div>
-                                    <div class="row requirement-row">
-                                        <div class="col-9 requirement">
-                                            {%if building['Requires'] | length > 0%}
-                                                Requires
-                                                {%for requirement in building['Requires']%}
-                                                    <span class="badge bg-requirement">{{requirement}}</span>
-                                                {%endfor%}
-                                            {%else%}
-                                            &nbsp
-                                            {%endif%}
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="health">
-                                                {{building['Stats']['Shield']}} <i class="bi bi-shield-shaded"></i>
+                                    <div class="col">
+                                        <div class="container content">
+                                            <div class="row" style="height: 22px;">
+                                                <div class="col">
+                                                    <span class="title">
+                                                        {{ name }}
+                                                    </span>
+                                                    {%if item['Costs']['Time'] > 1%}
+                                                        <span class="resource">
+                                                            {{item['Costs']['Time']}}<i class="bi light bi-clock-fill"></i>
+                                                        </span>
+                                                    {%endif%}
+                                                    {%if item['Costs']['Supply'] > 0%}
+                                                        <span class="resource">
+                                                            {{item['Costs']['Supply']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Supply{{race}}.png" width="20px"></span>
+                                                        </span>
+                                                    {%endif%}
+                                                    {%if item['Costs']['Gas'] > 0%}
+                                                        <span class="resource">
+                                                            {{item['Costs']['Gas']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Gas.png" width="20px"></span>
+                                                        </span>
+                                                    {%endif%}
+                                                    {%if item['Costs']['Minerals'] > 0%}
+                                                        <span class="resource">
+                                                            {{item['Costs']['Minerals']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Mineral.png" width="20px"></span>
+                                                        </span>
+                                                    {%endif%}
+                                                </div>
                                             </div>
-                                            <div class="health">
-                                                {{building['Stats']['Health']}} <i class="bi bi-heart-fill"></i>
+                                            <div class="row requirement-row">
+                                                <div class="col-9 requirement">
+                                                    {%if item['Requires'] | length > 0%}
+                                                        Requires
+                                                        {%for requirement in item['Requires']%}
+                                                            <span class="badge bg-requirement">{{requirement}}</span>
+                                                        {%endfor%}
+                                                    {%else%}
+                                                    &nbsp
+                                                    {%endif%}
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="health">
+                                                        {{item['Stats']['Shield']}} <i class="bi bi-shield-shaded"></i>
+                                                    </div>
+                                                    <div class="health">
+                                                        {{item['Stats']['Health']}} <i class="bi bi-heart-fill"></i>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="row products-row">
-                                        {%if num_products(building) > 0 %}
-                                            <div class="col products">
-                                                {%if 'Range' in building['Stats']%}
-                                                    <div class="image-container unit border-1">
-                                                        <div class="container">
-                                                            <div class="glow-small"></div>
-                                                            <div class="row">
-                                                                <div class="col stat-header">
-                                                                    RANGE
+                                            <div class="row products-row">
+                                                {%if num_products(item) > 0 %}
+                                                    <div class="col products">
+                                                        {%if 'Speed' in item['Stats']%}
+                                                            <div class="image-container unit border-1">
+                                                                <div class="container">
+                                                                    <div class="glow-small"></div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-header">
+                                                                            SPEED
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-value">
+                                                                            {{item['Stats']['Speed']}}
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row">
-                                                                <div class="col stat-value">
-                                                                    {{building['Stats']['Range']}}
+                                                        {%endif%}
+                                                        {%if 'Range' in item['Stats']%}
+                                                            <div class="image-container unit border-1">
+                                                                <div class="container">
+                                                                    <div class="glow-small"></div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-header">
+                                                                            RANGE
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-value">
+                                                                            {{item['Stats']['Range']}}
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        {%endif%}
+                                                        {%if 'Ground Damage' in item['Stats']%}
+                                                            <div class="image-container unit border-1">
+                                                                <div class="container">
+                                                                    <div class="glow-small"></div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-header">
+                                                                            GR.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-value">
+                                                                            {{item['Stats']['Ground Damage']}}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {%endif%}
+                                                        {%if 'Air Damage' in item['Stats']%}
+                                                            <div class="image-container unit border-1">
+                                                                <div class="container">
+                                                                    <div class="glow-small"></div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-header">
+                                                                            AIR
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-value">
+                                                                            {{item['Stats']['Air Damage']}}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {%endif%}
+                                                        {%for unit in item['Produces']%}
+                                                            <div class="image-container unit border-1">
+                                                                <div class="glow-small"></div>
+                                                                <div class="image">
+                                                                    <img class="icon" src="static/img/{{race}}/{{img(unit)}}" style="max-width:32px">
+                                                                </div>
+                                                            </div>
+                                                        {%endfor%}
+                                                        {%for upgrade in item['Upgrades']%}
+                                                            <img class="icon" src="static/img/{{race}}/{{img(upgrade)}}" style="max-width:42px; float: right; margin-top: 1px;">
+                                                        {%endfor%}
                                                     </div>
                                                 {%endif%}
-                                                {%if 'Ground Damage' in building['Stats']%}
-                                                    <div class="image-container unit border-1">
-                                                        <div class="container">
-                                                            <div class="glow-small"></div>
-                                                            <div class="row">
-                                                                <div class="col stat-header">
-                                                                    GR.
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col stat-value">
-                                                                    {{building['Stats']['Ground Damage']}}
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                {%endif%}
-                                                {%if 'Air Damage' in building['Stats']%}
-                                                    <div class="image-container unit border-1">
-                                                        <div class="container">
-                                                            <div class="glow-small"></div>
-                                                            <div class="row">
-                                                                <div class="col stat-header">
-                                                                    AIR
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col stat-value">
-                                                                    {{building['Stats']['Air Damage']}}
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                {%endif%}
-                                                {%for unit in building['Produces']%}
-                                                    <div class="image-container unit border-1">
-                                                        <div class="glow-small"></div>
-                                                        <div class="image">
-                                                            <img class="icon" src="static/img/{{race}}/{{img(unit)}}" style="max-width:32px">
-                                                        </div>
-                                                    </div>
-                                                {%endfor%}
-                                                {%for upgrade in building['Upgrades']%}
-                                                    <img class="icon" src="static/img/{{race}}/{{img(upgrade)}}" style="max-width:42px; float: right; margin-top: 1px;">
-                                                {%endfor%}
                                             </div>
-                                        {%endif%}
-                                    </div>
-                                    <div class="row abilities-row">
-                                        <div class="col abilities">
-                                            {%if building['Abilities'] | length > 0%}
-                                                {%for ability in building['Abilities']%}
-                                                    <span class="badge bg-ability">{{ability}}</span>
-                                                {%endfor%}
-                                            {%else%}
-                                            &nbsp
-                                            {%endif%}
-                                        </div>
+                                            <div class="row abilities-row">
+                                                <div class="col abilities">
+                                                    {%if item['Abilities'] | length > 0%}
+                                                        {%for ability in item['Abilities']%}
+                                                            <span class="badge bg-ability">{{ability}}</span>
+                                                        {%endfor%}
+                                                    {%else%}
+                                                    &nbsp
+                                                    {%endif%}
+                                                </div>
 
-                                        <div class="col"></div>
+                                                <div class="col"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            {%endfor%}
                         </div>
-                    {%endfor%}
                     </div>
-                </div>
+                {%endfor%}
                 <div class="col">
                     Column
                 </div>

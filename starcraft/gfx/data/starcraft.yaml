@@ -306,5 +306,65 @@ Races:
           - Recall
           - Stasis Field
           - Khaydarin Core
+    Units:
+      Probe:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 0
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: S
+          Speed: 2
+          Health: 1
+          Shield: 0
+          Range: 1
+          Ground Damage: 1
+          Air Damage: 0
+          Sight: 7
+        Abilities:
+          - Harvest
+          - Warp
+      Zealot:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: S
+          Speed: 2
+          Health: 3
+          Shield: 1
+          Range: 1
+          Ground Damage: 2
+          Air Damage: 0
+          Sight: 6
+      Dragoon:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 1
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: L
+          Speed: 2
+          Health: 3
+          Shield: 1
+          Range: 4
+          Ground Damage: 2e
+          Air Damage: 2e
+          Sight: 6
+        Requires:
+          - Cybernetics Core
   Terran:
   Zerg:
