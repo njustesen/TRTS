@@ -17,6 +17,8 @@ def num_products(building):
         stats += 1
     if 'Range' in building['Stats']:
         stats += 1
+    if 'Speed' in building['Stats']:
+        stats += 1
     return produces + upgrades + stats
 
 

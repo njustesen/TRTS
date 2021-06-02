@@ -328,6 +328,7 @@ Races:
         Abilities:
           - Harvest
           - Warp
+          - Hovering
       Zealot:
         Size:
           Width: 2
@@ -345,7 +346,7 @@ Races:
           Range: 1
           Ground Damage: 2
           Air Damage: 0
-          Sight: 6
+          Sight: 7
       Dragoon:
         Size:
           Width: 2
@@ -363,8 +364,70 @@ Races:
           Range: 4
           Ground Damage: 2e
           Air Damage: 2e
-          Sight: 6
+          Sight: 8
         Requires:
           - Cybernetics Core
+      High Templar:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 3
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: S
+          Speed: 1
+          Health: 1
+          Shield: 1
+          Sight: 7
+        Requires:
+          - Templar Archives
+        Abilities:
+          - Merge to Archon
+          - Psionic Storm
+          - Hallucination
+      Dark Templar:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 2
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: S
+          Speed: 2
+          Health: 3
+          Shield: 1
+          Ground Damage: 4
+          Sight: 8
+        Requires:
+          - Templar Archives
+        Abilities:
+          - Cloaked
+      Archon:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Supply: 0
+          Minerals: 0
+          Gas: 0
+        Stats:
+          Size: L
+          Speed: 2
+          Health: 1
+          Shield: 7
+          Ground Damage: 5s
+          Air Damage: 5s
+          Sight: 8
+        Abilities:
+          - Hovers
+        Requires:
+          - Templar Archives
   Terran:
   Zerg:
