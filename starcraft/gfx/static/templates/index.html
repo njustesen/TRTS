@@ -21,29 +21,29 @@
                             <div class="col">
                                 <div class="container content">
                                     <div class="row" style="height: 22px;">
-                                        <div class="col-7 title">
-                                            {{ name }}
-                                        </div>
                                         <div class="col">
+                                            <span class="title">
+                                                {{ name }}
+                                            </span>
                                             {%if building['Costs']['Time'] > 1%}
-                                                <div class="resource">
+                                                <span class="resource">
                                                     {{building['Costs']['Time']}}<i class="bi light bi-clock-fill"></i>
-                                                </div>
+                                                </span>
                                             {%endif%}
                                             {%if building['Costs']['Supply'] > 0%}
-                                                <div class="resource">
+                                                <span class="resource">
                                                     {{building['Costs']['Supply']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Supply{{race}}.png" width="20px"></span>
-                                                </div>
+                                                </span>
                                             {%endif%}
                                             {%if building['Costs']['Gas'] > 0%}
-                                                <div class="resource">
+                                                <span class="resource">
                                                     {{building['Costs']['Gas']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Gas.png" width="20px"></span>
-                                                </div>
+                                                </span>
                                             {%endif%}
                                             {%if building['Costs']['Minerals'] > 0%}
-                                                <div class="resource">
+                                                <span class="resource">
                                                     {{building['Costs']['Minerals']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Mineral.png" width="20px"></span>
-                                                </div>
+                                                </span>
                                             {%endif%}
                                         </div>
                                     </div>
