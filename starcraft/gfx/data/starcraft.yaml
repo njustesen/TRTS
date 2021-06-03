@@ -72,7 +72,7 @@ Races:
         Upgrades:
           - Ground Weapons
           - Ground Armor
-          - Plasma Shield
+          - Plasma Shields
       Photon Cannon:
         Size:
           Width: 2
@@ -602,8 +602,8 @@ Races:
           - Fleet Beacon
       Interceptor:
         Size:
-          Width: 2
-          Height: 2
+          Width: 1.67
+          Height: 1.67
         Costs:
           Time: 1
           Minerals: 1
@@ -650,5 +650,257 @@ Races:
           - Recall
         Requires:
           - Arbiter Tribunal
+    Upgrades:
+      Ground Weapons Level 1:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+        Text: "+1 Attack to ground units"
+        Level: 1
+      Ground Weapons Level 2:
+        Costs:
+          Time: 3
+          Minerals: 3
+          Gas: 3
+        Text: "+1 Attack to ground units"
+        Requires:
+          - Level 1
+          - Templar Archives
+      Ground Weapons Level 3:
+        Costs:
+          Time: 4
+          Minerals: 4
+          Gas: 4
+        Text: "+1 Attack to ground units"
+        Requires:
+          - Level 2
+          - Templar Archives
+      Ground Armor Level 1:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+        Text: "+1 HP to ground units"
+        Level: 1
+      Ground Armor Level 2:
+        Costs:
+          Time: 3
+          Minerals: 3
+          Gas: 3
+        Text: "+1 HP to ground units"
+        Requires:
+          - Level 1
+          - Templar Archives
+      Ground Armor Level 3:
+        Costs:
+          Time: 4
+          Minerals: 4
+          Gas: 4
+        Text: "+1 HP to ground units"
+        Requires:
+          - Level 2
+          - Templar Archives
+      Plasma Shields Level 1:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+        Text: "+1 Shields"
+        Level: 1
+      Plasma Shields Level 2:
+        Costs:
+          Time: 4
+          Minerals: 4
+          Gas: 4
+        Text: "+1 Shields"
+        Requires:
+          - Level 1
+          - Cybernetics Core
+      Plasma Shields Level 3:
+        Costs:
+          Time: 6
+          Minerals: 6
+          Gas: 6
+        Text: "+1 Shields"
+        Requires:
+          - Level 2
+          - Cybernetics Core
+      Singularity Charge:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "+2 Dragoon Range"
+      Air Weapons Level 1:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+        Text: "+1 Attack to flying units"
+        Level: 1
+      Air Weapons Level 2:
+        Costs:
+          Time: 3
+          Minerals: 3
+          Gas: 3
+        Text: "+1 Attack to flying units"
+        Requires:
+          - Level 1
+          - Fleet Beacon
+      Air Weapons Level 3:
+        Costs:
+          Time: 4
+          Minerals: 4
+          Gas: 4
+        Text: "+1 Attack to flying units"
+        Requires:
+          - Level 2
+          - Fleet Beacon
+      Air Armor Level 1:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "+1 HP to flying units"
+        Level: 1
+      Air Armor Level 2:
+        Costs:
+          Time: 3
+          Minerals: 4
+          Gas: 4
+        Text: "+1 HP to flying units"
+        Requires:
+          - Level 1
+          - Fleet Beacon
+      Air Armor Level 3:
+        Costs:
+          Time: 4
+          Minerals: 5
+          Gas: 5
+        Text: "+1 HP to flying units"
+        Requires:
+          - Level 2
+          - Fleet Beacon
+      Leg Enhancements:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "+1 Zealot Speed"
+      Psionic Storm:
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 4
+        Text: "Allows High Templars to cast Psionic Storm at range 9 dealing 4-X damage to 3/2/1 targets of the same type, where X the speed of target, to a minimum of 1 damage par target."
+      Hallucination:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "Allows High Templar to cast Hallucination creating two temporary duplicates of a friendly unit in the same area as the High Templar, with 1 HP, that cannot attack or cast spells, and only exists until the end of the round."
+      Khaydarin Amulet:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Allows High Templars to cast two spells every round."
+      Maelstrom:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Dark Archons to cast Maelstrom at range 10 targeting 4/3/2 biological units of the same type that becomes stunned and visible for the remainder of this turn."
+      Mind Control:
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 4
+        Text: "Allows Dark Archons to cast Mind Control at range 8, gaining full control over one target unit for the rest of the game."
+      Argus Talisman:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Dark Archons to cast two spells per round."
+      Scarab Damage:
+        Costs:
+          Time: 2
+          Minerals: 4
+          Gas: 4
+        Text: "+1 Reaver Attack"
+      Increased Reaver Capacity:
+        Costs:
+          Time: 2
+          Minerals: 4
+          Gas: 4
+        Text: "Reavers can house 4 scarabs instead of 2"
+      Gravitic Drive:
+        Costs:
+          Time: 2
+          Minerals: 4
+          Gas: 4
+        Text: "+1 Shuttle speed"
+      Sensor Array:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "Observers automatically reveals everything in the area they move into."
+      Gravitic Booster:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "+1 Observer speed"
+      Carrier Capacity:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Carriers can house 8 Interceptors instead of 4"
+      Apial Sensors:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+        Text: "+2 Scout sight"
+      Gravitic Thrusters:
+        Costs:
+          Time: 2
+          Minerals: 4
+          Gas: 4
+        Text: "+1 Carrier speed"
+      Disruption Web:
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 4
+        Text: "Allows Corsairs to cast Disruption Web at range 9 preventing 3/2/1 unit to attack this turn."
+      Argus Jewel:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Corsairs to cast two spells per round."
+      Stasis Field:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Arbiters to cast Stasis Field at range 9, freezing up to 4/3/2 units of the same type until next Macro-management Phase. Frozen units cannot do anything and cannot be targeted."
+      Recall:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Arbiters to cast Recall at any time, teleporting any number of friendly units from one area to the one with the Arbiter."
+      Khaydarin Core:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Arbiters to cast two spells per round."
   Terran:
   Zerg:

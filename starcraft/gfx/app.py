@@ -4,21 +4,22 @@ app = Flask(__name__, template_folder='static')
 
 
 def img(name):
-    return name.replace(" ", "") + ".png"
+    return name.replace("Level 1", "").replace("Level 2", "").replace("Level 3", "").replace(" ", "") + ".png"
 
 
-def num_products(building):
-    produces = len(building['Produces']) if 'Produces' in building else 0
-    upgrades = len(building['Upgrades']) if 'Upgrades' in building else 0
+def num_products(item):
+    produces = len(item['Produces']) if 'Produces' in item else 0
+    upgrades = len(item['Upgrades']) if 'Upgrades' in item else 0
     stats = 0
-    if 'Ground Damage' in building['Stats']:
-        stats += 1
-    if 'Air Damage' in building['Stats']:
-        stats += 1
-    if 'Range' in building['Stats']:
-        stats += 1
-    if 'Speed' in building['Stats']:
-        stats += 1
+    if 'Stats' in item:
+        if 'Ground Damage' in item['Stats']:
+            stats += 1
+        if 'Air Damage' in item['Stats']:
+            stats += 1
+        if 'Range' in item['Stats']:
+            stats += 1
+        if 'Speed' in item['Stats']:
+            stats += 1
     return produces + upgrades + stats
 
 
