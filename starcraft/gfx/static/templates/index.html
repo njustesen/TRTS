@@ -15,6 +15,20 @@
                                 <div class="row item border-1">
                                     <div class="image-container building border-2 col-3" >
                                         <div class="glow-large"></div>
+                                        <div class="size">
+                                            {%if 'Size' in item['Stats'] and item_type != 'Buildings'%}
+                                                <span class="size">
+                                                    {{item['Stats']['Size']}}
+                                                </span>
+                                            {%endif%}
+                                        </div>
+                                        <div class="types">
+                                            {%if 'Types' in item['Stats']%}
+                                                {%for type in item['Stats']['Types']%}
+                                                    <span class="badge bg-type">{{type}}</span>
+                                                {%endfor%}
+                                            {%endif%}
+                                        </div>
                                         <div class="image">
                                             <img class="icon" src="static/img/{{race}}/{{img(name)}}" style="max-width:{{item['Size']['Width']/0.04}}%;">
                                         </div>
@@ -25,6 +39,9 @@
                                                 <div class="col">
                                                     <span class="title">
                                                         {{ name }}
+                                                        {%if 'Amount' in item['Stats']%}
+                                                            <span class="amount">({{ item['Stats']['Amount'] }}x)</span>
+                                                        {%endif%}
                                                     </span>
                                                     {%if item['Costs']['Time'] > 1%}
                                                         <span class="resource">
@@ -160,7 +177,7 @@
                                                             <span class="badge bg-ability">{{ability}}</span>
                                                         {%endfor%}
                                                     {%else%}
-                                                    &nbsp
+                                                        &nbsp
                                                     {%endif%}
                                                 </div>
                                             </div>

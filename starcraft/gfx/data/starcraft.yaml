@@ -318,6 +318,9 @@ Races:
           Time: 1
         Stats:
           Size: S
+          Types:
+           - Mech
+           - Robo
           Speed: 2
           Health: 1
           Shield: 0
@@ -340,6 +343,8 @@ Races:
           Time: 1
         Stats:
           Size: S
+          Types:
+            - Bio
           Speed: 2
           Health: 3
           Shield: 1
@@ -358,6 +363,8 @@ Races:
           Time: 1
         Stats:
           Size: L
+          Type:
+            - Mech
           Speed: 2
           Health: 3
           Shield: 1
@@ -378,6 +385,8 @@ Races:
           Time: 1
         Stats:
           Size: S
+          Types:
+            - Bio
           Speed: 1
           Health: 1
           Shield: 1
@@ -399,6 +408,8 @@ Races:
           Time: 1
         Stats:
           Size: S
+          Types:
+            - Bio
           Speed: 2
           Health: 3
           Shield: 1
@@ -408,11 +419,11 @@ Races:
           - Templar Archives
         Abilities:
           - Cloaked
-          - Dark Archon Merging
+          - Merge to Dark Archon
       Archon:
         Size:
-          Width: 2
-          Height: 2
+          Width: 4
+          Height: 4
         Costs:
           Time: 1
           Supply: 0
@@ -424,8 +435,8 @@ Races:
           Health: 1
           Shield: 7
           Range: 2
-          Ground Damage: 5
-          Air Damage: 5
+          Ground Damage: 4s
+          Air Damage: 4s
           Sight: 8
         Abilities:
           - Hovers
@@ -433,8 +444,8 @@ Races:
           - Templar Archives
       Dark Archon:
         Size:
-          Width: 2
-          Height: 2
+          Width: 4
+          Height: 4
         Costs:
           Time: 1
           Supply: 0
@@ -455,8 +466,8 @@ Races:
           - Templar Archives
       Shuttle:
         Size:
-          Width: 2
-          Height: 2
+          Width: 3
+          Height: 3
         Costs:
           Time: 1
           Minerals: 4
@@ -464,6 +475,8 @@ Races:
           Supply: 2
         Stats:
           Size: L
+          Types:
+            - Mech
           Speed: 2
           Health: 3
           Shield: 1
@@ -473,8 +486,8 @@ Races:
           - Transport
       Reaver:
         Size:
-          Width: 2
-          Height: 2
+          Width: 3
+          Height: 3
         Costs:
           Time: 1
           Minerals: 4
@@ -482,11 +495,14 @@ Races:
           Supply: 4
         Stats:
           Size: L
+          Types:
+            - Mech
+            - Robo
           Speed: 1
           Health: 2
           Shield: 2
           Range: 8
-          Ground Damage: 4e
+          Ground Damage: 4es
           Sight: 10
         Produces:
           - Scarab
@@ -505,6 +521,9 @@ Races:
           Supply: 1
         Stats:
           Size: S
+          Types:
+            - Mech
+            - Robo
           Speed: 1
           Health: 1
           Shield: 1
@@ -517,8 +536,8 @@ Races:
           - Flying
       Scout:
         Size:
-          Width: 2
-          Height: 2
+          Width: 3
+          Height: 3
         Costs:
           Time: 1
           Minerals: 5
@@ -526,6 +545,8 @@ Races:
           Supply: 3
         Stats:
           Size: L
+          Types:
+            - Mech
           Speed: 2
           Health: 3
           Shield: 2
@@ -546,6 +567,8 @@ Races:
           Supply: 2
         Stats:
           Size: M
+          Types:
+            - Mech
           Speed: 3
           Health: 3
           Shield: 1
@@ -555,8 +578,8 @@ Races:
           - Flying
       Carrier:
         Size:
-          Width: 2
-          Height: 2
+          Width: 4
+          Height: 4
         Costs:
           Time: 2
           Minerals: 7
@@ -564,6 +587,8 @@ Races:
           Supply: 6
         Stats:
           Size: L
+          Types:
+            - Mech
           Speed: 1
           Health: 10
           Shield: 3
@@ -585,7 +610,10 @@ Races:
           Gas: 0
           Supply: 0
         Stats:
+          Amount: 2
           Size: S
+          Types:
+            - Mech
           Speed: 4
           Health: 1
           Shield: 0
@@ -595,12 +623,10 @@ Races:
           Sight: 4
         Abilities:
           - Flying
-        Produces:
-          - Interceptor
       Arbiter:
         Size:
-          Width: 2
-          Height: 2
+          Width: 4
+          Height: 4
         Costs:
           Time: 2
           Minerals: 2
@@ -608,6 +634,8 @@ Races:
           Supply: 4
         Stats:
           Size: L
+          Types:
+            - Mech
           Speed: 2
           Health: 5
           Shield: 3

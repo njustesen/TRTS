@@ -110,7 +110,8 @@ body {
 }
 
 .bg-ability {
-    background-color: rgb(40, 140, 80)!important;
+    background-color: rgb(20, 50, 110)!important;
+    color: rgb(150, 220, 255);
 }
 
 .resource {
@@ -156,4 +157,26 @@ body {
 
 .resource-image {
     position: absolute;
+}
+
+.size {
+    z-index: 10;
+    position: absolute;
+    left: 46%;
+    top: 80%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.types {
+    text-align: center;
+}
+
+.bg-type {
+    background-color: rgb(20, 50, 110)!important;
+    color: rgb(150, 220, 255);
+}
+
+.amount {
+    color: rgb(40, 100, 220);
 }
