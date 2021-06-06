@@ -7,6 +7,21 @@ def img(name):
     return name.replace("Level 1", "").replace("Level 2", "").replace("Level 3", "").replace(" ", "") + ".png"
 
 
+def level_requirements(requirements):
+    reqs = {}
+    for level, level_reqs in requirements.items():
+        existing_key = None
+        for l, r in reqs.items():
+            if level_reqs == r:
+                existing_key = l
+        if existing_key is None:
+            reqs[str(level)] = level_reqs
+        else:
+            reqs[l + '+' + str(level)] = level_reqs
+            del reqs[existing_key]
+    return reqs
+
+
 def num_products(item):
     produces = len(item['Produces']) if 'Produces' in item else 0
     upgrades = len(item['Upgrades']) if 'Upgrades' in item else 0
@@ -30,7 +45,8 @@ def my_form_post():
                            race='Protoss',
                            data=parsed_yaml_file,
                            img=img,
-                           num_products=num_products)
+                           num_products=num_products,
+                           level_requirements=level_requirements)
 
 
 if __name__ == '__main__':

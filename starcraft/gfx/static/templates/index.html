@@ -46,47 +46,63 @@
                                             <div class="row" style="height: 22px;">
                                                 <div class="col">
                                                     <span class="title">
-                                                        {{ name }}
+                                                        {{ name }} {%if 'Levels' in item%}1-{{item['Levels']}}{%endif%}
                                                         {%if 'Stats' in item and 'Amount' in item['Stats']%}
                                                             <span class="amount">({{ item['Stats']['Amount'] }}x)</span>
                                                         {%endif%}
                                                     </span>
                                                     {%if item['Costs']['Time'] > 1%}
                                                         <span class="resource">
-                                                            {{item['Costs']['Time']}}<i class="bi light bi-clock-fill"></i>
+                                                            {{item['Costs']['Time']}}{%if 'Mod' in item['Costs']%}+{{ item['Costs']['Mod'] }}{%endif%}
+                                                            <i class="bi light bi-clock-fill"></i>
                                                         </span>
                                                     {%endif%}
                                                     {%if 'Supply' in item['Costs'] and item['Costs']['Supply'] > 0%}
                                                         <span class="resource">
-                                                            {{item['Costs']['Supply']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Supply{{race}}.png" width="20px"></span>
+                                                            {{item['Costs']['Supply']}}{%if 'Mod' in item['Costs']%}+{{ item['Costs']['Mod'] }}{%endif%}
+                                                            <span class="resource-container"><img class="resource-image" src="static/img/icons/Supply{{race}}.png" width="20px"></span>
                                                         </span>
                                                     {%endif%}
                                                     {%if item['Costs']['Gas'] > 0%}
                                                         <span class="resource">
-                                                            {{item['Costs']['Gas']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Gas.png" width="20px"></span>
+                                                            {{item['Costs']['Gas']}}{%if 'Mod' in item['Costs']%}+{{ item['Costs']['Mod'] }}{%endif%}
+                                                            <span class="resource-container"><img class="resource-image" src="static/img/icons/Gas.png" width="20px"></span>
                                                         </span>
                                                     {%endif%}
                                                     {%if item['Costs']['Minerals'] > 0%}
                                                         <span class="resource">
-                                                            {{item['Costs']['Minerals']}}<span class="resource-container"><img class="resource-image" src="static/img/icons/Mineral.png" width="20px"></span>
+                                                            {{item['Costs']['Minerals']}}{%if 'Mod' in item['Costs']%}+{{ item['Costs']['Mod'] }}{%endif%}
+                                                            <span class="resource-container"><img class="resource-image" src="static/img/icons/Mineral.png" width="20px"></span>
                                                         </span>
                                                     {%endif%}
                                                 </div>
                                             </div>
                                             <div class="row requirement-row">
                                                 <div class="col requirement">
-                                                    {%if item['Requires'] | length > 0%}
-                                                        Requires
-                                                        {%for requirement in item['Requires']%}
-                                                            <span class="badge bg-requirement">{{requirement}}</span>
-                                                        {%endfor%}
-                                                    {%elif item_type != 'Upgrades'%}
-                                                        &nbsp
-                                                    {%endif%}
                                                     {%if 'Text' in item%}
                                                         <span class="text-short">
                                                             {{item['Text']}}
                                                         </span>
+                                                    {%endif%}
+                                                    {%if item['Requires'] | length > 0%}
+                                                        {%if 'Levels' in item %}
+                                                            {%for levels, requirements in level_requirements(item['Requires']).items()%}
+                                                                Level {{levels}} requires
+                                                                {%for requirement in requirements%}
+                                                                    <span class="badge bg-requirement">{{requirement}}</span>
+                                                                {%endfor%}
+                                                                {%if loop.index + 1 < loop.length %}
+                                                                    <br>
+                                                                {%endif%}
+                                                            {%endfor%}
+                                                        {%else%}
+                                                            Requires
+                                                                {%for requirement in item['Requires']%}
+                                                                    <span class="badge bg-requirement">{{requirement}}</span>
+                                                                {%endfor%}
+                                                        {%endif%}
+                                                    {%elif item_type != 'Upgrades'%}
+                                                        &nbsp
                                                     {%endif%}
                                                 </div>
                                                 {%if 'Stats' in item %}
