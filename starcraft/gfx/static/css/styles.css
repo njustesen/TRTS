@@ -38,6 +38,14 @@ body {
     z-index: 1000;
 }
 
+.glow-reqs {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 0px 12px #931;
+    z-index: 1000;
+}
+
 .image {
     position: absolute;
     top: 50%; left: 50%;
@@ -64,6 +72,10 @@ body {
 
 .border-1 {
     border: 1px solid rgb(40, 100, 220);
+}
+
+.border-req {
+    border: 1px solid rgb(40, 60, 120);
 }
 
 .Buildings {

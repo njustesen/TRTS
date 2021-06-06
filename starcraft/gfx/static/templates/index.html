@@ -189,8 +189,12 @@
                                                                 </div>
                                                             {%endif%}
                                                             {%for unit in item['Produces']%}
-                                                                <div class="image-container unit border-1">
-                                                                    <div class="glow-small"></div>
+                                                                {% if unit in data['Races'][race]['Units'] and 'Requires' in data['Races'][race]['Units'][unit] %}
+                                                                    <div class="image-container unit border-req">
+                                                                {%else%}
+                                                                    <div class="image-container unit border-1">
+                                                                        <div class="glow-small"></div>
+                                                                {%endif%}
                                                                     <div class="image">
                                                                         <img class="icon" src="static/img/{{race}}/{{img(unit)}}" style="max-width:32px">
                                                                     </div>
