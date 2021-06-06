@@ -23,7 +23,7 @@ Vulture         | 2    | 0   | 2    |     3 |  2 |    M |     5 |     2c |     |
 Spider Mine     |      |     |      |     4 |  1 |    S |     1 |    2es |     |     3 | Mech |
 Siege Tank      | 3    | 2   | 2    |     2 |  4 |    L |     7 |     2e |     |    10 | Mech |
 In _Siege Mode_ |      |     |      |     0 |  4 |    L |    12 |    3es |     |    10 | Mech |
-Goliath         | 2    | 1   | 2    |     2 |  4 |    L |     5 |      2 |  3e |     8 | Mech |
+Goliath         | 2    | 1   | 2    |     2 |  3 |    L |     5 |      2 |  3e |     8 | Mech |
 Dropship        | 2    | 2   | 2    |     2 |  4 |    L |       |        |     |    11 | Mech |
 Wraith          | 3    | 2   | 2    |     3 |  3 |    L |     5 |      1 |  3e |     7 | Mech |
 Science Vessel  | 2    | 5   | 2    |     2 |  5 |    L |       |        |     |    10 | Mech |
