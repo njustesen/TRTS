@@ -22,7 +22,7 @@ Drone           |    1 |   0 |    1 |     2 |  1 |    S |     1 |    1/2 |      
 Overlord        |    2 |   0 |   +2 |     1 |  4 |    L |       |        |      |     9 |  Bio |
 Zergling (2x)   |    1 |   0 |    1 |     3 |  1 |    S |     1 |      1 |      |     5 |  Bio |
 Hydralisk       |    1 |   1 |    1 |     2 |  2 |    M |     4 |     2e |   2e |     5 |  Bio |
-Mutalisk        |    2 |   2 |    2 |     3 |  2 |    S |     3 |    1+1 |  1+1 |     7 |  Bio |
+Mutalisk        |    2 |   2 |    2 |     3 |  3 |    S |     3 |    1+1 |  1+1 |     7 |  Bio |
 Scourge (2x)    |    1 |   1 |    1 |     3 |  1 |    S |     1 |        |    2 |     7 |  Bio |
 Lurker          |    4 |   4 |    1 |     3 |  4 |    M |     6 |     4s |      |     8 |  Bio |
 Ultralisk       |    4 |   4 |    4 |     2 |  9 |    L |     1 |      4 |      |     7 |  Bio |
