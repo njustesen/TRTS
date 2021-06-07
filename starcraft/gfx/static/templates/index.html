@@ -51,25 +51,25 @@
                                                             <span class="amount">({{ item['Stats']['Amount'] }}x)</span>
                                                         {%endif%}
                                                     </span>
-                                                    {%if item['Costs']['Time'] > 1%}
+                                                    {%if 'Costs' in item and item['Costs']['Time'] > 1%}
                                                         <span class="resource">
                                                             {{item['Costs']['Time']}}{%if 'Mod' in item['Costs']%}+{{ item['Costs']['Mod'] }}{%endif%}
                                                             <i class="bi light bi-clock-fill"></i>
                                                         </span>
                                                     {%endif%}
-                                                    {%if 'Supply' in item['Costs'] and item['Costs']['Supply'] > 0%}
+                                                    {%if 'Costs' in item and 'Supply' in item['Costs'] and item['Costs']['Supply'] > 0%}
                                                         <span class="resource">
                                                             {{item['Costs']['Supply']}}{%if 'Mod' in item['Costs']%}+{{ item['Costs']['Mod'] }}{%endif%}
                                                             <span class="resource-container"><img class="resource-image" src="static/img/icons/Supply{{race}}.png" width="20px"></span>
                                                         </span>
                                                     {%endif%}
-                                                    {%if item['Costs']['Gas'] > 0%}
+                                                    {%if 'Costs' in item and item['Costs']['Gas'] > 0%}
                                                         <span class="resource">
                                                             {{item['Costs']['Gas']}}{%if 'Mod' in item['Costs']%}+{{ item['Costs']['Mod'] }}{%endif%}
                                                             <span class="resource-container"><img class="resource-image" src="static/img/icons/Gas.png" width="20px"></span>
                                                         </span>
                                                     {%endif%}
-                                                    {%if item['Costs']['Minerals'] > 0%}
+                                                    {%if 'Costs' in item and item['Costs']['Minerals'] > 0%}
                                                         <span class="resource">
                                                             {{item['Costs']['Minerals']}}{%if 'Mod' in item['Costs']%}+{{ item['Costs']['Mod'] }}{%endif%}
                                                             <span class="resource-container"><img class="resource-image" src="static/img/icons/Mineral.png" width="20px"></span>
@@ -107,9 +107,11 @@
                                                 </div>
                                                 {%if 'Stats' in item %}
                                                     <div class="col-3">
-                                                        <div class="health">
-                                                            {{item['Stats']['Shield']}} <i class="bi bi-shield-shaded"></i>
-                                                        </div>
+                                                        {%if 'Shields' in item['Stats']%}
+                                                            <div class="health">
+                                                                {{item['Stats']['Shield']}} <i class="bi bi-shield-shaded"></i>
+                                                            </div>
+                                                        {%endif%}
                                                         <div class="health">
                                                             {{item['Stats']['Health']}} <i class="bi bi-heart-fill"></i>
                                                         </div>
@@ -200,7 +202,7 @@
                                                                     </div>
                                                                 </div>
                                                             {%endfor%}
-                                                            {%for upgrade in item['Upgrades']%}
+                                                            {%for upgrade in item['Upgrades']|reverse%}
                                                                 <img class="icon" src="static/img/{{race}}/{{img(upgrade)}}" style="max-width:42px; float: right; margin-top: 1px;">
                                                             {%endfor%}
                                                         </div>

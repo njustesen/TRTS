@@ -19,6 +19,318 @@ Races:
           - Base
           - Supply
           - Lift Off
+      ComSat Station:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 1
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 15
+        Requires:
+          - Academy
+        Abilities:
+          - Add-On (Command Center)
+          - Scan
+      Nuclear Silo:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 2
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+        Requires:
+          - Science Facility
+          - Covert Ops
+        Produces:
+          - Nuke
+        Abilities:
+          - Add-On (Command Center)
+      Supply Depot:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+        Requires:
+          - Command Center
+        Abilities:
+          - Supply
+      Refinery:
+        Size:
+          Width: 3.5
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+        Requires:
+          - Command Center
+        Abilities:
+          - Gas Extractor
+      Barracks:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 15
+        Requires:
+          - Command Center
+        Produces:
+          - Marine
+          - Firebat
+          - Medic
+          - Ghost
+        Abilities:
+          - Lift Off
+      Bunker:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 8
+        Requires:
+          - Barracks
+        Abilities:
+          - Bunker
+      Engineering Bay:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+        Requires:
+          - Command Center
+        Upgrades:
+          - Infantry Weapons
+          - Infantry Armor
+        Abilities:
+          - Lift Off
+      Academy:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 3
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 10
+        Requires:
+          - Barracks
+        Upgrades:
+          - Stim Pack
+          - U-238 Shells
+          - Restoration
+          - Optical Flare
+          - Caduceus Reactor
+      Missile Turret:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 4
+          Range: 7
+          Air Damage: 2e
+          Sight: 11
+        Requires:
+          - Engineering Bay
+        Abilities:
+          - Detector
+      Factory:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 4
+          Gas: 2
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 25
+        Produces:
+          - Vulture
+          - Siege Tank
+          - Goliath
+        Requires:
+          - Barracks
+        Abilities:
+          - Lift Off
+      Machine Shop:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 1
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 15
+        Upgrades:
+          - Spider Mine
+          - Siege Mode
+        Abilities:
+          - Add-On (Factory)
+      Starport:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 2
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 25
+        Produces:
+          - Wraith
+          - Dropship
+          - Valkyrie
+          - Battlecruiser
+        Requires:
+          - Factory
+        Abilities:
+          - Lift Off
+      Control Tower:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 1
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 15
+        Upgrades:
+          - Cloaking Field
+          - Apollo Reactor
+        Abilities:
+          - Add-On (Starport)
+      Armory:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 1
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 15
+        Upgrades:
+          - Vehicle Weapons
+          - Vehicle Plating
+          - Ship Weapons
+          - Ship Plating
+        Requires:
+          - Factory
+      Science Facility:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 1
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 15
+        Upgrades:
+          - EMP Shockwave
+          - Irradiate
+          - Titan Reactor
+        Requires:
+          - Factory
+          - Starport
+      Covert Ops:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 1
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 15
+        Upgrades:
+          - Personnel Cloaking
+          - Lockdown
+          - Ocular Implants
+          - Moebius Reactor
+        Abilities:
+          - Add On (Science Facility)
+      Physics Lab:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 1
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: L
+          Health: 15
+        Upgrades:
+          - Yamato Gun
+          - Colossus Reactor
+        Abilities:
+          - Add On (Science Facility)
     Units:
       SCV:
         Size:
@@ -35,7 +347,6 @@ Races:
             - Mech
           Speed: 2
           Health: 1
-          Shield: 0
           Range: 1
           Ground Damage: 1/2
           Air Damage: 0
@@ -45,6 +356,311 @@ Races:
           - Construction
           - Repair
           - Hovering
+      Marine:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 0
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: S
+          Types:
+            - Bio
+          Speed: 2
+          Health: 1
+          Range: 4
+          Ground Damage: 1
+          Air Damage: 0
+          Sight: 7
+        Abilities:
+          - Stim Pack
+      Firebat:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 1
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: S
+          Types:
+            - Bio
+          Speed: 2
+          Health: 2
+          Range: 2
+          Ground Damage: 2cs
+          Air Damage: 0
+          Sight: 7
+        Abilities:
+          - Stim Pack
+        Requires:
+          - Academy
+      Medic:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 1
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: S
+          Types:
+            - Bio
+          Speed: 2
+          Health: 1
+          Sight: 9
+        Abilities:
+          - Heal
+          - Restoration
+          - Optical Flare
+        Requires:
+          - Academy
+      Ghost:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 1
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: S
+          Types:
+            - Bio
+          Speed: 2
+          Health: 1
+          Sight: 9
+          Range: 7
+          Ground Damage: 2c
+          Air Damage: 2c
+        Abilities:
+          - Call Down
+          - Personnel Cloaking
+          - Lockdown
+        Requires:
+          - Academy
+      Vulture:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: M
+          Types:
+            - Mech
+          Speed: 3
+          Health: 2
+          Sight: 8
+          Range: 5
+          Ground Damage: 2c
+        Produces:
+          - Spider Mine
+        Abilities:
+          - Spider Mines
+          - Hovers
+      Spider Mine:
+        Size:
+          Width: 1
+          Height: 1
+        Stats:
+          Size: S
+          Types:
+            - Mech
+            - Robo
+          Speed: 4
+          Health: 1
+          Sight: 3
+          Range: 1
+          Ground Damage: 2es
+        Abilities:
+          - Spider Mine
+      Siege Tank:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 2
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: L
+          Types:
+            - Mech
+          Speed: 2
+          Health: 4
+          Sight: 10
+          Range: 7
+          Ground Damage: 2e
+        Abilities:
+          - Siege Mode
+        Requires:
+          - Machine Shop at Factory
+      Goliath:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 2
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: L
+          Types:
+            - Mech
+          Speed: 2
+          Health: 4
+          Sight: 8
+          Range: 5/6
+          Ground Damage: 2
+          Air Damage: 3e
+        Requires:
+          - Armory
+      Wraith:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 4
+          Gas: 2
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: L
+          Types:
+            - Mech
+          Speed: 4
+          Health: 4
+          Range: 5
+          Ground Damage: 1
+          Air Damage: 3e
+          Sight: 7
+        Abilities:
+          - Flying
+          - Cloaking Field
+      Wraith:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 2
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: L
+          Types:
+            - Mech
+          Speed: 3
+          Health: 3
+          Range: 5
+          Ground Damage: 1
+          Air Damage: 3e
+          Sight: 7
+        Abilities:
+          - Flying
+          - Cloaking Field
+      Dropship:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 2
+          Gas: 2
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: L
+          Types:
+            - Mech
+          Speed: 2
+          Health: 4
+          Sight: 11
+        Requires:
+          - Control Tower at Starport
+        Abilities:
+          - Flying
+          - Transport
+      Science Vessel:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 2
+          Gas: 5
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: L
+          Types:
+            - Mech
+          Speed: 2
+          Health: 5
+          Sight: 10
+        Requires:
+          - Control Tower at Starport
+          - Science Facility
+        Abilities:
+          - Flying
+          - Transport
+          - Defense Matrix
+          - EMP Shockwave
+          - Irradiate
+      Valkyrie:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 6
+          Gas: 2
+          Supply: 3
+          Time: 1
+        Stats:
+          Size: L
+          Types:
+            - Mech
+          Speed: 3
+          Health: 6
+          Range: 6
+          Air Damage: 3es
+          Sight: 8
+        Requires:
+          - Control Tower at Starport
+          - Armory
+      Battlecruiser:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 8
+          Gas: 6
+          Supply: 6
+          Time: 1
+        Stats:
+          Size: L
+          Types:
+            - Mech
+          Speed: 1
+          Health: 13
+          Range: 6
+          Ground Damage: 3
+          Air Damage: 3
+          Sight: 11
+        Abilities:
+          - Yamato Gun
     Upgrades:
       Infantry Weapons:
         Costs:
@@ -99,7 +715,7 @@ Races:
           - Supply
       Assimilator:
         Size:
-          Width: 4
+          Width: 3.5
           Height: 2
         Costs:
           Minerals: 2
