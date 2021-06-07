@@ -1,4 +1,64 @@
 Races:
+  Terran:
+    Buildings:
+      Command Center:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 8
+          Gas: 0
+          Supply: 0
+          Time: 2
+        Stats:
+          Size: L
+          Health: 30
+        Produces:
+          - SCV
+        Abilities:
+          - Base
+          - Supply
+          - Lift Off
+    Units:
+      SCV:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 0
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: S
+          Types:
+            - Mech
+          Speed: 2
+          Health: 1
+          Shield: 0
+          Range: 1
+          Ground Damage: 1/2
+          Air Damage: 0
+          Sight: 7
+        Abilities:
+          - Harvest
+          - Construction
+          - Repair
+          - Hovering
+    Upgrades:
+      Infantry Weapons:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+          Mod: 1
+        Text: "+1 Att. to Barracks units"
+        Levels: 3
+        Requires:
+          2:
+            - Science Facility
+          3:
+            - Science Facility
   Protoss:
     Buildings:
       Nexus:
@@ -325,7 +385,7 @@ Races:
           Health: 1
           Shield: 0
           Range: 1
-          Ground Damage: 1
+          Ground Damage: 1/2
           Air Damage: 0
           Sight: 7
         Abilities:
@@ -658,7 +718,7 @@ Races:
           Minerals: 2
           Gas: 2
           Mod: 1
-        Text: "+1 Att. to ground units"
+        Text: "+1 Att. to Gateway units"
         Levels: 3
         Requires:
           2:
@@ -770,7 +830,7 @@ Races:
           Time: 2
           Minerals: 4
           Gas: 4
-        Text: "+1 Reaver Attack"
+        Text: "+2 Reaver Attack"
       Increased Reaver Capacity:
         Costs:
           Time: 2
@@ -843,5 +903,4 @@ Races:
           Minerals: 3
           Gas: 3
         Text: "Allows Arbiters to cast two spells per round."
-  Terran:
   Zerg:
