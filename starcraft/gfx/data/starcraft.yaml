@@ -15,9 +15,8 @@ Races:
           Health: 30
         Produces:
           - SCV
-        Abilities:
-          - Base
-          - Supply
+          - ComSat Station
+          - Nuclear Silo
           - Lift Off
       ComSat Station:
         Size:
@@ -31,11 +30,12 @@ Races:
         Stats:
           Size: L
           Health: 15
+          Types:
+            - Add-On
+        Produces:
+          - ScannerSweep
         Requires:
           - Academy
-        Abilities:
-          - Add-On (Command Center)
-          - Scan
       Nuclear Silo:
         Size:
           Width: 2
@@ -48,13 +48,13 @@ Races:
         Stats:
           Size: L
           Health: 10
+          Types:
+            - Add-On
         Requires:
           - Science Facility
           - Covert Ops
         Produces:
           - Nuke
-        Abilities:
-          - Add-On (Command Center)
       Supply Depot:
         Size:
           Width: 3
@@ -69,8 +69,6 @@ Races:
           Health: 10
         Requires:
           - Command Center
-        Abilities:
-          - Supply
       Refinery:
         Size:
           Width: 3.5
@@ -85,8 +83,6 @@ Races:
           Health: 10
         Requires:
           - Command Center
-        Abilities:
-          - Gas Extractor
       Barracks:
         Size:
           Width: 4
@@ -101,13 +97,12 @@ Races:
           Health: 15
         Requires:
           - Command Center
+            - Lift Off
         Produces:
           - Marine
           - Firebat
           - Medic
           - Ghost
-        Abilities:
-          - Lift Off
       Bunker:
         Size:
           Width: 3
@@ -122,8 +117,8 @@ Races:
           Health: 8
         Requires:
           - Barracks
-        Abilities:
-          - Bunker
+        Produces:
+          - Load
       Engineering Bay:
         Size:
           Width: 4
@@ -138,10 +133,9 @@ Races:
           Health: 10
         Requires:
           - Command Center
-        Upgrades:
+        Produces:
           - Infantry Weapons
           - Infantry Armor
-        Abilities:
           - Lift Off
       Academy:
         Size:
@@ -157,7 +151,7 @@ Races:
           Health: 10
         Requires:
           - Barracks
-        Upgrades:
+        Produces:
           - Stim Pack
           - U-238 Shells
           - Restoration
@@ -180,8 +174,6 @@ Races:
           Sight: 11
         Requires:
           - Engineering Bay
-        Abilities:
-          - Detector
       Factory:
         Size:
           Width: 4
@@ -198,10 +190,10 @@ Races:
           - Vulture
           - Siege Tank
           - Goliath
+          - Machine Shop
+          - Lift Off
         Requires:
           - Barracks
-        Abilities:
-          - Lift Off
       Machine Shop:
         Size:
           Width: 2
@@ -214,11 +206,11 @@ Races:
         Stats:
           Size: L
           Health: 15
-        Upgrades:
+          Types:
+            - Add-On
+        Produces:
           - Spider Mine
           - Siege Mode
-        Abilities:
-          - Add-On (Factory)
       Starport:
         Size:
           Width: 4
@@ -236,10 +228,10 @@ Races:
           - Dropship
           - Valkyrie
           - Battlecruiser
+          - Control Tower
+          - Lift Off
         Requires:
           - Factory
-        Abilities:
-          - Lift Off
       Control Tower:
         Size:
           Width: 2
@@ -252,11 +244,11 @@ Races:
         Stats:
           Size: L
           Health: 15
-        Upgrades:
+          Types:
+            - Add-On
+        Produces:
           - Cloaking Field
           - Apollo Reactor
-        Abilities:
-          - Add-On (Starport)
       Armory:
         Size:
           Width: 3
@@ -269,7 +261,7 @@ Races:
         Stats:
           Size: L
           Health: 15
-        Upgrades:
+        Produces:
           - Vehicle Weapons
           - Vehicle Plating
           - Ship Weapons
@@ -278,8 +270,8 @@ Races:
           - Factory
       Science Facility:
         Size:
-          Width: 3
-          Height: 2
+          Width: 4
+          Height: 3
         Costs:
           Minerals: 2
           Gas: 1
@@ -288,7 +280,7 @@ Races:
         Stats:
           Size: L
           Health: 15
-        Upgrades:
+        Produces:
           - EMP Shockwave
           - Irradiate
           - Titan Reactor
@@ -307,13 +299,13 @@ Races:
         Stats:
           Size: L
           Health: 15
-        Upgrades:
+          Types:
+            - Add-On
+        Produces:
           - Personnel Cloaking
           - Lockdown
           - Ocular Implants
           - Moebius Reactor
-        Abilities:
-          - Add On (Science Facility)
       Physics Lab:
         Size:
           Width: 2
@@ -326,11 +318,11 @@ Races:
         Stats:
           Size: L
           Health: 15
-        Upgrades:
+          Types:
+            - Add-On
+        Produces:
           - Yamato Gun
           - Colossus Reactor
-        Abilities:
-          - Add On (Science Facility)
     Units:
       SCV:
         Size:
@@ -351,11 +343,10 @@ Races:
           Ground Damage: 1/2
           Air Damage: 0
           Sight: 7
-        Abilities:
-          - Harvest
-          - Construction
+        Produces:
+          - Gather
+          - Construct
           - Repair
-          - Hovering
       Marine:
         Size:
           Width: 2
@@ -375,7 +366,7 @@ Races:
           Ground Damage: 1
           Air Damage: 0
           Sight: 7
-        Abilities:
+        Produces:
           - Stim Pack
       Firebat:
         Size:
@@ -396,7 +387,7 @@ Races:
           Ground Damage: 2cs
           Air Damage: 0
           Sight: 7
-        Abilities:
+        Produces:
           - Stim Pack
         Requires:
           - Academy
@@ -416,7 +407,7 @@ Races:
           Speed: 2
           Health: 1
           Sight: 9
-        Abilities:
+        Produces:
           - Heal
           - Restoration
           - Optical Flare
@@ -441,8 +432,8 @@ Races:
           Range: 7
           Ground Damage: 2c
           Air Damage: 2c
-        Abilities:
-          - Call Down
+        Produces:
+          - Nuke
           - Personnel Cloaking
           - Lockdown
         Requires:
@@ -467,9 +458,6 @@ Races:
           Ground Damage: 2c
         Produces:
           - Spider Mine
-        Abilities:
-          - Spider Mines
-          - Hovers
       Spider Mine:
         Size:
           Width: 1
@@ -484,8 +472,6 @@ Races:
           Sight: 3
           Range: 1
           Ground Damage: 2es
-        Abilities:
-          - Spider Mine
       Siege Tank:
         Size:
           Width: 3
@@ -504,7 +490,7 @@ Races:
           Sight: 10
           Range: 7
           Ground Damage: 2e
-        Abilities:
+        Produces:
           - Siege Mode
         Requires:
           - Machine Shop at Factory
@@ -548,30 +534,7 @@ Races:
           Ground Damage: 1
           Air Damage: 3e
           Sight: 7
-        Abilities:
-          - Flying
-          - Cloaking Field
-      Wraith:
-        Size:
-          Width: 3
-          Height: 3
-        Costs:
-          Minerals: 3
-          Gas: 2
-          Supply: 2
-          Time: 1
-        Stats:
-          Size: L
-          Types:
-            - Mech
-          Speed: 3
-          Health: 3
-          Range: 5
-          Ground Damage: 1
-          Air Damage: 3e
-          Sight: 7
-        Abilities:
-          - Flying
+        Produces:
           - Cloaking Field
       Dropship:
         Size:
@@ -590,10 +553,9 @@ Races:
           Health: 4
           Sight: 11
         Requires:
-          - Control Tower at Starport
-        Abilities:
-          - Flying
-          - Transport
+          - Starport + Add-On
+        Produces:
+          - Load
       Science Vessel:
         Size:
           Width: 3
@@ -611,12 +573,10 @@ Races:
           Health: 5
           Sight: 10
         Requires:
-          - Control Tower at Starport
+          - Starport + Add-On
           - Science Facility
-        Abilities:
-          - Flying
-          - Transport
-          - Defense Matrix
+        Produces:
+          - Defensive Matrix
           - EMP Shockwave
           - Irradiate
       Valkyrie:
@@ -659,8 +619,10 @@ Races:
           Ground Damage: 3
           Air Damage: 3
           Sight: 11
-        Abilities:
+        Produces:
           - Yamato Gun
+        Requires:
+          - Physics Lab
     Upgrades:
       Infantry Weapons:
         Costs:
@@ -692,9 +654,6 @@ Races:
           Shield: 15
         Produces:
           - Probe
-        Abilities:
-          - Base
-          - Supply
       Pylon:
         Size:
           Width: 2
@@ -710,9 +669,6 @@ Races:
           Shield: 7
         Requires:
           - Nexus
-        Abilities:
-          - Psionic Matrix
-          - Supply
       Assimilator:
         Size:
           Width: 3.5
@@ -728,8 +684,6 @@ Races:
           Shield: 10
         Requires:
           - Nexus
-        Abilities:
-          - Gas Extractor
       Forge:
         Size:
           Width: 3
@@ -745,7 +699,7 @@ Races:
           Shield: 10
         Requires:
           - Nexus
-        Upgrades:
+        Produces:
           - Ground Weapons
           - Ground Armor
           - Plasma Shields
@@ -768,8 +722,6 @@ Races:
           Sight: 11
         Requires:
           - Forge
-        Abilities:
-          - Detector
       Gateway:
         Size:
           Width: 4
@@ -805,7 +757,7 @@ Races:
           Shield: 5
         Requires:
           - Gateway
-        Abilities:
+        Produces:
           - Recharge
       Cybernetics Core:
         Size:
@@ -822,7 +774,7 @@ Races:
           Shield: 10
         Requires:
           - Gateway
-        Upgrades:
+        Produces:
           - Air Weapons
           - Air Armor
           - Singularity Charge
@@ -841,7 +793,7 @@ Races:
           Shield: 10
         Requires:
           - Cybernetics Core
-        Upgrades:
+        Produces:
           - Leg Enhancements
       Templar Archives:
         Size:
@@ -858,7 +810,7 @@ Races:
           Shield: 10
         Requires:
           - Citadel of Adun
-        Upgrades:
+        Produces:
           - Psionic Storm
           - Hallucination
           - Khaydarin Amulet
@@ -899,7 +851,7 @@ Races:
           Shield: 10
         Requires:
           - Robotics Facility
-        Upgrades:
+        Produces:
           - Scarab Damage
           - Increased Reaver Capacity
           - Gravitic Drive
@@ -918,7 +870,7 @@ Races:
           Shield: 5
         Requires:
           - Robotics Facility
-        Upgrades:
+        Produces:
           - Sensor Array
           - Gravitic Booster
       Stargate:
@@ -956,7 +908,7 @@ Races:
           Shield: 5
         Requires:
           - Stargate
-        Upgrades:
+        Produces:
           - Apial Sensors
           - Gravitic Thrusters
           - Carrier Capacity
@@ -978,7 +930,7 @@ Races:
         Requires:
           - Stargate
           - Templar Archives
-        Upgrades:
+        Produces:
           - Recall
           - Stasis Field
           - Khaydarin Core
@@ -1004,10 +956,9 @@ Races:
           Ground Damage: 1/2
           Air Damage: 0
           Sight: 7
-        Abilities:
-          - Harvest
+        Produces:
+          - Gather
           - Warp
-          - Hovering
       Zealot:
         Size:
           Width: 2
@@ -1069,8 +1020,8 @@ Races:
           Sight: 7
         Requires:
           - Templar Archives
-        Abilities:
-          - Merge to Archon
+        Produces:
+          - Summon Archon
           - Psionic Storm
           - Hallucination
       Dark Templar:
@@ -1093,9 +1044,9 @@ Races:
           Sight: 8
         Requires:
           - Templar Archives
-        Abilities:
-          - Cloaked
-          - Merge to Dark Archon
+        Produces:
+          - Summon Dark Archon
+          - Personnel Cloaking
       Archon:
         Size:
           Width: 4
@@ -1114,8 +1065,6 @@ Races:
           Ground Damage: 4s
           Air Damage: 4s
           Sight: 8
-        Abilities:
-          - Hovers
         Requires:
           - Templar Archives
       Dark Archon:
@@ -1133,8 +1082,7 @@ Races:
           Health: 2
           Shield: 4
           Sight: 10
-        Abilities:
-          - Hovers
+        Produces:
           - Feedback
           - Maelstrom
           - Mind Control
@@ -1157,9 +1105,8 @@ Races:
           Health: 3
           Shield: 1
           Sight: 8
-        Abilities:
-          - Flying
-          - Transport
+        Produces:
+          - Load
       Reaver:
         Size:
           Width: 3
@@ -1182,8 +1129,6 @@ Races:
           Sight: 10
         Produces:
           - Scarab
-        Abilities:
-          - Scarabs
         Requires:
           - Robotics Support Bay
       Observer:
@@ -1204,12 +1149,8 @@ Races:
           Health: 1
           Shield: 1
           Sight: 9
-        Abilities:
-          - Detector
         Requires:
           - Observatory
-        Abilities:
-          - Flying
       Scout:
         Size:
           Width: 3
@@ -1230,8 +1171,6 @@ Races:
           Ground Damage: 1
           Air Damage: 4e
           Sight: 8
-        Abilities:
-          - Flying
       Corsair:
         Size:
           Width: 2
@@ -1251,8 +1190,6 @@ Races:
           Range: 5
           Air Damage: 2es
           Sight: 8
-        Abilities:
-          - Flying
       Carrier:
         Size:
           Width: 4
@@ -1272,9 +1209,6 @@ Races:
           Sight: 11
         Produces:
           - Interceptor
-        Abilities:
-          - Flying
-          - Interceptors
         Requires:
           - Fleet Beacon
       Interceptor:
@@ -1298,8 +1232,6 @@ Races:
           Air Damage: 1
           Ground Damage: 1
           Sight: 4
-        Abilities:
-          - Flying
       Arbiter:
         Size:
           Width: 4
@@ -1320,9 +1252,8 @@ Races:
           Ground Damage: 1e
           Air Damage: 1e
           Sight: 9
-        Abilities:
-          - Flying
-          - Invisibility Field
+        Produces:
+          - Cloaking Field
           - Stasis Field
           - Recall
         Requires:

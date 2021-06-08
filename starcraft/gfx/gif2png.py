@@ -4,9 +4,10 @@ import glob
 import os
 
 for folder in list(glob.glob('static/img/*')):
-    for file in list(glob.glob(folder + '/*.gif')):
-        img = Image.open(file)
-        img.save(file.replace("gif", "png"), 'png', optimize=True, quality=90)
-        os.remove(file)
+    for extension in ['gif', 'jpg']:
+        for file in list(glob.glob(folder + '/*.' + extension)):
+            img = Image.open(file)
+            img.save(file.replace(extension, "png"), 'png', optimize=True, quality=90)
+            os.remove(file)
 
 

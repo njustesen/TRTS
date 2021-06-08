@@ -79,13 +79,13 @@ body {
 }
 
 .Buildings {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
 }
 
 .Units {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
 }
 
 .Upgrades {
@@ -197,6 +197,9 @@ body {
 .bg-type {
     background-color: rgb(20, 50, 110)!important;
     color: rgb(150, 220, 255);
+    position: relative;
+    z-index: 10000;
+    font-size: 10px;
 }
 
 .amount {

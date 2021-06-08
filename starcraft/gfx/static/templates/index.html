@@ -107,7 +107,7 @@
                                                 </div>
                                                 {%if 'Stats' in item %}
                                                     <div class="col-3">
-                                                        {%if 'Shields' in item['Stats']%}
+                                                        {%if 'Shield' in item['Stats']%}
                                                             <div class="health">
                                                                 {{item['Stats']['Shield']}} <i class="bi bi-shield-shaded"></i>
                                                             </div>
@@ -173,7 +173,7 @@
                                                                     </div>
                                                                 </div>
                                                             {%endif%}
-                                                            {%if 'Air Damage' in item['Stats']%}
+                                                            {%if 'Air Damage' in item['Stats'] and item['Stats']['Air Damage'] != 0%}
                                                                 <div class="image-container unit border-1">
                                                                     <div class="container">
                                                                         <div class="glow-small"></div>
@@ -191,7 +191,7 @@
                                                                 </div>
                                                             {%endif%}
                                                             {%for unit in item['Produces']%}
-                                                                {% if unit in data['Races'][race]['Units'] and 'Requires' in data['Races'][race]['Units'][unit] %}
+                                                                {% if (unit in data['Races'][race]['Units'] and 'Requires' in data['Races'][race]['Units'][unit]) or (unit in data['Races'][race]['Buildings'] and 'Requires' in data['Races'][race]['Buildings'][unit]) or (unit in data['Races'][race]['Upgrades'] and item_type != 'Buildings') %}
                                                                     <div class="image-container unit border-req">
                                                                 {%else%}
                                                                     <div class="image-container unit border-1">
@@ -207,17 +207,6 @@
                                                             {%endfor%}
                                                         </div>
                                                     {%endif%}
-                                                </div>
-                                                <div class="row abilities-row">
-                                                    <div class="col abilities">
-                                                        {%if item['Abilities'] | length > 0%}
-                                                            {%for ability in item['Abilities']%}
-                                                                <span class="badge bg-ability">{{ability}}</span>
-                                                            {%endfor%}
-                                                        {%else%}
-                                                            &nbsp
-                                                        {%endif%}
-                                                    </div>
                                                 </div>
                                             {%endif%}
                                         </div>
