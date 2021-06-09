@@ -60,6 +60,17 @@ def terran():
                            level_requirements=level_requirements)
 
 
+@app.route('/zerg', methods=['GET', 'POST'])
+def zerg():
+    parsed_yaml_file = yaml.load(open('data/starcraft.yaml', 'r'), Loader=yaml.FullLoader)
+    return render_template('templates/index.html',
+                           race='Zerg',
+                           data=parsed_yaml_file,
+                           img=img,
+                           num_products=num_products,
+                           level_requirements=level_requirements)
+
+
 if __name__ == '__main__':
     app.debug = True
     app.run()

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
     <head>
-        <title>Hello</title>
+        <title>{{race}}</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="static/css/styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
-    <body>
+    <body style='background: url("static/img/{{race}}/background.png") no-repeat center center fixed;'>
         <div class="container" style="max-width: 100%;">
             <div class="row">
                 {%for item_type in data['Races'][race]%}
@@ -17,13 +17,6 @@
                                         {%if item_type != 'Upgrades'%}
                                             <div class="glow-large"></div>
                                         {% endif %}
-                                        <div class="size">
-                                            {%if item_type == 'Units' and 'Size' in item['Stats']%}
-                                                <span class="size">
-                                                    {{item['Stats']['Size']}}
-                                                </span>
-                                            {%endif%}
-                                        </div>
                                         <div class="types">
                                             {%if 'Stats' in item and 'Types' in item['Stats']%}
                                                 {%for type in item['Stats']['Types']%}
@@ -40,6 +33,22 @@
                                                 <img class="icon" src="static/img/{{race}}/{{img(name)}}" style="max-width:42px;">
                                             </div>
                                         {% endif %}
+                                        {%if 'Abilities' in item%}
+                                            <div class="abilities">
+                                                {%if 'Cloaked' in item['Abilities']%}
+                                                    <i class="bi bi-eye-slash light"></i>
+                                                {%endif%}
+                                                {%if 'Air' in item['Abilities']%}
+                                                    <i class="bi bi-pin-map-fill light"></i>
+                                                {%endif%}
+                                                {%if 'Hovers' in item['Abilities']%}
+                                                    <i class="bi bi-layers-half light"></i>
+                                                {%endif%}
+                                                {%if 'Detector' in item['Abilities']%}
+                                                    <i class="bi bi-broadcast light"></i>
+                                                {%endif%}
+                                            </div>
+                                        {%endif%}
                                     </div>
                                     <div class="col">
                                         <div class="container content">
@@ -47,9 +56,15 @@
                                                 <div class="col">
                                                     <span class="title">
                                                         {{ name }} {%if 'Levels' in item%}1-{{item['Levels']}}{%endif%}
+                                                        {%if item_type == 'Units' and 'Size' in item['Stats']%}
+                                                            <span class="size">
+                                                                {{item['Stats']['Size']}}
+                                                            </span>
+                                                        {%endif%}
                                                         {%if 'Stats' in item and 'Amount' in item['Stats']%}
                                                             <span class="amount">({{ item['Stats']['Amount'] }}x)</span>
                                                         {%endif%}
+
                                                     </span>
                                                     {%if 'Costs' in item and item['Costs']['Time'] > 1%}
                                                         <span class="resource">
@@ -69,7 +84,7 @@
                                                             <span class="resource-container"><img class="resource-image" src="static/img/icons/Gas.png" width="20px"></span>
                                                         </span>
                                                     {%endif%}
-                                                    {%if 'Costs' in item and item['Costs']['Minerals'] > 0%}
+                                                    {%if 'Costs' in item and item['Costs']['Minerals'] != 0%}
                                                         <span class="resource">
                                                             {{item['Costs']['Minerals']}}{%if 'Mod' in item['Costs']%}+{{ item['Costs']['Mod'] }}{%endif%}
                                                             <span class="resource-container"><img class="resource-image" src="static/img/icons/Mineral.png" width="20px"></span>

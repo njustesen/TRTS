@@ -11,7 +11,7 @@ Races:
           Supply: 0
           Time: 2
         Stats:
-          Size: L
+          Size: LARGE
           Health: 30
         Produces:
           - SCV
@@ -28,7 +28,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 15
           Types:
             - Add-On
@@ -46,7 +46,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
           Types:
             - Add-On
@@ -65,7 +65,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
         Requires:
           - Command Center
@@ -79,7 +79,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
         Requires:
           - Command Center
@@ -93,7 +93,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 15
         Requires:
           - Command Center
@@ -113,7 +113,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 8
         Requires:
           - Barracks
@@ -129,7 +129,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
         Requires:
           - Command Center
@@ -147,7 +147,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
         Requires:
           - Barracks
@@ -167,7 +167,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 4
           Range: 7
           Air Damage: 2e
@@ -184,7 +184,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 25
         Produces:
           - Vulture
@@ -204,7 +204,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 15
           Types:
             - Add-On
@@ -221,7 +221,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 25
         Produces:
           - Wraith
@@ -242,7 +242,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 15
           Types:
             - Add-On
@@ -259,7 +259,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 15
         Produces:
           - Vehicle Weapons
@@ -278,7 +278,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 15
         Produces:
           - EMP Shockwave
@@ -297,7 +297,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 15
           Types:
             - Add-On
@@ -316,7 +316,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 15
           Types:
             - Add-On
@@ -334,7 +334,7 @@ Races:
           Supply: 1
           Time: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
             - Mech
           Speed: 2
@@ -347,6 +347,8 @@ Races:
           - Gather
           - Construct
           - Repair
+        Abilities:
+          - Hovers
       Marine:
         Size:
           Width: 2
@@ -357,7 +359,7 @@ Races:
           Supply: 1
           Time: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
             - Bio
           Speed: 2
@@ -378,7 +380,7 @@ Races:
           Supply: 1
           Time: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
             - Bio
           Speed: 2
@@ -401,7 +403,7 @@ Races:
           Supply: 1
           Time: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
             - Bio
           Speed: 2
@@ -423,7 +425,7 @@ Races:
           Supply: 1
           Time: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
             - Bio
           Speed: 2
@@ -448,7 +450,7 @@ Races:
           Supply: 2
           Time: 1
         Stats:
-          Size: M
+          Size: MEDIUM
           Types:
             - Mech
           Speed: 3
@@ -458,12 +460,14 @@ Races:
           Ground Damage: 2c
         Produces:
           - Spider Mine
+        Abilities:
+          - Hovers
       Spider Mine:
         Size:
           Width: 1
           Height: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
             - Mech
             - Robo
@@ -472,6 +476,8 @@ Races:
           Sight: 3
           Range: 1
           Ground Damage: 2es
+        Abilities:
+          - Cloaked
       Siege Tank:
         Size:
           Width: 3
@@ -482,7 +488,7 @@ Races:
           Supply: 2
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 2
@@ -504,7 +510,7 @@ Races:
           Supply: 2
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 2
@@ -525,7 +531,7 @@ Races:
           Supply: 2
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 4
@@ -536,6 +542,8 @@ Races:
           Sight: 7
         Produces:
           - Cloaking Field
+        Abilities:
+          - Air
       Dropship:
         Size:
           Width: 3
@@ -546,7 +554,7 @@ Races:
           Supply: 2
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 2
@@ -556,6 +564,8 @@ Races:
           - Starport + Add-On
         Produces:
           - Load
+        Abilities:
+          - Air
       Science Vessel:
         Size:
           Width: 3
@@ -566,7 +576,7 @@ Races:
           Supply: 2
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 2
@@ -579,6 +589,9 @@ Races:
           - Defensive Matrix
           - EMP Shockwave
           - Irradiate
+        Abilities:
+          - Detector
+          - Air
       Valkyrie:
         Size:
           Width: 3
@@ -589,7 +602,7 @@ Races:
           Supply: 3
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 3
@@ -600,6 +613,8 @@ Races:
         Requires:
           - Control Tower at Starport
           - Armory
+        Abilities:
+          - Air
       Battlecruiser:
         Size:
           Width: 4
@@ -610,7 +625,7 @@ Races:
           Supply: 6
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 1
@@ -623,6 +638,8 @@ Races:
           - Yamato Gun
         Requires:
           - Physics Lab
+        Abilities:
+          - Air
     Upgrades:
       Infantry Weapons:
         Costs:
@@ -630,13 +647,199 @@ Races:
           Minerals: 2
           Gas: 2
           Mod: 1
-        Text: "+1 Att. to Barracks units"
+        Text: "+1 Att. to Barracks units."
         Levels: 3
         Requires:
           2:
             - Science Facility
           3:
             - Science Facility
+      Infantry Armor:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+          Mod: 1
+        Text: "+1 HP to SCV and Barracks units."
+        Levels: 3
+        Requires:
+          2:
+            - Science Facility
+          3:
+            - Science Facility
+      Stim Pack:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+          Mod: 1
+        Text: "Allows Marines and Firebats to use Stim Pack, giving them +1 speed, 1+ attack and the ability to attack in any number of combat rounds this turn. Stimmed units, however, die of overdose at the end of this round if not healed."
+      U-238 Shells:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "+1 Marine Range."
+      Restoration:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Medics to use Restoration, removing any harmful effects besides Stasis Field on a unit in the same area."
+      Optical Flare:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Medics to permanently use Optical flare, reduce the range of one unit's attacks and abilities to 1."
+      Caduceus Reactor:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Medics to use two abilities each round, except for two Optical Flares."
+      Spider Mines:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Vultures to each plant three Spider Mines during the Macro-management Phase, or instead of attacking during combat. Mines that are planted during combat are not borrowed."
+      Siege Tech:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "Siege Tanks are automatically considered to be in Siege Mode when defending, giving them range 12, +1 attack, splash damage, and one additional attack per Vehicle Weapons upgrade."
+      Ion Thrusters:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "+1 Vulture speed."
+      Charon Boosters:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+        Text: "+3 Goliath Range."
+      Cloaking Field:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Wraiths to be cloaked during one combat round each turn."
+      Apollo Reactor:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Wraiths to always be cloaked."
+      Vehicle Weapons:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+          Mod: 1
+        Levels: 3
+        Requires:
+          2:
+            - Science Facility
+          3:
+            - Science Facility
+        Text: "+1 attack to Factory units."
+      Vehicle Plating:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+          Mod: 1
+        Levels: 3
+        Requires:
+          2:
+            - Science Facility
+          3:
+            - Science Facility
+        Text: "+1 HP to Factory units."
+      Ship Weapons:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+          Mod: 1
+        Levels: 3
+        Requires:
+          2:
+            - Science Facility
+          3:
+            - Science Facility
+        Text: "+1 attack to Starport units."
+      Ship Plating:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+          Mod: 1
+        Levels: 3
+        Requires:
+          2:
+            - Science Facility
+          3:
+            - Science Facility
+        Text: "+1 HP to Starport units."
+      EMP Shockwave:
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 4
+        Text: "Allows Science Vessels to use EMP Shockwave at range 8, removing any Shield of up to two units of the same type. Additionally, the targets cannot use any abilities this turn."
+      Irradiate:
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 4
+        Text: "Allows Science Vessels to cast Irradiate at range 9 on 1 large, 2 medium, or 4 small biological units of the same type that are not in Stasis. These units are dealt 2 damage at then end of each round."
+      Titan Reactor:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Science Vessels to use two abilities each turn."
+      Yamato Gun:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Battlecruisers to fire their Yamato Gun at range 10 one time per turn, dealing 10 damage to one unit"
+      Colossus Reactor:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Battlecruisers to fire their Yamato Gun twice per turn"
+      Personnel Cloaking:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Ghosts to be cloaked in one combat round per turn."
+      Lockdown:
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 4
+        Text: "Allows Ghosts to cast Lockdown at range 8 on a mechanical unit, making the target unable to do anything until the next round."
+      Ocular Implants:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Ghosts to Call Down nukes in adjacent Areas as part of a push."
+      Moebius Reactor:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Ghosts to always be cloaked."
   Protoss:
     Buildings:
       Nexus:
@@ -649,7 +852,7 @@ Races:
           Supply: 0
           Time: 2
         Stats:
-          Size: L
+          Size: LARGE
           Health: 15
           Shield: 15
         Produces:
@@ -664,7 +867,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 7
           Shield: 7
         Requires:
@@ -679,7 +882,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
           Shield: 10
         Requires:
@@ -694,7 +897,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
           Shield: 10
         Requires:
@@ -712,8 +915,10 @@ Races:
           Gas: 0
           Supply: 0
           Time: 1
+        Abilities:
+          - Detector
         Stats:
-          Size: L
+          Size: LARGE
           Health: 2
           Shield: 2
           Range: 7
@@ -732,7 +937,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
           Shield: 10
         Requires:
@@ -752,7 +957,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 5
           Shield: 5
         Requires:
@@ -769,7 +974,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
           Shield: 10
         Requires:
@@ -788,7 +993,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
           Shield: 10
         Requires:
@@ -805,7 +1010,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
           Shield: 10
         Requires:
@@ -827,7 +1032,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
           Shield: 10
         Requires:
@@ -846,7 +1051,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
           Shield: 10
         Requires:
@@ -865,7 +1070,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 5
           Shield: 5
         Requires:
@@ -883,7 +1088,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 10
           Shield: 10
         Requires:
@@ -903,7 +1108,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 5
           Shield: 5
         Requires:
@@ -924,7 +1129,7 @@ Races:
           Supply: 0
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Health: 5
           Shield: 5
         Requires:
@@ -945,7 +1150,7 @@ Races:
           Supply: 1
           Time: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
            - Mech
            - Robo
@@ -959,6 +1164,8 @@ Races:
         Produces:
           - Gather
           - Warp
+        Abilities:
+          - Hovers
       Zealot:
         Size:
           Width: 2
@@ -969,7 +1176,7 @@ Races:
           Supply: 2
           Time: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
             - Bio
           Speed: 2
@@ -989,7 +1196,7 @@ Races:
           Supply: 2
           Time: 1
         Stats:
-          Size: L
+          Size: LARGE
           Type:
             - Mech
           Speed: 2
@@ -1011,7 +1218,7 @@ Races:
           Supply: 2
           Time: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
             - Bio
           Speed: 1
@@ -1034,7 +1241,7 @@ Races:
           Supply: 2
           Time: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
             - Bio
           Speed: 2
@@ -1042,11 +1249,12 @@ Races:
           Shield: 1
           Ground Damage: 4
           Sight: 8
+        Abilities:
+          - Cloaked
         Requires:
           - Templar Archives
         Produces:
           - Summon Dark Archon
-          - Personnel Cloaking
       Archon:
         Size:
           Width: 4
@@ -1057,7 +1265,7 @@ Races:
           Minerals: 0
           Gas: 0
         Stats:
-          Size: L
+          Size: LARGE
           Speed: 2
           Health: 1
           Shield: 7
@@ -1067,6 +1275,8 @@ Races:
           Sight: 8
         Requires:
           - Templar Archives
+        Abilities:
+          - Hovers
       Dark Archon:
         Size:
           Width: 4
@@ -1077,7 +1287,7 @@ Races:
           Minerals: 0
           Gas: 0
         Stats:
-          Size: L
+          Size: LARGE
           Speed: 2
           Health: 2
           Shield: 4
@@ -1088,6 +1298,8 @@ Races:
           - Mind Control
         Requires:
           - Templar Archives
+        Abilities:
+          - Hovers
       Shuttle:
         Size:
           Width: 3
@@ -1098,7 +1310,7 @@ Races:
           Gas: 0
           Supply: 2
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 2
@@ -1107,6 +1319,8 @@ Races:
           Sight: 8
         Produces:
           - Load
+        Abilities:
+          - Air
       Reaver:
         Size:
           Width: 3
@@ -1117,7 +1331,7 @@ Races:
           Gas: 2
           Supply: 4
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
             - Robo
@@ -1141,7 +1355,7 @@ Races:
           Gas: 1
           Supply: 1
         Stats:
-          Size: S
+          Size: SMALL
           Types:
             - Mech
             - Robo
@@ -1149,8 +1363,12 @@ Races:
           Health: 1
           Shield: 1
           Sight: 9
+        Abilities:
+          - Detector
         Requires:
           - Observatory
+        Abilities:
+          - Air
       Scout:
         Size:
           Width: 3
@@ -1161,7 +1379,7 @@ Races:
           Gas: 2
           Supply: 3
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 2
@@ -1171,6 +1389,8 @@ Races:
           Ground Damage: 1
           Air Damage: 4e
           Sight: 8
+        Abilities:
+          - Air
       Corsair:
         Size:
           Width: 2
@@ -1181,7 +1401,7 @@ Races:
           Gas: 2
           Supply: 2
         Stats:
-          Size: M
+          Size: MEDIUM
           Types:
             - Mech
           Speed: 3
@@ -1190,6 +1410,8 @@ Races:
           Range: 5
           Air Damage: 2es
           Sight: 8
+        Abilities:
+          - Air
       Carrier:
         Size:
           Width: 4
@@ -1200,7 +1422,7 @@ Races:
           Gas: 5
           Supply: 6
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 1
@@ -1211,18 +1433,19 @@ Races:
           - Interceptor
         Requires:
           - Fleet Beacon
+        Abilities:
+          - Air
       Interceptor:
         Size:
           Width: 1.67
           Height: 1.67
         Costs:
           Time: 1
-          Minerals: 1
+          Minerals: 1/2
           Gas: 0
           Supply: 0
         Stats:
-          Amount: 2
-          Size: S
+          Size: SMALL
           Types:
             - Mech
           Speed: 4
@@ -1232,6 +1455,8 @@ Races:
           Air Damage: 1
           Ground Damage: 1
           Sight: 4
+        Abilities:
+          - Air
       Arbiter:
         Size:
           Width: 4
@@ -1242,7 +1467,7 @@ Races:
           Gas: 7
           Supply: 4
         Stats:
-          Size: L
+          Size: LARGE
           Types:
             - Mech
           Speed: 2
@@ -1258,6 +1483,8 @@ Races:
           - Recall
         Requires:
           - Arbiter Tribunal
+        Abilities:
+          - Air
     Upgrades:
       Ground Weapons:
         Costs:
@@ -1451,3 +1678,51 @@ Races:
           Gas: 3
         Text: "Allows Arbiters to cast two spells per round."
   Zerg:
+    Buildings:
+      Hatchery:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 8
+          Gas: 0
+          Supply: 0
+          Time: 2
+        Stats:
+          Size: LARGE
+          Health: 30
+        Produces:
+          - Larva
+    Units:
+      Drone:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 0
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: SMALL
+          Types:
+            - Bio
+          Speed: 2
+          Health: 1
+          Shield: 0
+          Range: 1
+          Ground Damage: 1/2
+          Air Damage: 0
+          Sight: 7
+        Produces:
+          - Gather
+          - Morph
+        Abilities:
+          - Hovers
+    Upgrades:
+      Metabolic Boost:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "+1 Zergling speed."
