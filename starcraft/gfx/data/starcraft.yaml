@@ -809,19 +809,19 @@ Races:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Battlecruisers to fire their Yamato Gun at range 10 one time per turn, dealing 10 damage to one unit"
+        Text: "Allows Battlecruisers to fire their Yamato Gun at range 10 one time per round, dealing 10 damage to one unit"
       Colossus Reactor:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Battlecruisers to fire their Yamato Gun twice per turn"
+        Text: "Allows Battlecruisers to fire their Yamato Gun twice per round"
       Personnel Cloaking:
         Costs:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Ghosts to be cloaked in one combat round per turn."
+        Text: "Allows Ghosts to be cloaked in one combat per round."
       Lockdown:
         Costs:
           Time: 1
@@ -2194,6 +2194,8 @@ Races:
           - Spawn Broodling
         Requires:
           - Queens Nest
+        Abilities:
+          - Air
       Devourer:
         Size:
           Width: 3
@@ -2214,6 +2216,8 @@ Races:
           Air Damage: 2esa
         Requires:
           - Greater Spire
+        Abilities:
+          - Air
       Guardian:
         Size:
           Width: 3
@@ -2234,6 +2238,8 @@ Races:
           Sight: 7
         Requires:
           - Greater Spire
+        Abilities:
+          - Air
       Broodling:
         Size:
           Width: 2
@@ -2424,7 +2430,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Defilers to cast two spells per turn."
+        Text: "Allows Defilers to cast two spells each round."
       Anabolic Synthesis:
         Costs:
           Time: 2
