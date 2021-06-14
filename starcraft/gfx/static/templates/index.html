@@ -81,7 +81,7 @@
                                                     {%if 'Costs' in item and item['Costs']['Gas'] > 0%}
                                                         <span class="resource">
                                                             {{item['Costs']['Gas']}}{%if 'Mod' in item['Costs']%}+{{ item['Costs']['Mod'] }}{%endif%}
-                                                            <span class="resource-container"><img class="resource-image" src="static/img/icons/Gas.png" width="20px"></span>
+                                                            <span class="resource-container"><img class="resource-image" src="static/img/icons/Gas{{race}}.png" width="20px"></span>
                                                         </span>
                                                     {%endif%}
                                                     {%if 'Costs' in item and item['Costs']['Minerals'] != 0%}

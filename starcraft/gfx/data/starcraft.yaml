@@ -1694,6 +1694,29 @@ Races:
         Produces:
           - Larva
     Units:
+      Larva:
+        Size:
+          Width: 1.5
+          Height: 1.5
+        Costs:
+          Minerals: 0
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: SMALL
+          Types:
+            - Bio
+          Health: 10
+          Sight: 4
+        Produces:
+          - Drone
+          - Zergling
+          - Hydralisk
+          - Mutalisk
+          - Defiler
+          - Queen
+          - Ultralisk
       Drone:
         Size:
           Width: 2
@@ -1709,7 +1732,6 @@ Races:
             - Bio
           Speed: 2
           Health: 1
-          Shield: 0
           Range: 1
           Ground Damage: 1/2
           Air Damage: 0
@@ -1717,8 +1739,290 @@ Races:
         Produces:
           - Gather
           - Morph
+          - Burrow
         Abilities:
           - Hovers
+      Overlord:
+        Size:
+          Width: 2.8
+          Height: 2.8
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Time: 1
+        Stats:
+          Size: LARGE
+          Types:
+            - Bio
+          Speed: 1
+          Health: 4
+        Abilities:
+          - Detector
+          - Air
+      Zergling:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 0
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: SMALL
+          Amount: 2
+          Types:
+            - Bio
+          Speed: 3
+          Health: 1
+          Range: 1
+          Ground Damage: 1
+          Air Damage: 0
+          Sight: 5
+        Produces:
+          - Burrow
+        Requires:
+          - Spawning Pool
+      Hydralisk:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Minerals: 1
+          Gas: 1
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: MEDIUM
+          Types:
+            - Bio
+          Speed: 2
+          Health: 2
+          Range: 4
+          Ground Damage: 2e
+          Air Damage: 0
+          Sight: 5
+        Produces:
+          - Burrow
+          - Lurker
+        Requires:
+          - Hydralisk Den
+      Mutalisk:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 2
+          Gas: 2
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: SMALL
+          Types:
+            - Bio
+          Speed: 3
+          Health: 3
+          Range: 3
+          Ground Damage: 1+1
+          Air Damage: 1+1
+          Sight: 7
+        Abilities:
+          - Air
+        Requires:
+          - Spire
+        Produces:
+          - Devourer
+          - Guardian
+      Scourge:
+        Size:
+          Width: 1.5
+          Height: 1.5
+        Costs:
+          Minerals: 1
+          Gas: 1
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: SMALL
+          Amount: 2
+          Types:
+            - Bio
+          Speed: 3
+          Health: 3
+          Range: 1
+          Air Damage: 2x
+          Sight: 7
+        Abilities:
+          - Air
+        Requires:
+          - Spire
+      Lurker:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 4
+          Supply: 1
+          Time: 1
+        Stats:
+          Size: MEDIUM
+          Types:
+            - Bio
+          Speed: 3
+          Health: 4
+          Range: 6
+          Air Damage: 2
+          Ground Damage: 4s
+          Sight: 8
+        Produces:
+          - Burrow
+        Abilities:
+          - Air
+        Requires:
+          - Lurker Aspect
+      Ultralisk:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 4
+          Gas: 4
+          Supply: 4
+          Time: 1
+        Stats:
+          Size: LARGE
+          Types:
+            - Bio
+          Speed: 2
+          Health: 9
+          Range: 1
+          Ground Damage: 4
+          Sight: 7
+        Requires:
+          - Ultralisk Cavern
+      Defiler:
+        Size:
+          Width: 2.7
+          Height: 2.7
+        Costs:
+          Minerals: 1
+          Gas: 3
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: MEDIUM
+          Types:
+            - Bio
+          Speed: 2
+          Health: 3
+          Sight: 10
+        Produces:
+          - Consume
+          - Dark Swarm
+          - Plague
+        Requires:
+          - Defilers Den
+      Queen:
+        Size:
+          Width: 2.2
+          Height: 2.2
+        Costs:
+          Minerals: 2
+          Gas: 2
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: MEDIUM
+          Types:
+            - Bio
+          Speed: 2
+          Health: 3
+          Sight: 10
+        Produces:
+          - Infest Command Center
+          - Parasite
+          - Ensnare
+          - Spawn Broodling
+        Requires:
+          - Queens Nest
+      Devourer:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 5
+          Gas: 3
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: LARGE
+          Types:
+            - Bio
+          Speed: 2
+          Health: 7
+          Sight: 7
+          Range: 6
+          Air Damage: 2esa
+        Requires:
+          - Greater Spire
+      Guardian:
+        Size:
+          Width: 3
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 4
+          Supply: 2
+          Time: 1
+        Stats:
+          Size: LARGE
+          Types:
+            - Bio
+          Speed: 1
+          Health: 5
+          Range: 8
+          Ground Damage: 3
+          Sight: 7
+        Requires:
+          - Greater Spire
+      Broodling:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Minerals: 0
+          Gas: 0
+          Supply: 0
+        Stats:
+          Size: SMALL
+          Amount: 2
+          Types:
+            - Bio
+          Speed: 3
+          Health: 1
+          Range: 1
+          Ground Damage: 1
+          Sight: 5
+      Infested Terran:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 1
+          Supply: 1
+        Stats:
+          Size: SMALL
+          Types:
+            - Bio
+          Speed: 3
+          Health: 1
+          Range: 1
+          Ground Damage: 10esx
+          Sight: 5
     Upgrades:
       Metabolic Boost:
         Costs:
