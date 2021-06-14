@@ -1,0 +1,87 @@
+body {
+    color: rgb(255, 255, 255);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bi {
+    color: rgb(180, 80, 220);
+}
+
+.light {
+    color: rgb(180, 160, 255);
+}
+
+.item {
+    background-color: rgba(10, 0, 40, 0.9);
+    box-shadow: inset 75px 0px 50px #315;
+}
+
+.glow-large {
+    box-shadow: inset 0px 0px 24px #427;
+}
+
+.glow-small {
+    box-shadow: inset 0px 0px 12px #427;
+}
+
+.glow-reqs {
+    box-shadow: inset 0px 0px 12px #427;
+}
+
+.image {
+    transform: translate(-50%,-50%);
+}
+
+.border-2 {
+    border: 2px solid rgb(100, 20, 220);
+}
+
+.border-1 {
+    border: 1px solid rgb(100, 20, 220);
+}
+
+.border-req {
+    border: 1px solid rgb(100, 20, 220);
+}
+
+.title {
+    color: rgb(255, 255, 255);
+}
+
+.bg-requirement {
+    background-color: rgb(160, 40, 220)!important;
+}
+
+.abilities-row {
+    border-top: 1px solid rgba(160, 40, 220, 0.6);
+}
+
+.bg-ability {
+    background-color: rgb(20, 50, 110)!important;
+    color: rgb(220, 150, 255);
+}
+
+
+.products-row {
+    border-top: 1px solid rgba(40, 100, 220, 0.6);
+}
+
+.size {
+    color: rgb(230, 180, 255);
+}
+
+.abilities {
+    color: rgb(220, 150, 255);
+}
+
+.bg-type {
+    background-color: rgb(50, 20, 110)!important;
+    color: rgb(220, 150, 255);
+}
+
+.amount {
+    color: rgb(140, 80, 220);
+}

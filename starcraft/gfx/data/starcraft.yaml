@@ -1684,15 +1684,263 @@ Races:
           Width: 4
           Height: 3
         Costs:
-          Minerals: 8
+          Minerals: 6
           Gas: 0
           Supply: 0
           Time: 2
         Stats:
           Size: LARGE
-          Health: 30
+          Health: 25
         Produces:
           - Larva
+          - Lair
+      Lair:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 3
+          Gas: 2
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: LARGE
+          Health: 30
+        Requires:
+          - Spawning Pool
+        Produces:
+          - Larva
+          - Hive
+          - Ventral Sacs
+          - Antennae
+          - Pneumatized Carapace
+      Hive:
+        Size:
+          Width: 4
+          Height: 3
+        Costs:
+          Minerals: 4
+          Gas: 3
+          Supply: 0
+          Time: 2
+        Stats:
+          Size: LARGE
+          Health: 50
+        Requires:
+          - Queens Nest
+        Produces:
+          - Larva
+          - Ventral Sacs
+          - Antennae
+          - Pneumatized Carapace
+      Spawning Pool:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 4
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: LARGE
+          Health: 15
+        Produces:
+          - Metabolic Boost
+          - Adrenal Glands
+      Extractor:
+        Size:
+          Width: 3.7
+          Height: 2.3
+        Costs:
+          Minerals: 1
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: LARGE
+          Health: 15
+      Creep Colony:
+        Size:
+          Width: 2.9
+          Height: 2.9
+        Costs:
+          Minerals: 1
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Size: LARGE
+          Health: 8
+        Produces:
+          - Sunken Colony
+          - Spore Colony
+      Sunken Colony:
+        Size:
+          Width: 2.9
+          Height: 2.9
+        Costs:
+          Minerals: 1
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Range: 7
+          Ground: 4e
+          Size: LARGE
+          Health: 8
+      Spore Colony:
+        Size:
+          Width: 2.6
+          Height: 2.6
+        Costs:
+          Minerals: 1
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Stats:
+          Range: 7
+          Air: 3
+          Size: LARGE
+          Health: 8
+        Abilities:
+          - Detector
+      Hydralisk Den:
+        Size:
+          Width: 3.2
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 1
+          Supply: 0
+          Time: 1
+        Requires:
+          - Spawning Pool
+        Stats:
+          Size: LARGE
+          Health: 15
+      Evolution Chamber:
+        Size:
+          Width: 3.5
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Requires:
+          - Hatchery
+        Produces:
+          - Melee Attacks
+          - Missile Attacks
+          - Carapace
+        Stats:
+          Size: LARGE
+          Health: 15
+      Spire:
+        Size:
+          Width: 2.3
+          Height: 3.2
+        Costs:
+          Minerals: 4
+          Gas: 3
+          Supply: 0
+          Time: 1
+        Requires:
+          - Lair
+        Produces:
+          - Flyer Attack
+          - Flyer Carapace
+          - Greater Spire
+        Stats:
+          Size: LARGE
+          Health: 15
+      Greater Spire:
+        Size:
+          Width: 2.3
+          Height: 3.2
+        Costs:
+          Minerals: 2
+          Gas: 3
+          Supply: 0
+          Time: 1
+        Requires:
+          - Hive
+        Produces:
+          - Flyer Attack
+          - Flyer Carapace
+        Stats:
+          Size: LARGE
+          Health: 20
+      Queens Nest:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 2
+          Gas: 3
+          Supply: 0
+          Time: 1
+        Requires:
+          - Hive
+        Produces:
+          - Ensnare
+          - Spawn Broodling
+          - Gamete Meiosis
+        Stats:
+          Size: LARGE
+          Health: 15
+      Nydus Canal:
+        Size:
+          Width: 2.4
+          Height: 2.4
+        Costs:
+          Minerals: 3
+          Gas: 0
+          Supply: 0
+          Time: 1
+        Requires:
+          - Hive
+        Produces:
+          - Nydus Canal
+        Stats:
+          Size: LARGE
+          Health: 5
+      Defiler Mound:
+        Size:
+          Width: 3.7
+          Height: 2
+        Costs:
+          Minerals: 3
+          Gas: 2
+          Supply: 0
+          Time: 1
+        Requires:
+          - Hive
+        Produces:
+          - Consume
+          - Plague
+          - Metasynaptic Node
+        Stats:
+          Size: LARGE
+          Health: 15
+      Ultralisk Cavern:
+        Size:
+          Width: 3
+          Height: 2
+        Costs:
+          Minerals: 3
+          Gas: 4
+          Supply: 0
+          Time: 1
+        Requires:
+          - Hive
+        Produces:
+          - Anabolic Synthesis
+          - Chitinous Plating
+        Stats:
+          Size: LARGE
+          Health: 10
     Units:
       Larva:
         Size:
@@ -1918,8 +2166,8 @@ Races:
           Health: 3
           Sight: 10
         Produces:
-          - Consume
           - Dark Swarm
+          - Consume
           - Plague
         Requires:
           - Defilers Den
@@ -2030,3 +2278,163 @@ Races:
           Minerals: 2
           Gas: 2
         Text: "+1 Zergling speed."
+      Burrow:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows medium and small ground units to burrow, making them invisible, at any time, unless they have attacked this round, and can un-burrow at any time."
+      Ventral Sacs:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Gives Overlords the ability to transport up to 8 units, where medium units counts as 2, and large units counts as 4."
+      Antennae:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Overlords immediately reveal all units and buildings when moving into a new area."
+      Pneumatized Carapace:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "+1 Overload speed."
+      Adrenal Glands:
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 4
+        Text: "Allows surviving Zerglings to attack at the end of all combat rounds."
+      Muscular Augments:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "+1 Hydralisk speed."
+      Grooved Spines:
+        Costs:
+          Time: 1
+          Minerals: 3
+          Gas: 3
+        Text: "+1 Hydralisk range."
+      Lurker Aspect:
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 4
+        Text: "Enables Hydralisks to morph into Lurkers."
+        Requires:
+          - Lair
+      Melee Attacks:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+          Mod: 1
+        Text: "+1 Attack to melee units."
+        Levels: 3
+        Requires:
+          2:
+            - Lair
+          3:
+            - Hive
+      Missile Attacks:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+          Mod: 1
+        Text: "+1 Attack to Hydralisks and Lurkers."
+        Levels: 3
+        Requires:
+          2:
+            - Lair
+          3:
+            - Hive
+      Carapace:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+          Mod: 1
+        Text: "+1 HP to all ground units."
+        Levels: 3
+        Requires:
+          2:
+            - Lair
+          3:
+            - Hive
+      Flyer Attack:
+        Costs:
+          Time: 2
+          Minerals: 2
+          Gas: 2
+          Mod: 1
+        Text: "+1 Attack to all Zerg air units."
+        Levels: 3
+        Requires:
+          3:
+            - Hive
+      Flyer Carapace:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+          Mod: 1
+        Text: "+1 HP to all Zerg air units."
+        Levels: 3
+        Requires:
+          3:
+            - Hive
+      Ensnare:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Queens to use the Ensnare, targeting 4 small, 3 medium or 2 large unborrowed units that get their attack cut in half (rounded down) and cannot move further this round."
+      Spawn Broodling:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Queens to Spawn Broodlings, instantaneously destroying any non-robotic ground unit and replaces it with two Broodlings under control that lives until the end of this round. Archons and Dark Archons cannot be targeted. "
+      Gamete Meiosis:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Queens to cast two ability per round."
+      Consume:
+        Costs:
+          Time: 1
+          Minerals: 2
+          Gas: 2
+        Text: "Allows Defilers to use Consume, which removes two Zerglings from the game, allowing the Defiler to instantly use another ability."
+      Plague:
+        Costs:
+          Time: 1
+          Minerals: 4
+          Gas: 4
+        Text: "Allows Defilers to cast Plague on up to 4 small, 3 medium, 2 large units of the same type, or 1 structure, dealing 1 damage now and 6 at the end of this round, however, to a minimum of 1 HP."
+      Metasynaptic Node:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "Allows Defilers to cast two spells per turn."
+      Anabolic Synthesis:
+        Costs:
+          Time: 2
+          Minerals: 4
+          Gas: 4
+        Text: "+1 Ultralisk Speed."
+      Chitinous Plating:
+        Costs:
+          Time: 2
+          Minerals: 3
+          Gas: 3
+        Text: "+2 HP to Ultralisks."
+

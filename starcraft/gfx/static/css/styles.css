@@ -1,18 +1,9 @@
 body {
     background-color: black;
-    color: rgb(150, 220, 255);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-.bi {
-    color: rgb(40, 100, 220);
-}
-
-.light {
-    color: rgb(230, 230, 255);
 }
 
 .row {
@@ -21,16 +12,13 @@ body {
 }
 
 .item {
-    background-color: rgba(5, 5, 60, 0.75);
     margin: 4px;
-    box-shadow: inset 75px 0px 50px #126;
 }
 
 .glow-large {
     position: absolute;
     height: 100%;
     width: 100%;
-    box-shadow: inset 0px 0px 24px #139;
     z-index: 1000;
 }
 
@@ -38,7 +26,6 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    box-shadow: inset 0px 0px 12px #139;
     z-index: 1000;
 }
 
@@ -46,7 +33,6 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    box-shadow: inset 0px 0px 12px #931;
     z-index: 1000;
 }
 
@@ -71,15 +57,15 @@ body {
 }
 
 .border-2 {
-    border: 2px solid rgb(40, 100, 220);
+    border: 2px solid black;
 }
 
 .border-1 {
-    border: 1px solid rgb(40, 100, 220);
+    border: 1px solid black;
 }
 
 .border-req {
-    border: 1px solid rgb(40, 60, 120);
+    border: 1px solid black;
 }
 
 .Buildings {
@@ -113,22 +99,17 @@ body {
 
 .title {
     font-weight: bold;
-    color: rgb(230, 230, 255);
 }
 
 .requirement {
     font-size: 12px;
 }
 
-.bg-requirement {
-    background-color: rgb(40, 100, 220)!important;
-}
-
 .abilities-row {
     margin-top: 1px;
     margin-right: 4px;
     margin-left: 1px;
-    border-top: 1px solid rgba(40, 100, 220, 0.6);
+    border-top: 1px solid black;
 }
 
 .abilities {
@@ -136,7 +117,6 @@ body {
 }
 
 .bg-ability {
-    background-color: rgb(20, 50, 110)!important;
     color: rgb(150, 220, 255);
 }
 
@@ -157,7 +137,7 @@ body {
     margin-top: 1px;
     margin-right: 4px;
     margin-left: 1px;
-    border-top: 1px solid rgba(40, 100, 220, 0.6);
+    border-top: 1px solid black;
     min-height: 44px;
 }
 
@@ -187,7 +167,6 @@ body {
 
 .size {
     font-size: 10px;
-    color: rgb(150, 220, 255);
 }
 
 .abilities {
@@ -196,7 +175,6 @@ body {
     text-align: center;
     bottom: 0%;
     font-size: 16px;
-    color: rgb(150, 220, 255);
     width: 100%;
 }
 
@@ -205,15 +183,10 @@ body {
 }
 
 .bg-type {
-    background-color: rgb(20, 50, 110)!important;
     color: rgb(150, 220, 255);
     position: relative;
     z-index: 10000;
     font-size: 10px;
-}
-
-.amount {
-    color: rgb(40, 100, 220);
 }
 
 .text-short {
