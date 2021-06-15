@@ -7,6 +7,20 @@ def img(name):
     return name.replace("Level 1", "").replace("Level 2", "").replace("Level 3", "").replace(" ", "") + ".png"
 
 
+def font(text):
+    if len(text) < 100:
+        return 12
+    if len(text) < 200:
+        return 12
+    return 11
+
+
+def header(item_type):
+    if item_type == 'Buildings' or item_type == 'Units':
+        return 22
+    return 18
+
+
 def level_requirements(requirements):
     reqs = {}
     for level, level_reqs in requirements.items():
@@ -46,7 +60,10 @@ def protoss():
                            data=parsed_yaml_file,
                            img=img,
                            num_products=num_products,
-                           level_requirements=level_requirements)
+                           level_requirements=level_requirements,
+                           font=font,
+                           header=header,
+                           float=float)
 
 
 @app.route('/terran', methods=['GET', 'POST'])
@@ -57,7 +74,10 @@ def terran():
                            data=parsed_yaml_file,
                            img=img,
                            num_products=num_products,
-                           level_requirements=level_requirements)
+                           level_requirements=level_requirements,
+                           font=font,
+                           header=header,
+                           float=float)
 
 
 @app.route('/zerg', methods=['GET', 'POST'])
@@ -68,7 +88,10 @@ def zerg():
                            data=parsed_yaml_file,
                            img=img,
                            num_products=num_products,
-                           level_requirements=level_requirements)
+                           level_requirements=level_requirements,
+                           font=font,
+                           header=header,
+                           float=float)
 
 
 if __name__ == '__main__':

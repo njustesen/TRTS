@@ -15,7 +15,7 @@
                         {%elif item_type == 'Units'%}
                         <div class="col" style="max-width: 420px">
                             {%elif item_type == 'Upgrades'%}
-                            <div class="col" style="max-width: 600px">
+                            <div class="col" style="max-width: 610px">
                     {%endif%}
                         <div class="container">
                             {%for name, item in data['Races'][race][item_type].items()%}
@@ -37,7 +37,7 @@
                                             </div>
                                         {% else %}
                                             <div>
-                                                <img class="icon" src="static/img/{{race}}/{{img(name)}}" style="max-width:42px;">
+                                                <img class="icon" src="static/img/{{race}}/{{img(name)}}" style="max-width:32px;">
                                             </div>
                                         {% endif %}
                                         {%if 'Abilities' in item%}
@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="container content">
-                                            <div class="row" style="height: 22px;">
+                                            <div class="row" style="height: {{header(item_type)}}px;">
                                                 <div class="col">
                                                     <span class="title">
                                                         {{ name }} {%if 'Levels' in item%}1-{{item['Levels']}}{%endif%}
@@ -71,7 +71,28 @@
                                                         {%if 'Stats' in item and 'Amount' in item['Stats']%}
                                                             <span class="amount">({{ item['Stats']['Amount'] }}x)</span>
                                                         {%endif%}
-
+                                                    </span>
+                                                    <span class="requirement">
+                                                        {%if item_type == 'Upgrades' and item['Requires'] | length > 0%}
+                                                            {%if 'Levels' in item %}
+                                                                {%for levels, requirements in level_requirements(item['Requires']).items()%}
+                                                                    Level {{levels}} requires
+                                                                    {%for requirement in requirements%}
+                                                                        <span class="badge bg-requirement">{{requirement}}</span>
+                                                                    {%endfor%}
+                                                                    {%if loop.index + 1 < loop.length %}
+                                                                        +
+                                                                    {%endif%}
+                                                                {%endfor%}
+                                                            {%else%}
+                                                                Requires
+                                                                    {%for requirement in item['Requires']%}
+                                                                        <span class="badge bg-requirement">{{requirement}}</span>
+                                                                    {%endfor%}
+                                                            {%endif%}
+                                                        {%elif item_type != 'Upgrades'%}
+                                                            &nbsp
+                                                        {%endif%}
                                                     </span>
                                                     {%if 'Costs' in item and item['Costs']['Time'] > 1%}
                                                         <span class="resource">
@@ -101,28 +122,16 @@
                                             </div>
                                             <div class="row requirement-row">
                                                 <div class="col requirement">
-                                                    {%if 'Text' in item%}
-                                                        <span class="text-short">
+                                                    {%if 'Text' in item and item_type=='Upgrades'%}
+                                                        <span class="text-short" style="font-size:{{font(item['Text'])}}px">
                                                             {{item['Text']}}
                                                         </span>
                                                     {%endif%}
-                                                    {%if item['Requires'] | length > 0%}
-                                                        {%if 'Levels' in item %}
-                                                            {%for levels, requirements in level_requirements(item['Requires']).items()%}
-                                                                Level {{levels}} requires
-                                                                {%for requirement in requirements%}
-                                                                    <span class="badge bg-requirement">{{requirement}}</span>
-                                                                {%endfor%}
-                                                                {%if loop.index + 1 < loop.length %}
-                                                                    <br>
-                                                                {%endif%}
+                                                    {%if item_type != 'Upgrades' and item['Requires'] | length > 0%}
+                                                        Requires
+                                                            {%for requirement in item['Requires']%}
+                                                                <span class="badge bg-requirement">{{requirement}}</span>
                                                             {%endfor%}
-                                                        {%else%}
-                                                            Requires
-                                                                {%for requirement in item['Requires']%}
-                                                                    <span class="badge bg-requirement">{{requirement}}</span>
-                                                                {%endfor%}
-                                                        {%endif%}
                                                     {%elif item_type != 'Upgrades'%}
                                                         &nbsp
                                                     {%endif%}
@@ -134,101 +143,111 @@
                                                                 {{item['Stats']['Shield']}} <i class="bi bi-shield-shaded"></i>
                                                             </div>
                                                         {%endif%}
+                                                        {%if 'Health' in item['Stats']%}
                                                         <div class="health">
                                                             {{item['Stats']['Health']}} <i class="bi bi-heart-fill"></i>
                                                         </div>
+                                                        {%endif%}
                                                     </div>
                                                 {%endif%}
                                             </div>
                                             {% if item_type != 'Upgrades' %}
                                                 <div class="row products-row">
-                                                    {%if num_products(item) > 0 %}
-                                                        <div class="col products">
-                                                            {%if 'Speed' in item['Stats']%}
+
+                                                    <div class="col products">
+                                                        {%if 'Speed' in item['Stats']%}
+                                                            <div class="image-container unit border-2">
+                                                                <div class="container">
+                                                                    <div class="glow-small"></div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-header">
+                                                                            SPEED
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-value">
+                                                                            {{item['Stats']['Speed']}}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {%endif%}
+                                                        {%if 'Range' in item['Stats']%}
+                                                            <div class="image-container unit border-2">
+                                                                <div class="container">
+                                                                    <div class="glow-small"></div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-header">
+                                                                            RANGE
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-value">
+                                                                            {{item['Stats']['Range']}}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {%endif%}
+                                                        {%if 'Ground Damage' in item['Stats']%}
+                                                            <div class="image-container unit border-2">
+                                                                <div class="container">
+                                                                    <div class="glow-small"></div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-header">
+                                                                            GR.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-value">
+                                                                            {{item['Stats']['Ground Damage']}}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {%endif%}
+                                                        {%if 'Air Damage' in item['Stats'] and item['Stats']['Air Damage'] != 0%}
+                                                            <div class="image-container unit border-2">
+                                                                <div class="container">
+                                                                    <div class="glow-small"></div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-header">
+                                                                            AIR
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col stat-value">
+                                                                            {{item['Stats']['Air Damage']}}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {%endif%}
+                                                        {%for unit in item['Produces']%}
+                                                            {% if (unit in data['Races'][race]['Units'] and 'Requires' in data['Races'][race]['Units'][unit]) or (unit in data['Races'][race]['Buildings'] and 'Requires' in data['Races'][race]['Buildings'][unit]) or ((item_type != 'Buildings') and (unit in data['Races'][race]['Upgrades']) and (data['Races'][race]['Upgrades'][unit]['Costs']['Time'] > 0)) %}
+                                                                <div class="image-container unit border-req">
+                                                            {%else%}
                                                                 <div class="image-container unit border-2">
-                                                                    <div class="container">
-                                                                        <div class="glow-small"></div>
-                                                                        <div class="row">
-                                                                            <div class="col stat-header">
-                                                                                SPEED
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col stat-value">
-                                                                                {{item['Stats']['Speed']}}
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                                    <div class="glow-small"></div>
                                                             {%endif%}
-                                                            {%if 'Range' in item['Stats']%}
-                                                                <div class="image-container unit border-2">
-                                                                    <div class="container">
-                                                                        <div class="glow-small"></div>
-                                                                        <div class="row">
-                                                                            <div class="col stat-header">
-                                                                                RANGE
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col stat-value">
-                                                                                {{item['Stats']['Range']}}
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="image">
+                                                                    <img class="icon" src="static/img/{{race}}/{{img(unit.replace('!', ''))}}" style="max-width:32px">
                                                                 </div>
-                                                            {%endif%}
-                                                            {%if 'Ground Damage' in item['Stats']%}
-                                                                <div class="image-container unit border-2">
-                                                                    <div class="container">
-                                                                        <div class="glow-small"></div>
-                                                                        <div class="row">
-                                                                            <div class="col stat-header">
-                                                                                GR.
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col stat-value">
-                                                                                {{item['Stats']['Ground Damage']}}
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            {%endif%}
-                                                            {%if 'Air Damage' in item['Stats'] and item['Stats']['Air Damage'] != 0%}
-                                                                <div class="image-container unit border-2">
-                                                                    <div class="container">
-                                                                        <div class="glow-small"></div>
-                                                                        <div class="row">
-                                                                            <div class="col stat-header">
-                                                                                AIR
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col stat-value">
-                                                                                {{item['Stats']['Air Damage']}}
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            {%endif%}
-                                                            {%for unit in item['Produces']%}
-                                                                {% if (unit in data['Races'][race]['Units'] and 'Requires' in data['Races'][race]['Units'][unit]) or (unit in data['Races'][race]['Buildings'] and 'Requires' in data['Races'][race]['Buildings'][unit]) or ((item_type != 'Buildings') and (unit in data['Races'][race]['Upgrades']) and (data['Races'][race]['Upgrades'][unit]['Costs']['Time'] > 0)) %}
-                                                                    <div class="image-container unit border-req">
-                                                                {%else%}
-                                                                    <div class="image-container unit border-2">
-                                                                        <div class="glow-small"></div>
-                                                                {%endif%}
-                                                                    <div class="image">
-                                                                        <img class="icon" src="static/img/{{race}}/{{img(unit.replace('!', ''))}}" style="max-width:32px">
-                                                                    </div>
-                                                                </div>
-                                                            {%endfor%}
-                                                            {%for upgrade in item['Upgrades']|reverse%}
-                                                                <img class="icon" src="static/img/{{race}}/{{img(upgrade)}}" style="max-width:42px; float: right; margin-top: 1px;">
-                                                            {%endfor%}
+                                                            </div>
+                                                        {%endfor%}
+                                                        {%for upgrade in item['Upgrades']|reverse%}
+                                                            <img class="icon" src="static/img/{{race}}/{{img(upgrade)}}" style="max-width:42px; float: right; margin-top: 1px;">
+                                                        {%endfor%}
+                                                                    {%if 'Text' in item and item_type!='Upgrades'%}
+                                                        <div>
+                                                    <span class="text-short middle" style="font-size:{{font(item['Text'])}}px">
+                                                        {{item['Text']}}
+                                                    </span>
                                                         </div>
-                                                    {%endif%}
+                                                {%endif%}
+                                                    </div>
+
+
                                                 </div>
                                             {%endif%}
                                         </div>

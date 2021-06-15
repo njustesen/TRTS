@@ -18,6 +18,7 @@ Races:
           - ComSat Station
           - Nuclear Silo
           - Lift Off
+        Text: +2 Supply
       ComSat Station:
         Size:
           Width: 2
@@ -69,6 +70,7 @@ Races:
           Health: 10
         Requires:
           - Command Center
+        Text: +2 Supply
       Refinery:
         Size:
           Width: 3.5
@@ -83,6 +85,7 @@ Races:
           Health: 10
         Requires:
           - Command Center
+        Text: Gas Extractor
       Barracks:
         Size:
           Width: 4
@@ -97,12 +100,12 @@ Races:
           Health: 15
         Requires:
           - Command Center
-            - Lift Off
         Produces:
           - Marine
           - Firebat
           - Medic
           - Ghost
+          - Lift Off
       Bunker:
         Size:
           Width: 3
@@ -435,7 +438,7 @@ Races:
           Ground Damage: 2c
           Air Damage: 2c
         Produces:
-          - Nuke
+          - Call Down
           - Personnel Cloaking
           - Lockdown
         Requires:
@@ -497,7 +500,7 @@ Races:
           Range: 7
           Ground Damage: 2e
         Produces:
-          - Siege Mode
+          - Siege Tech
         Requires:
           - Machine Shop at Factory
       Goliath:
@@ -641,6 +644,48 @@ Races:
         Abilities:
           - Air
     Upgrades:
+      Gather:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows SCVs to collect resources in the Income Phase."
+      Construct:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows SCVs to construct buildings in the Income Phase."
+      Repair:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows SCVs to repair 2 HP of a damaged building at the cost of 1 mineral per building being repaired."
+      Load:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Bunkers to load four Barracks units and Dropships to load and transport up to eight ground units where medium counts as two and large as four. Units can be loaded and unloaded at any point."
+      Heal:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Medics to immediately deny up to two lost HP on a single Barracks unit."
+      Nuke:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Nuclear Silos can produce and house one Nuke each at the cost of 4 minerals, 4 gas, and 8 supply."
+      Call Down:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Ghosts can Call Down a Nuke by informing the other player that a \"Nuclear Luanch Detected!\" and then secretely mark the area of the Ghost on the Player Board. The Ghost cannot move any further. All Nukes detonate at the end of the round if the Ghosts is still alive. Nukes deal 25, 20, 15, 10, and 5 damage to five different targets."
       Infantry Weapons:
         Costs:
           Time: 2
@@ -697,7 +742,7 @@ Races:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Medics to use two abilities each round, except for two Optical Flares."
+        Text: "Allows Medics to use two different abilities each round."
       Spider Mines:
         Costs:
           Time: 1
@@ -857,6 +902,7 @@ Races:
           Shield: 15
         Produces:
           - Probe
+        Text: +2 Supply
       Pylon:
         Size:
           Width: 2
@@ -872,6 +918,7 @@ Races:
           Shield: 7
         Requires:
           - Nexus
+        Text: +2 Supply
       Assimilator:
         Size:
           Width: 3.5
@@ -887,6 +934,7 @@ Races:
           Shield: 10
         Requires:
           - Nexus
+        Text: Gas Extractor
       Forge:
         Size:
           Width: 3
@@ -1338,13 +1386,24 @@ Races:
           Speed: 1
           Health: 2
           Shield: 2
-          Range: 8
-          Ground Damage: 4es
           Sight: 10
         Produces:
           - Scarab
         Requires:
           - Robotics Support Bay
+      Scarab:
+        Size:
+          Width: 2
+          Height: 2
+        Costs:
+          Time: 1
+          Minerals: 1
+          Gas: 0
+          Supply: 0
+        Stats:
+          Size: ""
+          Range: 8
+          Ground Damage: 4es!
       Observer:
         Size:
           Width: 2
@@ -1365,10 +1424,9 @@ Races:
           Sight: 9
         Abilities:
           - Detector
+          - Air
         Requires:
           - Observatory
-        Abilities:
-          - Air
       Scout:
         Size:
           Width: 3
@@ -1486,6 +1544,66 @@ Races:
         Abilities:
           - Air
     Upgrades:
+      Gather:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Probes to collect resources in the Income Phase."
+      Warp:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Probes to warp in any number of structures in the Production Phase."
+      Recharge:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Shield Batteries to immediately replenish two lost Shield points."
+      Summon Archon:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows two High Templars to merge into an Archon in the Production Phase."
+      Summon Dark Archon:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows two Dark Templars to merge into a Dark Archon in the Production Phase."
+      Feedback:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Dark Archons to cast Feedback on a target unit that beecomes unable to cast spells this turn and takes damage equal to the number of spells it were able to cast in the remainder of this turn."
+      Load:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Shuttles to load and transport up to eight ground units where medium counts as two and large as four. Units can be loaded and unloaded at any point."
+      Scarab:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Reavers cannot attack but can instead produce Scarabs in the Production Phase that the Reaver will house. Each Reaver can release one Scarab each turn, using the attacking stats of the Scarab."
+      Interceptor:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Carriers cannot attack but can instead produce Interceptors in the Production Phase that the Carrier will house. Carriers release all their Interceptors during combat. If a Carrier is targeted by an enemy unit with greater range that the Interceptors, then the all Interceptors in this combat can attack in attacking units in the same combat step."
+      Cloaking Field:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "All other friendly units in the same area as the Arbiter are invisible."
       Ground Weapons:
         Costs:
           Time: 2
@@ -1568,7 +1686,7 @@ Races:
           Time: 1
           Minerals: 4
           Gas: 4
-        Text: "Allows High Templars to cast Psionic Storm at range 9 dealing 4-X damage to 4/3/2 targets of the same type, where X the speed of the target, to a minimum of 1 damage par target."
+        Text: "Allows High Templars to cast Psionic Storm at range 9 dealing 2 damage to 4 small, 3 medium or 2 large targets of the same type."
       Hallucination:
         Costs:
           Time: 1

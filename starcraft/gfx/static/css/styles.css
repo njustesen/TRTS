@@ -4,6 +4,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    line-height: 1.1;
 }
 
 .row {
@@ -79,8 +80,8 @@ body {
 }
 
 .Upgrades {
-    width: 46px;
-    height: 46px;
+    width: 36px;
+    height: 36px;
 }
 
 .unit {
@@ -92,7 +93,7 @@ body {
 }
 
 .content {
-    padding-top: 4px;
+    padding-top: 2px;
     height: 100%;
     padding-left: 4px;
 }
@@ -157,7 +158,6 @@ body {
 
 .resource-container {
     position: relative;
-    top: 2px;
     margin-right: 20px;
 }
 
@@ -190,7 +190,12 @@ body {
 }
 
 .text-short {
-    float: right;
-    margin-right: 4px;
+    float: left;
     font-size: 13px;
+}
+
+.middle {
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 4px;
 }
