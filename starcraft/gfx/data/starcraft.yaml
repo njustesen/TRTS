@@ -190,8 +190,8 @@ Races:
           - Vulture
           - Siege Tank
           - Goliath
-          - Machine Shop
           - Lift Off
+          - Machine Shop
         Requires:
           - Barracks
       Machine Shop:
@@ -1197,7 +1197,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Type:
+          Types:
             - Mech
           Speed: 2
           Health: 3
@@ -1703,6 +1703,8 @@ Races:
           Gas: 2
           Supply: 0
           Time: 1
+          Types:
+            - Tier 2
         Stats:
           Size: LARGE
           Health: 30
@@ -1710,10 +1712,10 @@ Races:
           - Spawning Pool
         Produces:
           - Larva
-          - Hive
           - Ventral Sacs
           - Antennae
           - Pneumatized Carapace
+          - Hive
       Hive:
         Size:
           Width: 4
@@ -1726,6 +1728,8 @@ Races:
         Stats:
           Size: LARGE
           Health: 50
+          Types:
+            - Tier 3
         Requires:
           - Queens Nest
         Produces:
@@ -1786,9 +1790,13 @@ Races:
           Time: 1
         Stats:
           Range: 7
-          Ground: 4e
+          Ground Damage: 4e
           Size: LARGE
           Health: 8
+          Types:
+            - Tier 2
+        Requires:
+          - Spawning Pool
       Spore Colony:
         Size:
           Width: 2.6
@@ -1800,9 +1808,13 @@ Races:
           Time: 1
         Stats:
           Range: 7
-          Air: 3
+          Air Damage: 3
           Size: LARGE
           Health: 8
+          Types:
+            - Tier 2
+        Requires:
+          - Evolution Chamber
         Abilities:
           - Detector
       Hydralisk Den:
@@ -1816,6 +1828,10 @@ Races:
           Time: 1
         Requires:
           - Spawning Pool
+        Produces:
+          - Muscular Augments
+          - Grooved Spines
+          - Lurker Aspect
         Stats:
           Size: LARGE
           Health: 15
@@ -1872,6 +1888,8 @@ Races:
         Stats:
           Size: LARGE
           Health: 20
+          Types:
+            - Tier 2
       Queens Nest:
         Size:
           Width: 3
@@ -2098,7 +2116,7 @@ Races:
           Speed: 3
           Health: 3
           Range: 1
-          Air Damage: 2x
+          Air Damage: 2!
           Sight: 7
         Abilities:
           - Air
@@ -2124,7 +2142,7 @@ Races:
           Ground Damage: 4s
           Sight: 8
         Produces:
-          - Burrow
+          - Burrow!
         Abilities:
           - Air
         Requires:
@@ -2275,9 +2293,39 @@ Races:
           Speed: 3
           Health: 1
           Range: 1
-          Ground Damage: 10esx
+          Ground Damage: 10es!
           Sight: 5
     Upgrades:
+      Gather:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Drones to collect resources in the Income Phase."
+      Morph:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Drones to morph into a Tier 1 structure during the Production Phase."
+      Dark Swarm:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Defilers to cast a Dark Swarm in an area where no ground units will take direct damage from ranged attacks this combat round, except from splash damage."
+      Infest Command Center:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Queens to Infest a heavily damaged (< 15 HP) Terran Command Center that will be replaced by an Infested Command Center under your control with the same HP."
+      Parasite:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows Queens to cast a parasite on a target unit to permanently gain its vision."
       Metabolic Boost:
         Costs:
           Time: 1
@@ -2289,7 +2337,7 @@ Races:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows medium and small ground units to burrow, making them invisible, at any time, unless they have attacked this round, and can un-burrow at any time."
+        Text: "Allows medium and small ground units to burrow, making them invisible but unable to attack, at any time before attacking this round, and can un-burrow at any time. Lurkers do not need this upgrade to burrow and can only attack while burrowed."
       Ventral Sacs:
         Costs:
           Time: 2
