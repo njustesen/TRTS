@@ -72,6 +72,11 @@
                                                             <span class="amount">({{ item['Stats']['Amount'] }}x)</span>
                                                         {%endif%}
                                                     </span>
+                                                    {%if 'Costs' in item and 'Energy' in item['Costs']%}
+                                                        <span class="energy">
+                                                            <img src="static/img/icons/energy.png">
+                                                        </span>
+                                                    {%endif%}
                                                     <span class="requirement">
                                                         {%if item_type == 'Upgrades' and item['Requires'] | length > 0%}
                                                             {%if 'Levels' in item %}
