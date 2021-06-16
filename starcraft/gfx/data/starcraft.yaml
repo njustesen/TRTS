@@ -700,7 +700,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Ghosts can Call Down a Nuke instead of making a push by informing the other player that a \"Nuclear Luanch Detected!\" and then secretly marking the area of the Ghost on the Player Board. The Ghost cannot move any further this round. All Nukes detonate in the marked area at the end of the round if the Ghosts is still alive. Nukes deal 25, 20, 15, 10, and 5 damage to five different targets."
+        Text: "Ghosts can Call Down a Nuke if, any are available in a Nuclear Silo, instead of making a push by informing the other player that a \"Nuclear Luanch Detected!\" and then secretly marking the area of the Ghost on the Player Board. The Ghost cannot move any further this round. All Nukes detonate in the marked area at the end of the round if the Ghosts is still alive. Nukes deal 25, 20, 15, 10, and 5 damage to five different targets."
       Infantry Weapons:
         Costs:
           Time: 2
