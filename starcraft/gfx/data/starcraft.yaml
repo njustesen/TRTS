@@ -462,7 +462,7 @@ Races:
           Range: 5
           Ground Damage: 2c
         Produces:
-          - Spider Mine
+          - Spider Mines
         Abilities:
           - Hovers
       Spider Mine:
@@ -477,10 +477,11 @@ Races:
           Speed: 4
           Health: 1
           Sight: 3
-          Range: 1
-          Ground Damage: 2es
+          Range: 4
+          Ground Damage: 2es!
         Abilities:
           - Cloaked
+        Text: Automatically attacks non-hovering units with lowest range.
       Siege Tank:
         Size:
           Width: 3
@@ -502,7 +503,7 @@ Races:
         Produces:
           - Siege Tech
         Requires:
-          - Machine Shop at Factory
+          - Factory + Add-On
       Goliath:
         Size:
           Width: 3
@@ -614,7 +615,7 @@ Races:
           Air Damage: 3es
           Sight: 8
         Requires:
-          - Control Tower at Starport
+          - Starport + Add-On
           - Armory
         Abilities:
           - Air
@@ -655,19 +656,31 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows SCVs to construct buildings in the Income Phase."
+        Text: "Allows each SCV to construct one building in the Production Phase in areas without creep. Constructing SCVs cannot do anything else until the building is complete. If the constructing SCV is killed, or leaves the construction, another SCV can take over."
       Repair:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows SCVs to repair 2 HP of a damaged building at the cost of 1 mineral per building being repaired."
+        Text: "Allows each SCV to repair 2 HP of a damaged building or mechanical unit at the cost of 1 mineral per building/unit being repaired."
       Load:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Bunkers to load four Barracks units and Dropships to load and transport up to eight ground units where medium counts as two and large as four. Units can be loaded and unloaded at any point."
+        Text: "Allows Bunkers to load four Barracks units and Dropships to load and transport up to eight ground units where medium units counts as two and large as four. Units can be loaded and unloaded at any point."
+      Lift Off:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows buildings with this ability to Lift Off, making them air units with speed 1. Lifting Off or landing costs 1 movement point and lifted buildings cannot do anything else other than moving or landing."
+      Scanner Sweep:
+        Costs:
+          Time: 0
+          Minerals: 0
+          Gas: 0
+        Text: "Allows ComSat Stations at any point to scan one area, revealing all units and three un-revealed buildings of other player's choice (if any). When used during combat, any enemy cloaked units become visible."
       Heal:
         Costs:
           Time: 0
@@ -679,13 +692,13 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Nuclear Silos can produce and house one Nuke each at the cost of 4 minerals, 4 gas, and 8 supply."
+        Text: "Nuclear Silos can produce and house one Nuke at the cost of 4 minerals, 4 gas, and 8 supply."
       Call Down:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Ghosts can Call Down a Nuke by informing the other player that a \"Nuclear Luanch Detected!\" and then secretely mark the area of the Ghost on the Player Board. The Ghost cannot move any further. All Nukes detonate at the end of the round if the Ghosts is still alive. Nukes deal 25, 20, 15, 10, and 5 damage to five different targets."
+        Text: "Ghosts can Call Down a Nuke at range 9 by informing the other player that a \"Nuclear Luanch Detected!\" and then secretely mark the area of the Ghost on the Player Board. The Ghost cannot move any further. All Nukes detonate at the end of the round if the Ghosts is still alive. Nukes deal 25, 20, 15, 10, and 5 damage to five different targets."
       Infantry Weapons:
         Costs:
           Time: 2
@@ -705,7 +718,7 @@ Races:
           Minerals: 2
           Gas: 2
           Mod: 1
-        Text: "+1 HP to SCV and Barracks units."
+        Text: "+1 HP to SCVs and Barracks units."
         Levels: 3
         Requires:
           2:
@@ -730,25 +743,25 @@ Races:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Medics to use Restoration, removing any harmful effects besides Stasis Field on a unit in the same area."
+        Text: "Allows Medics to use Restoration at range 6, removing any harmful effects besides Stasis Field on a unit in the same area."
       Optical Flare:
         Costs:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Medics to permanently use Optical flare, reduce the range of one unit's attacks and abilities to 1."
+        Text: "Allows Medics to use Optical Flare at range 9, permanently reducing the range of a unit's attacks and abilities to 1."
       Caduceus Reactor:
         Costs:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Medics to use two different abilities each round."
+        Text: "Allows Medics to use two different spells each round."
       Spider Mines:
         Costs:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Vultures to each plant three Spider Mines during the Macro-management Phase, or instead of attacking during combat. Mines that are planted during combat are not borrowed."
+        Text: "Allows Vultures to each plant a total of three Spider Mines in game. Mines can be planted in the Macro-management Phase, or instead of attacking during combat. Mines that are planted during combat are not cloaked."
       Siege Tech:
         Costs:
           Time: 1
@@ -804,7 +817,7 @@ Races:
             - Science Facility
           3:
             - Science Facility
-        Text: "+1 HP to Factory units."
+        Text: "+1 HP to Factory units. +2 HP to Tanks."
       Ship Weapons:
         Costs:
           Time: 2
@@ -830,13 +843,13 @@ Races:
             - Science Facility
           3:
             - Science Facility
-        Text: "+1 HP to Starport units."
+        Text: "+2 HP to Starport units."
       EMP Shockwave:
         Costs:
           Time: 1
           Minerals: 4
           Gas: 4
-        Text: "Allows Science Vessels to use EMP Shockwave at range 8, removing any Shield of up to two units of the same type. Additionally, the targets cannot use any abilities this turn."
+        Text: "Allows Science Vessels to use EMP Shockwave at range 8, removing any Shield of up to two units of the same type. Additionally, the targets cannot use any spells this turn."
       Irradiate:
         Costs:
           Time: 1
@@ -848,7 +861,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Science Vessels to use two abilities each turn."
+        Text: "Allows Science Vessels to use two spells each turn."
       Yamato Gun:
         Costs:
           Time: 1
@@ -878,7 +891,7 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows Ghosts to Call Down nukes in adjacent Areas as part of a push."
+        Text: "Allows Ghosts to Call Down nukes in adjacent areas as part of a push."
       Moebius Reactor:
         Costs:
           Time: 2
@@ -1555,13 +1568,13 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Probes to warp in any number of structures in the Production Phase."
+        Text: "Allows Probes to warp in any number of structures in the Production Phase in areas without creep."
       Recharge:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Shield Batteries to immediately replenish two lost Shield points."
+        Text: "Allows Shield Batteries to immediately replenish or deny two lost Shield points."
       Summon Archon:
         Costs:
           Time: 0
@@ -1579,7 +1592,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Dark Archons to cast Feedback on a target unit that beecomes unable to cast spells this turn and takes damage equal to the number of spells it were able to cast in the remainder of this turn."
+        Text: "Allows Dark Archons to cast Feedback at range 10 on a target unit that beecomes unable to cast spells this turn and takes damage equal to the number of spells it were able to cast in the remainder of this turn."
       Load:
         Costs:
           Time: 0
@@ -1692,13 +1705,13 @@ Races:
           Time: 1
           Minerals: 3
           Gas: 3
-        Text: "Allows High Templar to cast Hallucination creating two temporary duplicates of a friendly unit in the same area as the High Templar, with 1 HP, that cannot attack or cast spells, and only exists until the end of the round."
+        Text: "Allows High Templar to cast Hallucination during the Production Phase creating two temporary duplicates of a friendly unit in the same area as the High Templar, with 1 HP, that cannot attack or cast spells, and only exists until the end of the round."
       Khaydarin Amulet:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows High Templars to cast two spells every round."
+        Text: "Allows High Templars to cast two spells each round."
       Maelstrom:
         Costs:
           Time: 1
@@ -1716,7 +1729,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Dark Archons to cast two spells per round."
+        Text: "Allows Dark Archons to cast two spells each round."
       Scarab Damage:
         Costs:
           Time: 2
@@ -1746,37 +1759,37 @@ Races:
           Time: 1
           Minerals: 3
           Gas: 3
-        Text: "+1 Observer speed"
+        Text: "+1 Observer speed."
       Carrier Capacity:
         Costs:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Carriers can house 8 Interceptors instead of 4"
+        Text: "Carriers can house 8 Interceptors instead of 4."
       Apial Sensors:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "+2 Scout sight"
+        Text: "+2 Scout sight."
       Gravitic Thrusters:
         Costs:
           Time: 2
           Minerals: 4
           Gas: 4
-        Text: "+1 Carrier speed"
+        Text: "+1 Carrier speed."
       Disruption Web:
         Costs:
           Time: 1
           Minerals: 4
           Gas: 4
-        Text: "Allows Corsairs to cast Disruption Web at range 9 preventing 3/2/1 unit to attack this turn."
+        Text: "Allows Corsairs to cast Disruption Web at range 9 preventing 3 small, 2 medium, or 1 large unit of the same type to attack this turn."
       Argus Jewel:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows Corsairs to cast two spells per round."
+        Text: "Allows Corsairs to cast two spells each round."
       Stasis Field:
         Costs:
           Time: 1
@@ -1788,13 +1801,13 @@ Races:
           Time: 1
           Minerals: 3
           Gas: 3
-        Text: "Allows Arbiters to cast Recall at any time, teleporting any number of friendly units from one area to the one with the Arbiter."
+        Text: "Allows Arbiters to cast Recall at any time during combat, teleporting any number of friendly units from one area to the one with the Arbiter."
       Khaydarin Core:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Arbiters to cast two spells per round."
+        Text: "Allows Arbiters to cast two spells each round."
   Zerg:
     Buildings:
       Hatchery:
@@ -1821,11 +1834,11 @@ Races:
           Gas: 2
           Supply: 0
           Time: 1
-          Types:
-            - Tier 2
         Stats:
           Size: LARGE
           Health: 30
+          Types:
+            - Tier 2
         Requires:
           - Spawning Pool
         Produces:
@@ -1882,6 +1895,7 @@ Races:
         Stats:
           Size: LARGE
           Health: 15
+        Text: Gas Extractor
       Creep Colony:
         Size:
           Width: 2.9
@@ -2042,6 +2056,7 @@ Races:
         Stats:
           Size: LARGE
           Health: 5
+        Text: Produces one Nydus Exit for free on any area under control with creep.
       Defiler Mound:
         Size:
           Width: 3.7
@@ -2143,6 +2158,7 @@ Races:
         Abilities:
           - Detector
           - Air
+        Text: +2 Supply
       Zergling:
         Size:
           Width: 2
@@ -2232,7 +2248,7 @@ Races:
           Types:
             - Bio
           Speed: 3
-          Health: 3
+          Health: 1
           Range: 1
           Air Damage: 2!
           Sight: 7
@@ -2253,16 +2269,14 @@ Races:
           Size: MEDIUM
           Types:
             - Bio
+            - Tier 2
           Speed: 3
           Health: 4
           Range: 6
-          Air Damage: 2
           Ground Damage: 4s
           Sight: 8
         Produces:
           - Burrow!
-        Abilities:
-          - Air
         Requires:
           - Lurker Aspect
       Ultralisk:
@@ -2345,6 +2359,7 @@ Races:
           Size: LARGE
           Types:
             - Bio
+            - Tier 2
           Speed: 2
           Health: 7
           Sight: 7
@@ -2367,6 +2382,7 @@ Races:
           Size: LARGE
           Types:
             - Bio
+            - Tier 2
           Speed: 1
           Health: 5
           Range: 8
@@ -2425,25 +2441,25 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Drones to morph into a Tier 1 structure during the Production Phase."
+        Text: "Allows Drones to morph into a Tier 1 structure during the Production Phase in an area with creep unless it's a Hatchery. Any area with a Zerg structure has Creep."
       Dark Swarm:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Defilers to cast a Dark Swarm in an area where no ground units will take direct damage from ranged attacks this combat round, except from splash damage."
+        Text: "Allows Defilers to cast a Dark Swarm at range 9 in an area where no ground units will take direct damage from ranged attacks this combat round, except from splash damage."
       Infest Command Center:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Queens to Infest a heavily damaged (< 15 HP) Terran Command Center that will be replaced by an Infested Command Center under your control with the same HP."
+        Text: "Enables Queens to automatically Infest a heavily damaged (< 15 HP) Terran Command Center during any combat round that will be replaced by an Infested Command Center under your control with the same HP."
       Parasite:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Queens to cast a parasite on a target unit to permanently gain its vision."
+        Text: "Allows Queens to cast a parasite at range 12 on a target unit to permanently gain its vision. This ability can be used when retreating."
       Metabolic Boost:
         Costs:
           Time: 1
@@ -2479,7 +2495,7 @@ Races:
           Time: 1
           Minerals: 4
           Gas: 4
-        Text: "Allows surviving Zerglings to attack at the end of all combat rounds."
+        Text: "Provides surviving Zerglings with an additional attack at the end of all combat rounds."
       Muscular Augments:
         Costs:
           Time: 1
@@ -2497,7 +2513,7 @@ Races:
           Time: 1
           Minerals: 4
           Gas: 4
-        Text: "Enables Hydralisks to morph into Lurkers."
+        Text: "Enables Hydralisks to morph into Lurkers in the Production Phase. Morphing Hydralisks have 10 HP."
         Requires:
           - Lair
       Melee Attacks:
@@ -2506,7 +2522,7 @@ Races:
           Minerals: 2
           Gas: 2
           Mod: 1
-        Text: "+1 Attack to melee units."
+        Text: "+1 Attack to melee units. +2 Attack to Ultralisks."
         Levels: 3
         Requires:
           2:
@@ -2556,7 +2572,7 @@ Races:
           Minerals: 3
           Gas: 3
           Mod: 1
-        Text: "+1 HP to all Zerg air units."
+        Text: "+2 HP to all Zerg air units."
         Levels: 3
         Requires:
           3:
@@ -2566,31 +2582,31 @@ Races:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Queens to use the Ensnare, targeting 4 small, 3 medium or 2 large unborrowed units that get their attack cut in half (rounded down) and cannot move further this round."
+        Text: "Allows Queens to use Ensnare at range 9, targeting 4 small, 3 medium or 2 large unborrowed units of the same type that get their attack cut in half (rounded down) and cannot move further this round."
       Spawn Broodling:
         Costs:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Queens to Spawn Broodlings, instantaneously destroying any non-robotic ground unit and replaces it with two Broodlings under control that lives until the end of this round. Archons and Dark Archons cannot be targeted. "
+        Text: "Allows Queens to Spawn Broodlings at range 9, instantaneously destroying any non-robotic ground unit and replaces it with two Broodlings under control that lives until the end of this round. Archons and Dark Archons cannot be targeted. "
       Gamete Meiosis:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Queens to cast two ability per round."
+        Text: "Allows Queens to cast two spells each round."
       Consume:
         Costs:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Defilers to use Consume, which removes two Zerglings from the game, allowing the Defiler to instantly use another ability."
+        Text: "Allows Defilers to use Consume at range 10, which removes two Zerglings from the game, allowing the Defiler to instantly use another ability."
       Plague:
         Costs:
           Time: 1
           Minerals: 4
           Gas: 4
-        Text: "Allows Defilers to cast Plague on up to 4 small, 3 medium, 2 large units of the same type, or 1 structure, dealing 1 damage now and 6 at the end of this round, however, to a minimum of 1 HP."
+        Text: "Allows Defilers to cast Plague at range 9 on up to 4 small, 3 medium, 2 large units of the same type, or 1 structure, dealing 1 damage now and 6 at the end of this round, however, to a minimum of 1 HP."
       Metasynaptic Node:
         Costs:
           Time: 2

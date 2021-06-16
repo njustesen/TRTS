@@ -1,10 +1,10 @@
 body {
     background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     line-height: 1.1;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .row {
@@ -154,6 +154,7 @@ body {
 
 .stat-value {
     text-align: center;
+    line-height: 1.6;
 }
 
 .resource-container {
@@ -196,6 +197,7 @@ body {
 
 .middle {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
+    max-width: 180px;
     padding-left: 4px;
 }
