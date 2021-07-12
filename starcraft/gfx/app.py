@@ -52,6 +52,17 @@ def num_products(item):
     return produces + upgrades + stats
 
 
+def num_health_stats(item):
+    c = 0
+    if 'Stats' in item:
+        if 'Health' in item['Stats']:
+            c+=1
+        if 'Shield' in item['Stats']:
+            c += 1
+        if 'Armor' in item['Stats']:
+            c += 1
+    return c
+
 @app.route('/protoss', methods=['GET', 'POST'])
 def protoss():
     parsed_yaml_file = yaml.load(open('data/starcraft.yaml', 'r'), Loader=yaml.FullLoader)
@@ -63,6 +74,7 @@ def protoss():
                            level_requirements=level_requirements,
                            font=font,
                            header=header,
+                           num_health_stats=num_health_stats,
                            float=float)
 
 
@@ -77,6 +89,7 @@ def terran():
                            level_requirements=level_requirements,
                            font=font,
                            header=header,
+                           num_health_stats=num_health_stats,
                            float=float)
 
 
@@ -91,7 +104,12 @@ def zerg():
                            level_requirements=level_requirements,
                            font=font,
                            header=header,
+                           num_health_stats=num_health_stats,
                            float=float)
+
+@app.route('/rules', methods=['GET', 'POST'])
+def rules():
+    return render_template('templates/rules.html')
 
 
 if __name__ == '__main__':

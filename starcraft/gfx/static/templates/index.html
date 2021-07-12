@@ -51,6 +51,12 @@
                                                 {%if 'Hovers' in item['Abilities']%}
                                                     <i class="bi bi-layers-half light"></i>
                                                 {%endif%}
+                                                {%if 'Stack' in item['Abilities']%}
+                                                    <i class="bi bi-stack light"></i>
+                                                {%endif%}
+                                                {%if 'Frenzy' in item['Abilities']%}
+                                                    <i class="bi bi-exclamation-square light"></i>
+                                                {%endif%}
                                                 {%if 'Detector' in item['Abilities']%}
                                                     <i class="bi bi-broadcast light"></i>
                                                 {%endif%}
@@ -142,10 +148,15 @@
                                                     {%endif%}
                                                 </div>
                                                 {%if 'Stats' in item %}
-                                                    <div class="col-3">
+                                                    <div class="col" style="max-width:{{ 5 + (num_health_stats(item) * 10) }}%">
+                                                        {%if 'Armor' in item['Stats']%}
+                                                            <div class="armor">
+                                                                {{item['Stats']['Armor']}} <i class="bi bi-shield-shaded"></i>
+                                                            </div>
+                                                        {%endif%}
                                                         {%if 'Shield' in item['Stats']%}
                                                             <div class="health">
-                                                                {{item['Stats']['Shield']}} <i class="bi bi-shield-shaded"></i>
+                                                                {{item['Stats']['Shield']}} <i class="bi bi-record-circle"></i>
                                                             </div>
                                                         {%endif%}
                                                         {%if 'Health' in item['Stats']%}

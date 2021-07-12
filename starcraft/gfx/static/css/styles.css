@@ -134,6 +134,13 @@ body {
     margin-right: 4px;
 }
 
+.armor {
+    font-weight: bold;
+    float: right;
+    font-size: 12px;
+    margin-right: 4px;
+}
+
 .products-row {
     margin-top: 1px;
     margin-right: 4px;
