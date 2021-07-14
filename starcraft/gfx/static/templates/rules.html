@@ -10,16 +10,17 @@
         <div class="container" style="max-width: 100%;">
             <div class="row">
                 <div class="col-3">
+                    <!--
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Setup</div>
                             <div>
                                 <ol>
-                                    <li>Place the main game board (known as the Map) somewhere on the table so it can be reached by all players.</li>
+                                    <li>Select a map to play on and place the main game board (known as the Map) somewhere on the table so it can be reached by all players.</li>
                                     <li>Randomly determine the starting location of each player among the starting locations on the map and situate yourself near your own.</li>
-                                    <li>Each player selects a race and places one of the smaller game boards (known as the minimap) in front of them and collects all the unit, buildings, upgrades, and control markers associated with their race as well as a set of mineral, gas, and miscellaneous tokens.</li>
-                                    <li>Each player places one of their control markers on all the areas they control. Look at the Map to see how it is partitioned.</li>
-                                    <li>Each player places a Command Center, Nexus, or Hatchery (depending on your race) along with two workers in starting location on their Minimap. Zerg also starts with one Overlord.</li>
+                                    <li>Each player selects a race and places one of the smaller game boards (known as the minimap) in front of them and collects all the unit, buildings, upgrades, and control markers associated with their race as well as a set of mineral, gas, and miscellaneous tokens. This is all placed next to the Minimap.</li>
+                                    <li>Each player places a control markers on all the areas they control. Look at the Map to see how it is partitioned.</li>
+                                    <li>Each player places a Command Center, Nexus, or Hatchery (depending on their race) along with two workers in their starting location on their Minimap. Zerg also starts with one Overlord.</li>
                                     <li>The minimaps are secret and must be hidden from other players' vision behind books, board games, or something else you find.</li>
                                     <li>Place the turn tracker near the Map and place the player tokens in a line, in a random order, with the first player token on the turn 1 square and the others behind.</li>
                                 </ol>
@@ -27,6 +28,7 @@
                             </div>
                         </div>
                     </div>
+                    --->
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px;">
                         <div class="container content">
                             <div class="title">Turn Sequence</div>
@@ -49,8 +51,11 @@
                                         In the current turn order, players can make a Push or pass. When all players passes, the Micro Phase ends and a new turn starts.
                                     </div>
                                 </div>
+                                <br>
+                                <div>
                                 When a turn is over, move the player token from the end of the line to the start of the line so it's placed on the square of the next turn.
                                 Then start a new turn.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -58,11 +63,16 @@
                         <div class="container content">
                             <div class="title">Income</div>
                             <div>
-                                Units with the <b>Gather</b> ability (called workers) can collect either one Mineral or one Gas, if they did not attack last turn, from areas where they own a <i>resource gathering facility</i> (Command Center, Nexus, Hatchery, Lair, or Hive).
-                                Workers can only collect resources from the areas they are in and they cannot move in this step.
+                                In the <b>first turn of the game</b>, receive one mineral and proceed to the Move & Produce step.
+                            </div>
+                            <br>
+                            <div>
+                                In <b>any other turn</b>, workers collect either one Mineral or one Gas (if they did not attack last turn) from areas where you own a <i>resource gathering facility</i>.
+                            </div>
+                            <br>
+                            <div>
                                 No more minerals can be gathered from one area than the number of mineral fields in it.
                                 At most three gas can be gathered from each gas extractor.
-                                Take all the collected resources and place them somewhere on your minimap.
                             </div>
                         </div>
                     </div>
@@ -70,19 +80,121 @@
                         <div class="container content">
                             <div class="title">Deployment</div>
                             <div>
-                                dslfdfs
+                                Units, structures, and upgrades that were produced in last turn's Production Phase are now deployed, unless they take more that one turn to produce (look for the <i class="bi light bi-clock-fill"></i> symbol).
+                                If a unit or building takes more than one turn to produce, place a counter on the building instead of deploying it, and deploy it when it's complete.
                             </div>
                         </div>
                     </div>
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Move & Produce</div>
+                            <br>
                             <div>
-                                dslfdfs
+                                <b>Moving</b><br>
+                                In this step, you can secretly move all your units on your Minimap through areas you control.
+                                Look at the Speed value to see how far things can move during a turn.
+                                Use counters to remember how far things have moved as they can move again the Micro Phase if they have movement points left.
+                            </div>
+                            <br>
+                            <div>
+                                <b>Producing</b><br>
+                                Workers with the Warp, Construct, or Morph ability can use them in this step to produce structures; follow the rules of the ability.
+                                They can move before they produce and Probes are also allowed to move after.
+                            </div>
+                            <br>
+                            <div>
+                                Structures can train units, produce add-ons, research upgrades, or morph into a higher tier as shown in their rules.
+                                Each structure can only do one of these actions at a time.
+                                Hatcheries, Lairs, and Hives, however, can produce two times each turn even while researching or morphing into a higher tier.
+                                If (x2) is written after the name of a unit, then two of these units are produced for the cost written, counting as only one action.
+                                One Hatchery can thus produce two pairs of Zerglings or Scourge per turn.
+                            </div>
+                            <br>
+                            <div>
+                                Gas Extractors can only be build on top of a non-occupied gas geyser.
+                            </div>
+                            <br>
+                            <div>
+                                Anything in production can at any time be <b>cancelled</b>. Simply remove or revert it and claim the resources that you paid.
+                            </div>
+                            <br>
+                            <div>
+                                <b>Supply</b><br>
+                                Producing units requires some amount of supplies which is indicated in by <img src="static/img/icons/SupplyTerran.png" width="20px"></span> on your race sheet.
+                                Some units and buildings give you supply which is also indicated on the race sheet.
+                                The total supply cost of the units in production cannot be higher than the number of supplies you have.
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+
+                    <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
+                        <div class="container content">
+                            <div class="title">Push</div>
+                            <div>
+                                To make a push, gather a <i>Control Group</i> of units on your Minimap that can all reach the same area.
+                                The area must have an enemy control marker and be an area you contest or an area adjacent to another area you control.
+                                Units must be able to reach the target area by only passing through areas that you control.
+                                If some units are in a contested area, you have to start the push in that area.
+                                Now, declare to the other players the area on the Map that you <i>engage</i>.
+                            </div>
+                            <br>
+                            <div>
+                                All other players now have to declare whether they are in that area.
+                            </div>
+                            <br>
+                            <div>
+                                <b>If no players are in that area</b> remove any control marker on that area and place one of your own. You can then <i>push forward</i> or <i>end the push</i>.
+                            </div>
+                            <br>
+                            <div>
+                                <b>If any player is in that area</b>
+                                <ol>
+                                    <li>Reveal all non-cloaked attackers by placing them on the edge of the area on the Map.</li>
+                                    <li>Any of the defending players can, in the current turn order, decide to retreat with any units to any reachable area under control. Retreating units must be revealed unless some units or structures are left behind.</li>
+                                    <li>If no units or buildings remain, remove any control marker on that area and place one of your own. You can now <i>push forward</i> of <i>end the push</i>.</li>
+                                    <li>If some units or buildings remain, the defending player must now move all units and defensive buildings to the engaged area on the Map.</li>
+                                    <li>The attacking player can now decide to a) retreat with all attackers to any reachable areas under control which ends the push, or b) commit to the engagement, resulting in combat. Units only spend a movement point moving into the engaged area if they commit.</li>
+                                    <li>If the attacking player <i>commits</i>, all units in the control group spend a movement point on the engagement and a combat round will happen immediately before proceeding. Before the combat, move any remaining buildings from the defending player to the area on the Map.</li>
+                                </ol>
+                            </div>
+                            <br>
+                            <div>
+                                <b>Pushing Forward</b><br/>
+                                Unless the attackers retreated, they can <i>push forward</i> to an adjacent and reachable area that has an enemy control marker.
+                                Form a new control group with any units in your currently active control group that have not yet attacked, cast spells, and have movement points left.
+                                Follow the Push rules with this control group.
+                            </div>
+                            <br>
+                            <div>
+                                <b>Ending a Push</b><br/>
+                                You can also <i>end a push</i>, where you move back any units in your currently active control group that have not attacked or cast a spell to reachable areas you control.
+                                After ending a push, it becomes the next player in the current player turn order to make a push or pass.
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-3">
+                    <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
+                        <div class="container content">
+                            <div class="title">Combat</div>
+                            <div>
+                                dsfsf
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
+                        <div class="container content">
+                            <div class="title">Winning</div>
+                            <div>
+                                dsfsf
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </body>
