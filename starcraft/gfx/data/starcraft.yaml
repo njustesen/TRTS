@@ -2255,7 +2255,7 @@ Races:
           Sight: 7
         Abilities:
           - Air
-          - Stack
+          - Swarm
         Requires:
           - Spire
         Produces:
@@ -2463,7 +2463,7 @@ Races:
           Sight: 5
     Upgrades:
       Larva:
-        Text: "Allows Hatcheries, Lairs, and Hives to produce two units each turn, even while researching or morphing into tier 2 or 3. While units are being produced they take form as non-destructable eggs that hatch in the Deployment Phase. Zergling and Scource eggs hatch two units instead of one."
+        Text: "Allows Hatcheries, Lairs, and Hives to produce two units each turn, even while researching or morphing into tier 2 or 3. While units are being produced they take form as non-destructable eggs that hatch in the Deployment Phase. Zergling and Scource eggs hatch two units for the price listed while still counting as one production action."
       Gather:
         Costs:
           Time: 0
