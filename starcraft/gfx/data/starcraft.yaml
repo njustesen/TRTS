@@ -340,6 +340,7 @@ Races:
         Stats:
           Size: SMALL
           Types:
+            - Bio
             - Mech
           Speed: 2
           Health: 1
@@ -352,7 +353,7 @@ Races:
           - Construct
           - Repair
         Abilities:
-          - Hovers
+          - Hover
       Marine:
         Size:
           Width: 2
@@ -465,7 +466,7 @@ Races:
         Produces:
           - Spider Mines
         Abilities:
-          - Hovers
+          - Hover
       Spider Mine:
         Size:
           Width: 1
@@ -691,7 +692,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Medics to either a) deny two damage points assigned to Barracks units, b) heal an injured Firebat in the Macromanagent Phase, or c) remove two Stim counters."
+        Text: "Allows Medics to instantly replenish a lost health point on a biological unit."
       Nuke:
         Costs:
           Time: 0
@@ -703,7 +704,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Ghosts can Call Down a Nuke if, any are available in a Nuclear Silo, instead of making a push by informing the other player that a \"Nuclear Luanch Detected!\" and then secretly marking the area of the Ghost on the Player Board. The Ghost cannot move any further this round. All Nukes detonate in the marked area at the end of the round if the Ghosts is still alive. Nukes deal 25, 20, 15, 10, and 5 damage to five different targets."
+        Text: "Ghosts can Call Down a Nuke, if any are available in a Nuclear Silo, instead of making a push by informing the other player that a \"Nuclear Luanch Detected!\" and then secretly marking the area of the Ghost on the Player Board. The Ghost cannot move any further this round. All Nukes detonate in the marked area at the end of the round if the Ghosts is still alive. Nukes deal 25, 20, 15, 10, and 5 damage to five different targets."
       Defensive Matrix:
         Costs:
           Time: 0
@@ -741,7 +742,7 @@ Races:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Marines and Firebats to use Stim Pack in the \"Attacker Reveals\" step, gaining Frenzy in this combat only and gaining one Stim counter."
+        Text: "Marines and Firebats gain Frenzy."
       U-238 Shells:
         Costs:
         Costs:
@@ -755,7 +756,7 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Medics to use Restoration at range 6, removing any harmful effects besides Stasis Field on a unit in the same area."
+        Text: "Allows Medics to use Restoration at range 6, removing any harmful effects on a unit besides Stasis Field."
       Optical Flare:
         Costs:
           Time: 1
@@ -768,13 +769,13 @@ Races:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Medics to use two different spells each round."
+        Text: "Allows Medics to cast a spell in every combat."
       Spider Mines:
         Costs:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Vultures to each plant one Spider Mines in a game. Mines can be planted in the Macro-management Phase or instead of attacking during combat. Mines planted during combat are not burrowed."
+        Text: "Allows Vultures to each plant one Spider Mine in a game. Mines can be planted in the Macro-management Phase or instead of attacking during combat. Mines planted during combat are not burrowed."
       Siege Tech:
         Costs:
           Time: 1
@@ -877,7 +878,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Science Vessels to use two spells each turn."
+        Text: "Allows Science Vessels to cast a spell in every combat."
       Yamato Gun:
         Costs:
           Time: 1
@@ -1245,7 +1246,7 @@ Races:
           - Gather
           - Warp
         Abilities:
-          - Hovers
+          - Hover
       Zealot:
         Size:
           Width: 2
@@ -1357,7 +1358,7 @@ Races:
         Requires:
           - Templar Archives
         Abilities:
-          - Hovers
+          - Hover
       Dark Archon:
         Size:
           Width: 4
@@ -1380,7 +1381,7 @@ Races:
         Requires:
           - Templar Archives
         Abilities:
-          - Hovers
+          - Hover
       Shuttle:
         Size:
           Width: 3
@@ -1434,6 +1435,7 @@ Races:
           Gas: 0
           Supply: 0
         Stats:
+          Amount: ''
           Size: ""
           Range: 8
           Ground Damage: 3es!
@@ -1595,7 +1597,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Shield Batteries to immediately replenish or deny two lost Shield points."
+        Text: "Allows Shield Batteries to instantly replenish two lost Shield points."
       Summon Archon:
         Costs:
           Time: 0
@@ -1626,7 +1628,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Reavers cannot attack but instead produce Scarabs in the Production Phase that the Reaver will house. Each Reaver can release one Scarab each turn following the attacking stats of the Scarab."
+        Text: "Reavers cannot attack but instead produce as many Scarabs in the Production Phase that the Reaver can house (initially one) for one mineral. Each Reaver can release one Scarab each Combat Round following the attacking stats of the Scarab."
       Interceptor:
         Costs:
           Time: 0
@@ -1645,7 +1647,7 @@ Races:
           Minerals: 2
           Gas: 2
           Mod: 1
-        Text: "+1 Attack to Gateway units"
+        Text: "+1 Attack to Gateway units."
         Levels: 3
         Requires:
           2:
@@ -1658,7 +1660,7 @@ Races:
           Minerals: 2
           Gas: 2
           Mod: 1
-        Text: "+1 Armor to ground army units"
+        Text: "+1 Armor to ground army units."
         Levels: 3
         Requires:
           2:
@@ -1755,7 +1757,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Dark Archons to cast two spells each round."
+        Text: "Allows Dark Archons to cast a spell in every combat."
       Scarab Damage:
         Costs:
           Time: 2
@@ -1797,7 +1799,7 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "+2 Scout Sight."
+        Text: "Scouts can always retreat without being revealed during the Attackers Reveal and Defender Reveal steps, and all enemy structures are revealed when Scouts engage an area."
       Gravitic Thrusters:
         Costs:
           Time: 2
@@ -1816,7 +1818,7 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows Corsairs to cast two spells each round."
+        Text: "Allows Corsairs to cast a spell in every combat."
       Stasis Field:
         Costs:
           Time: 1
@@ -1836,7 +1838,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Arbiters to cast two spells each round."
+        Text: "Allows Arbiters to cast a spell in every combat."
   Zerg:
     Buildings:
       Hatchery:
@@ -2167,7 +2169,7 @@ Races:
           - Morph
           - Burrow
         Abilities:
-          - Hovers
+          - Hover
       Overlord:
         Size:
           Width: 2.8
@@ -2463,7 +2465,7 @@ Races:
           Sight: 5
     Upgrades:
       Larva:
-        Text: "Allows Hatcheries, Lairs, and Hives to produce two units each turn, even while researching or morphing into tier 2 or 3. While units are being produced they take form as non-destructable eggs that hatch in the Deployment Phase. Zergling and Scource eggs hatch two units for the price listed while still counting as one production action."
+        Text: "Allows Hatcheries, Lairs, and Hives to produce two units each turn, even while researching or morphing into tier 2 or 3. While units are being produced they take form as non-destructable eggs that hatch in the Deployment Phase. Zergling and Scourge eggs hatch two units for the price listed while still counting as one production action."
       Gather:
         Costs:
           Time: 0
@@ -2634,14 +2636,14 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Queens to cast two spells each round."
+        Text: "Allows Queens to cast a spell in every combat."
       Consume:
         Costs:
           Time: 1
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Defilers to use Consume at range 10, which kills two Zerglings in the area, allowing the Defiler to instantly cast another spell."
+        Text: "Allows Defilers to use Consume two friendly Zerglings at range 10 to replenish the Energy of the Defiler."
       Plague:
         Costs:
           Time: 1
@@ -2654,7 +2656,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Defilers to cast two spells each round."
+        Text: "Allows Defilers to cast a spell in every combat."
       Anabolic Synthesis:
         Costs:
           Time: 2
