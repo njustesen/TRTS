@@ -63,6 +63,29 @@ def num_health_stats(item):
             c += 1
     return c
 
+
+def print_size(item, item_type):
+    if item_type == 'Upgrades':
+        return "small"
+    if 'Size' in item:
+        if item['Size']['Width'] < 3 and item['Size']['Height'] < 3:
+            return "small"
+    return ""
+
+
+def print_num(item, item_type):
+    if 'Prints' in item:
+        return item['Prints']
+    if item_type == 'Upgrades':
+        if 'Levels' in item:
+            return item['Levels']
+        return 1
+    if 'Size' in item:
+        if item['Size']['Width'] < 3 and item['Size']['Height'] < 3:
+            return 18
+    return 12
+
+
 @app.route('/protoss', methods=['GET', 'POST'])
 def protoss():
     parsed_yaml_file = yaml.load(open('data/starcraft.yaml', 'r'), Loader=yaml.FullLoader)
@@ -106,6 +129,40 @@ def zerg():
                            header=header,
                            num_health_stats=num_health_stats,
                            float=float)
+
+
+@app.route('/print-protoss', methods=['GET', 'POST'])
+def print_protoss():
+    parsed_yaml_file = yaml.load(open('data/starcraft.yaml', 'r'), Loader=yaml.FullLoader)
+    return render_template('templates/print.html',
+                           race='Protoss',
+                           img=img,
+                           print_size=print_size,
+                           print_num=print_num,
+                           data=parsed_yaml_file)
+
+
+@app.route('/print-terran', methods=['GET', 'POST'])
+def print_terran():
+    parsed_yaml_file = yaml.load(open('data/starcraft.yaml', 'r'), Loader=yaml.FullLoader)
+    return render_template('templates/print.html',
+                           race='Terran',
+                           img=img,
+                           print_size=print_size,
+                           print_num=print_num,
+                           data=parsed_yaml_file)
+
+
+@app.route('/print-zerg', methods=['GET', 'POST'])
+def print_zerg():
+    parsed_yaml_file = yaml.load(open('data/starcraft.yaml', 'r'), Loader=yaml.FullLoader)
+    return render_template('templates/print.html',
+                           race='Zerg',
+                           print_size=print_size,
+                           img=img,
+                           print_num=print_num,
+                           data=parsed_yaml_file)
+
 
 @app.route('/rules', methods=['GET', 'POST'])
 def rules():

@@ -45,6 +45,10 @@ body {
     padding: 2px;
 }
 
+.small {
+    width: 75%;
+}
+
 .icon {
     max-height:100%;
     display: block;
@@ -72,6 +76,11 @@ body {
 .Buildings {
     width: 90px;
     height: 90px;
+}
+
+.small {
+    width: 65px;
+    height: 65px;
 }
 
 .Units {
