@@ -492,7 +492,7 @@ Races:
           Ground Damage: 2es!
         Abilities:
           - Cloaked
-        Text: Automatically attacks non-hovering units with lowest range.
+        Text: Automatically attacks non-hovering units with lowest range of the enemy's choice.
       Siege Tank:
         Size:
           Width: 3
@@ -650,7 +650,7 @@ Races:
           Ground Damage: 3
           Air Damage: 3
           Sight: 11
-          Armor: 2
+          Armor: 1
         Produces:
           - Yamato Gun
         Requires:
@@ -681,7 +681,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Bunkers to load four Barracks units and Dropships to load and transport 8/4/2 ground units. Units can be loaded and unloaded at any point if they have not attacked this turn."
+        Text: "Allows Bunkers to load 4 Barracks units and Dropships to load and transport 8 ground units, where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked."
       Lift Off:
         Costs:
           Time: 0
@@ -700,8 +700,8 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-          Energy: 1
-        Text: "Allows Medics to instantly heal or deny a lost health point on a biological unit."
+          Energy: 0
+        Text: "Allows Medics to instantly heal or deny a lost health point on a biological unit one time per round."
       Nuke:
         Costs:
           Time: 0
@@ -713,7 +713,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Ghosts Call Down a Nuke, if any are available in a Nuclear Silo, instead of making a push by informing the other player that a \"Nuclear Luanch Detected!\" and then secretly marking the Ghost and the target area on the Minimap. The Ghost cannot move further this round. All Nukes detonate in the marked area at the end of the next Micro Phase if the Ghosts is still alive. Nukes deal 25 damage to 10 targets."
+        Text: "Allows Ghosts Call Down a Nuke, if any are available in a Nuclear Silo, instead of making a push by informing the other player that a \"Nuclear Luanch Detected!\" and then secretly marking the Ghost and the target area on the Minimap. The Ghost cannot move further or attack this round. All Nukes detonate in the marked area at the end of the next Micro Phase if the Ghosts is still alive. Nukes deal 25 damage to 10 targets."
       Defensive Matrix:
         Costs:
           Time: 0
@@ -755,7 +755,6 @@ Races:
         Text: "Marines and Firebats gain Frenzy."
       U-238 Shells:
         Costs:
-        Costs:
           Time: 1
           Minerals: 3
           Gas: 3
@@ -792,7 +791,7 @@ Races:
           Time: 1
           Minerals: 3
           Gas: 3
-        Text: "Allows Siege Tanks to be in Siege Mode when defending, giving them range 12, +1 Attack, splash damage, and they become static."
+        Text: "Allows Siege Tanks to be in Siege Mode if they are not engaging, giving them range 12, +1 Attack, splash damage, and they become static."
       Ion Thrusters:
         Costs:
           Time: 1
@@ -811,13 +810,13 @@ Races:
           Minerals: 3
           Gas: 3
           Energy: 1
-        Text: "Allows Wraiths to be cloaked during one push."
+        Text: "Allows Wraiths to become cloaked this round."
       Apollo Reactor:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Wraiths Cloaking Field ability lasts forever and Wraiths can replenish energy in contested areas."
+        Text: "Allows Wraiths to replenish energy in contested areas."
       Vehicle Weapons:
         Costs:
           Time: 2
@@ -876,14 +875,14 @@ Races:
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Science Vessels to use EMP Shockwave at range 8, removing any Shield and Energy of up to two units of the same type. Cloaked Terran units that are hit by EMP Shockwave also become visible."
+        Text: "Allows Science Vessels to use EMP Shockwave at range 8, removing any Shield and Energy of up to two units of the same type. Wraiths and Ghosts hit by EMP Shockwave become visible."
       Irradiate:
         Costs:
           Time: 1
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Science Vessels to cast Irradiate at range 9 on a biological unit that are not in Stasis, dealing 4s damage at the end of this round."
+        Text: "Allows Science Vessels to cast Irradiate at range 9 on a biological unit that are not in Stasis, dealing 1s damage now and 2s at the end of this round."
       Titan Reactor:
         Costs:
           Time: 2
@@ -896,7 +895,7 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Battlecruisers to fire their Yamato Gun at range 10 instead of attacking, dealing 10 damage to one unit."
+        Text: "Allows Battlecruisers to fire their Yamato Gun at range 10 instead of attacking, dealing 10 damage to one unit or structure."
       Colossus Reactor:
         Costs:
           Time: 2
@@ -909,7 +908,7 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Ghosts to be cloaked during one push."
+        Text: "Allows Ghosts to be cloaked until next round."
       Lockdown:
         Costs:
           Time: 1
@@ -922,13 +921,13 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows Ghosts to Call Down nukes in an adjacent ground area."
+        Text: "Allows Ghosts to Call Down nukes in adjacent ground areas."
       Moebius Reactor:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Ghosts Personnel Cloaking ability lasts forever and allows Ghosts to replenish energy in contested areas."
+        Text: "Allows Ghosts to replenish energy in contested areas."
   Protoss:
     Buildings:
       Nexus:
@@ -1543,7 +1542,7 @@ Races:
           Health: 7
           Shield: 3
           Sight: 11
-          Armor: 3
+          Armor: 1
         Produces:
           - Interceptor
         Requires:
@@ -1556,11 +1555,12 @@ Races:
           Height: 1.67
         Costs:
           Time: 1
-          Minerals: 1/2
+          Minerals: 1
           Gas: 0
           Supply: 0
         Stats:
           Size: SMALL
+          Amount: 2
           Types:
             - Mech
           Speed: 4
@@ -1611,7 +1611,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Probes to warp in any number of structures in the Production Phase in areas without creep. Structures other than Nexus and Pylons can only be warped in areas with a Pylon."
+        Text: "Allows Probes to warp in any number of structures in the Production Phase in areas without creep. Structures other than Nexus and Pylons can only be warped into areas with a Pylon."
       Recharge:
         Costs:
           Time: 0
@@ -1643,7 +1643,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Shuttles to load and transport up to 8/4/2 ground units. Units can be loaded and unloaded at any point, except during combat if they have attacked. Note, that Reavers don't attack."
+        Text: "Allows Shuttles to load and transport up to 8 ground units where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked. Note, that Reavers don't attack."
       Scarab:
         Costs:
           Time: 0
@@ -1655,7 +1655,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Carriers cannot attack but instead produce Interceptors in the Production Phase that the Carrier will house. Interceptors are released during combat when they attack. When Carriers are targeted by enemy units, their Interceptors can attack back in the same combat step."
+        Text: "Carriers cannot attack but instead produce Interceptors in the Production Phase that the Carrier will house. Interceptors are released when attacking and remain out until the Carrier is moved."
       Cloaking Field:
         Costs:
           Time: 0
@@ -1745,14 +1745,14 @@ Races:
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows High Templars to cast Psionic Storm at range 9 dealing 6s damage (ignoring Armor) minus the speed of the enemy."
+        Text: "Allows High Templars to cast Psionic Storm at range 9 dealing 6s damage (ignoring Armor) to units minus the targets' speed."
       Hallucination:
         Costs:
           Time: 1
           Minerals: 3
           Gas: 3
           Energy: 1
-        Text: "Allows High Templar to cast Hallucination during the Production Phase creating two temporary duplicates of a friendly unit in the same area as the High Templar, with 1 HP, that cannot attack or cast spells, and only exists until the end of the round."
+        Text: "Allows High Templar to cast Hallucination during the Production Phase creating two temporary duplicates of a friendly unit in the same area as the High Templar, with the same amount of HP. Duplicates only exist until the end of the round, or until they are targeted by an enemy spell, or their HP is reduced to half (rounded down) of what they started with."
       Khaydarin Amulet:
         Costs:
           Time: 2
@@ -1765,7 +1765,7 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Dark Archons to cast Maelstrom at range 10 targeting 3/2/1 biological units of the same type making them static and become visible for the remainder of this turn."
+        Text: "Allows Dark Archons to cast Maelstrom at range 10 targeting 3/2/1 biological units of the same type making them static and are visible until next round."
       Mind Control:
         Costs:
           Time: 1
@@ -1802,7 +1802,7 @@ Races:
           Time: 1
           Minerals: 3
           Gas: 3
-        Text: "Allows Observers to always reveal all structures when engaging an area."
+        Text: "Observers gain Scouting."
       Gravitic Booster:
         Costs:
           Time: 1
@@ -1820,7 +1820,7 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Scouts can always retreat without being revealed during the Attackers Reveal and Defender Reveal steps, and all enemy structures are revealed when Scouts engage an area."
+        Text: "Scouts gain Scouting."
       Gravitic Thrusters:
         Costs:
           Time: 2
@@ -1846,14 +1846,14 @@ Races:
           Minerals: 3
           Gas: 3
           Energy: 1
-        Text: "Allows Arbiters to cast Stasis Field at range 9, freezing up to 4/3/2 units of the same type until the beginning of the next Micro PHase. Frozen units are static, cannot do anything and cannot be targeted."
+        Text: "Allows Arbiters to cast Stasis Field at range 9, freezing up to 4/3/2 units of the same type until the beginning of the next Micro Phase. Frozen units are static, cannot do anything, and cannot be targeted."
       Recall:
         Costs:
           Time: 1
           Minerals: 3
           Gas: 3
           Energy: 1
-        Text: "Allows Arbiters to cast Recall during combat, teleporting any number of friendly units from one area to the one with the Arbiter."
+        Text: "Allows Arbiters to cast Recall during the Macro Phase or during combat at range 7, teleporting any number of friendly units from one area to the one with the Arbiter."
       Khaydarin Core:
         Costs:
           Time: 2
@@ -2537,13 +2537,13 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Gives Overlords the ability to load and transport up to 8/4/2 ground units that have not attacked this turn."
+        Text: "Gives Overlords the ability to load and transport up to 8 ground units that have not attacked this turn, where medium counts as 2 and large as 4."
       Antennae:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Overlords to always reveal all structures when engaging an area."
+        Text: "Overlords gain Scouting."
       Pneumatized Carapace:
         Costs:
           Time: 2
@@ -2678,7 +2678,7 @@ Races:
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Defilers to cast Plague at range 9 on a unit type or structure, dealing 1s additional damage whenever they are dealt damage this round."
+        Text: "Allows Defilers to cast Plague at range 9 on 6/4/2 units or a structure and lasts until they replenish. Plagued units have no armor and are dealt 1 damage whenever they attack."
       Metasynaptic Node:
         Costs:
           Time: 2
