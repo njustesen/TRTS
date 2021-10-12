@@ -243,7 +243,13 @@
                                                             </div>
                                                         {%endif%}
                                                         {%for unit in item['Produces']%}
-                                                            {% if (unit in data['Races'][race]['Units'] and 'Requires' in data['Races'][race]['Units'][unit]) or (unit in data['Races'][race]['Buildings'] and 'Requires' in data['Races'][race]['Buildings'][unit]) or ((item_type != 'Buildings') and (unit in data['Races'][race]['Upgrades']) and (data['Races'][race]['Upgrades'][unit]['Costs']['Time'] > 0)) %}
+                                                            {%if (unit in data['Races'][race]['Units'] and 'Requires' in data['Races'][race]['Units'][unit]) %}
+                                                                <div class="image-container unit border-req">
+                                                            {%elif (unit in data['Races'][race]['Buildings'] and 'Requires' in data['Races'][race]['Buildings'][unit]) %}
+                                                                <div class="image-container unit border-req">
+                                                            {%elif (unit in data['Races'][race]['Upgrades'] and 'Requires' in data['Races'][race]['Upgrades'][unit]) %}
+                                                                <div class="image-container unit border-req">
+                                                            {%elif ((item_type != 'Buildings') and (unit in data['Races'][race]['Upgrades']) and (data['Races'][race]['Upgrades'][unit]['Costs']['Time'] > 0)) %}
                                                                 <div class="image-container unit border-req">
                                                             {%else%}
                                                                 <div class="image-container unit border-2">

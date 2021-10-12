@@ -882,7 +882,7 @@ Races:
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Science Vessels to cast Irradiate at range 9 on a biological unit that are not in Stasis, dealing 1s damage now and 2s at the end of this round."
+        Text: "Allows Science Vessels to cast Irradiate at range 9 on a biological unit that are not in Stasis, dealing 1 damage to the target and 1 damage to up to three units of that type in the same area, now, and at the end of every round until the target replenishes, where after the target is no longer Irradiated."
       Titan Reactor:
         Costs:
           Time: 2
@@ -2531,7 +2531,7 @@ Races:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows medium and small ground units to Burrow, making them invisible but unable to attack, at any time before attacking this round, and un-burrow at any time. Lurkers do not need this upgrade to burrow and can only attack while burrowed."
+        Text: "Allows medium and small ground units to Burrow at any time before attacking this round, and un-burrow at any time. Burrowed are invisible but cannot attack. Lurkers do not need this upgrade to burrow and can only attack while burrowed."
       Ventral Sacs:
         Costs:
           Time: 2
@@ -2670,15 +2670,14 @@ Races:
           Time: 1
           Minerals: 2
           Gas: 2
-          Energy: 1
-        Text: "Allows Defilers to Consume two friendly Zerglings to replenish the Energy of the Defiler."
+        Text: "Allows Defilers to Consume two friendly Zerg units to replenish the Energy of the Defiler."
       Plague:
         Costs:
           Time: 1
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Defilers to cast Plague at range 9 on 6/4/2 units or a structure and lasts until they replenish. Plagued units have no armor and are dealt 1 damage whenever they attack."
+        Text: "Allows Defilers to cast Plague at range 9 on 6/4/2 units or a structure, lasting until the targets replenish. Plagued units are dealt double damage."
       Metasynaptic Node:
         Costs:
           Time: 2
