@@ -9,7 +9,7 @@
     <body style="height: 1600px">
         <div class="container" style="max-width: 100%;">
             <div class="row">
-                <div class="col-3" class="col" style="width: 440px">
+                <div class="col-3" class="col" style="width: 414px">
                     <!--
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
@@ -37,7 +37,7 @@
                                 <div>
                                     <b>Turn Order</b>
                                     <div>
-                                        Each turn starts with the <b>Macro Phase</b>, that is done secretly and simultaneously, followed by the <b>Micro Phase</b>, that is executed one player at the time in the <i>current turn order</i>.
+                                        Each turn starts with the <b>Macro Phase</b>, that is done secretly and simultaneously, followed by the <b>Micro Phase</b>, that is executed one player at the time.
                                     </div>
                                 </div>
                                 <br />
@@ -53,7 +53,7 @@
                                 <div>
                                     <b>Micro Phase</b>
                                     <div>
-                                        In the <i>current turn order</i>, players can either make a <i>Push</i> or <i>pass</i>. When all players passes in a round, the Micro Phase ends and a new turn starts.
+                                        Starting with the Starting Player, players either make a <i>Push</i> or <i>pass</i>. When all players passes in a round, the Micro Phase ends and a new turn starts. The first player to pass claims the Starting Player Token.
                                     </div>
                                 </div>
                             </div>
@@ -62,11 +62,11 @@
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Replenish</div>
-                            Units and structures that did not participate in combat last round and start the round in a non-contested area <i>replenish</i>:
+                            Units and structures in non-contested areas <i>replenish</i>:
                             <ol>
-                                <li>Zerg units and structures gain full HP.</li>
-                                <li>Protoss units and structures gain full Shield.</li>
-                                <li>Spell casters gain Energy. Structures also replenish Energy in contested areas.</li>
+                                <li>Zerg units and structures heal one HP.</li>
+                                <li>Protoss units and structures gain one Shield.</li>
+                                <li>Units and structures gain Energy. Structures also gain Energy in contested areas.</li>
                             </ol>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                             </div>
                             <br>
                             <div>
-                                <b>All following rounds:</b> each worker can collect either one Mineral or one Gas (if they were not part of combat last round) from areas where you own a <i>resource gathering facility</i>.
+                                <b>All following rounds:</b> each worker can collect either one Mineral or one Gas (unless they did something in the previous Micro Phase) from areas where you own a <i>resource gathering facility</i>
                             </div>
                             <br>
                             <div>
@@ -91,12 +91,12 @@
                         <div class="container content">
                             <div class="title">Deployment</div>
                             <div>
-                                Units, structures, and upgrades that were produced in last round's Production Phase are now deployed.
+                                Units, structures, and upgrades that were produced last round are now deployed.
                             </div>
                             <br>
                             <div>
                                 Some things take more that one round to produce (look for the <i class="bi light bi-clock-fill"></i> symbol).
-                                In such case, use counters to remember how many rounds it has been under production.
+                                Use counters to remember how many rounds these has been under production.
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                             <div>
                                 <b>Move</b><br>
                                 You can secretly move all your units on your Minimap from, through, and to areas you control.
-                                Look at the Speed value to see how far things can move per round.
+                                Look at the Speed value to see how far units can move per round.
                                 Use counters to remember how far things have moved as they can move again the Micro Phase if they have movement points left.
                             </div>
                             <br>
@@ -124,20 +124,20 @@
                             </div>
                             <br>
                             <div>
-                                Gas Extractors can only be build on top of an unoccupied gas geyser.
+                                Gas Extractors can only be build ontop of an unoccupied gas geyser.
                             </div>
                             <br>
                             <div>
-                                Anything in production can at any time be <b>cancelled</b>. Simply remove or revert it and claim the resources that you paid.
+                                Anything in production can at any time be <b>cancelled</b>. Simply remove it and claim the resources you paid minus one mineral.
                             </div>
                             <br>
                             <div>
-                                Structures in productions have half (rounded down) of their Health and Shield until they are deployed. Units being morphed are in an Egg with 10 HP. Archons being summoned have full Health and Shield.
+                                Structures in production have half (rounded down) Health and Shield. Units being morphed are in an Egg with 10 HP. Archons being summoned have full Health and Shield.
                             </div>
                             <br>
                             <div>
                                 <b>Supply</b><br>
-                                Producing units requires some amount of Supplies which is indicated by <img src="static/img/icons/SupplyTerran.png" width="20px"></span> on your race sheet.
+                                Producing units requires some amount of Supply indicated by <img src="static/img/icons/SupplyTerran.png" width="20px"></span> on your race sheet.
                                 Some units and structures give you Supply, which is also indicated on the race sheet.
                                 The total Supply cost of the units you put into production cannot be larger than your Supply.
                             </div>
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="width: 460px">
+                <div class="col-3" style="width: 400px">
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Area Control</div>
@@ -166,10 +166,10 @@
                         <div class="container content">
                             <div class="title">Push</div>
                             <div>
-                                To make a push, gather a <i>Control Group</i> of units on your Minimap that can all reach the same area that is controlled by an enemy or contested.
+                                To make a push, gather a <i>Control Group</i> of units on your Minimap that can all reach the same area that is controlled by an enemy or is contested.
                                 Units that have retreated or been part of another push this round cannot be part of a new push.
                                 Units in a contested area have to start the push in that area.
-                                Your control group cannot start in several contested areas.
+                                Units in your control group cannot start in several contested areas.
                                 Now, declare to the other players the area on the Map you <i>engage</i>.
                                 You can only engage to the same area once per round.
                             </div>
@@ -179,30 +179,30 @@
                             </div>
                             <br>
                             <div>
-                                If the area is <b>unoccupied</b>, remove any control markers on that area and place one of your own. Move your units to that area on your Minimap and then <i>push forward</i> or <i>end the push</i>.
+                                If the area is <b>unoccupied</b>, remove any control markers on that area and place one of your own. Then, <i>push forward</i> or <i>end the push</i>.
                             </div>
                             <br>
                             <div>
                                 If the area is <b>occupied</b>
                                 <ol>
-                                    <li><b>Attackers Reveal:</b> Reveal all non-cloaked attackers by placing them on the edge of the area on the Map, showing where they came from.</li>
-                                    <li><b>Defenders Retreat:</b> Any of the defending players can, in the current turn order, decide to retreat with any units to any reachable area under control but not through the areas that the attackers engages from. Retreating units must be revealed unless some units or structures are left behind.
-                                    If no units or structures remain, remove any control marker on that area and place one of your own. You can now <i>push forward</i> or <i>end the push</i>.</li>
-                                    <li><b>Defenders Reveal:</b> If some units or structures remain, the defending player must now move all units and defensive structures to the engaged area on the Map. Only defending workers that want to join the combat are revealed.</li>
-                                    <li><b>Attackers Retreat:</b> The attacking player can now decide to a) retreat with all attackers to any reachable areas through the area they came from, which ends the push, or b) commit to the engagement, resulting in combat. Retreating units do not spend a Movement Point on engaging the area.</li>
-                                    <li><b>Combat:</b> if the attackers commit, move any remaining structures and workers of the defending player to the area on the Map, and attackers spend a movement point moving into the area. Then perform a combat round.
+                                    <li><b>Attackers Reveal:</b> Reveal all visible attackers by placing them in the area on the Map and show where they came from. You may declare if you have detectors or scouts.</li>
+                                    <li><b>Defenders Reveal:</b> The defending player must now place all visible units and structures in the engaged area on the Map. You may declare if you have detectors.</li>
+                                    <li><b>Attackers Retreat:</b> The attacking player can now decide to a) retreat with all attackers to the area(s) they came from, which ends the push, or b) commit to the engagement. Retreating units do not spend a Movement Point on the engagement.</li>
+                                    <li><b>Defenders Retreat:</b> If the attackers commit, the defending players can, in the current turn order, retreat with any units to any reachable area under control but not through the areas that the attackers came from.
+                                    If no defending units or structures remain, remove any control marker on the area and place one owned by the attacking player, and the attacking player can then <i>push forward</i> or <i>end the push</i>.</li>
+                                    <li><b>Combat:</b> If the attacker committed and any defending units or structures remain, then perform a combat round.
                                 </ol>
                             </div>
                             <div>
                                 <b>Pushing Forward</b><br/>
-                                Attackers that did not retreat, attack, or cast spells this round can <i>push forward</i> to a new area.
-                                Form a new Control Group from your current Control Group and follow the rules above.
+                                Attacking units that did not retreat or attack can <i>push forward</i> to a new area.
+                                Form a new Control Group from your current Control Group and follow the rules for a Push.
                             </div>
                             <br>
                             <div>
                                 <b>Ending a Push</b><br/>
-                                You can also <i>end a push</i>, allowing you to move any units in your current control group, that have not attacked or cast spells this round, to reachable areas you control.
-                                After ending a push, it becomes the next player in the current turn order to make a push or pass.
+                                You can also <i>end a push</i>, allowing you to move any units in your current control group, that have not attacked, to reachable areas you control.
+                                After ending a push, it becomes the next player to make a push or pass.
                             </div>
                         </div>
                     </div>
@@ -211,32 +211,46 @@
                             <b>Special Rules</b>
                             <div>
                                 <i class="bi bi-eye-slash light"></i> Cloaking: Can only be attacked and seen by players with a detector in the area.<br/>
-                                <i class="bi bi-broadcast light"></i> Detect: Can see cloaked and burrowed units.<br/>
+                                <i class="bi bi-broadcast light"></i> Detection: Can see cloaked and burrowed units.<br/>
                                 <i class="bi bi-pin-map-fill light"></i> Flying: Can only be attacked by Air Attack.<br/>
                                 <i class="bi bi-layers-half light"></i> Hover: Cannot be targeted by Spider Mines.<br/>
                                 <i class="bi bi-x-octagon light"></i> Static: Has speed 0 and cannot target enemies with a higher Range value.<br/>
                                 <i class="bi bi-exclamation-square light"></i> Frenzy: Can attack again at the end of the combat if they survived and did attack this combat round.<br/>
+                                <i class="bi bi-binoculars-fill light"></i> Scouting: All enemy units and structures are revealed in the Defenders Reveal step.<br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
+                        <div class="container content">
+                            <b>Spellcasting</b>
+                            <br>
+                            <div>
+                                Abilities with the <img src="static/img/icons/energy.png">-icon are called spells and require Energy to be used.
+                                When spells are used, the spell caster lose their Energy which can be regained in the Replenish Phase.
+                                Abilities that do not cost Energy can be cast following the rules of the ability.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="width: 510px">
+                <div class="col-3" style="width: 425px">
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Combat</div>
+                            <br/>
                             <div>
-                                First, reveal any new Attack, Armor or Speed upgrades.
+                                <b>Preperation</b></br>
+                                First, reveal any new upgrades on your units in combat.
                             </div>
                             <br />
                             <div>
-                                Starting with units of the highest Range, also considering spells, perform a Combat Step wherein these units can attack or cast spells.
-                                In a Combat Step, the attacking player first assigns targets and declares spells being casted, followed by the defending players in the current turn order.
+                                Then, the defending player must declare workers that will participate in combat. All workers from the attacking player will automatically participate.
                             </div>
-                            <br>
+                            <br />
                             <div>
-                                All damage and spells of a Combat Step take effect simultaneously before moving on the the next Combat Step.
-                                Remove any units that are killed and use tokens to show lost Health and Shield points.
-                                Units can decide not to attack in a Combat Step to make responsive attack in a later Combat Step.
+                                <b>Combat Steps</b></br>
+                                Starting with units of the highest Range, also considering spells, perform a Combat Step wherein these units can attack or cast spells.
+                                In a Combat Step, the attacking player first assigns targets and declares spells and abilities being used, followed by the defending players in the turn order.
+                                Units can decide not to attack in a Combat Step to make a responsive attack in a later Combat Step.
                             </div>
                             <br>
                             <div>
@@ -244,27 +258,27 @@
                             </div>
                             <br>
                             <div>
-                                Workers that joined the combat can attack or repair but cannot collect resources next round.
+                                Damage and spell effects from all players take effect simultaneously before moving on the the next Combat Step.
+                                Remove any units that are killed and use tokens to show lost Health, Shield, and Energy.
                             </div>
                             <br>
                             <div>
-                                Spell casters can only cast one spell with the <img src="static/img/icons/energy.png"> icon per round, unless their Energy level is upgraded.
-                            </div>
-                            <br>
-                            <div>
-                                <b>Assign Targets</b>
+                                <b>Assigning Targets</b>
                                 <div>
-                                    Split the units that will attack in this Combat Step into groups by which unit type they will target.
-                                    Spell casters then declares which spells they are casting and their targets.
+                                    For each attacking unit select one unit type among the defending units that will be targeted. For spell casters, follow the rules of the spell.
                                 </div>
                                 <br>
                                 <div>
-                                    Air units (and units dropped by transporting air units) can freely select their targets while ground units can only select targets that have the same or lower Range value.
+                                    Air attacks can only target flying units and ground attacks can only target ground units.
+                                    Air units (and units being dropped by transporting air units in this combat step) can freely select targets regardless of their range.
+                                    Ground units can only select targets with the same or lower ground attack Range.
                                     If there are no enemy units with the same or lower Range, ground units have to select targets in ascending order of Range.
-                                    Spell-casters and non-defensive structures are always targeted last by ground units unless they have used spells in this Combat in which their Range value is equal to the lowest range of those spells.
-                                    Workers in combat can be targeted normally while other workers are targeted last together with spell-casters.
                                 </div>
-                            </div>
+                                <br>
+                                <div>
+                                    Workers not participating in combat are <i>last-in-line</i> together with any unit that is unable to attack (not considering spellcasting) in this combat.
+                                    <i>Last-in-line</i> units can be targeted normally by air units but only by ground units if there are no other targets available besides non-defensive structures.
+                                </div>
                             <br>
                             <div>
                                 <b>Deal Damage</b>
@@ -273,27 +287,24 @@
                                     The attacker allocates the damage onto the targets.
                                 </div>
                                 <br/>
-                                <div>MAV = Attack + Upgrades  + Bonus - Armor</div>
+                                <div>MAV = Attack - Armor + Bonus</div>
                                 <br />
                                 <div>
-                                    MAV can never be lower than 1, except for workers which always have MAV = ½. Workers thus need to attack in pairs to deal any damage.
+                                    MAV can never be lower than 1, except for workers which always have MAV = ½. Workers need to attack in pairs to deal any damage.
                                 </div>
                                 <br />
                                 <div>
-                                    <b>Attack:</b> The Attack value shown on the race sheet as <i>Gr.</i> if the targets are ground units or <i>Air</i> if they are flying.
-                                </div>
-                                <div>
-                                    <b>Upgrades:</b> The amount of bonus attack coming from researched Attack upgrades.
+                                    <b>Attack:</b> The Attack value shown on the race sheet (as <i>Gr.</i> if the targets are ground units or <i>Air</i> if they are flying) including any Attack upgrades.
                                 </div>
                                 <div>
                                     <b>Armor:</b> The Armor value of the target units including Armor upgrades.
                                 </div>
                                 <div>
-                                    <b>Bonus:</b> Bonus from Explosive, Concussive, and Splash Damage, and Acid Spores.
+                                    <b>Bonus:</b> Bonus from Explosive, Concussive, and Splash Damage, or Acid Spores.
                                 </div>
                                 <br />
                                 <div>
-                                    <b>Bonus</b>
+                                    <b>Bonus Damage</b>
                                 </div>
                                 <div>
                                     Explosive (e) attacks deal one additional damage to large units and one less to small.
@@ -313,25 +324,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
-                        <div class="container content">
-                            <div class="title">Winning</div>
+                </div>
+                <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
+                    <div class="container content">
+                        <div class="title">Winning</div>
+                        <div>
+                            <b>Elimination</b>
                             <div>
-                                <b>Elimination</b>
-                                <div>
-                                    Ways to get eliminated:
-                                    <ul>
-                                        <li>You loose all units</li>
-                                        <li>You loose all structures</li>
-                                        <li>You surrender</li>
-                                    </ul>
-                                </div>
-                                <b>Winning</b>
+                                Ways to get eliminated:
                                 <ul>
-                                    <li>All other players are eliminated</li>
-                                    <li>After round 36, the player with the most areas under control wins. As long as it's a tie, play another round.</li>
+                                    <li>You loose all units</li>
+                                    <li>You loose all structures</li>
+                                    <li>You surrender</li>
                                 </ul>
                             </div>
+                            <b>Winning</b>
+                            <ul>
+                                <li>All other players are eliminated</li>
+                                <li>After the last round, the player controlling the most areas wins. If tied, play another round only with the Micro Phase. If still tied, the player with the starting player token wins.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -663,7 +663,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows SCVs to collect resources in the Income Phase if they did not attack, repair, or move last round."
+        Text: "Allows SCVs to collect resources in the Income Phase unless they did something in the previous Micro Phase."
       Construct:
         Costs:
           Time: 0
@@ -785,7 +785,7 @@ Races:
           Time: 1
           Minerals: 2
           Gas: 2
-        Text: "Allows Vultures to plant one Spider Mine in one Macro-management Phase or during one combat instead of attacking. Mines planted during combat are not burrowed."
+        Text: "Allows Vultures to plant one Spider Mine from your available Spider Mines in the Macro-management Phase or during combat (in which case it counts as attacking). Mines planted during combat are not burrowed. You gain two Spider Mines for each Vulture you have and produce in the rest of the game."
       Siege Tech:
         Costs:
           Time: 1
@@ -921,7 +921,7 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows Ghosts to Call Down nukes in adjacent ground areas."
+        Text: "Ghosts gain Scouting and Call Down nukes in adjacent ground areas."
       Moebius Reactor:
         Costs:
           Time: 2
@@ -1605,7 +1605,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Probes to collect resources in the Income Phase if they did not attack or move last round."
+        Text: "Allows Probes to collect resources in the Income Phase unless they did something in the previous Micro Phase."
       Warp:
         Costs:
           Time: 0
@@ -2499,7 +2499,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Drones to collect resources in the Income Phase if they did not attack or move last round."
+        Text: "Allows Drones to collect resources in the Income Phase unless they did something in the previous Micro Phase."
       Morph:
         Costs:
           Time: 0
