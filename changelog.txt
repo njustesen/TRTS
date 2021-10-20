@@ -1,0 +1,27 @@
+# StarCraft Changelog
+
+## Version 0.7.0
+
+- Mutalisks range 3 -> 4 and Swarming removed
+- A new replenish step is added to the Macro Phase where units heal one HP, Shield, or Energy if they are in non-contested areas
+- New Energy rules including
+	- Spellcasters can have Energy or not
+	- Spells cost Energy
+	- Abilities cost no energy but have specific rules and requirments
+	- Energy upgrades allows units to regain energy in contested areas
+- Units that have attacked this round are allowed to retreat if engaged later
+- Units in contested areas must make a push starting in the area they are in
+- New units and buildings are first revealed when an opponent makes a push in the 
+- New Scouting ability introduced to units with Sight upgrades
+- Starting armor on Carrier and Battlecruisers reduced from 3 and 2 -> 1 
+- Irradiate changed
+- "Static" term introduced to describe untis and buildings that have Speed 0. Units may be static temporarily.
+- Last-in-line units cannot be targeted by ground units if there are other units available to target.
+- Interceptor rules changed slightly since Carriers don't attack and thus is always last-in-line
+- Psionic Storm deals damage based on targets speed
+- Recall has range 7 when used in combat
+- Consume changed to correctly allowing all Zerg units to be eaten by the Defiler
+- Number of rounds in a game is reduced to 32
+- Reveal and Retreat steps simplified.
+- Each vulture adds two Spider Mines to a bank of Spider Mines that all Vultures can plant.
+- Optical Flare removes detection and scouting and no longer reduces range but almost
