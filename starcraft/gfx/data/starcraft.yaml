@@ -429,6 +429,8 @@ Races:
           - Optical Flare
         Requires:
           - Academy
+        Abilities:
+          - Last-in-Line
       Ghost:
         Size:
           Width: 2
@@ -581,6 +583,7 @@ Races:
           - Load
         Abilities:
           - Air
+          - Last-in-Line
       Science Vessel:
         Size:
           Width: 3
@@ -607,6 +610,7 @@ Races:
         Abilities:
           - Detector
           - Air
+          - Last-in-Line
       Valkyrie:
         Size:
           Width: 3
@@ -772,7 +776,7 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Medics to cast Optical Flare at range 9, permanently reducing the range of a unit's attacks and abilities to 1."
+        Text: "Allows Medics to cast Optical Flare at range 9, causing one unit to lose Detection and Scouting, and they can only be activated in the last combat step."
       Caduceus Reactor:
         Costs:
           Time: 1
@@ -1332,6 +1336,8 @@ Races:
           - Summon Archon
           - Psionic Storm
           - Hallucination
+        Abilities:
+          - Last-in-Line
       Dark Templar:
         Size:
           Width: 2
@@ -1402,6 +1408,7 @@ Races:
           - Templar Archives
         Abilities:
           - Hover
+          - Last-in-Line
       Shuttle:
         Size:
           Width: 3
@@ -1423,6 +1430,7 @@ Races:
           - Load
         Abilities:
           - Air
+          - Last-in-Line
       Reaver:
         Size:
           Width: 3
@@ -1549,6 +1557,7 @@ Races:
           - Fleet Beacon
         Abilities:
           - Air
+          - Last-in-Line
       Interceptor:
         Size:
           Width: 1.67
@@ -2216,6 +2225,7 @@ Races:
         Abilities:
           - Detector
           - Air
+          - Last-in-Line
         Text: +2 Supply
       Zergling:
         Size:
@@ -2381,6 +2391,8 @@ Races:
           - Plague
         Requires:
           - Defilers Den
+        Abilities:
+          - Last-in-Line
       Queen:
         Size:
           Width: 2.2
@@ -2406,6 +2418,7 @@ Races:
           - Queens Nest
         Abilities:
           - Air
+          - Last-in-Line
       Devourer:
         Size:
           Width: 3

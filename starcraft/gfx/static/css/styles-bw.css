@@ -1,0 +1,219 @@
+body {
+    background-color: white;
+    line-height: 1.1;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.item {
+    margin: 4px;
+}
+
+.glow-large {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.glow-small {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.glow-reqs {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.image {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 2px;
+}
+
+.small {
+    width: 75%;
+}
+
+.icon {
+    max-height:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container {
+    position: relative;
+    background-color: white;
+}
+
+.border-2 {
+    border: 2px solid black;
+}
+
+.border-1 {
+    border: 1px solid black;
+}
+
+.border-req {
+    border: 1px solid black;
+}
+
+.Buildings {
+    width: 90px;
+    height: 90px;
+}
+
+.small {
+    width: 65px;
+    height: 65px;
+}
+
+.Units {
+    width: 90px;
+    height: 90px;
+}
+
+.Upgrades {
+    width: 36px;
+    height: 36px;
+}
+
+.unit {
+    width: 42px;
+    height: 42px;
+    float: left;
+    margin-top: 1px;
+    margin-right: 1px;
+}
+
+.content {
+    padding-top: 2px;
+    height: 100%;
+    padding-left: 4px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.requirement {
+    font-size: 12px;
+}
+
+.abilities-row {
+    margin-top: 1px;
+    margin-right: 4px;
+    margin-left: 1px;
+    border-top: 1px solid black;
+}
+
+.abilities {
+    font-size: 12px;
+}
+
+.bg-ability {
+    color: rgb(150, 220, 255);
+}
+
+.resource {
+    font-weight: bold;
+    float: right;
+    padding-right: 4px;
+}
+
+.health {
+    font-weight: bold;
+    float: right;
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.armor {
+    font-weight: bold;
+    float: right;
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.products-row {
+    margin-top: 1px;
+    margin-right: 4px;
+    margin-left: 1px;
+    border-top: 1px solid black;
+    min-height: 44px;
+}
+
+.requirement-row {
+    min-height: 16px;
+}
+
+.stat-header {
+    font-size: 10px;
+    padding-top: 1px;
+    text-align: center;
+}
+
+.stat-value {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.resource-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+.resource-image {
+    position: absolute;
+}
+
+.size {
+    font-size: 10px;
+}
+
+.abilities {
+    z-index: 10;
+    position: absolute;
+    text-align: center;
+    bottom: 0%;
+    font-size: 16px;
+    width: 100%;
+}
+
+.types {
+    text-align: center;
+}
+
+.bg-type {
+    color: black;
+    position: relative;
+    z-index: 10000;
+    font-size: 10px;
+}
+
+.text-short {
+    float: left;
+    font-size: 13px;
+}
+
+.middle {
+    text-align: center;
+    padding-top: 10px;
+    max-width: 180px;
+    padding-left: 4px;
+}
