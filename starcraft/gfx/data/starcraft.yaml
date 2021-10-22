@@ -879,7 +879,7 @@ Races:
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Science Vessels to use EMP Shockwave at range 8, removing any Shield and Energy of up to two units of the same type. Wraiths and Ghosts hit by EMP Shockwave become visible."
+        Text: "Allows Science Vessels to use EMP Shockwave to deny a spell cast by an enemy and remove any Shield and Energy on the spellcaster, or target 4/3/2 units at range 8 that lose Energy and Shield. Wraiths and Ghosts hit by EMP Shockwave become visible."
       Irradiate:
         Costs:
           Time: 1
@@ -1627,7 +1627,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Shield Batteries to instantly replenish two lost Shield."
+        Text: "Allows Shield Batteries to instantly replenish four lost Shield points distributed among any number of units."
       Summon Archon:
         Costs:
           Time: 0
@@ -2362,6 +2362,7 @@ Races:
             - Bio
           Speed: 2
           Health: 9
+          Armor: 1
           Range: 1
           Ground Damage: 3
           Sight: 7
@@ -2525,7 +2526,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Defilers to cast a Dark Swarm at range 9. No ground units will take direct damage from ranged attacks this combat round, except from splash damage."
+        Text: "Allows Defilers to cast a Dark Swarm, denying all ranged ground damage besides splash in this area for the remainder of this round."
       Infest Command Center:
         Costs:
           Time: 0

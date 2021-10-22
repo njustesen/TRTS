@@ -11,7 +11,7 @@
     <body style="height: 1600px">
         <div class="container" style="max-width: 100%;">
             <div class="row">
-                <div class="col-3" class="col" style="width: 417px">
+                <div class="col-3" class="col" style="width: 429px">
                     <!--
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
@@ -68,7 +68,7 @@
                             <ol>
                                 <li>Zerg units and structures heal one HP.</li>
                                 <li>Protoss units and structures gain one Shield.</li>
-                                <li>Units and structures gain Energy. Structures also gain Energy in contested areas.</li>
+                                <li>Units and structures gain Energy.</li>
                             </ol>
                         </div>
                     </div>
@@ -143,11 +143,10 @@
                                 Some units and structures give you Supply, which is also indicated on the race sheet.
                                 The total Supply cost of the units you put into production cannot be larger than your Supply.
                             </div>
-                            <br>
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="width: 440px">
+                <div class="col-3" style="width: 445px">
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Area Control</div>
@@ -216,10 +215,10 @@
                                 <i class="bi bi-broadcast light"></i> Detection: Can see cloaked and burrowed units.<br/>
                                 <i class="bi bi-pin-map-fill light"></i> Flying: Can only be attacked by Air Attack.<br/>
                                 <i class="bi bi-layers-half light"></i> Hover: Cannot be targeted by Spider Mines.<br/>
-                                <i class="bi bi-x-octagon light"></i> Static: Has speed 0 and cannot target enemies with a higher Range value.<br/>
+                                <i class="bi bi-x-octagon light"></i> Static: Has Speed 0 and can only target enemies with the same or lower Range value.<br/>
                                 <i class="bi bi-exclamation-square light"></i> Frenzy: Can attack again at the end of the combat if they survived and did attack this combat round.<br/>
                                 <i class="bi bi-binoculars-fill light"></i> Scouting: Allows defending units to secretly retreat before the Defenders Reveals step, if you have a unit with Scouting and the attackers do not.<br/>
-                                <i class="bi bi-chevron-double-up light"></i> Last-in-Line: Can only be targeted by ground units when there are not other targets available, besides non-defensive structures, until the unit is activated, where after they can be targeted at that range.<br/>
+                                <i class="bi bi-plus-circle-fill light"></i> Support: Are Last-in-Line until activated, where after they can be targeted at that range.<br/>
                             </div>
                         </div>
                     </div>
@@ -235,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="width: 395px">
+                <div class="col-3" style="width: 430px">
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Combat</div>
@@ -276,6 +275,10 @@
                                     Air units (and units being dropped by transporting air units in this combat step) can freely select targets regardless of their range.
                                     Ground units can only select targets with the same or lower ground attack Range.
                                     If there are no enemy units with the same or lower Range, ground units have to select targets in ascending order of Range.
+                                </div>
+                                <br>
+                                <div>
+                                    Units that are <b>Last-in-Line</b> cannot be targeted by ground units if there are any other available targets beside non-defensive structures.
                                 </div>
                             <br>
                             <div>
