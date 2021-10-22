@@ -795,7 +795,7 @@ Races:
           Time: 1
           Minerals: 3
           Gas: 3
-        Text: "Allows Siege Tanks to be in Siege Mode if they are not engaging, giving them range 12, +1 Attack, splash damage, and they become static."
+        Text: "Allows Siege Tanks to go in Siege Mode at the cost of 1 movement point, gaining Range 12, +1 Attack, splash damage, and they become static. Unsieging costs 1 movement point as well."
       Ion Thrusters:
         Costs:
           Time: 1

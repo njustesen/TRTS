@@ -15,8 +15,8 @@
 - New Scouting ability introduced to units with Sight upgrades
 - Starting armor on Carrier and Battlecruisers reduced from 3 and 2 -> 1 
 - Irradiate changed
-- "Static" term introduced to describe untis and buildings that have Speed 0. Units may be static temporarily.
-- Last-in-line units cannot be targeted by ground units if there are other units available to target.
+- "Static" term introduced to describe untis and buildings that have Speed 0 and that can never target units with higher range. Units may be static temporarily.
+- New last-in-line rule, that includes any unit that will not participate in combat. Last-in-line units cannot be targeted by ground units if there are other units available to target.
 - Interceptor rules changed slightly since Carriers don't attack and thus is always last-in-line
 - Psionic Storm deals damage based on targets speed
 - Recall has range 7 when used in combat
@@ -24,4 +24,5 @@
 - Number of rounds in a game is reduced to 32
 - Reveal and Retreat steps simplified.
 - Each vulture adds two Spider Mines to a bank of Spider Mines that all Vultures can plant.
-- Optical Flare removes detection and scouting and no longer reduces range but almost
+- Optical Flare removes dectection and scouting and no longer reduces range but almost
+- Siege Mode changed, such that Tanks must siege/un-siege at the cost of 1 movement point, while it allows them to use siege mode while attacking.
