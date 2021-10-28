@@ -180,6 +180,8 @@ Races:
           Sight: 11
         Requires:
           - Engineering Bay
+        Abilities:
+          - Detector
       Factory:
         Size:
           Width: 4
@@ -685,7 +687,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Bunkers to load 4 Barracks units and Dropships to load and transport 8 ground units, where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked."
+        Text: "Allows Bunkers to load 4 Barracks units and Dropships to load 8 ground units, where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked but whenever they are loaded they spend one movement point."
       Lift Off:
         Costs:
           Time: 0
@@ -727,7 +729,7 @@ Races:
         Text: "Allows Science Vessels to cast Defensive Matrix at range 10, giving +5 Shield to a unit this round only."
       Infantry Weapons:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -740,7 +742,7 @@ Races:
             - Science Facility
       Infantry Armor:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -753,52 +755,52 @@ Races:
             - Science Facility
       Stim Pack:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
         Text: "Marines and Firebats gain Frenzy."
       U-238 Shells:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
         Text: "+1 Marine Range."
       Restoration:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
           Energy: 1
         Text: "Allows Medics to cast Restoration at range 6, removing any harmful effects on a unit besides Stasis Field."
       Optical Flare:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
           Energy: 1
         Text: "Allows Medics to cast Optical Flare at range 9, causing one unit to lose Detection and Scouting, and they can only be activated in the last combat step."
       Caduceus Reactor:
         Costs:
-          Time: 1
+          Time: 3
           Minerals: 2
           Gas: 2
           Energy: 1
         Text: "Allows Medics to replenish energy in contested areas."
       Spider Mines:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
         Text: "Allows Vultures to plant one Spider Mine from your available Spider Mines in the Macro-management Phase or during combat (in which case it counts as attacking). Mines planted during combat are not burrowed. You gain two Spider Mines for each Vulture you have and produce in the rest of the game."
       Siege Tech:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Siege Tanks to go in Siege Mode at the cost of 1 movement point, gaining Range 12, +1 Attack, splash damage, and they become static. Unsieging costs 1 movement point as well."
+        Text: "Allows Siege Tanks to go into Siege Mode before any combat at the cost of 1 movement point, gaining Range 12, +1 Attack, splash damage, and they become static. Unsieging costs 1 movement point as well."
       Ion Thrusters:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
         Text: "+1 Vulture Speed."
@@ -810,20 +812,20 @@ Races:
         Text: "+3 Goliath Air Range."
       Cloaking Field:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
           Energy: 1
         Text: "Allows Wraiths to become cloaked this round."
       Apollo Reactor:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
         Text: "Allows Wraiths to replenish energy in contested areas."
       Vehicle Weapons:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -836,7 +838,7 @@ Races:
         Text: "+1 attack to Factory units."
       Vehicle Plating:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -849,7 +851,7 @@ Races:
         Text: "+1 Armor to Factory units."
       Ship Weapons:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -862,7 +864,7 @@ Races:
         Text: "+1 Attack to Starport units."
       Ship Plating:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
           Mod: 1
@@ -875,60 +877,60 @@ Races:
         Text: "+1 Armor to Starport units."
       EMP Shockwave:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 4
           Gas: 4
           Energy: 1
         Text: "Allows Science Vessels to use EMP Shockwave to deny a spell cast by an enemy and remove any Shield and Energy on the spellcaster, or target 4/3/2 units at range 8 that lose Energy and Shield. Wraiths and Ghosts hit by EMP Shockwave become visible."
       Irradiate:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 4
           Gas: 4
           Energy: 1
         Text: "Allows Science Vessels to cast Irradiate at range 9 on a biological unit that are not in Stasis, dealing 1 damage to the target and 1 damage to up to three units of that type in the same area, now, and at the end of every round until the target replenishes, where after the target is no longer Irradiated."
       Titan Reactor:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
         Text: "Allows Science Vessels to replenish energy in contested areas."
       Yamato Gun:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
           Energy: 1
         Text: "Allows Battlecruisers to fire their Yamato Gun at range 10 instead of attacking, dealing 10 damage to one unit or structure."
       Colossus Reactor:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
         Text: "Allows Battlecruisers to replenish energy in contested areas."
       Personnel Cloaking:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
           Energy: 1
         Text: "Allows Ghosts to be cloaked until next round."
       Lockdown:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 4
           Gas: 4
           Energy: 1
         Text: "Allows Ghosts to cast Lockdown at range 8 on a mechanical unit, making it static and unable to do anything this round."
       Ocular Implants:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
         Text: "Ghosts gain Scouting and Call Down nukes in adjacent ground areas."
       Moebius Reactor:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
         Text: "Allows Ghosts to replenish energy in contested areas."
@@ -1466,7 +1468,7 @@ Races:
           Amount: ''
           Size: ""
           Range: 8
-          Ground Damage: 3es!
+          Ground Damage: 4es!
       Observer:
         Size:
           Width: 2
@@ -1652,7 +1654,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Shuttles to load and transport up to 8 ground units where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked. Note, that Reavers don't attack."
+        Text: "Allows Shuttles to load and transport up to 8 ground units where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked (note, that Reavers don't attack) but whenever they are loaded they spend one movement point."
       Scarab:
         Costs:
           Time: 0
@@ -1673,7 +1675,7 @@ Races:
         Text: "All friendly units (except Arbiters) in the area of the Arbiter are invisible."
       Ground Weapons:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -1686,7 +1688,7 @@ Races:
             - Templar Archives
       Ground Armor:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -1699,7 +1701,7 @@ Races:
             - Templar Archives
       Plasma Shields:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 2
@@ -1718,7 +1720,7 @@ Races:
         Text: "+2 Dragoon Range"
       Air Weapons:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 2
@@ -1731,7 +1733,7 @@ Races:
             - Fleet Beacon
       Air Armor:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
           Mod: 1
@@ -1744,128 +1746,128 @@ Races:
             - Fleet Beacon
       Leg Enhancements:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
         Text: "+1 Zealot Speed"
       Psionic Storm:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 4
           Gas: 4
           Energy: 1
         Text: "Allows High Templars to cast Psionic Storm at range 9 dealing 6s damage (ignoring Armor) to units minus the targets' speed."
       Hallucination:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
           Energy: 1
         Text: "Allows High Templar to cast Hallucination during the Production Phase creating two temporary duplicates of a friendly unit in the same area as the High Templar, with the same amount of HP. Duplicates only exist until the end of the round, or until they are targeted by an enemy spell, or their HP is reduced to half (rounded down) of what they started with."
       Khaydarin Amulet:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
         Text: "Allows High Templars to replenish energy in contested areas."
       Maelstrom:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
           Energy: 1
         Text: "Allows Dark Archons to cast Maelstrom at range 10 targeting 3/2/1 biological units of the same type making them static and are visible until next round."
       Mind Control:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 4
           Gas: 4
           Energy: 1
         Text: "Allows Dark Archons to cast Mind Control at range 8, gaining full control over one target unit."
       Argus Talisman:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
         Text: "Allows Dark Archons to replenish energy in contested areas."
       Scarab Damage:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 4
           Gas: 4
         Text: "+2 Reaver Attack."
       Increased Reaver Capacity:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 4
           Gas: 4
         Text: "Reavers can house 2 Scarabs instead of 1."
       Gravitic Drive:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 4
           Gas: 4
         Text: "+1 Shuttle Speed."
       Sensor Array:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
         Text: "Observers gain Scouting."
       Gravitic Booster:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
         Text: "+1 Observer Speed."
       Carrier Capacity:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
         Text: "Carriers can house 8 Interceptors instead of 4."
       Apial Sensors:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
         Text: "Scouts gain Scouting."
       Gravitic Thrusters:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 4
           Gas: 4
         Text: "+1 Carrier Speed."
       Disruption Web:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 4
           Gas: 4
           Energy: 1
         Text: "Allows Corsairs to cast Disruption Web at range 9, preventing 3/2/1 units of the same type to attack and being attacked by melee units this turn."
       Argus Jewel:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
         Text: "Allows Corsairs to replenish energy in contested areas."
       Stasis Field:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
           Energy: 1
         Text: "Allows Arbiters to cast Stasis Field at range 9, freezing up to 4/3/2 units of the same type until the beginning of the next Micro Phase. Frozen units are static, cannot do anything, and cannot be targeted."
       Recall:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
           Energy: 1
         Text: "Allows Arbiters to cast Recall during the Macro Phase or during combat at range 7, teleporting any number of friendly units from one area to the one with the Arbiter."
       Khaydarin Core:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
         Text: "Allows Arbiters to replenish energy in contested areas."
@@ -2542,7 +2544,7 @@ Races:
         Text: "Allows Queens to cast Parasite at range 12 on a target unit to permanently gain its vision. Can also be used when retreating."
       Burrow:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
         Text: "Allows medium and small ground units to Burrow at any time before attacking this round, and un-burrow at any time. Burrowed are invisible but cannot attack. Lurkers do not need this upgrade to burrow and can only attack while burrowed."
@@ -2551,7 +2553,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Gives Overlords the ability to load and transport up to 8 ground units that have not attacked this turn, where medium counts as 2 and large as 4."
+        Text: "Allows Overlords to load up to 8 ground units that have not attacked this turn, where medium counts as 2 and large as 4. Units can be loaded and unloaded at any time if they have not attacked but whenever units are loaded they spend one movement point"
       Antennae:
         Costs:
           Time: 2
@@ -2566,13 +2568,13 @@ Races:
         Text: "+1 Overlord speed."
       Metabolic Boost:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
         Text: "+1 Zergling speed."
       Adrenal Glands:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 4
           Gas: 4
         Requires:
@@ -2580,19 +2582,19 @@ Races:
         Text: "Zerglings gain Frenzy."
       Muscular Augments:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
         Text: "+1 Hydralisk speed."
       Grooved Spines:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 3
           Gas: 3
         Text: "+1 Hydralisk range."
       Lurker Aspect:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 4
           Gas: 4
         Text: "Enables Hydralisks to morph into Lurkers in the Production Phase. Lurker eggs have 10 HP."
@@ -2600,7 +2602,7 @@ Races:
           - Lair
       Melee Attacks:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -2613,7 +2615,7 @@ Races:
             - Hive
       Missile Attacks:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -2626,7 +2628,7 @@ Races:
             - Hive
       Carapace:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -2639,7 +2641,7 @@ Races:
             - Hive
       Flyer Attack:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 2
           Gas: 2
           Mod: 1
@@ -2650,7 +2652,7 @@ Races:
             - Hive
       Flyer Carapace:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
           Mod: 1
@@ -2661,40 +2663,40 @@ Races:
             - Hive
       Ensnare:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
           Energy: 1
         Text: "Allows Queens to use Ensnare at range 9, targeting 4/3/2 unborrowed units that until next round have their base Attack value reduced to 1 and they become static."
       Spawn Broodling:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
           Energy: 1
         Text: "Allows Queens to Spawn Broodlings at range 9, destroying any non-robotic ground unit and replaceing it with two Broodlings under control that lives until the end of this round. Archons and Dark Archons cannot be targeted by Spawn Broodlings."
       Gamete Meiosis:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
         Text: "Allows Queens to replenish Energy in contested areas."
       Consume:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 2
           Gas: 2
         Text: "Allows Defilers to Consume two friendly Zerg units to replenish the Energy of the Defiler."
       Plague:
         Costs:
-          Time: 1
+          Time: 2
           Minerals: 4
           Gas: 4
           Energy: 1
         Text: "Allows Defilers to cast Plague at range 9 on 6/4/2 units or a structure, lasting until the targets replenish. Plagued units are dealt double damage."
       Metasynaptic Node:
         Costs:
-          Time: 2
+          Time: 3
           Minerals: 3
           Gas: 3
         Text: "Allows Defilers to replenish Energy in contested areas."

@@ -1,5 +1,13 @@
 # StarCraft Changelog
 
+## Version 0.7.1
+
+- Reaver Scarabs damage 3es! -> 4es! as originally computed
+- Missile Turret gained missing Detector ability
+- Units spend one movement point when being loaded.
+- Siege tanks can only go into siege mode before a combat starts, making it impossible to go into siege mode after being dropped by a dropship during combat
+- Most research and upgrades takes one more round to produce
+
 ## Version 0.7.0
 
 - Mutalisks range 3 -> 4 and Swarming removed
