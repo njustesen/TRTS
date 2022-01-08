@@ -2,16 +2,15 @@
     <head>
         <title>{{race}}</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <!--<link href="static/css/styles.css" rel="stylesheet">
-        <link href="static/css/Terran.css" rel="stylesheet">-->
-        <link href="static/css/styles-bw.css" rel="stylesheet">
-
+        <link href="static/css/styles.css" rel="stylesheet">
+        <link href="static/css/Terran.css" rel="stylesheet">
+        <!--<link href="static/css/styles-bw.css" rel="stylesheet">-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
     <body style="height: 1600px">
         <div class="container" style="max-width: 100%;">
             <div class="row">
-                <div class="col-3" class="col" style="width: 429px">
+                <div class="col-3" class="col" style="width: 400px">
                     <!--
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
@@ -146,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="width: 445px">
+                <div class="col-3" style="width: 400px">
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Area Control</div>
@@ -218,13 +217,12 @@
                                 <i class="bi bi-x-octagon light"></i> Static: Has Speed 0 and can only target enemies with the same or lower Range value.<br/>
                                 <i class="bi bi-exclamation-square light"></i> Frenzy: Can attack again at the end of the combat if they survived and did attack this combat round.<br/>
                                 <i class="bi bi-binoculars-fill light"></i> Scouting: Allows defending units to secretly retreat before the Defenders Reveals step, if you have a unit with Scouting and the attackers do not.<br/>
-                                <i class="bi bi-plus-circle-fill light"></i> Support: Are Last-in-Line until activated, where after they can be targeted at that range.<br/>
                             </div>
                         </div>
                     </div>
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
-                            <b>Spellcasting & Energy</b>
+                            <b>Spells & Energy</b>
                             <br>
                             <div>
                                 Abilities with the <img src="static/img/icons/energy.png">-icon are called spells and require Energy to be used.
@@ -234,7 +232,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="width: 430px">
+                <div class="col-3" style="width: 400px">
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Combat</div>
@@ -250,36 +248,29 @@
                             <br />
                             <div>
                                 <b>Combat Steps</b></br>
-                                Starting with units of the highest Range, also considering spells, perform a Combat Step wherein these units can attack or cast spells.
-                                In a Combat Step, the attacking player first assigns targets and declares spells and abilities being used, followed by the defending players in the turn order.
-                                Units can decide not to attack in a Combat Step to make a responsive attack in a later Combat Step.
+                                Starting with units of the highest Range. perform a Combat Step wherein these units can attack or cast spells.
+                                In a Combat Step, the attacking player first assigns targets and declares spells and abilities being used, followed by the defending player.
+                                Units can decide not to attack in a Combat Step to attack later but units can only attack once per round.
+                                Spells can be cast while being Last-in-line.
                             </div>
                             <br>
                             <div>
-                                Units can only attack once per round.
-                            </div>
-                            <br>
-                            <div>
-                                Damage and spell effects from all players take effect simultaneously before moving on the the next Combat Step.
-                                Remove any units that are killed and use tokens to show lost Health, Shield, and Energy.
+                                Damage from all players take effect simultaneously before moving on the the next Combat Step.
+                                Remove any units that are killed and use tokens to show lost Health and Shield.
+                                Any units that have not attacked can go Last-in-line after every combat step.
                             </div>
                             <br>
                             <div>
                                 <b>Assigning Targets</b>
                                 <div>
                                     For each attacking unit select one unit type among the defending units that will be targeted. For spell casters, follow the rules of the spell.
-                                </div>
-                                <br>
-                                <div>
                                     Air attacks can only target flying units and ground attacks can only target ground units.
-                                    Air units (and units being dropped by transporting air units in this combat step) can freely select targets regardless of their range.
-                                    Ground units can only select targets with the same or lower ground attack Range.
-                                    If there are no enemy units with the same or lower Range, ground units have to select targets in ascending order of Range.
+                                    <b>Air units</b> can freely target any enemy. This also includes units that are being dropped by transporting air units in the melee combat step.
+                                    <b>Ground Units</b> can freely target buildings and units that are not <i>last-in-line</i> and that have the same or lower range.
+                                    If a ground unit cannot freely target anything, they have to target enemies with the lowest range available.
+                                    If all units that can be targeted by a ground unit are Last-in-line, they can all be freely targeted.
                                 </div>
-                                <br>
-                                <div>
-                                    Units that are <b>Last-in-Line</b> cannot be targeted by ground units if there are any other available targets beside non-defensive structures.
-                                </div>
+                            </div>
                             <br>
                             <div>
                                 <b>Deal Damage</b>
@@ -317,30 +308,37 @@
                                     <b>Splash (s)</b> attacks deal 1/2/3 additional damage if there are 3/7/12 or more targets of the same type.
                                 </div>
                                 <div>
-                                    <b>Suicide (!)</b> attacks kills the attacker.
+                                    <b>Suicide (!)</b> attacks kill the attacker.
                                 </div>
+                            </div>
+                            <br/>
+                            <div>
+                                <b>Post-Combat Step</b></br>
+                                After the ordinary combat steps, a special post-combat step takes place.
+                                Here, Frenzy units that attacked in the combat can attack again following the normal targeting rules of the melee combat step.
+                                Units that have not attacked this round, can attack now, freely targeting any unit.
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
-                    <div class="container content">
-                        <div class="title">Winning</div>
-                        <div>
-                            <b>Elimination</b>
+                    <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
+                        <div class="container content">
+                            <div class="title">Winning</div>
                             <div>
-                                Ways to get eliminated:
+                                <b>Elimination</b>
+                                <div>
+                                    Ways to get eliminated:
+                                    <ul>
+                                        <li>You loose all units</li>
+                                        <li>You loose all structures</li>
+                                        <li>You surrender</li>
+                                    </ul>
+                                </div>
+                                <b>Winning</b>
                                 <ul>
-                                    <li>You loose all units</li>
-                                    <li>You loose all structures</li>
-                                    <li>You surrender</li>
+                                    <li>All other players are eliminated</li>
+                                    <li>After the last round, the player controlling the most areas wins. If tied, play another round only with the Micro Phase. If still tied, the player with the starting player token wins.</li>
                                 </ul>
                             </div>
-                            <b>Winning</b>
-                            <ul>
-                                <li>All other players are eliminated</li>
-                                <li>After the last round, the player controlling the most areas wins. If tied, play another round only with the Micro Phase. If still tied, the player with the starting player token wins.</li>
-                            </ul>
                         </div>
                     </div>
                 </div>

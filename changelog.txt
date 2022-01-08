@@ -1,12 +1,17 @@
 # StarCraft Changelog
 
-## Version 0.7.1
+## Version 0.8.0
 
 - Reaver Scarabs damage 3es! -> 4es! as originally computed
 - Missile Turret gained missing Detector ability
-- Units spend one movement point when being loaded.
+- It costs 1 Movement point to siege or unsiege
+- It costs 1 Movement point to gather
+- It costs 1 Movement point to be loaded
 - Siege tanks can only go into siege mode before a combat starts, making it impossible to go into siege mode after being dropped by a dropship during combat
 - Most research and upgrades takes one more round to produce
+- Any unit can go Last-in-line after a combat step as long as they have not attacked
+- Post-combat step with frenzy and option to attack Last-in-line units
+- Splash damage is per 3/6\*/9\*\* units. \* Only for Medium and Small units. \*\* Only for Large units.
 
 ## Version 0.7.0
 
@@ -19,9 +24,9 @@
 	- Energy upgrades allows units to regain energy in contested areas
 - Units that have attacked this round are allowed to retreat if engaged later
 - Units in contested areas must make a push starting in the area they are in
-- New units and buildings are first revealed when an opponent makes a push in the 
+- New units and buildings are first revealed when an opponent makes a push in the
 - New Scouting ability introduced to units with Sight upgrades
-- Starting armor on Carrier and Battlecruisers reduced from 3 and 2 -> 1 
+- Starting armor on Carrier and Battlecruisers reduced from 3 and 2 -> 1
 - Irradiate changed
 - "Static" term introduced to describe untis and buildings that have Speed 0 and that can only hit units with equal or lower Range. Units may be static temporarily.
 - New Last-in-Line rule, that includes any unit that will not participate in combat. Last-in-line units cannot be targeted by ground units if there are other units available to target.

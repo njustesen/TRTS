@@ -176,7 +176,7 @@ Races:
           Size: LARGE
           Health: 4
           Range: 7
-          Air Damage: 3e
+          Air Damage: 3
           Sight: 11
         Requires:
           - Engineering Bay
@@ -402,7 +402,7 @@ Races:
           Speed: 2
           Health: 2
           Range: 2
-          Ground Damage: 1cs
+          Ground Damage: 1s
           Air Damage: 0
           Sight: 7
         Produces:
@@ -450,8 +450,8 @@ Races:
           Health: 1
           Sight: 9
           Range: 7
-          Ground Damage: 2c
-          Air Damage: 2c
+          Ground Damage: 1
+          Air Damage: 1
         Produces:
           - Call Down
           - Personnel Cloaking
@@ -475,7 +475,7 @@ Races:
           Health: 2
           Sight: 8
           Range: 5
-          Ground Damage: 2c
+          Ground Damage: 2
         Produces:
           - Spider Mines
         Abilities:
@@ -493,10 +493,10 @@ Races:
           Health: 1
           Sight: 3
           Range: 4
-          Ground Damage: 2es!
+          Ground Damage: 1s!
         Abilities:
           - Cloaked
-        Text: Automatically attacks non-hovering units with lowest range of the enemy's choice.
+          - Static
       Siege Tank:
         Size:
           Width: 3
@@ -514,7 +514,7 @@ Races:
           Health: 4
           Sight: 10
           Range: 7
-          Ground Damage: 2e
+          Ground Damage: 2
         Produces:
           - Siege Tech
         Requires:
@@ -537,7 +537,7 @@ Races:
           Sight: 8
           Range: 5/6
           Ground Damage: 2
-          Air Damage: 3e
+          Air Damage: 3
         Requires:
           - Armory
       Wraith:
@@ -557,7 +557,7 @@ Races:
           Health: 4
           Range: 5
           Ground Damage: 1
-          Air Damage: 3e
+          Air Damage: 3
           Sight: 7
         Produces:
           - Cloaking Field
@@ -612,7 +612,6 @@ Races:
         Abilities:
           - Detector
           - Air
-          - Last-in-Line
       Valkyrie:
         Size:
           Width: 3
@@ -629,7 +628,7 @@ Races:
           Speed: 3
           Health: 5
           Range: 6
-          Air Damage: 3es
+          Air Damage: 3s
           Sight: 8
           Armor: 1
         Requires:
@@ -687,7 +686,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Bunkers to load 4 Barracks units and Dropships to load 8 ground units, where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked but whenever they are loaded they spend one movement point."
+        Text: "Allows Bunkers to load 4 Barracks units and Dropships to load 8 ground units, where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked while it costs one movement point to be loaded."
       Lift Off:
         Costs:
           Time: 0
@@ -726,32 +725,28 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Science Vessels to cast Defensive Matrix at range 10, giving +5 Shield to a unit this round only."
+        Text: "Allows Science Vessels to cast Defensive Matrix to deny up to five damage."
       Infantry Weapons:
         Costs:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
+          Mod: 2
         Text: "+1 Attack to Barracks units."
-        Levels: 3
+        Levels: 2
         Requires:
           2:
-            - Science Facility
-          3:
             - Science Facility
       Infantry Armor:
         Costs:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
+          Mod: 2
         Text: "+1 Armor to Barracks units."
-        Levels: 3
+        Levels: 2
         Requires:
           2:
-            - Science Facility
-          3:
             - Science Facility
       Stim Pack:
         Costs:
@@ -771,14 +766,16 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Medics to cast Restoration at range 6, removing any harmful effects on a unit besides Stasis Field."
+        Text: "Allows Medics to cast Restoration, removing or denying any harmful effects on a unit besides Stasis Field."
       Optical Flare:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Medics to cast Optical Flare at range 9, causing one unit to lose Detection and Scouting, and they can only be activated in the last combat step."
+        Stats:
+          Range: 9
+        Text: "Allows Medics to cast Optical Flare, causing one unit to lose Detection and Scouting, and they can from now on not be activated before the melee combat step unless they have a unit with Scouting in the area."
       Caduceus Reactor:
         Costs:
           Time: 3
@@ -828,12 +825,10 @@ Races:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
-        Levels: 3
+          Mod: 2
+        Levels: 2
         Requires:
           2:
-            - Science Facility
-          3:
             - Science Facility
         Text: "+1 attack to Factory units."
       Vehicle Plating:
@@ -841,12 +836,10 @@ Races:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
-        Levels: 3
+          Mod: 2
+        Levels: 2
         Requires:
           2:
-            - Science Facility
-          3:
             - Science Facility
         Text: "+1 Armor to Factory units."
       Ship Weapons:
@@ -854,12 +847,10 @@ Races:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
-        Levels: 3
+          Mod: 2
+        Levels: 2
         Requires:
           2:
-            - Science Facility
-          3:
             - Science Facility
         Text: "+1 Attack to Starport units."
       Ship Plating:
@@ -867,12 +858,10 @@ Races:
           Time: 3
           Minerals: 3
           Gas: 3
-          Mod: 1
-        Levels: 3
+          Mod: 2
+        Levels: 2
         Requires:
           2:
-            - Science Facility
-          3:
             - Science Facility
         Text: "+1 Armor to Starport units."
       EMP Shockwave:
@@ -881,14 +870,18 @@ Races:
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Science Vessels to use EMP Shockwave to deny a spell cast by an enemy and remove any Shield and Energy on the spellcaster, or target 4/3/2 units at range 8 that lose Energy and Shield. Wraiths and Ghosts hit by EMP Shockwave become visible."
+        Stats:
+          Range: X/8
+        Text: "Allows Science Vessels to use EMP Shockwave to either a) deny a spell cast in this combat round and remove all Shield on the spellcaster, or b) at range 8, target 4/3/2 units that lose Energy and Shield. Wraiths and Ghosts hit by EMP Shockwave become visible."
       Irradiate:
         Costs:
           Time: 2
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Science Vessels to cast Irradiate at range 9 on a biological unit that are not in Stasis, dealing 1 damage to the target and 1 damage to up to three units of that type in the same area, now, and at the end of every round until the target replenishes, where after the target is no longer Irradiated."
+        Stats:
+          Range: 9
+        Text: "Allows Science Vessels to cast Irradiate on a biological unit that are not in Stasis, dealing 1 damage to the target and 1 damage to up to three units of that type in the same area, now, and at the end of every round until the target replenishes, where after the target is no longer Irradiated."
       Titan Reactor:
         Costs:
           Time: 3
@@ -901,7 +894,9 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Battlecruisers to fire their Yamato Gun at range 10 instead of attacking, dealing 10 damage to one unit or structure."
+        Stats:
+          Range: 10
+        Text: "Allows Battlecruisers to fire their Yamato Gun instead of attacking, dealing 10 damage to one unit or structure."
       Colossus Reactor:
         Costs:
           Time: 3
@@ -921,7 +916,9 @@ Races:
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Ghosts to cast Lockdown at range 8 on a mechanical unit, making it static and unable to do anything this round."
+        Stats:
+          Range: 8
+        Text: "Allows Ghosts to cast Lockdown on a mechanical unit, making it static and unable to do anything this round."
       Ocular Implants:
         Costs:
           Time: 3
@@ -1310,8 +1307,8 @@ Races:
           Health: 3
           Shield: 1
           Range: 4
-          Ground Damage: 2e
-          Air Damage: 2e
+          Ground Damage: 2
+          Air Damage: 2
           Sight: 8
         Requires:
           - Cybernetics Core
@@ -1380,8 +1377,8 @@ Races:
           Health: 1
           Shield: 7
           Range: 2
-          Ground Damage: 3s
-          Air Damage: 3s
+          Ground Damage: 3
+          Air Damage: 3
           Sight: 8
         Requires:
           - Templar Archives
@@ -1410,7 +1407,6 @@ Races:
           - Templar Archives
         Abilities:
           - Hover
-          - Last-in-Line
       Shuttle:
         Size:
           Width: 3
@@ -1432,7 +1428,6 @@ Races:
           - Load
         Abilities:
           - Air
-          - Last-in-Line
       Reaver:
         Size:
           Width: 3
@@ -1468,7 +1463,7 @@ Races:
           Amount: ''
           Size: ""
           Range: 8
-          Ground Damage: 4es!
+          Ground Damage: 4s!
       Observer:
         Size:
           Width: 2
@@ -1510,7 +1505,7 @@ Races:
           Shield: 2
           Range: 4
           Ground Damage: 1
-          Air Damage: 4e
+          Air Damage: 4
           Sight: 8
         Abilities:
           - Air
@@ -1531,10 +1526,11 @@ Races:
           Health: 3
           Shield: 1
           Range: 5
-          Air Damage: 2es
+          Air Damage: 2s
           Sight: 8
         Abilities:
           - Air
+          - Disruption Web
       Carrier:
         Size:
           Width: 4
@@ -1599,8 +1595,8 @@ Races:
           Health: 5
           Shield: 3
           Range: 5
-          Ground Damage: 1e
-          Air Damage: 1e
+          Ground Damage: 1
+          Air Damage: 1
           Sight: 9
         Produces:
           - Cloaking Field
@@ -1648,13 +1644,15 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Dark Archons to cast Feedback at range 10 on a target unit with energy. That unit loses its energy and is dealt 2 damage."
+        Stats:
+          Range: 10
+        Text: "Allows Dark Archons to cast Feedback on an target that will lose Energy, have any spells casted in this combat round denied, and is dealt 2 damage. Feedback can target spellcasters that are Last-in-line in combat steps where they cast a spell."
       Load:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Shuttles to load and transport up to 8 ground units where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked (note, that Reavers don't attack) but whenever they are loaded they spend one movement point."
+        Text: "Allows Shuttles to load and transport up to 8 ground units where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked (note, Reavers don't attack) while it costs one movement point to be loaded."
       Scarab:
         Costs:
           Time: 0
@@ -1678,26 +1676,22 @@ Races:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
+          Mod: 2
         Text: "+1 Attack to Gateway units."
-        Levels: 3
+        Levels: 2
         Requires:
           2:
-            - Templar Archives
-          3:
             - Templar Archives
       Ground Armor:
         Costs:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
+          Mod: 2
         Text: "+1 Armor to ground army units."
-        Levels: 3
+        Levels: 2
         Requires:
           2:
-            - Templar Archives
-          3:
             - Templar Archives
       Plasma Shields:
         Costs:
@@ -1706,11 +1700,9 @@ Races:
           Gas: 2
           Mod: 2
         Text: "+1 Shields to army units and buildings."
-        Levels: 3
+        Levels: 2
         Requires:
           2:
-            - Cybernetics Core
-          3:
             - Cybernetics Core
       Singularity Charge:
         Costs:
@@ -1725,24 +1717,20 @@ Races:
           Gas: 2
           Mod: 2
         Text: "+1 Attack to flying units"
-        Levels: 3
+        Levels: 2
         Requires:
           2:
-            - Fleet Beacon
-          3:
             - Fleet Beacon
       Air Armor:
         Costs:
           Time: 3
           Minerals: 3
           Gas: 3
-          Mod: 1
+          Mod: 2
         Text: "+1 Armor to flying units"
-        Levels: 3
+        Levels: 2
         Requires:
           2:
-            - Fleet Beacon
-          3:
             - Fleet Beacon
       Leg Enhancements:
         Costs:
@@ -1756,7 +1744,9 @@ Races:
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows High Templars to cast Psionic Storm at range 9 dealing 6s damage (ignoring Armor) to units minus the targets' speed."
+        Stats:
+          Range: 9
+        Text: "Allows High Templars to cast Psionic Storm, dealing 6s damage (ignoring Armor) minus the targets' speed."
       Hallucination:
         Costs:
           Time: 2
@@ -1776,14 +1766,18 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Dark Archons to cast Maelstrom at range 10 targeting 3/2/1 biological units of the same type making them static and are visible until next round."
+        Stats:
+          Range: 10
+        Text: "Allows Dark Archons to cast Maelstrom, targeting 3/2/1 biological units of the same type making them static and visible until next round."
       Mind Control:
         Costs:
           Time: 2
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Dark Archons to cast Mind Control at range 8, gaining full control over one target unit."
+        Stats:
+          Range: 8
+        Text: "Allows Dark Archons to cast Mind Control, gaining full control over one target unit."
       Argus Talisman:
         Costs:
           Time: 3
@@ -1844,7 +1838,9 @@ Races:
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Corsairs to cast Disruption Web at range 9, preventing 3/2/1 units of the same type to attack and being attacked by melee units this turn."
+        Stats:
+          Range: 9
+        Text: "Allows Corsairs to cast Disruption Web, preventing 3/2/1 units of the same type to attack and being attacked by melee units this round."
       Argus Jewel:
         Costs:
           Time: 3
@@ -1857,14 +1853,16 @@ Races:
           Minerals: 3
           Gas: 3
           Energy: 1
-        Text: "Allows Arbiters to cast Stasis Field at range 9, freezing up to 4/3/2 units of the same type until the beginning of the next Micro Phase. Frozen units are static, cannot do anything, and cannot be targeted."
+        Stats:
+          Range: 9
+        Text: "Allows Arbiters to cast Stasis Field, freezing 4/3/2 units of the same type until the post combat step of the first combat in the next Micro Phase or the end of the next Micro Phase. Frozen units are static, cannot do anything, and cannot be targeted."
       Recall:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
           Energy: 1
-        Text: "Allows Arbiters to cast Recall during the Macro Phase or during combat at range 7, teleporting any number of friendly units from one area to the one with the Arbiter."
+        Text: "Allows Arbiters to cast Recall during the Macro Phase or during combat if not Last-in-line, teleporting any number of friendly units from one area to the one with the Arbiter."
       Khaydarin Core:
         Costs:
           Time: 3
@@ -2007,7 +2005,7 @@ Races:
           Time: 1
         Stats:
           Range: 7
-          Ground Damage: 4e
+          Ground Damage: 4
           Size: LARGE
           Health: 8
           Types:
@@ -2269,7 +2267,7 @@ Races:
           Speed: 2
           Health: 2
           Range: 4
-          Ground Damage: 2e
+          Ground Damage: 2
           Air Damage: 0
           Sight: 5
         Produces:
@@ -2441,7 +2439,7 @@ Races:
           Armor: 1
           Sight: 7
           Range: 6
-          Air Damage: 2esa
+          Air Damage: 2sa
         Requires:
           - Greater Spire
         Abilities:
@@ -2505,7 +2503,7 @@ Races:
           Speed: 3
           Health: 1
           Range: 1
-          Ground Damage: 10es!
+          Ground Damage: 10s!
           Sight: 5
     Upgrades:
       Larva:
@@ -2534,6 +2532,8 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
+        Stats:
+          Range: 1
         Text: "Allows Queens in combat to Infest a damaged Terran Command Center with less than 15 HP that will be replaced by an Infested Command Center under your control with the same HP."
       Parasite:
         Costs:
@@ -2541,19 +2541,21 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Queens to cast Parasite at range 12 on a target unit to permanently gain its vision. Can also be used when retreating."
+        Stats:
+          Range: 12
+        Text: "Allows Queens to cast Parasite on a target unit to permanently gain its vision. Can also be used when retreating."
       Burrow:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows medium and small ground units to Burrow at any time before attacking this round, and un-burrow at any time. Burrowed are invisible but cannot attack. Lurkers do not need this upgrade to burrow and can only attack while burrowed."
+        Text: "Allows medium and small ground units to Burrow at any time before attacking this round, and un-burrow at any time. Burrowed units are invisible but cannot attack. Lurkers do not need this upgrade to burrow and can only attack while burrowed."
       Ventral Sacs:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Overlords to load up to 8 ground units that have not attacked this turn, where medium counts as 2 and large as 4. Units can be loaded and unloaded at any time if they have not attacked but whenever units are loaded they spend one movement point"
+        Text: "Allows Overlords to load up to 8 ground units that have not attacked this turn, where medium counts as 2 and large as 4. Units can be loaded and unloaded at any point if they have not attacked while it costs one movement point to be loaded."
       Antennae:
         Costs:
           Time: 2
@@ -2605,61 +2607,55 @@ Races:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
+          Mod: 2
         Text: "+1 Attack to Zerglings, Ultralisks, and Broodlings."
-        Levels: 3
+        Levels: 2
         Requires:
           2:
-            - Lair
-          3:
             - Hive
       Missile Attacks:
         Costs:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
+          Mod: 2
         Text: "+1 Attack to Hydralisks and Lurkers."
-        Levels: 3
+        Levels: 2
         Requires:
           2:
-            - Lair
-          3:
             - Hive
       Carapace:
         Costs:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
+          Mod: 2
         Text: "+1 Armor to all ground units."
-        Levels: 3
+        Levels: 2
         Requires:
           2:
-            - Lair
-          3:
             - Hive
       Flyer Attack:
         Costs:
           Time: 3
           Minerals: 2
           Gas: 2
-          Mod: 1
+          Mod: 2
         Text: "+1 Attack to all Zerg air units."
-        Levels: 3
+        Levels: 2
         Requires:
-          3:
+          2:
             - Hive
       Flyer Carapace:
         Costs:
           Time: 3
           Minerals: 3
           Gas: 3
-          Mod: 1
+          Mod: 2
         Text: "+1 Armor to all Zerg air units."
-        Levels: 3
+        Levels: 2
         Requires:
-          3:
+          2:
             - Hive
       Ensnare:
         Costs:
@@ -2667,14 +2663,18 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Queens to use Ensnare at range 9, targeting 4/3/2 unborrowed units that until next round have their base Attack value reduced to 1 and they become static."
+        Stats:
+          Range: 9
+        Text: "Allows Queens to use Ensnare, targeting 4/3/2 unborrowed units that until next round have their base Attack value reduced to 1 and they become static."
       Spawn Broodling:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Queens to Spawn Broodlings at range 9, destroying any non-robotic ground unit and replaceing it with two Broodlings under control that lives until the end of this round. Archons and Dark Archons cannot be targeted by Spawn Broodlings."
+        Stats:
+          Range: 9
+        Text: "Allows Queens to Spawn Broodlings, destroying any non-robotic ground unit and replacing it with two Broodlings under control that lives until the end of this round. Archons and Dark Archons cannot be targeted by Spawn Broodlings."
       Gamete Meiosis:
         Costs:
           Time: 3
@@ -2693,7 +2693,9 @@ Races:
           Minerals: 4
           Gas: 4
           Energy: 1
-        Text: "Allows Defilers to cast Plague at range 9 on 6/4/2 units or a structure, lasting until the targets replenish. Plagued units are dealt double damage."
+        Stats:
+          Range: 9
+        Text: "Allows Defilers to cast Plague on 6/4/2 units or a structure, lasting until the targets replenish. Plagued units are dealt double damage."
       Metasynaptic Node:
         Costs:
           Time: 3

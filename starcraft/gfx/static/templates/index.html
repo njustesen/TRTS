@@ -2,12 +2,11 @@
     <head>
         <title>{{race}}</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link href="static/css/styles-bw.css" rel="stylesheet">
-        <!--<link href="static/css/Terran.css" rel="stylesheet">-->
+        <link href="static/css/styles.css" rel="stylesheet">
+        <link href="static/css/Terran.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
-    <!--<body style='background-image: url("static/img/{{race}}/background.png")'>-->
-    <body>
+    <body style='background-image: url("static/img/{{race}}/background.png")'>
         <div class="container" style="max-width: 100%; height: 1800px">
             <div class="row">
                 {%for item_type in data['Races'][race]%}
@@ -64,9 +63,6 @@
                                                 {%if 'Static' in item['Abilities']%}
                                                     <i class="bi bi-x-octagon light"></i>
                                                 {%endif%}
-                                                {%if 'Last-in-Line' in item['Abilities']%}
-                                                    <i class="bi bi-plus-circle-fill light"></i>
-                                                {%endif%}
                                             </div>
                                         {%endif%}
                                     </div>
@@ -89,6 +85,9 @@
                                                         <span class="energy">
                                                             <img src="static/img/icons/energy.png">
                                                         </span>
+                                                    {%endif%}
+                                                    {%if item_type == 'Upgrades' and 'Stats' in item and 'Range' in item['Stats'] %}
+                                                        <span class="spell-range">[Range {{ item['Stats']['Range'] }}]</span>
                                                     {%endif%}
                                                     <span class="requirement">
                                                         {%if item_type == 'Upgrades' and item['Requires'] | length > 0%}
@@ -269,7 +268,7 @@
                                                         {%endfor%}
                                                                     {%if 'Text' in item and item_type!='Upgrades'%}
                                                         <div>
-                                                    <span class="text-short middle" style="font-size:{{font(item['Text'])}}px">
+                                                    <span class="text-short middle" style="padding-top: 4px; font-size:{{font(item['Text'])}}px">
                                                         {{item['Text']}}
                                                     </span>
                                                         </div>

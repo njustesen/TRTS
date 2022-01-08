@@ -111,6 +111,10 @@ body {
     font-weight: bold;
 }
 
+.spell-range {
+    font-size: 14px;
+}
+
 .requirement {
     font-size: 12px;
 }
