@@ -73,9 +73,11 @@
                                                     <span class="title">
                                                         {{ name }} {%if 'Levels' in item%}1-{{item['Levels']}}{%endif%}
                                                         {%if item_type == 'Units' and 'Size' in item['Stats']%}
+                                                            <!--
                                                             <span class="size">
                                                                 {{item['Stats']['Size']}}
                                                             </span>
+                                                            -->
                                                         {%endif%}
                                                         {%if 'Stats' in item and 'Amount' in item['Stats']%}
                                                             <span class="amount">({{ item['Stats']['Amount'] }}x)</span>
