@@ -168,7 +168,7 @@ Races:
           Width: 2
           Height: 2
         Costs:
-          Minerals: 1
+          Minerals: 2
           Gas: 0
           Supply: 0
           Time: 1
@@ -424,7 +424,7 @@ Races:
             - Bio
           Speed: 2
           Health: 1
-          Sight: 9
+          Range: 9
         Produces:
           - Heal
           - Restoration
@@ -1596,7 +1596,7 @@ Races:
           Speed: 2
           Health: 5
           Shield: 3
-          Range: 5
+          Range: 6
           Ground Damage: 1
           Air Damage: 1
           Sight: 9
@@ -1711,14 +1711,14 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "+2 Dragoon Range"
+        Text: "+2 Dragoon Range."
       Air Weapons:
         Costs:
           Time: 3
           Minerals: 2
           Gas: 2
           Mod: 2
-        Text: "+1 Attack to flying units"
+        Text: "+1 Attack to flying units."
         Levels: 2
         Requires:
           2:
@@ -1729,7 +1729,7 @@ Races:
           Minerals: 3
           Gas: 3
           Mod: 2
-        Text: "+1 Armor to flying units"
+        Text: "+1 Armor to flying units."
         Levels: 2
         Requires:
           2:
@@ -1739,7 +1739,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "+1 Zealot Speed"
+        Text: "+1 Zealot Speed."
       Psionic Storm:
         Costs:
           Time: 2
@@ -2715,4 +2715,4 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "+2 Armor to Ultralisks."
+        Text: "+1 Armor to Ultralisks."
