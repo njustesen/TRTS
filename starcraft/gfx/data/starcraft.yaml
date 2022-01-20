@@ -30,7 +30,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 15
+          Health: 10
           Types:
             - Add-On
         Produces:
@@ -214,7 +214,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 15
+          Health: 10
           Types:
             - Add-On
         Produces:
@@ -254,7 +254,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 15
+          Health: 10
           Types:
             - Add-On
         Produces:
@@ -312,7 +312,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 15
+          Health: 10
           Types:
             - Add-On
         Produces:
@@ -332,7 +332,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 15
+          Health: 10
           Types:
             - Add-On
         Produces:
@@ -402,7 +402,7 @@ Races:
           Speed: 2
           Health: 2
           Range: 2
-          Ground Damage: 1s
+          Ground Damage: 2
           Air Damage: 0
           Sight: 7
         Produces:
@@ -493,12 +493,12 @@ Races:
           Health: 1
           Sight: 3
           Range: 4
-          Ground Damage: 1s!
+          Ground Damage: 3!
         Abilities:
           - Cloaked
         Text:
           - Can see and attack cloaked units but do not reveal them to other units.
-        Text: "Static if visible"
+        Text: "Cannot attack workers, Vultures, and (Dark) Archons."
       Siege Tank:
         Size:
           Width: 3
@@ -580,7 +580,7 @@ Races:
             - Mech
           Speed: 2
           Health: 4
-          Sight: 11
+          Range: 5
         Requires:
           - Starport + Add-On
         Produces:
@@ -603,7 +603,7 @@ Races:
             - Mech
           Speed: 2
           Health: 5
-          Sight: 10
+          Range: 9
         Requires:
           - Starport + Add-On
           - Science Facility
@@ -630,7 +630,7 @@ Races:
           Speed: 3
           Health: 5
           Range: 6
-          Air Damage: 3s
+          Air Damage: 4
           Sight: 8
           Armor: 1
         Requires:
@@ -708,7 +708,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 0
-        Text: "Allows Medics to instantly heal or deny a lost health point on a biological unit one time per round."
+        Text: "Allows Medics to instantly heal or deny 1 lost Health point on a biological unit, one time per round, and only if the Medic has Energy."
       Nuke:
         Costs:
           Time: 0
@@ -727,7 +727,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Science Vessels to cast Defensive Matrix to deny up to five damage."
+        Text: "Allows Science Vessels to cast Defensive Matrix to deny up to 5 damage."
       Infantry Weapons:
         Costs:
           Time: 3
@@ -777,14 +777,14 @@ Races:
           Energy: 1
         Stats:
           Range: 9
-        Text: "Allows Medics to cast Optical Flare, causing one unit to lose Detection and Scouting, and they can from now on not be activated before the melee combat step unless they have a unit with Scouting in the same area."
+        Text: "Allows Medics to cast Optical Flare, causing one unit to lose Detection and can from now on only attack and cast spells at Range 1."
       Caduceus Reactor:
         Costs:
           Time: 3
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Medics to replenish energy in contested areas."
+        Text: "Allows Medics to regenerate Energy in contested areas."
       Spider Mines:
         Costs:
           Time: 2
@@ -796,7 +796,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Siege Tanks to go into Siege Mode before any combat by using 1 movement point to gain Range 12, +1 Attack, splash damage, and they become immobile and static. Unsieging costs 1 movement point."
+        Text: "Allows Siege Tanks to go into Siege Mode before any combat by using 1 movement point to gain Range 12 and double attack and they become static. Unsieging costs 1 movement point."
       Ion Thrusters:
         Costs:
           Time: 2
@@ -821,7 +821,7 @@ Races:
           Time: 3
           Minerals: 3
           Gas: 3
-        Text: "Allows Wraiths to replenish energy in contested areas."
+        Text: "Allows Wraiths to regenerate energy in contested areas."
       Vehicle Weapons:
         Costs:
           Time: 3
@@ -874,7 +874,7 @@ Races:
           Energy: 1
         Stats:
           Range: X/8
-        Text: "Allows Science Vessels to use EMP Shockwave to either a) deny a spell cast in this combat round and remove all Shield on the spellcaster, or b) at range 8, target 4 units that lose Energy and Shield. Wraiths and Ghosts hit by EMP Shockwave become visible."
+        Text: "Allows Science Vessels to use EMP Shockwave to either a) deny a spell cast, or b) reduce 4 units' health to half (rounded up). Wraiths and Ghosts hit by EMP Shockwave become visible."
       Irradiate:
         Costs:
           Time: 2
@@ -883,13 +883,13 @@ Races:
           Energy: 1
         Stats:
           Range: 9
-        Text: "Allows Science Vessels to cast Irradiate on a biological unit that are not in Stasis, dealing 1 damage to the target and 1s damage to the rest of the units of that type in the same area, now, and at the end of every round until the target replenishes, where after the target is no longer Irradiated."
+        Text: "Allows Science Vessels to cast Irradiate on a biological unit, dealing 1 damage to the target and two other units of that type in the same area, now, and at the end of every round until the target regenerates in an area under control."
       Titan Reactor:
         Costs:
           Time: 3
           Minerals: 3
           Gas: 3
-        Text: "Allows Science Vessels to replenish energy in contested areas."
+        Text: "Allows Science Vessels to regenerate Energy in contested areas."
       Yamato Gun:
         Costs:
           Time: 2
@@ -904,7 +904,7 @@ Races:
           Time: 3
           Minerals: 3
           Gas: 3
-        Text: "Allows Battlecruisers to replenish energy in contested areas."
+        Text: "Allows Battlecruisers to regenerate Energy in contested areas."
       Personnel Cloaking:
         Costs:
           Time: 2
@@ -920,19 +920,19 @@ Races:
           Energy: 1
         Stats:
           Range: 8
-        Text: "Allows Ghosts to cast Lockdown on a mechanical unit, making it static and unable to do anything this round."
+        Text: "Allows Ghosts to cast Lockdown on a mech unit, making it static and unable to do anything this round."
       Ocular Implants:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Ghosts gain Scouting and Call Down nukes in adjacent ground areas."
+        Text: "Ghosts get +2 range and can Call Down nukes in adjacent ground areas."
       Moebius Reactor:
         Costs:
           Time: 3
           Minerals: 3
           Gas: 3
-        Text: "Allows Ghosts to replenish energy in contested areas."
+        Text: "Allows Ghosts to regenerate Energy in contested areas."
   Protoss:
     Buildings:
       Nexus:
@@ -946,8 +946,7 @@ Races:
           Time: 2
         Stats:
           Size: LARGE
-          Health: 15
-          Shield: 15
+          Health: 30
         Produces:
           - Probe
         Text: +2 Supply
@@ -963,8 +962,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 7
-          Shield: 7
+          Health: 15
         Requires:
           - Nexus
         Text: +2 Supply
@@ -979,8 +977,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 10
-          Shield: 10
+          Health: 20
         Requires:
           - Nexus
         Text: Gas Extractor
@@ -996,8 +993,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 10
-          Shield: 10
+          Health: 20
         Requires:
           - Nexus
         Produces:
@@ -1017,8 +1013,7 @@ Races:
           - Detector
         Stats:
           Size: LARGE
-          Health: 2
-          Shield: 2
+          Health: 4
           Range: 7
           Ground Damage: 3
           Air Damage: 3
@@ -1036,8 +1031,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 10
-          Shield: 10
+          Health: 20
         Requires:
           - Nexus
         Produces:
@@ -1056,8 +1050,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 5
-          Shield: 5
+          Health: 10
         Requires:
           - Gateway
         Produces:
@@ -1074,8 +1067,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 10
-          Shield: 10
+          Health: 20
         Requires:
           - Gateway
         Produces:
@@ -1094,8 +1086,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 10
-          Shield: 10
+          Health: 20
         Requires:
           - Cybernetics Core
         Produces:
@@ -1112,8 +1103,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 10
-          Shield: 10
+          Health: 20
         Requires:
           - Citadel of Adun
         Produces:
@@ -1135,8 +1125,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 10
-          Shield: 10
+          Health: 20
         Requires:
           - Cybernetics Core
         Produces:
@@ -1155,8 +1144,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 10
-          Shield: 10
+          Health: 20
         Requires:
           - Robotics Facility
         Produces:
@@ -1175,8 +1163,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 5
-          Shield: 5
+          Health: 10
         Requires:
           - Robotics Facility
         Produces:
@@ -1193,8 +1180,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 10
-          Shield: 10
+          Health: 20
         Requires:
           - Cybernetics Core
         Produces:
@@ -1214,8 +1200,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 5
-          Shield: 5
+          Health: 10
         Requires:
           - Stargate
         Produces:
@@ -1236,8 +1221,7 @@ Races:
           Time: 1
         Stats:
           Size: LARGE
-          Health: 5
-          Shield: 5
+          Health: 10
         Requires:
           - Stargate
           - Templar Archives
@@ -1262,7 +1246,6 @@ Races:
            - Robo
           Speed: 2
           Health: 1
-          Shield: 0
           Range: 1
           Ground Damage: ½
           Air Damage: 0
@@ -1286,8 +1269,7 @@ Races:
           Types:
             - Bio
           Speed: 2
-          Health: 3
-          Shield: 1
+          Health: 4
           Range: 1
           Ground Damage: 2
           Air Damage: 0
@@ -1306,8 +1288,7 @@ Races:
           Types:
             - Mech
           Speed: 2
-          Health: 3
-          Shield: 1
+          Health: 4
           Range: 4
           Ground Damage: 2
           Air Damage: 2
@@ -1328,9 +1309,8 @@ Races:
           Types:
             - Bio
           Speed: 1
-          Health: 1
-          Shield: 1
-          Sight: 7
+          Health: 2
+          Range: 7
         Requires:
           - Templar Archives
         Produces:
@@ -1353,8 +1333,7 @@ Races:
           Types:
             - Bio
           Speed: 2
-          Health: 3
-          Shield: 1
+          Health: 4
           Ground Damage: 4
           Sight: 8
           Range: 1
@@ -1376,8 +1355,7 @@ Races:
         Stats:
           Size: LARGE
           Speed: 2
-          Health: 1
-          Shield: 7
+          Health: 8
           Range: 2
           Ground Damage: 3
           Air Damage: 3
@@ -1398,9 +1376,8 @@ Races:
         Stats:
           Size: LARGE
           Speed: 2
-          Health: 2
-          Shield: 4
-          Sight: 10
+          Health: 6
+          Range: 10
         Produces:
           - Feedback
           - Maelstrom
@@ -1423,9 +1400,8 @@ Races:
           Types:
             - Mech
           Speed: 2
-          Health: 3
-          Shield: 1
-          Sight: 8
+          Health: 4
+          Range: 6
         Produces:
           - Load
         Abilities:
@@ -1445,9 +1421,8 @@ Races:
             - Mech
             - Robo
           Speed: 1
-          Health: 2
-          Shield: 2
-          Sight: 10
+          Health: 4
+          Range: 8
         Produces:
           - Scarab
         Requires:
@@ -1465,7 +1440,7 @@ Races:
           Amount: ''
           Size: ""
           Range: 8
-          Ground Damage: 4s!
+          Ground Damage: 5!
       Observer:
         Size:
           Width: 2
@@ -1481,9 +1456,8 @@ Races:
             - Mech
             - Robo
           Speed: 1
-          Health: 1
-          Shield: 1
-          Sight: 9
+          Health: 2
+          Range: 5
         Abilities:
           - Detector
           - Air
@@ -1503,8 +1477,7 @@ Races:
           Types:
             - Mech
           Speed: 2
-          Health: 3
-          Shield: 2
+          Health: 5
           Range: 4
           Ground Damage: 1
           Air Damage: 4
@@ -1525,10 +1498,9 @@ Races:
           Types:
             - Mech
           Speed: 3
-          Health: 3
-          Shield: 1
+          Health: 4
           Range: 5
-          Air Damage: 2s
+          Air Damage: 3
           Sight: 8
         Abilities:
           - Air
@@ -1547,9 +1519,8 @@ Races:
           Types:
             - Mech
           Speed: 1
-          Health: 7
-          Shield: 3
-          Sight: 11
+          Health: 10
+          Range: 9
           Armor: 1
         Produces:
           - Interceptor
@@ -1557,7 +1528,6 @@ Races:
           - Fleet Beacon
         Abilities:
           - Air
-          - Last-in-Line
       Interceptor:
         Size:
           Width: 1.67
@@ -1594,8 +1564,7 @@ Races:
           Types:
             - Mech
           Speed: 2
-          Health: 5
-          Shield: 3
+          Health: 8
           Range: 6
           Ground Damage: 1
           Air Damage: 1
@@ -1627,7 +1596,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Shield Batteries to instantly replenish 4 lost Shield points distributed among any number of units."
+        Text: "Allows Shield Batteries to instantly deny or heal 4 lost Health points distributed among any number of units."
       Summon Archon:
         Costs:
           Time: 0
@@ -1701,7 +1670,7 @@ Races:
           Minerals: 3
           Gas: 3
           Mod: 3
-        Text: "+1 Shields to units and buildings that start with Shields."
+        Text: "+1 Health to Photon Cannons and all Protoss units, except Probes and Interceptors."
         Levels: 2
         Requires:
           2:
@@ -1761,7 +1730,7 @@ Races:
           Time: 3
           Minerals: 3
           Gas: 3
-        Text: "Allows High Templars to replenish energy in contested areas."
+        Text: "Allows High Templars to regenerate energy in contested areas."
       Maelstrom:
         Costs:
           Time: 2
@@ -1785,7 +1754,7 @@ Races:
           Time: 3
           Minerals: 3
           Gas: 3
-        Text: "Allows Dark Archons to replenish energy in contested areas."
+        Text: "Allows Dark Archons to regenerate energy in contested areas."
       Scarab Damage:
         Costs:
           Time: 3
@@ -1803,13 +1772,13 @@ Races:
           Time: 2
           Minerals: 4
           Gas: 4
-        Text: "+1 Shuttle Speed."
+        Text: "+1 Shuttle Speed and Range."
       Sensor Array:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Observers gain Scouting."
+        Text: "+4 Observer Range."
       Gravitic Booster:
         Costs:
           Time: 2
@@ -1848,7 +1817,7 @@ Races:
           Time: 3
           Minerals: 2
           Gas: 2
-        Text: "Allows Corsairs to replenish energy in contested areas."
+        Text: "Allows Corsairs to regenerate energy in contested areas."
       Stasis Field:
         Costs:
           Time: 2
@@ -1857,7 +1826,7 @@ Races:
           Energy: 1
         Stats:
           Range: 9
-        Text: "Allows Arbiters to cast Stasis Field, freezing 3 units of the same type until the post combat step of the first combat in the next round or until the end of the next round. Frozen units are static, cannot do anything, and cannot be targeted."
+        Text: "Allows Arbiters to cast Stasis Field, freezing 3 units of the same type until the end of next round. Frozen units are static, cannot do anything, and cannot be targeted."
       Recall:
         Costs:
           Time: 2
@@ -1870,7 +1839,7 @@ Races:
           Time: 3
           Minerals: 3
           Gas: 3
-        Text: "Allows Arbiters to replenish energy in contested areas."
+        Text: "Allows Arbiters to regenerate energy in contested areas."
   Zerg:
     Buildings:
       Hatchery:
@@ -2528,7 +2497,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Defilers to cast a Dark Swarm, denying all ranged ground damage besides splash in this area for the remainder of this round."
+        Text: "Allows Defilers to cast a Dark Swarm, reducing all ranged ground damage in this area to half (rounded down) for the remainder of this round."
       Infest Command Center:
         Costs:
           Time: 0
@@ -2682,13 +2651,13 @@ Races:
           Time: 3
           Minerals: 3
           Gas: 3
-        Text: "Allows Queens to replenish Energy in contested areas."
+        Text: "Allows Queens to regenerate Energy in contested areas."
       Consume:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows Defilers to Consume two friendly Zerg units by using 1 Movement Point to replenish Energy."
+        Text: "Allows Defilers to Consume two friendly Zerg units by using 1 Movement Point to regenerate Energy."
       Plague:
         Costs:
           Time: 2
@@ -2697,13 +2666,13 @@ Races:
           Energy: 1
         Stats:
           Range: 9
-        Text: "Allows Defilers to cast Plague on 3 units or one structure, lasting until the targets replenish. Plagued units are dealt double damage."
+        Text: "Allows Defilers to cast Plague on 3 units or one structure, lasting until the targets regenerate in an area under control. Plagued units are dealt double damage."
       Metasynaptic Node:
         Costs:
           Time: 3
           Minerals: 3
           Gas: 3
-        Text: "Allows Defilers to replenish Energy in contested areas."
+        Text: "Allows Defilers to regenerate Energy in contested areas."
       Anabolic Synthesis:
         Costs:
           Time: 2
