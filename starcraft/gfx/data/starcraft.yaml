@@ -498,7 +498,6 @@ Races:
           - Cloaked
         Text:
           - Can see and attack cloaked units but do not reveal them to other units.
-        Text: "Cannot attack workers, Vultures, and (Dark) Archons."
       Siege Tank:
         Size:
           Width: 3
@@ -580,7 +579,7 @@ Races:
             - Mech
           Speed: 2
           Health: 4
-          Range: 5
+          Range: 6
         Requires:
           - Starport + Add-On
         Produces:
@@ -688,7 +687,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Bunkers to load 4 Barracks units and Dropships to load 8 ground units where Vultures and Goliaths counts as 2 and Tanks as 4. Units that have not attacked can be loaded using 1 movement point. Drobships can unload for free at any time, while Bunkers cannot unload in combat after the pre-combat step."
+        Text: "Allows 4 Barracks units that have not attacked to spend a movement point to be loaded into a Bunker and similarly 8 ground units into a Dropship where Vultures and Goliaths counts as 2 and Tanks as 4. Drobships can unload for free at any time, while Bunkers cannot unload during combat but can when revealing units."
       Lift Off:
         Costs:
           Time: 0
@@ -802,7 +801,7 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "+1 Vulture Speed."
+        Text: "+1 Vulture Speed and +1 Vulture Attack against units with Range 1."
       Charon Boosters:
         Costs:
           Time: 2
@@ -1457,7 +1456,7 @@ Races:
             - Robo
           Speed: 1
           Health: 2
-          Range: 5
+          Range: 6
         Abilities:
           - Detector
           - Air
@@ -1565,7 +1564,7 @@ Races:
             - Mech
           Speed: 2
           Health: 8
-          Range: 6
+          Range: 7
           Ground Damage: 1
           Air Damage: 1
           Sight: 9
@@ -1583,7 +1582,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Probes that have not attacked this round to collect minerals or gas at the cost of one movement point. The resource will be extracted in the next Income Phase."
+        Text: "Allows Probes that have not attacked to collect minerals or gas at the cost of one movement point. The resource will be extracted in the next Income Phase."
       Warp:
         Costs:
           Time: 0
@@ -1623,7 +1622,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Shuttles to load and transport up to 8 ground units where Zealots and Templar counts as 2 and Dragoons, Reaver, and Archons counts as 4. Units can be loaded and unloaded at any point if they have not attacked (note, Reavers don't attack) while it costs one movement point to be loaded."
+        Text: "Allows Shuttles to load up to 8 ground units that have not attacked where Zealots and Templar counts as 2 and Dragoons, Reaver, and Archons counts as 4. Units can be loaded and unloaded at any point if they have not attacked (note, Reavers don't attack)."
       Scarab:
         Costs:
           Time: 0
@@ -1708,7 +1707,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "+1 Zealot Speed."
+        Text: "+1 Zealot Speed and +1 Zealot Attack against static units and buildings."
       Psionic Storm:
         Costs:
           Time: 2
@@ -1778,7 +1777,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "+4 Observer Range."
+        Text: "+3 Observer Range."
       Gravitic Booster:
         Costs:
           Time: 2
@@ -1796,7 +1795,7 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Scouts gain Scouting."
+        Text: "+3 Scout Range."
       Gravitic Thrusters:
         Costs:
           Time: 2
@@ -2193,6 +2192,7 @@ Races:
             - Bio
           Speed: 1
           Health: 4
+          Range: 6
         Abilities:
           - Detector
           - Air
@@ -2312,7 +2312,7 @@ Races:
           Speed: 3
           Health: 4
           Range: 6
-          Ground Damage: 3s
+          Ground Damage: 4
           Sight: 8
         Produces:
           - Burrow!
@@ -2356,7 +2356,7 @@ Races:
             - Bio
           Speed: 2
           Health: 3
-          Sight: 10
+          Range: 9
         Produces:
           - Dark Swarm
           - Consume
@@ -2380,7 +2380,7 @@ Races:
             - Bio
           Speed: 2
           Health: 3
-          Sight: 10
+          Range: 9
         Produces:
           - Infest Command Center
           - Parasite
@@ -2410,7 +2410,7 @@ Races:
           Armor: 1
           Sight: 7
           Range: 6
-          Air Damage: 2sa
+          Air Damage: 3a
         Requires:
           - Greater Spire
         Abilities:
@@ -2474,7 +2474,7 @@ Races:
           Speed: 3
           Health: 1
           Range: 1
-          Ground Damage: 10s!
+          Ground Damage: 10
           Sight: 5
     Upgrades:
       Larva:
@@ -2484,7 +2484,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Drones that have not attacked this round to collect minerals or gas at the cost of one movement point. The resource will be extracted in the next Income Phase."
+        Text: "Allows Drones that have not attacked to collect minerals or gas at the cost of one movement point. The resource will be extracted in the next Income Phase."
       Morph:
         Costs:
           Time: 0
@@ -2526,19 +2526,19 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Overlords to load up to 8 ground units that have not attacked this round, where Hydralisks and Defilers counts as 2 and Lurkers and Ultralisks as 4. Units can be loaded and unloaded at any point if they have not attacked while it costs one movement point to be loaded."
+        Text: "Allows Overlords to load up to 8 ground units that have not attacked, where Hydralisks and Defilers counts as 2 and Lurkers and Ultralisks as 4. Units can be loaded and unloaded at any point if they have not attacked while it costs one movement point to be loaded."
       Antennae:
         Costs:
           Time: 2
-          Minerals: 3
-          Gas: 3
-        Text: "Overlords gain Scouting."
+          Minerals: 2
+          Gas: 2
+        Text: "+3 Overlord Range."
       Pneumatized Carapace:
         Costs:
           Time: 2
-          Minerals: 3
-          Gas: 3
-        Text: "+1 Overlord speed."
+          Minerals: 2
+          Gas: 2
+        Text: "+1 Overlord Speed."
       Metabolic Boost:
         Costs:
           Time: 2

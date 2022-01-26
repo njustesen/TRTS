@@ -89,7 +89,7 @@
                                                         </span>
                                                     {%endif%}
                                                     {%if item_type == 'Upgrades' and 'Stats' in item and 'Range' in item['Stats'] %}
-                                                        <span class="spell-range">[Range {{ item['Stats']['Range'] }}]</span>
+                                                        <!--<span class="spell-range">[Range {{ item['Stats']['Range'] }}]</span>-->
                                                     {%endif%}
                                                     <span class="requirement">
                                                         {%if item_type == 'Upgrades' and item['Requires'] | length > 0%}
