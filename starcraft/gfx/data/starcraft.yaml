@@ -384,6 +384,7 @@ Races:
           Ground Damage: 1
           Air Damage: 1
           Sight: 7
+          Amount: 2
         Produces:
           - Stim Pack
       Firebat:
@@ -405,6 +406,7 @@ Races:
           Ground Damage: 2
           Air Damage: 0
           Sight: 7
+          Amount: 2
         Produces:
           - Stim Pack
         Requires:
@@ -425,6 +427,7 @@ Races:
           Speed: 2
           Health: 1
           Range: 9
+          Amount: 2
         Produces:
           - Heal
           - Restoration
@@ -496,8 +499,7 @@ Races:
           Ground Damage: 3!
         Abilities:
           - Cloaked
-        Text:
-          - Can see and attack cloaked units but do not reveal them to other units.
+        Text: Can see and attack cloaked units but do not reveal them to other units.
       Siege Tank:
         Size:
           Width: 3
@@ -681,7 +683,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows SCVs in combat that have not attacked to repair or deny 2 lost HP of a building or mechanical unit (except SCVs)."
+        Text: "Allows SCVs that have not attacked to repair a building or mechanical unit one time per round to have it regain four lost HP. Repair can also be used at the beginning of a combat to a target that can deny four damage this combat."
       Load:
         Costs:
           Time: 0
@@ -707,7 +709,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 0
-        Text: "Allows Medics to instantly heal or deny 1 lost Health point on a biological unit, one time per round, and only if the Medic has Energy."
+        Text: "Allows Medics with Energy to heal two biological unit that regain one lost HP or can deny one HP this combat."
       Nuke:
         Costs:
           Time: 0
@@ -726,7 +728,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Science Vessels to cast Defensive Matrix to deny up to 5 damage."
+        Text: "Allows Science Vessels to cast Defensive Matrix on a unit to deny five damage this combat."
       Infantry Weapons:
         Costs:
           Time: 3
@@ -767,7 +769,7 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Medics to cast Restoration, removing or denying any harmful spell effects on a unit besides Stasis Field."
+        Text: "Allows Medics to cast Restoration, remove any harmful spell effects on a unit besides Stasis Field."
       Optical Flare:
         Costs:
           Time: 2
@@ -873,7 +875,7 @@ Races:
           Energy: 1
         Stats:
           Range: X/8
-        Text: "Allows Science Vessels to use EMP Shockwave to either a) deny a spell cast, or b) reduce 4 units' health to half (rounded up). Wraiths and Ghosts hit by EMP Shockwave become visible."
+        Text: "Allows Science Vessels to use EMP Shockwave to reduce 3 units' health to half (rounded up) and exhaust the energy on one of them. The unit that lose energy will have any spells cast in this combat step denied and will become visible if it is a cloaked Wraiths or Ghosts."
       Irradiate:
         Costs:
           Time: 2
@@ -1050,6 +1052,7 @@ Races:
         Stats:
           Size: LARGE
           Health: 10
+          Range: 10
         Requires:
           - Gateway
         Produces:
@@ -1432,11 +1435,11 @@ Races:
           Height: 2
         Costs:
           Time: 1
-          Minerals: 1
+          Minerals: ½
           Gas: 0
           Supply: 0
         Stats:
-          Amount: ''
+          Amount: 'x'
           Size: ""
           Range: 8
           Ground Damage: 5!
@@ -1533,12 +1536,12 @@ Races:
           Height: 1.67
         Costs:
           Time: 1
-          Minerals: 1
+          Minerals: ½
           Gas: 0
           Supply: 0
         Stats:
           Size: SMALL
-          Amount: 2
+          Amount: 4
           Types:
             - Mech
           Speed: 4
@@ -1595,7 +1598,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Shield Batteries to instantly deny or heal 4 lost Health points distributed among any number of units."
+        Text: "Allows Shield Batteries to heal two units that regain two lost HP or can deny two damage this combat."
       Summon Archon:
         Costs:
           Time: 0
@@ -2209,7 +2212,7 @@ Races:
           Time: 1
         Stats:
           Size: SMALL
-          Amount: 2
+          Amount: 2x
           Types:
             - Bio
           Speed: 3
