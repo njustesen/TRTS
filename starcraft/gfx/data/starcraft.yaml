@@ -2538,7 +2538,6 @@ Races:
           Time: 4
           Minerals: 4
           Gas: 4
-          Mod: 4
         Text: "+1 Armor to all ground units."
       Flyer Attack:
         Costs:
