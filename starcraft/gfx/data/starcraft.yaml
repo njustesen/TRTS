@@ -425,7 +425,7 @@ Races:
           Types:
             - Bio
           Speed: 2
-          Health: 1
+          Health: 2
           Range: 9
           Amount: 2
         Produces:
@@ -689,7 +689,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows 4 Barracks units that have not attacked to spend a movement point to be loaded into a Bunker and similarly 8 ground units into a Dropship where Vultures and Goliaths counts as 2 and Tanks as 4. Drobships can unload for free at any time, while Bunkers cannot unload during combat but can when revealing units."
+        Text: "Allows 4 Barracks units that have not attacked to spend a movement point to be loaded into a Bunker and similarly 8 ground units into a Dropship where Vultures and Goliaths counts as 2 and Tanks as 4. Bunkers cannot unload during combat."
       Lift Off:
         Costs:
           Time: 0
@@ -702,7 +702,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows ComSat Stations at any point to scan one area, revealing all enemy cloaked units and two un-revealed structures (if any) of the other player's choice. When used during combat, cloaked enemy units are revealed for the rest of this combat."
+        Text: "Allows ComSat Stations to scan one area instead of doing a push or when you reveal your attackers or defenders. A scan reveals all enemy cloaked units and two un-revealed structures (if any) of the other player's choice. When used during the Reveal Attacker/Defender step, enemies remain revealed for the rest of the combat."
       Heal:
         Costs:
           Time: 0
@@ -731,26 +731,16 @@ Races:
         Text: "Allows Science Vessels to cast Defensive Matrix on a unit to deny five damage this combat."
       Infantry Weapons:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Attack to Barracks units."
-        Levels: 2
-        Requires:
-          2:
-            - Science Facility
       Infantry Armor:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Armor to Barracks units."
-        Levels: 2
-        Requires:
-          2:
-            - Science Facility
       Stim Pack:
         Costs:
           Time: 2
@@ -803,7 +793,7 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "+1 Vulture Speed and +1 Vulture Attack against units with Range 1."
+        Text: "+1 Vulture Speed and Vultures gain Frenzy against units with lower Range."
       Charon Boosters:
         Costs:
           Time: 2
@@ -825,47 +815,27 @@ Races:
         Text: "Allows Wraiths to regenerate energy in contested areas."
       Vehicle Weapons:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
-        Levels: 2
-        Requires:
-          2:
-            - Science Facility
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 attack to Factory units."
       Vehicle Plating:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
-        Levels: 2
-        Requires:
-          2:
-            - Science Facility
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Armor to Factory units."
       Ship Weapons:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
-        Levels: 2
-        Requires:
-          2:
-            - Science Facility
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Attack to Starport units."
       Ship Plating:
         Costs:
-          Time: 3
-          Minerals: 3
-          Gas: 3
-          Mod: 2
-        Levels: 2
-        Requires:
-          2:
-            - Science Facility
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Armor to Starport units."
       EMP Shockwave:
         Costs:
@@ -1403,7 +1373,7 @@ Races:
             - Mech
           Speed: 2
           Health: 4
-          Range: 6
+          Range: 5
         Produces:
           - Load
         Abilities:
@@ -1604,13 +1574,13 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows two High Templars to merge into one Archon using 1 movement point each. The Archon cannot be used this round."
+        Text: "Allows two High Templars to merge into one Archon using one movement point each. The Archon cannot be used this round."
       Summon Dark Archon:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows two Dark Templars to merge into a Dark Archon using 1 movement point each. The Dark Archon cannot be used this round."
+        Text: "Allows two Dark Templars to merge into a Dark Archon using one movement point each. The Dark Archon cannot be used this round."
       Feedback:
         Costs:
           Time: 0
@@ -1625,7 +1595,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Shuttles to load up to 8 ground units that have not attacked where Zealots and Templar counts as 2 and Dragoons, Reaver, and Archons counts as 4. Units can be loaded and unloaded at any point if they have not attacked (note, Reavers don't attack)."
+        Text: "Allows Shuttles to load up to 8 ground units that have not attacked where Zealots and Templar counts as 2 and Dragoons, Reaver, and Archons counts as 4."
       Scarab:
         Costs:
           Time: 0
@@ -1646,37 +1616,22 @@ Races:
         Text: "All friendly units (except Arbiters) in the area of the Arbiter are cloaked."
       Ground Weapons:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Attack to Gateway units."
-        Levels: 2
-        Requires:
-          2:
-            - Templar Archives
       Ground Armor:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Armor to ground army units."
-        Levels: 2
-        Requires:
-          2:
-            - Templar Archives
       Plasma Shields:
         Costs:
-          Time: 3
-          Minerals: 3
-          Gas: 3
-          Mod: 3
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Health to Photon Cannons and all Protoss units, except Probes and Interceptors."
-        Levels: 2
-        Requires:
-          2:
-            - Cybernetics Core
       Singularity Charge:
         Costs:
           Time: 2
@@ -1685,32 +1640,22 @@ Races:
         Text: "+2 Dragoon Range."
       Air Weapons:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Attack to flying units."
-        Levels: 2
-        Requires:
-          2:
-            - Fleet Beacon
       Air Armor:
         Costs:
-          Time: 3
-          Minerals: 3
-          Gas: 3
-          Mod: 2
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Armor to flying units."
-        Levels: 2
-        Requires:
-          2:
-            - Fleet Beacon
       Leg Enhancements:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "+1 Zealot Speed and +1 Zealot Attack against static units and buildings."
+        Text: "+1 Zealot Speed and Zealot gain Frenzy against units with lower Speed."
       Psionic Storm:
         Costs:
           Time: 2
@@ -1768,13 +1713,13 @@ Races:
           Time: 2
           Minerals: 4
           Gas: 4
-        Text: "Reavers can house 2 Scarabs instead of 1."
+        Text: "Reavers can house two Scarabs instead of one."
       Gravitic Drive:
         Costs:
           Time: 2
           Minerals: 4
           Gas: 4
-        Text: "+1 Shuttle Speed and Range."
+        Text: "+1 Shuttle Speed and +2 Range."
       Sensor Array:
         Costs:
           Time: 2
@@ -1835,7 +1780,7 @@ Races:
           Minerals: 3
           Gas: 3
           Energy: 1
-        Text: "Allows Arbiters to cast Recall to teleport up to 10 friendly units from one area to the one where the Arbiter is."
+        Text: "Allows Arbiters to cast Recall to teleport up to ten friendly units from one area to the one where the Arbiter is."
       Khaydarin Core:
         Costs:
           Time: 3
@@ -2529,7 +2474,7 @@ Races:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Overlords to load up to 8 ground units that have not attacked, where Hydralisks and Defilers counts as 2 and Lurkers and Ultralisks as 4. Units can be loaded and unloaded at any point if they have not attacked while it costs one movement point to be loaded."
+        Text: "Allows Overlords to load up to 8 ground units where Hydralisks and Defilers counts as 2 and Lurkers and Ultralisks as 4."
       Antennae:
         Costs:
           Time: 2
@@ -2578,59 +2523,35 @@ Races:
           - Lair
       Melee Attacks:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Attack to Zerglings, Ultralisks, and Broodlings."
-        Levels: 2
-        Requires:
-          2:
-            - Hive
       Missile Attacks:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Attack to Hydralisks and Lurkers."
-        Levels: 2
-        Requires:
-          2:
-            - Hive
       Carapace:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
+          Time: 4
+          Minerals: 4
+          Gas: 4
+          Mod: 4
         Text: "+1 Armor to all ground units."
-        Levels: 2
-        Requires:
-          2:
-            - Hive
       Flyer Attack:
         Costs:
-          Time: 3
-          Minerals: 2
-          Gas: 2
-          Mod: 2
-        Text: "+1 Attack to all Zerg air units."
-        Levels: 2
-        Requires:
-          2:
-            - Hive
+          Time: 4
+          Minerals: 4
+          Gas: 4
+        Text: "+1 Attack to all air units."
       Flyer Carapace:
         Costs:
-          Time: 3
-          Minerals: 3
-          Gas: 3
-          Mod: 2
+          Time: 4
+          Minerals: 4
+          Gas: 4
         Text: "+1 Armor to all Zerg air units."
-        Levels: 2
-        Requires:
-          2:
-            - Hive
       Ensnare:
         Costs:
           Time: 2
