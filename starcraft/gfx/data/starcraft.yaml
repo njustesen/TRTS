@@ -580,7 +580,7 @@ Races:
           Types:
             - Mech
           Speed: 2
-          Health: 4
+          Health: 5
           Range: 6
         Requires:
           - Starport + Add-On
@@ -709,7 +709,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 0
-        Text: "Allows Medics with Energy to heal two biological unit that regain one lost HP or can deny one HP this combat."
+        Text: "Allows Medics with Energy to heal two biological unit that can either regain or deny a lost HP."
       Nuke:
         Costs:
           Time: 0
@@ -818,7 +818,7 @@ Races:
           Time: 4
           Minerals: 4
           Gas: 4
-        Text: "+1 attack to Factory units."
+        Text: "+1 Attack to Factory units."
       Vehicle Plating:
         Costs:
           Time: 4
@@ -1568,7 +1568,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Shield Batteries to heal two units that regain two lost HP or can deny two damage this combat."
+        Text: "Allows Shield Batteries to heal two units that can either regain or deny up to two lost HP."
       Summon Archon:
         Costs:
           Time: 0
@@ -1719,7 +1719,7 @@ Races:
           Time: 2
           Minerals: 4
           Gas: 4
-        Text: "+1 Shuttle Speed and +2 Range."
+        Text: "+1 Shuttle Speed and +4 Range."
       Sensor Array:
         Costs:
           Time: 2
@@ -1758,7 +1758,7 @@ Races:
           Energy: 1
         Stats:
           Range: 9
-        Text: "Allows Corsairs to cast Disruption Web, preventing 2 units of the same type to attack this round as well as being targeted by melee units this round."
+        Text: "Allows Corsairs to cast Disruption Web, preventing 2 units of the same type to attack this combat round as well as being targeted by melee units this round."
       Argus Jewel:
         Costs:
           Time: 3

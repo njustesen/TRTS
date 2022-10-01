@@ -10,7 +10,7 @@
     <body style="height: 1600px">
         <div class="container" style="max-width: 100%;">
             <div class="row">
-                <div class="col-3" class="col" style="width: 500px">
+                <div class="col-3" class="col" style="width: 430px">
                     <!--
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
@@ -148,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="width: 392px">
+                <div class="col-3" style="width: 365px">
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Area Control</div>
@@ -191,7 +191,7 @@
                                 <ol>
                                     <li><b>Attackers Reveal:</b> Reveal all visible attackers by placing them in the area on the Map and show where they came from. You may declare if you have detectors to reveal cloaked units.</li>
                                     <li><b>Defenders Reveal:</b> The defending player must now place all visible units and structures in the engaged area on the Map. You may declare if you have detectors to reveal cloaked units.</li>
-                                    <li><b>Attackers Retreat:</b> The attacking player can now decide to a) retreat with all attackers to the area(s) they came from, which ends the push, or b) commit to the engagement. Retreating attackers do not spend a Movement Point on the engagement.</li>
+                                    <li><b>Attackers Retreat:</b> The attacking player can now decide to retreat with all attackers to the area(s) they came from and end the push, or commit to the engagement. Retreating attackers do not spend a Movement Point on the engagement.</li>
                                     <li><b>Defenders Retreat:</b> If the attackers commit, the defending players can, in the current turn order, retreat with any units to any reachable area under control but not through the areas that the attackers came from.
                                     If no defending units or structures remain, remove any control marker on the area and place one owned by the attacking player, and the attacking player can then <i>push forward</i> or <i>end the push</i>.</li>
                                     <li><b>Combat:</b> If the attacker committed and any defending units or structures remain, then perform a combat round.
@@ -225,7 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="width: 452px">
+                <div class="col-3" style="width: 385px">
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Spells & Energy</div>
@@ -233,23 +233,20 @@
                                 Abilities with the <img src="static/img/icons/energy.png">-icon are called spells and require Energy to be used.
                                 When spells are used, the spell caster lose their Energy.
                                 Abilities that do not cost Energy can be cast following the rules of the ability.
+                                <span style="color:red">Spell casters do not have Energy when they are produced.</span>
                             </div>
                         </div>
                     </div>
                     <div class="item border-2" style="padding: 4px; padding-top: 8px; padding-bottom: 8px">
                         <div class="container content">
                             <div class="title">Loading & Unloading</div>
-                            <div>
-                                Units with the ability to <i>load/unload</i> units can at any time do so in the Macro phase, when revealing units, or when ending a push.
-                                However, it always costs one movement point for a unit to be loaded.
-                                Units that have attacked cannot be loaded.
-                                Loaded units are hidden and cannot attack or use abilities until they are unloaded.
-                                When going into combat, reveal any loaded units that you wish to use in this combat round.
+                            <div style="color:red">
+                                Units and structures with the Load ability can <i>load/unload</i> units at any time during the Macro phase or when activated during combat at the cost of one movement point.
+                                Static buildings do not spend movement points on unloading.
                             </div>
-                            <br />
-                            <div>
-                                Units can also be loaded and unloaded in the combat steps that match the Range of the loaded/unloaded units or the unit they are loaded into or out off.
-                                Units can not be both loaded and unloaded in the same combat step.
+                            <div style="color:red">
+                                At any time during the Macro phase, or when activated during combat, loaded units can be unloaded at the cost of one movement point as long as they are not attacking.</span>
+                                Loaded units are hidden and cannot attack or use abilities until they are unloaded.
                             </div>
                         </div>
                     </div>
@@ -258,7 +255,7 @@
                             <div class="title">Combat</div>
                             <br/>
                             <div>
-                                <b>Preperation</b></br>
+                                <b>Preparation</b></br>
                                 Reveal any new upgrades on your units in combat.
                             </div>
                             <br />
