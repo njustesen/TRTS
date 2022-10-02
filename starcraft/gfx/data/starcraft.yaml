@@ -683,7 +683,10 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows SCVs that have not attacked to repair a building or mechanical unit one time per round to have it regain four lost HP. Repair can also be used at the beginning of a combat to a target that can deny four damage this combat."
+        Text: "Allows SCVs that have not attacked to repair a building or mechanical unit one time per round to have it regain or deny four lost HP."
+        Stats:
+          Types:
+            - Reactive
       Load:
         Costs:
           Time: 0
@@ -695,7 +698,7 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows buildings that are not producing to Lift Off at any time, making them air units with speed 1. Flying buildings can land using 1 movement point."
+        Text: "Allows buildings that are not producing to Lift Off, making them air units with speed 1. Flying buildings can land using 1 movement point."
       Scanner Sweep:
         Costs:
           Time: 0
@@ -708,8 +711,11 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-          Energy: 0
-        Text: "Allows Medics with Energy to heal two biological unit that can either regain or deny a lost HP."
+          Energy: 1
+        Text: "Allows Medics to Heal up to two biological units that can either regain or deny a lost HP. Units cannot be healed more than once per turn."
+        Stats:
+          Types:
+            - Reactive
       Nuke:
         Costs:
           Time: 0
@@ -728,7 +734,7 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Science Vessels to cast Defensive Matrix on a unit to deny five damage this combat."
+        Text: "Allows Science Vessels to cast Defensive Matrix on a unit that can to deny up to five damage dealt in this round."
       Infantry Weapons:
         Costs:
           Time: 4
@@ -759,7 +765,10 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
-        Text: "Allows Medics to cast Restoration, remove any harmful spell effects on a unit besides Stasis Field."
+        Stats:
+          Types:
+            - Reactive
+        Text: "Allows Medics to cast Restoration to remove any harmful spell effects on a unit besides Stasis Field."
       Optical Flare:
         Costs:
           Time: 2
@@ -1568,7 +1577,10 @@ Races:
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Shield Batteries to heal two units that can either regain or deny up to two lost HP."
+        Stats:
+          Types:
+            - Reactive
+        Text: "Allows Shield Batteries to heal up to two units that can either regain or deny up to two lost HP."
       Summon Archon:
         Costs:
           Time: 0
@@ -2468,7 +2480,7 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows ground units except for Defilers and Ultralisks to Burrow at any time before attacking this round using 1 Movement Point and un-burrow at any time. Burrowed units are invisible but cannot attack. Lurkers do not need this upgrade to burrow and can only attack while burrowed."
+        Text: "Allows ground units that are not attacking, except for Defilers and Ultralisks to Burrow and un-borrow, at any time. Borrowing costs 1 Movement Point. Burrowed units are invisible but cannot attack. Lurkers do not need this upgrade to burrow and can only attack while burrowed."
       Ventral Sacs:
         Costs:
           Time: 2

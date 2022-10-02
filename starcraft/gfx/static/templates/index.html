@@ -24,13 +24,15 @@
                                         {%if item_type != 'Upgrades'%}
                                             <div class="glow-large"></div>
                                         {% endif %}
-                                        <div class="types">
-                                            {%if 'Stats' in item and 'Types' in item['Stats']%}
-                                                {%for type in item['Stats']['Types']%}
-                                                    <span class="badge bg-type">{{type}}</span>
-                                                {%endfor%}
-                                            {%endif%}
-                                        </div>
+                                        {%if 'Stats' in item and 'Types' in item['Stats']%}
+                                            {% if item_type == 'Buildings' or item_type == 'Units' %}
+                                                <div class="types">
+                                                    {%for type in item['Stats']['Types']%}
+                                                        <span class="badge bg-type">{{type}}</span>
+                                                    {%endfor%}
+                                                </div>
+                                            {% endif %}
+                                        {% endif %}
                                         {% if item_type == 'Buildings' or item_type == 'Units' %}
                                             <div class="image">
                                                 <img class="icon" src="static/img/{{race}}/{{img(name)}}" style="max-width:{{item['Size']['Width']/0.04}}%;">
@@ -90,6 +92,11 @@
                                                         <span class="energy">
                                                             <img src="static/img/icons/energy.png">
                                                         </span>
+                                                    {%endif%}
+                                                    {%if 'Stats' in item and 'Types' in item['Stats'] and item_type == 'Upgrades'%}
+                                                        {%for type in item['Stats']['Types']%}
+                                                            <span class="badge bg-type" style="top:-2px">{{type}}</span>
+                                                        {%endfor%}
                                                     {%endif%}
                                                     {%if item_type == 'Upgrades' and 'Stats' in item and 'Range' in item['Stats'] %}
                                                         <!--<span class="spell-range">[Range {{ item['Stats']['Range'] }}]</span>-->
