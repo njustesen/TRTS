@@ -119,6 +119,7 @@ Races:
         Stats:
           Size: LARGE
           Health: 8
+          Range: 4
         Requires:
           - Barracks
         Produces:
