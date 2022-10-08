@@ -854,8 +854,10 @@ Races:
           Gas: 4
           Energy: 1
         Stats:
-          Range: X/8
-        Text: "Allows Science Vessels to use EMP Shockwave to reduce 3 units' health to half (rounded up) and exhaust the energy on one of them. The unit that lose energy will have any spells cast in this combat step denied and will become visible if it is a cloaked Wraiths or Ghosts."
+          Range: 8
+          Types:
+            - Reactive
+        Text: "Allows Science Vessels to use EMP Shockwave to reduce 3 units' health to half (rounded up) and exhaust the energy on one of them. The unit that lose energy will have any spells cast in this combat step denied and will become visible if it is a cloaked Wraith or Ghost."
       Irradiate:
         Costs:
           Time: 2
@@ -1602,7 +1604,9 @@ Races:
           Energy: 1
         Stats:
           Range: 10
-        Text: "Allows Dark Archons to cast Feedback on an target that will lose Energy, have any spells casted in this combat step denied, and is dealt 2 damage. Feedback can target units that are Last-in-line."
+          Types:
+            - Reactive
+        Text: "Allows Dark Archons to cast Feedback on an target that will lose Energy, have any spells casted in this combat step denied, and is dealt 2 damage."
       Load:
         Costs:
           Time: 0
@@ -1684,7 +1688,7 @@ Races:
           Minerals: 3
           Gas: 3
           Energy: 1
-        Text: "Allows High Templars to cast Hallucination during the Macro Phase creating two temporary duplicates of a friendly unit in the same area as the High Templar, with the same amount of HP. Duplicates only exist until the end of the round, or until they are dealt any damage or affected by an enemy spell. Duplicates are always targeted before non-duplicates."
+        Text: "Allows High Templars to cast Hallucination during the Macro Phase creating two temporary duplicates of a friendly unit in the same area as the High Templar, with the same amount of HP. Duplicates only exist until the end of the round, or until they are dealt any damage or are affected by an enemy spell. Duplicates are always targeted before non-duplicates if they have the same amount of HP."
       Khaydarin Amulet:
         Costs:
           Time: 3

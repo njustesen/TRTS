@@ -12,10 +12,6 @@ body {
     --bs-gutter-y: 0;
 }
 
-.item {
-    margin: 4px;
-}
-
 .glow-large {
     position: absolute;
     height: 100%;
@@ -69,10 +65,6 @@ body {
     border: 1px solid black;
 }
 
-.border-req {
-    border: 1px solid black;
-}
-
 .Buildings {
     width: 90px;
     height: 90px;
@@ -99,6 +91,7 @@ body {
     float: left;
     margin-top: 1px;
     margin-right: 1px;
+    background-color: black;
 }
 
 .content {
@@ -216,4 +209,48 @@ body {
     padding-top: 10px;
     max-width: 180px;
     padding-left: 4px;
+}
+
+.item {
+    color: black;
+    margin: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 75px 0px 50px #ffffff;
+}
+
+.title {
+    color:black;
+}
+
+.glow-large {
+    box-shadow: inset 0px 0px 0px #ffffff;
+}
+
+.image-container.Buildings {
+    background-color: black;
+}
+
+.image-container.Units {
+    background-color: black;
+}
+
+.border-req {
+    opacity: 75%;
+}
+
+.glow-small {
+    box-shadow: inset 0px 0px 0px #ffffff;
+}
+
+.bg-type {
+    background-color: black!important;
+    color: rgb(150, 220, 255);
+}
+
+.image {
+    background-color: black!important;
+}
+
+.stats {
+    background-color: white!important;
 }
