@@ -254,3 +254,7 @@ body {
 .stats {
     background-color: white!important;
 }
+
+.light {
+    color: rgb(0, 0, 0);
+}

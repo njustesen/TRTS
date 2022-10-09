@@ -672,63 +672,69 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows SCVs that have not attacked or repaired this round to collect minerals or gas at the cost of one movement point. The resource will be extracted in the next Income Phase."
+          MP: 1
+        Text: "Allows SCVs to collect minerals or gas. The resource will be extracted in the next Income Phase if the SCV is till there."
       Construct:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows each SCV to construct one building in the Production Phase in areas without creep. Constructing SCVs cannot do anything else until the building is complete. The construction will not finish if the SCV is killed, or leaves the construction, unless another SCV takes over."
+          MP: 1
+        Text: "Allows each SCV to construct one building in the Production Phase in areas without creep. Constructing SCVs cannot do anything else until the building is complete unless it is canceled. Buildings can be canceled for a refund of the cost of the building minus one of each resource. SCVs can also leave a building before it's finished. The construction will not finish if the SCV is killed or leaves it, unless another SCV takes over."
       Repair:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows SCVs that have not attacked to repair a building or mechanical unit one time per round to have it regain or deny four lost HP."
-        Stats:
-          Types:
-            - Reactive
+          MP: X
+        Text: "Allows SCVs to repair a building or mechanical unit other than SCVs to have it regain or deny X lost HP."
       Load:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows 4 Barracks units that have not attacked to spend a movement point to be loaded into a Bunker and similarly 8 ground units into a Dropship where Vultures and Goliaths counts as 2 and Tanks as 4. Bunkers cannot unload during combat."
+          MP: "*"
+        Text: "Allows 4 Barracks units to be loaded into a Bunker and 8 ground units into a Dropship where Vultures and Goliaths counts as 2 and Tanks as 4. *Read the rules on loading and unloading."
+        Stats:
+          Types:
+            - Instant
       Lift Off:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows buildings that are not producing to Lift Off, making them air units with speed 1. Flying buildings can land using 1 movement point."
+          MP: 1
+        Text: "Allows buildings to Lift Off, making them air units with speed 1 until they land which can be done without spending movement points."
       Scanner Sweep:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows ComSat Stations to scan one area instead of doing a push or when you reveal your attackers or defenders. A scan reveals all enemy cloaked units and two un-revealed structures (if any) of the other player's choice. When used during the Reveal Attacker/Defender step, enemies remain revealed for the rest of the combat."
+        Text: "Allows ComSat Stations to scan one area instead of doing a push or when you reveal your units. A scan reveals all enemy units, including cloaked units, and three un-revealed structures (if any) of the other player's choice. When used during the Reveal Attacker/Defender step, enemies remain revealed for the rest of the combat."
+        Stats:
+          Types:
+            - Instant
       Heal:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
           Energy: 1
-        Text: "Allows Medics to Heal up to two biological units that can either regain or deny a lost HP. Units cannot be healed more than once per turn."
-        Stats:
-          Types:
-            - Reactive
+        Text: "Allows Medics to Heal up to two biological units that each may regain or deny a lost HP. Units cannot be healed more than once per turn."
       Nuke:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Nuclear Silos can produce and house one Nuke at the cost of 4 minerals, 4 gas, and 8 supply."
+        Text: "Nuclear Silos can in the Production Phase produce one Nuke at the cost of 4 minerals, 4 gas, and 8 supply. Nuclear Silos can house at most one nuke."
       Call Down:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Ghosts Call Down a Nuke, if any are available in a Nuclear Silo, instead of making a push by informing the other player that a \"Nuclear Luanch Detected!\" and then secretly marking the Ghost and the target area on the Minimap. The Ghost cannot move further or attack until the Nuke has detonated. All Nukes detonate in the marked area at the end of the next Micro Phase if the Ghosts is still alive. Nukes deal 25 damage to 5 targets of your choice and 5 targets for each enemy of their choice."
+          MP: 1
+        Text: "Allows Ghosts to Call Down a Nuke, if any are available in a Nuclear Silo by marking the Ghost and the target area as well as announcing \"Nuclear Launch Detected!\". If the Ghost is hidden on the Minimap, the markings can be made secretly and the Nuke can be announced at the end of the round instead. Nukes detonate in their marked area at the end of the next Micro Phase if the Ghosts is still alive. Nukes deal 20 damage to targets of your choice and 20 to targets for each enemy in the area of their choice."
       Defensive Matrix:
         Costs:
           Time: 0
@@ -736,6 +742,9 @@ Races:
           Gas: 0
           Energy: 1
         Text: "Allows Science Vessels to cast Defensive Matrix on a unit that can to deny up to five damage dealt in this round."
+        Stats:
+          Types:
+            - Instant
       Infantry Weapons:
         Costs:
           Time: 4
@@ -766,10 +775,10 @@ Races:
           Minerals: 2
           Gas: 2
           Energy: 1
+        Text: "Allows Medics to cast Restoration to remove any harmful spell effects besides Stasis Field on two units."
         Stats:
           Types:
-            - Reactive
-        Text: "Allows Medics to cast Restoration to remove any harmful spell effects on a unit besides Stasis Field."
+            - Instant
       Optical Flare:
         Costs:
           Time: 2
@@ -779,31 +788,41 @@ Races:
         Stats:
           Range: 9
         Text: "Allows Medics to cast Optical Flare, causing one unit to lose Detection and can from now on only attack and cast spells at Range 1."
+        Stats:
+          Types:
+            - Instant
       Caduceus Reactor:
         Costs:
           Time: 3
           Minerals: 2
           Gas: 2
-          Energy: 1
         Text: "Allows Medics to regenerate Energy in contested areas."
       Spider Mines:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows Vultures to plant one Spider Mine from your available Spider Mines by using 1 movement point. Mines planted during combat are not burrowed. You gain two Spider Mines for each Vulture you have and produce in the rest of the game."
+          MP: X
+        Text: "Allows Vultures to plant X Spider Mines. However, during combat at most one can be planted and the Vulture cannot attack in this combat round. Mines that are planted in combat are not burrowed unless it survives this combat round. You gain two Spider Mines for each Vulture you have when this upgrade is finished and for each you produce going forward."
+        Stats:
+          Types:
+            - Instant
       Siege Tech:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Siege Tanks to go into Siege Mode before any combat by using 1 movement point to gain Range 12 and double attack and they become static. Unsieging costs 1 movement point."
+          MP: 1
+        Text: "Allows Siege Tanks to go in or out of Siege Mode. Tanks in Siege Mode have Range 12, double Attack, and are static."
+        Stats:
+          Types:
+            - Instant
       Ion Thrusters:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "+1 Vulture Speed and Vultures gain Frenzy against units with lower Range."
+        Text: "+1 Vulture Speed and Vultures gain Frenzy against lower ranged units."
       Charon Boosters:
         Costs:
           Time: 2
@@ -816,7 +835,10 @@ Races:
           Minerals: 3
           Gas: 3
           Energy: 1
-        Text: "Allows Wraiths to become cloaked until next round."
+        Text: "Allows Wraiths to become cloaked this round."
+        Stats:
+          Types:
+            - Instant
       Apollo Reactor:
         Costs:
           Time: 3
@@ -856,8 +878,8 @@ Races:
         Stats:
           Range: 8
           Types:
-            - Reactive
-        Text: "Allows Science Vessels to use EMP Shockwave to reduce 3 units' health to half (rounded up) and exhaust the energy on one of them. The unit that lose energy will have any spells cast in this combat step denied and will become visible if it is a cloaked Wraith or Ghost."
+            - Instant
+        Text: "Allows Science Vessels to use EMP Shockwave to target three units. If the targets are Protoss, their HP is reduced to half (rounded up). One of the targets will lose energy and have any spells cast in this combat step denied and if it's a cloaked Wraith or Ghost, it's revealed."
       Irradiate:
         Costs:
           Time: 2
@@ -866,6 +888,8 @@ Races:
           Energy: 1
         Stats:
           Range: 9
+          Types:
+            - Instant
         Text: "Allows Science Vessels to cast Irradiate on a biological unit, dealing 1 damage to the target and two other units of that type in the same area, now, and at the end of every round until the target regenerates in an area under control."
       Titan Reactor:
         Costs:
@@ -895,6 +919,8 @@ Races:
           Gas: 2
           Energy: 1
         Text: "Allows Ghosts to be cloaked until next round."
+        Types:
+          - Instant
       Lockdown:
         Costs:
           Time: 2
@@ -903,13 +929,15 @@ Races:
           Energy: 1
         Stats:
           Range: 8
-        Text: "Allows Ghosts to cast Lockdown on a mech unit, making it static and unable to do anything this round."
+        Text: "Allows Ghosts to cast Lockdown on a mechanical unit, making it static and unable to do anything this round."
+        Types:
+          - Instant
       Ocular Implants:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Ghosts get +2 range and can Call Down nukes in adjacent ground areas."
+        Text: "+2 Ghost Range and they can Call Down Nukes in adjacent ground areas. If a Nuke is detonated in an unrevealed area. It is briefly revealed while damage is allocated."
       Moebius Reactor:
         Costs:
           Time: 3
@@ -1567,13 +1595,18 @@ Races:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Probes that have not attacked to collect minerals or gas at the cost of one movement point. The resource will be extracted in the next Income Phase."
+          MP: 1
+        Text: "Allows Probes to collect minerals or gas. The resource will be extracted in the next Income Phase."
       Warp:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Probes to warp in a structure in the Production Phase in areas without creep by using 1 movement point. Structures other than Nexus and Pylons can only be warped into areas with a Pylon."
+          MP: 1
+        Text: "Allows Probes to Warp in a structure in the Production Phase in areas without creep. Structures other than Nexus and Pylons can only be Warped into areas with a Pylon."
+        Stats:
+          Types:
+            - Instant
       Recharge:
         Costs:
           Time: 0
@@ -1582,20 +1615,28 @@ Races:
           Energy: 1
         Stats:
           Types:
-            - Reactive
-        Text: "Allows Shield Batteries to heal up to two units that can either regain or deny up to two lost HP."
+            - Instant
+        Text: "Allows Shield Batteries to heal up to two Protoss units that can either regain or deny up to two lost HP."
       Summon Archon:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows two High Templars to merge into one Archon using one movement point each. The Archon cannot be used this round."
+          MP: 1
+        Text: "Allows two High Templars to merge into one Archon. The Archon deploy immediately but cannot be used before the next Deployment Phase."
+        Stats:
+          Types:
+            - Instant
       Summon Dark Archon:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows two Dark Templars to merge into a Dark Archon using one movement point each. The Dark Archon cannot be used this round."
+          MP: 1
+        Text: "Allows two Dark Templars to merge into a Dark Archon. The Dark Archon deploy immediately but cannot be used before the next Deployment Phase."
+        Stats:
+          Types:
+            - Instant
       Feedback:
         Costs:
           Time: 0
@@ -1603,22 +1644,25 @@ Races:
           Gas: 0
           Energy: 1
         Stats:
-          Range: 10
           Types:
-            - Reactive
-        Text: "Allows Dark Archons to cast Feedback on an target that will lose Energy, have any spells casted in this combat step denied, and is dealt 2 damage."
+            - Instant
+        Text: "Allows Dark Archons to cast Feedback on a target that will lose Energy, have any spells cast in this combat step denied, and is dealt 2 damage."
       Load:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Shuttles to load up to 8 ground units that have not attacked where Zealots and Templar counts as 2 and Dragoons, Reaver, and Archons counts as 4."
+          MP: "*"
+        Text: "Allows Shuttles to load up to 8 ground units where Zealots and Templar counts as 2 and Dragoons, Reaver, and Archons counts as 4. *Read the rules on loading and unloading."
+        Stats:
+          Types:
+            - Instant
       Scarab:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Reavers cannot attack but instead produce as many Scarabs in the Production Phase that the Reaver can house (initially one) for one mineral. Each Reaver can release one Scarab in each Combat Round following the attacking stats of the Scarab."
+        Text: "Reavers cannot attack but can instead produce as many Scarabs in the Production Phase that the Reaver can house (initially one) for one mineral. Reavers can release one Scarab in each Combat Round following the attacking stats of the Scarab."
       Interceptor:
         Costs:
           Time: 0
@@ -1631,6 +1675,9 @@ Races:
           Minerals: 0
           Gas: 0
         Text: "All friendly units (except Arbiters) in the area of the Arbiter are cloaked."
+        Stats:
+          Types:
+            - Passive
       Ground Weapons:
         Costs:
           Time: 4
@@ -1680,21 +1727,28 @@ Races:
           Gas: 4
           Energy: 1
         Stats:
-          Range: 9
-        Text: "Allows High Templars to cast Psionic Storm, dealing 6s damage (ignoring Armor) minus the targets' speed."
+          Types:
+            - Instant
+        Text: "Allows High Templars to cast Psionic Storm, dealing 5 damage ignoring armor."
       Hallucination:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
           Energy: 1
-        Text: "Allows High Templars to cast Hallucination during the Macro Phase creating two temporary duplicates of a friendly unit in the same area as the High Templar, with the same amount of HP. Duplicates only exist until the end of the round, or until they are dealt any damage or are affected by an enemy spell. Duplicates are always targeted before non-duplicates if they have the same amount of HP."
+        Text: "Allows High Templars to cast Hallucination during the Macro Phase creating two temporary duplicates of a friendly unit in the same area as the High Templar. Duplicates only exist until the end of the round, or until they are dealt any damage or are affected by an enemy spell. Duplicates cannot attack or use spells."
+        Stats:
+          Types:
+            - Instant
       Khaydarin Amulet:
         Costs:
           Time: 3
           Minerals: 3
           Gas: 3
-        Text: "Allows High Templars to regenerate energy in contested areas."
+        Text: "Allows High Templars to regenerate Energy in contested areas."
+        Stats:
+          Types:
+            - Instant
       Maelstrom:
         Costs:
           Time: 2
@@ -1702,7 +1756,8 @@ Races:
           Gas: 2
           Energy: 1
         Stats:
-          Range: 10
+          Types:
+            - Instant
         Text: "Allows Dark Archons to cast Maelstrom, targeting 3 biological units of the same type making them static and visible until next round. Maelstrom can be cast on attacking cloaked units."
       Mind Control:
         Costs:
@@ -1711,7 +1766,8 @@ Races:
           Gas: 4
           Energy: 1
         Stats:
-          Range: 8
+          Types:
+            - Instant
         Text: "Allows Dark Archons to cast Mind Control, gaining full control over one target unit."
       Argus Talisman:
         Costs:
@@ -1724,7 +1780,7 @@ Races:
           Time: 3
           Minerals: 4
           Gas: 4
-        Text: "+2 Reaver Attack."
+        Text: "+2 Scarab Attack."
       Increased Reaver Capacity:
         Costs:
           Time: 2
@@ -1775,7 +1831,9 @@ Races:
           Energy: 1
         Stats:
           Range: 9
-        Text: "Allows Corsairs to cast Disruption Web, preventing 2 units of the same type to attack this combat round as well as being targeted by melee units this round."
+          Types:
+            - Instant
+        Text: "Allows Corsairs to cast Disruption Web, preventing 2 units of the same type to attack this combat round as well as being targeted by melee."
       Argus Jewel:
         Costs:
           Time: 3
@@ -1789,7 +1847,8 @@ Races:
           Gas: 3
           Energy: 1
         Stats:
-          Range: 9
+          Types:
+            - Instant
         Text: "Allows Arbiters to cast Stasis Field, freezing 3 units of the same type until the end of next round. Frozen units are static, cannot do anything, and cannot be targeted."
       Recall:
         Costs:
@@ -1797,6 +1856,9 @@ Races:
           Minerals: 3
           Gas: 3
           Energy: 1
+        Stats:
+          Types:
+            - Instant
         Text: "Allows Arbiters to cast Recall to teleport up to ten friendly units from one area to the one where the Arbiter is."
       Khaydarin Core:
         Costs:
@@ -2444,18 +2506,23 @@ Races:
     Upgrades:
       Larva:
         Text: "Allows Hatcheries, Lairs, and Hives to produce two units each round, even while researching or morphing into tier 2 or 3. While units are being produced they take form as eggs with 10 HP that hatch in the Deployment Phase. Zergling and Scourge eggs hatch two units for the price listed while still counting as one production action."
+        Stats:
+          Types:
+            - Passive
       Gather:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Drones that have not attacked to collect minerals or gas at the cost of one movement point. The resource will be extracted in the next Income Phase."
+          MP: 1
+        Text: "Allows Drones to collect minerals or gas. The resource will be extracted in the next Income Phase."
       Morph:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Text: "Allows Drones to morph into a Tier 1 structure during the Production Phase in an area with creep unless it's a Hatchery. Any area with a Zerg structure has Creep."
+          MP: 1
+        Text: "Allows Drones to morph into a Tier 1 structure during the Production Phase. Structures other than Hatcheries and Extractors can only be morphed in an area a least one Zerg structure."
       Dark Swarm:
         Costs:
           Time: 0
@@ -2463,13 +2530,15 @@ Races:
           Gas: 0
           Energy: 1
         Text: "Allows Defilers to cast a Dark Swarm, reducing all ranged ground damage in this area to half (rounded down) for the remainder of this round."
+        Stats:
+          Types:
+            - Instant
       Infest Command Center:
         Costs:
           Time: 0
           Minerals: 0
           Gas: 0
-        Stats:
-          Range: 1
+          MP: 1
         Text: "Allows Queens in combat to Infest a damaged Terran Command Center that will be replaced by an Infested Command Center under your control with the same HP."
       Parasite:
         Costs:
@@ -2478,20 +2547,29 @@ Races:
           Gas: 0
           Energy: 1
         Stats:
-          Range: 12
+          Types:
+            - Instant
         Text: "Allows Queens to cast Parasite on a target unit to permanently gain its vision. Parasite also be cast when retreating."
       Burrow:
         Costs:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows ground units that are not attacking, except for Defilers and Ultralisks to Burrow and un-borrow, at any time. Borrowing costs 1 Movement Point. Burrowed units are invisible but cannot attack. Lurkers do not need this upgrade to burrow and can only attack while burrowed."
+          MP: 1
+        Stats:
+          Types:
+            - Instant
+        Text: "Allows ground units, except for Defilers and Ultralisks to Burrow and un-borrow. Burrowed units are invisible but cannot attack. Lurkers, however, do not need this upgrade to burrow and can only attack while burrowed."
       Ventral Sacs:
         Costs:
           Time: 2
           Minerals: 3
           Gas: 3
-        Text: "Allows Overlords to load up to 8 ground units where Hydralisks and Defilers counts as 2 and Lurkers and Ultralisks as 4."
+          MP: "*"
+        Text: "Allows Overlords to load up to 8 ground units where Hydralisks and Defilers counts as 2 and Lurkers and Ultralisks as 4. *See the rules for loading and unloading."
+        Stats:
+          Types:
+            - Instant
       Antennae:
         Costs:
           Time: 2
@@ -2535,6 +2613,7 @@ Races:
           Time: 2
           Minerals: 4
           Gas: 4
+          MP: 1
         Text: "Enables Hydralisks to morph into Lurkers in the Production Phase. Lurker eggs have 10 HP."
         Requires:
           - Lair
@@ -2575,8 +2654,9 @@ Races:
           Gas: 2
           Energy: 1
         Stats:
-          Range: 9
-        Text: "Allows Queens to use Ensnare, targeting 3 unborrowed units that until next round have their base Attack value reduced to 1 and they become static."
+          Types:
+            - Instant
+        Text: "Allows Queens to use Ensnare, targeting 3 units that, for this round, have Attack value 1 (or 0 if their original Attack value was lower) and become static."
       Spawn Broodling:
         Costs:
           Time: 2
@@ -2584,8 +2664,9 @@ Races:
           Gas: 2
           Energy: 1
         Stats:
-          Range: 9
-        Text: "Allows Queens to Spawn Broodlings, destroying any non-robotic ground unit and replacing it with two Broodlings under control that lives until the end of this round. Archons and Dark Archons cannot be targeted by Spawn Broodlings."
+          Types:
+            - Instant
+        Text: "Allows Queens to Spawn Broodlings, destroying A non-robotic ground unit and replacing it with two Broodlings under control that lives until the end of this round. Archons and Dark Archons cannot be targeted by Spawn Broodlings."
       Gamete Meiosis:
         Costs:
           Time: 3
@@ -2597,7 +2678,10 @@ Races:
           Time: 2
           Minerals: 2
           Gas: 2
-        Text: "Allows Defilers to Consume two friendly Zerg units by using 1 Movement Point to regenerate Energy."
+        Stats:
+          Types:
+            - Instant
+        Text: "Allows Defilers to Consume two friendly Zerg units to regenerate Energy."
       Plague:
         Costs:
           Time: 2
@@ -2605,7 +2689,8 @@ Races:
           Gas: 4
           Energy: 1
         Stats:
-          Range: 9
+          Types:
+            - Instant
         Text: "Allows Defilers to cast Plague on 3 units or one structure, lasting until the targets regenerate in an area under control. Plagued units are dealt double damage."
       Metasynaptic Node:
         Costs:
